@@ -1,0 +1,18 @@
+<div id="edit_page" class="col-md-8 col-md-offset-2">
+  <div class="row">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1>Fix campagnes</h1>
+      </div>
+      <div class="panel-body">
+        <div class="current_image">
+          <strong>Rigth now</strong>
+          <%#= image_tag @campaign.image.url(:medium) %>
+        </div>
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Cancel', campaign_path %>

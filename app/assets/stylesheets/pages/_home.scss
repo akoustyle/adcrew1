@@ -1,1 +1,84 @@
 // Specific CSS for your home-page
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white !important;
+  // background-image: asset-url("gradient-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+}
+
+h2 {
+  color: #ECEDF2;
+}
+
+i {
+  color: #DBDBDB;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 5px;
+}
+
+i:hover {
+  color: #003597;
+  cursor: pointer;
+}
+
+.feature {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  background-color: transparent;
+  border-radius: 30px;
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  height: 170px;
+}
+
+.features {
+  padding: 50px;
+  text-align: center;
+  // background-color: #ECEDF2;
+}
+
+.features h1 {
+  color: #003597;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.typeform-share {
+  background-color: #003597 !important;
+  margin-top: 50px !important;
+}

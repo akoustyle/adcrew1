@@ -1,0 +1,16 @@
+.banner {
+  text-align: center;
+  background-image: asset-url("background.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
+}
+
+.banner h1 {
+  margin-bottom: 20px;
+}
+
+.banner img {
+  height: 100px;
+}

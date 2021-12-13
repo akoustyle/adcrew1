@@ -1,0 +1,30 @@
+<div>
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+      <div class="panel heading campaign_image center">
+        <%#= image_tag @campaign.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+        <h1><%= @campaign.name %> </h1>
+        <p><%= @campaign.objectif %></p>
+      </div>
+      <div class="panel-footer">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="user">
+              <p> Post by <%= @campaign.tag %></p>
+            </div>
+          </div>
+          <div class="col md-6">
+            <div class="btn-group pull-right">
+              <%# if user_signed_in? %>
+                <%= link_to "Edit", edit_campaign_path, class: "btn btn-info" %>
+                <%= link_to "Delete", campaign_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
+              <%# end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
