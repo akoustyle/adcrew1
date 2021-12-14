@@ -90,22 +90,3 @@ i:hover {
   text-align: center;
   padding: 50px 0;
 }
-
-.container1 {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 600px 1fr;
-}
-.wording {
-  background-color: orange;
-  height: 20px;
-}
-.wording-image {
-  background-image: url('bilal.png');
-  height: 300px;
-}
-
-.container1 img {
-  height: 50px;
-  width: 50px;
-}
