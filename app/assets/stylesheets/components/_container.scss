@@ -1,0 +1,21 @@
+.container1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 600px 1fr;
+}
+.wording {
+  background-color: orange;
+  height: 20px;
+}
+.wording-image {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('bilal.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  margin: 15px;
+}
+
+.container1 img {
+  height: 50px;
+  width: 50px;
+}
