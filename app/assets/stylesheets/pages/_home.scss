@@ -1,18 +1,4 @@
 // Specific CSS for your home-page
-body {
-  margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: white !important;
-  // background-image: asset-url("gradient-bg.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position:fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
 
 h1 {
   color: white;
@@ -43,10 +29,26 @@ i:hover {
   cursor: pointer;
 }
 
+// .banner {
+//   text-align: center;
+//   background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("images/axa-banner.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   padding: 150px 0;
+//   height: 100vh;
+// }
+
+.banner h1 {
+  margin-bottom: 20px;
+}
+
+.banner img {
+  height: 100px;
+}
+
 .feature {
   text-align: center;
   padding: 40px 20px 20px 20px;
-  background-color: transparent;
   border-radius: 30px;
   height: 450px;
   margin-bottom: 20px;
@@ -63,7 +65,6 @@ i:hover {
 .features {
   padding: 50px;
   text-align: center;
-  // background-color: #ECEDF2;
 }
 
 .features h1 {
@@ -81,4 +82,30 @@ i:hover {
 .typeform-share {
   background-color: #003597 !important;
   margin-top: 50px !important;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.container1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 600px 1fr;
+}
+.wording {
+  background-color: orange;
+  height: 20px;
+}
+.wording-image {
+  background-image: url('bilal.png');
+  height: 300px;
+}
+
+.container1 img {
+  height: 50px;
+  width: 50px;
 }
