@@ -36,7 +36,7 @@ class TalentsController < ApplicationController
 
   def destroy
     @talent.destroy
-    redirect_to root_path
+    redirect_to talents_path
   end
 
   private
