@@ -13,7 +13,7 @@
                 <p>INFLUENCE & MARKETING 360</p>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"> <%= link_to "ADCREW", root_path %></a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <%# <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#">ADCrew</a>
                         </li>
@@ -23,12 +23,12 @@
                         <li>
                             <a href="#">TEAM</a>
                         </li>
-                    </ul>
+                    </ul> %>
                 </li>
                 <li>
                     <a href="#"><%= link_to "Campagnes", campaigns_path %></a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Team</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <%# <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Team</a> %>
+                    <%# <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li>
                             <a href="#">Page 1</a>
                         </li>
@@ -38,10 +38,16 @@
                         <li>
                             <a href="#">Page 3</a>
                         </li>
-                    </ul>
+                    </ul> %>
+                </li>
+                <li>
+                    <a href="#"> <%= link_to "Team", team_path  %></a>
                 </li>
                 <li>
                     <a href="#"> <%= link_to "Talents", talents_path  %></a>
+                </li>
+                <li>
+                    <a href="#"> <%= link_to "Prod", prod_path  %></a>
                 </li>
                 <li>
                     <a href="#"> <%= link_to "Contact", contact_path %> </a>
