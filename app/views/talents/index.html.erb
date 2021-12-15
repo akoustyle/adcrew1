@@ -1,0 +1,26 @@
+<h1>It is working!!</h1>
+
+<ul>
+  <%# @campaigns.each do |campaign| %>
+    <li><%#= campaign.name %></li>
+  <%# end %>
+
+</ul>
+
+<h1>Talents AD CREW</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <% @talents.each do |talent| %>
+        <div class="feature">
+          <div class="feature-title">
+            <h2><%= link_to talent.name, talent %></h2>
+            <p> <%= talent.about %> </p>
+          </div>
+          <%#= link_to (image_tag talent.image.url), talent %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+ <%= link_to "Gram it", new_talent_path %>

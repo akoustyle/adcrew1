@@ -21,9 +21,12 @@
 // }
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-image: asset-url('gradient-bg.png');
+  // background-image: asset-url('gradient-bg.png');
+  background-color: peru;
   background-size: cover;
   background-repeat: no-repeat;
 }
