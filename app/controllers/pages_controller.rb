@@ -8,4 +8,7 @@ class PagesController < ApplicationController
 
   def prod
   end
+
+  def contact
+  end
 end
