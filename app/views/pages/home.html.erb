@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="features">
+    <%# <div class="features">
       <h1>Nos Campagnes</h1>
 
       <div class="container2">
@@ -24,12 +24,404 @@
         </div>
         <div class="campagne-image">
           <%= image_tag('camp1.png') %>
-          <%= image_tag('camp2.png') %>
-          <%= image_tag('camp3.png') %>
+          <%#= image_tag('camp2.png') %>
+          <%#= image_tag('camp3.png') %>
+        <%# </div>
+      </div>
+    </div> %>
+        <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">Nos campagnes AD CREW</h2>
+            <p data-animate="fadeInUp" class="lead">We have worked on dozens of projects so we have picked only the latest for you.</p>
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="webdesign">Green</a></li>
+            <li><a href="#" data-filter="seo">Urban</a></li>
+            <li><a href="#" data-filter="marketing">Positivisme</a></li>
+            <li><a href="#" data-filter="other">Fashion</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto"><span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('portfolio-1.jpg', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('portfolio-2.jpg', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name 2</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider3.jpg,img/main-slider1.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('camp1.png', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name 3</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="marketing" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('camp2.png', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name 4</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('camp3.png', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name 5</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="other" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('portfolio-6.jpg', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name 6</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="seo" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('bilal.png', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><%= image_tag('canon-logo.jpeg', class: "img-fluid") %>
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <%# <section class="pt-5">
+      <div class="container">
+        <h1>Featured Destinations</h1>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aliquid</p>
+      </div>
+      <div class="swiper destinations-slider swiper-padding">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background-image: asset-url('travel-home-4.jpg')">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Paris</p>
+                <h2 class="h3 mb-4">France</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-2.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Tokyo</p>
+                <h2 class="h3 mb-4">Japan</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-3.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Madrid</p>
+                <h2 class="h3 mb-4">Spain</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-1.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Rome</p>
+                <h2 class="h3 mb-4">Italy</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-5.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Jakarta</p>
+                <h2 class="h3 mb-4">Indonesia</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-6.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Ottawa</p>
+                <h2 class="h3 mb-4">Canada</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-7.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Cairo</p>
+                <h2 class="h3 mb-4">Egypt</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-4.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Berlin</p>
+                <h2 class="h3 mb-4">Germany</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-2.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Bangkok</p>
+                <h2 class="h3 mb-4">Thailand</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-3.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">Malé</p>
+                <h2 class="h3 mb-4">Maldives</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+          <div class="swiper-slide h-auto"><a class="destination d-flex align-items-end bg-center bg-cover" href="post.html" style="background: url(img/travel-home-1.jpg)">
+              <div class="destination-inner w-100 text-center text-white index-forward has-transition">
+                <p class="small text-uppercase mb-0">New York</p>
+                <h2 class="h3 mb-4">United States</h2>
+                <div class="btn btn-primary w-100 destination-btn text-white">Discover</div>
+              </div></a></div>
+        </div>
+        <div class="swiper-button-prev swiper-custom-nav text-uppercase letter-spacing-0">
+          <svg class="svg-icon svg-icon me-1">
+            <use xlink:href="#arrow-left-1"> </use>
+          </svg><span class="text-sm">Prev</span>
+        </div>
+        <div class="swiper-button-next swiper-custom-nav text-uppercase letter-spacing-0"><span class="text-sm">Next</span>
+          <svg class="svg-icon svg-icon ms-1">
+            <use xlink:href="#arrow-right-1"> </use>
+          </svg>
+        </div>
+      </div>
+    </section> %>
+    <script>
+    // window.addEventListener('DOMContentLoaded', function () {
+    // /* =====================================
+    //     DESTINATIONS SLIDER
+    // ======================================== */
+    // var destinationsSlider = new Swiper('.destinations-slider', {
+    //     slidesPerView: 1,
+    //     spaceBetween: 10,
+    //     centeredSlides: true,
+    //     simulateTouch: false,
+    //     loop: true,
+    //     breakpoints: {
+    //         551: {
+    //             slidesPerView: 2,
+    //         },
+    //         991: {
+    //             slidesPerView: 3,
+    //         },
+    //         1200: {
+    //             slidesPerView: 4,
+    //         },
+    //         1700: {
+    //             slidesPerView: 5,
+    //         },
+    //     },
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',
+    //     },
+    // });
 
+  /* =========================================
+     * filter
+     *  =======================================*/
+
+    $('#filter a').click(function (e) {
+        e.preventDefault();
+
+        $('#filter li').removeClass('active');
+        $(this).parent('li').addClass('active');
+
+        var categoryToFilter = $(this).attr('data-filter');
+
+        $('.reference-item').each(function () {
+
+            if ($(this).data('category') === categoryToFilter || categoryToFilter === 'all') {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+
+    });
+
+          /* =========================================
+     * reference functionality
+     *  =======================================*/
+    $('.reference a').on('click', function (e) {
+
+        e.preventDefault();
+
+        var title = $(this).find('.reference-title').text(),
+            description = $(this).siblings('.reference-description').html();
+
+        $('#detail-title').text(title);
+        $('#detail-content').html(description);
+
+        var images = $(this).siblings('.reference-description').data('images').split(',');
+        if (images.length > 0) {
+            sliderContent = '';
+            for (var i = 0; i < images.length; ++i) {
+                sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
+            }
+        } else {
+            sliderContent = '';
+        }
+
+        openReference(sliderContent);
+
+    });
+
+    function openReference(sliderContent) {
+        $('#detail').slideDown();
+        $('#references-masonry').slideUp();
+
+
+        if (sliderContent !== '') {
+
+            var slider = $('#detail-slider');
+
+            if (slider.hasClass('owl-loaded')) {
+                slider.trigger('replace.owl.carousel', sliderContent);
+            } else {
+                slider.html(sliderContent);
+                slider.owlCarousel({
+                    nav: false,
+                    dots: true,
+                    items: 1
+                });
+
+            }
+        }
+    }
+
+
+    function closeReference() {
+        $('#references-masonry').slideDown();
+        $('#detail').slideUp();
+    }
+
+    $('#filter button, #detail .close').on('click', function () {
+        closeReference();
+    });
+
+    /* =========================================
+     *  animations
+     *  =======================================*/
+
+    delayTime = 0;
+
+    $('[data-animate]').waypoint(function (direction) {
+        delayTime += 250;
+
+        var element = $(this.element);
+
+        $(this.element).delay(delayTime).queue(function (next) {
+            element.toggleClass('animated');
+            element.toggleClass(element.data('animate'));
+            delayTime = 0;
+            next();
+        });
+
+        this.destroy();
+
+    }, {
+        offset: '90%'
+    });
+
+    $('[data-animate-hover]').hover(function () {
+        $(this).css({
+            opacity: 1
+        });
+        $(this).addClass('animated');
+        $(this).removeClass($(this).data('animate'));
+        $(this).addClass($(this).data('animate-hover'));
+    }, function () {
+        $(this).removeClass('animated');
+        $(this).removeClass($(this).data('animate-hover'));
+    });
+    </script>
     <%# <div id="footer">
       <p>AXA Landing Page / 2019</p>
       <ul class="social-icons">
