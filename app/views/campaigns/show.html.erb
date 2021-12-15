@@ -20,6 +20,7 @@
               <%# if user_signed_in? %>
                 <%= link_to "Edit", edit_campaign_path, class: "btn btn-info" %>
                 <%= link_to "Delete", campaign_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
+                <%= link_to "Back to the list", campaigns_path, class: "btn btn-primary" %>
               <%# end %>
             </div>
           </div>
