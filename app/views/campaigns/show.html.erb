@@ -5,8 +5,11 @@
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <h1><%= @campaign.name %> </h1>
-        <p><%= @campaign.objectif %></p>
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photo.attached? ? cl_image_path(@campaign.photo.key) : asset_path('background.jpeg') %>)">
+          <h1><%= @campaign.name %> </h1>
+          <p><%= @campaign.objectif %></p>
+          <%#= cl_image_tag @campaign.photo.key, height: 300, width: 400, crop: :fill %>
+        </div>
       </div>
       <div class="panel-footer">
         <div class="row">
@@ -29,3 +32,20 @@
     </div>
   </div>
 </div>
+
+<div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
+<section id="pageContent">
+  <div id="leftCol">
+    <article class="feature" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photo.attached? ? cl_image_path(@campaign.photo.key) : asset_path('background.jpeg') %>)">
+    </article>
+  </div>
+  <div id="rightCol">
+    <figure  class="features">
+      <h1><%= @campaign.name %></h1>
+      <h2><%= @campaign.objectif %> </h2>
+      <h2> <%= @campaign.activation %></h2>
+      <h2> Total reach <%= @campaign.reach %>M </h2>
+    </figure>
+  </div>
+</section><!--Ici se termine le pageContent-->
+<div id="mainFooter"></div><!--Ici se termine le mainFooter-->

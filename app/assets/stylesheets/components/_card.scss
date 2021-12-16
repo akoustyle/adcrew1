@@ -1,0 +1,53 @@
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.wagon-cards-with-map {
+  display: flex;
+  align-items: flex-start;
+}
+.wagon-cards-with-map .wagon-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+.wagon-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.wagon-card-container {
+  flex-grow: 1;
+  padding: 0 1em;
+  h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: .5em;
+  }
+}
+.wagon-card.active {
+  border: 4px solid white;
+}
