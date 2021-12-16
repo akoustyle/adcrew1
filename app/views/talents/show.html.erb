@@ -5,8 +5,10 @@
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <h1><%= @talent.name %> </h1>
-        <p><%= @talent.about %></p>
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photo.attached? ? cl_image_path(@talent.photo.key) : asset_path('background.jpeg') %>)">
+          <h1><%= @talent.name %> </h1>
+          <p><%= @talent.about %></p>
+         </div>
       </div>
       <div class="panel-footer">
         <div class="row">
