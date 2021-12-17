@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3">
        <% @talents.each do |talent| %>
-          <div class="feature" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photo.attached? ? cl_image_path(talent.photo.key) : asset_path('background.jpeg') %>)">
+          <div class="feature" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
             <div class="feature-title">
               <h2><%= link_to talent.name, talent %></h2>
               <span><%= talent.title %></span>

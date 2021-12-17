@@ -5,7 +5,7 @@
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photo.attached? ? cl_image_path(@talent.photo.key) : asset_path('background.jpeg') %>)">
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <h1><%= @talent.name %> </h1>
           <p><%= @talent.about %></p>
          </div>
