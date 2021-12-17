@@ -42,7 +42,7 @@ class TalentsController < ApplicationController
   private
 
   def talent_params
-    params.require(:talent).permit(:name, :about, :title, :insta_link, :tiktok_link, :youtube_link, photo:[])
+    params.require(:talent).permit(:name, :about, :title, :insta_link, :tiktok_link, :youtube_link, photos:[])
   end
 
   def find_talent
