@@ -18,7 +18,7 @@
     <%= c.input :activation, input_html: { class: 'form-control'} %>
     <%= c.input :reach, input_html: { class: 'form-control'} %>
     <%= c.input :tag, input_html: { class: 'form-control'} %>
-    <%= c.input :photo, input_html: { multiple: true} %>
+    <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'form-control'} %>
     <%= c.button :submit, class: 'btn btn-info' %>
   </div>
 <% end %>
