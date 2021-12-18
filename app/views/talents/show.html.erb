@@ -17,6 +17,9 @@
               <p> <%= @talent.title %></p>
             </div>
           </div>
+          <% @talent.photos.each do |photo| %>
+		  		  <%= cl_image_tag photo.key, style: "height: 85vh" %>
+		      <% end %>
           <div class="col md-6">
             <div class="btn-group pull-right">
               <%# if user_signed_in? %>

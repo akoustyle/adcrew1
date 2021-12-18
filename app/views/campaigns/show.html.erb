@@ -5,7 +5,7 @@
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photo.attached? ? cl_image_path(@campaign.photo.key) : asset_path('background.jpeg') %>)">
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.first.key) : asset_path('background.jpeg') %>)">
           <h1><%= @campaign.name %> </h1>
           <p><%= @campaign.objectif %></p>
           <%#= cl_image_tag @campaign.photo.key, height: 300, width: 400, crop: :fill %>
@@ -36,9 +36,12 @@
 <div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
 <section id="pageContent">
   <div id="leftCol">
-    <article class="feature" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photo.attached? ? cl_image_path(@campaign.photo.key) : asset_path('background.jpeg') %>)">
+    <article class="feature" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.first.key) : asset_path('background.jpeg') %>)">
     </article>
   </div>
+  <% @campaign.photos.each do |photo| %>
+		<%= cl_image_tag photo.key, style: "height: 45vh" %>
+	<% end %>
   <div id="rightCol">
     <figure  class="features">
       <h1><%= @campaign.name %></h1>
