@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'team', to: 'pages#team', as: :team
   get 'contact', to: 'pages#contact', as: :contact
   get 'prod', to: 'pages#prod', as: :prod
+  get 'index', to: 'pages#index', as: :index
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
