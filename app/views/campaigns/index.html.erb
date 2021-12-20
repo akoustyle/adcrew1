@@ -7,29 +7,30 @@
 </ul>
 
 <h1>Campagne AD CREW</h1>
-<div class="col-md-6 col-md-offset-3">
-  <div id="campaigns" class="transitions-enabled">
-    <% @campaigns.each do |campaign| %>
-      <div class="box panel panel-default">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-          <h2>
-            <%= link_to campaign.name, campaign %>
-          </h2>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
- <%= link_to "Gram it", new_campaign_path %>
 
-<div class="wagon-cards-with-map">
-  <div class="wagon-card-container">
-    <div class="wagon-cards">
-      <% @campaigns.each do |campaign| %>
-        <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-          <%= campaign.name %>
+
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <% @campaigns.each do |campaign|%>
+            <div class="swiper-slide wagon-cards">
+              <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
+                <%# <div class="tag">
+                  <div class="campaign-tag"> %>
+                    <%= link_to campaign.name, campaign %>
+                  <%# </div>
+                  <div class="campaign-tag">
+                    <%# <i class="fas fa-map-marker-alt"></i><%= Geocoder::Calculations.distance_between([@user_campaign.latitude, @user_campaign.longitude], [campaign.latitude,campaign.longitude]).truncate(1) %>
+                  <%# </div>
+                </div> %>
+              </div>
+            </div>
+          <% end %>
         </div>
-      <% end %>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-  </div>
-</div>
+
+     <%= link_to "Gram it", new_campaign_path %>

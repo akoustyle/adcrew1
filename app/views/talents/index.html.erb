@@ -1,29 +1,12 @@
-<h1>It is working!!</h1>
-
-<ul>
-  <%# @campaigns.each do |campaign| %>
-    <li><%#= campaign.name %></li>
-  <%# end %>
-
-</ul>
-
 <h1>Talents AD CREW</h1>
-<div class="container">
-  <div class="features">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3">
-       <% @talents.each do |talent| %>
-          <div class="feature" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-            <div class="feature-title">
-              <h2><%= link_to talent.name, talent %></h2>
-              <span><%= talent.title %></span>
-              <p> <%= talent.about %> </p>
-            </div>
-            <%#= link_to (image_tag talent.image.url), talent %>
-          </div>
-        <% end %>
+ <%= link_to "Gram it", new_talent_path %>
+
+ <div class="content">
+  <div class="cards">
+    <% @talents.each do |talent| %>
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
+        <span><%= link_to talent.name, talent %></span>
       </div>
-    </div>
+    <% end %>
   </div>
 </div>
- <%= link_to "Gram it", new_talent_path %>
