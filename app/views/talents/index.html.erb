@@ -3,7 +3,7 @@
 
  <div class="content">
   <div class="cards">
-    <%= @talents.each do |talent| %>
+    <% @talents.each do |talent| %>
       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
         <span><%= link_to talent.name, talent %></span>
       </div>

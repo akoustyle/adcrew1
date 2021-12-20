@@ -133,3 +133,23 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.campaign-card {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 2px;
+grid-row-gap: 2px;
+}
+.campaign-cards {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.campaign-bg { grid-area: 1 / 1 / 4 / 3; }
+.campaign-md { grid-area: 2 / 2 / 4 / 3; }
+.campaign-info { grid-area: 1 / 3 / 4 / 5; }
+.campaign-sm { grid-area: 1 / 3 / 2 / 4; }

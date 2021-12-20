@@ -12,7 +12,7 @@
     <div class="container">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <%= @campaigns.each do |campaign|%>
+          <% @campaigns.each do |campaign|%>
             <div class="swiper-slide wagon-cards">
               <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
                 <%# <div class="tag">
