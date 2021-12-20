@@ -13,5 +13,6 @@ class PagesController < ApplicationController
   end
 
   def index
+    @campaigns = Campaign.all
   end
 end
