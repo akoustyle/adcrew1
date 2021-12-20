@@ -56,14 +56,14 @@
 <!--Ici commmence le grid des campagnes-->
 <div class="container">
   <div class="campaign-cards">
-    <div class="campaign-bg"></div>
-    <div class="campaign-md"></div>
-    <div class="campaign-sm"></div>
+    <div class="campaign-bg" style="width:400px;heigth:400px"><%= @campaign.photos.attached? ? cl_image_tag(@campaign.photos.first.key) : asset_path('background.jpeg') %></div>
+    <div class="campaign-md"><%= @campaign.photos.attached? ? cl_image_tag(@campaign.photos.second.key) : asset_path('background.jpeg') %></div>
+    <div class="campaign-sm"><%= @campaign.photos.attached? ? cl_image_tag(@campaign.photos.last.key) : asset_path('background.jpeg') %></div>
     <div class="campaign-info">
-      <div class="campaign-title"></div>
-      <div class="campaign-obj"></div>
-      <div class="campaign-details"></div>
-      <div class="campaign-reach"></div>
+      <div class="campaign-title"><h1> <%= @campaign.name %> </h1></div>
+      <div class="campaign-obj"> <h4> <%= @campaign.objectif %> </h4></div>
+      <div class="campaign-details"><p> <%= @campaign.activation %></p> </div>
+      <div class="campaign-reach"> <h1> <%= @campaign.reach %>M</h1></div>
     </div>
 
   </div>
