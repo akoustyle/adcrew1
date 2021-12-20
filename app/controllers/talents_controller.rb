@@ -2,7 +2,7 @@ class TalentsController < ApplicationController
  before_action :find_talent, only: [:show, :edit, :update, :destroy]
 
   def index
-    @talents = Talent.all
+    @talents = Talent.order(created_at: :desc)
   end
 
   def show
@@ -42,7 +42,7 @@ class TalentsController < ApplicationController
   private
 
   def talent_params
-    params.require(:talent).permit(:name, :about, :title, :insta_link, :tiktok_link, :youtube_link, photos:[])
+    params.require(:talent).permit(:name, :about, :title, :insta_link, :tiktok_link, :youtube_link, :video, photos:[])
   end
 
   def find_talent

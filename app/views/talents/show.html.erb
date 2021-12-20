@@ -15,6 +15,14 @@
           <div class="col-md-6">
             <div id="user">
               <p> <%= @talent.title %></p>
+              <div style="width:400px; height:400px">
+                <%# <%= @talent.video.attached? ? cl_video_tag(url_for(@talent.video), style: "width:100%; height:auto", controls: '') : asset_path('video1.mp4')%>
+                <%= cl_video_tag(url_for('video1.mp4'), style: "width:100%; height:auto", controls: '') %>
+                <video controls width="480" height="288">
+                  <source src="images/video1.mp4" type="video/mp4" />
+                </video>
+
+              </div>
             </div>
           </div>
           <% @talent.photos.each do |photo| %>
