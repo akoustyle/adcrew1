@@ -7,19 +7,6 @@
 </ul>
 
 <h1>Campagne AD CREW</h1>
-<div class="col-md-6 col-md-offset-3">
-  <div id="campaigns" class="transitions-enabled">
-    <% @campaigns.each do |campaign| %>
-      <div class="box panel panel-default">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-          <h2>
-            <%= link_to campaign.name, campaign %>
-          </h2>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
  <%= link_to "Gram it", new_campaign_path %>
 
 <div class="wagon-cards-with-map">
@@ -27,7 +14,7 @@
     <div class="wagon-cards">
       <% @campaigns.each do |campaign| %>
         <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-          <%= campaign.name %>
+          <%= link_to campaign.name, campaign %>
         </div>
       <% end %>
     </div>
