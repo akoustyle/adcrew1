@@ -11,4 +11,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def index
+    @campaigns = Campaign.all
+  end
 end
