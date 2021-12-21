@@ -1,0 +1,10 @@
+.talents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.talent-bg {
+  grid-column: 1;
+}
+.talent-md {
+  grid-column: 3;
+}
