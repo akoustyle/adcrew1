@@ -1,22 +1,32 @@
 
-<div class="container">
-  <div class="talents-grid">
+<div class="container d-flex">
+  <div class="col-md-4">
     <% @talent.photos.each do |photo| %>
-      <div class="talent-bg card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)" >
       </div>
 		<% end %>
-    <div class="talent-md">
-      <h1> <%= @talent.name %></h1>
-      <strong><%= @talent.title %></strong>
-    </div>
   </div>
-  <div class="col md-6">
-    <div class="btn-group pull-right">
-      <%# if user_signed_in? %>
-        <%= link_to "Edit", edit_talent_path, class: "btn btn-info" %>
-        <%= link_to "Delete", talent_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
-        <%= link_to "Back", talents_path, class: "btn btn-primary" %>
-      <%# end %>
+  <div class="col-md-8">
+    <h1> <%= @talent.name %></h1>
+    <h3><strong><%= @talent.title %></strong></h3>
+    <h4><%= @talent.insta_link %></h4>
+    <h4><%= @talent.youtube_link %></h4>
+    <h4><%= @talent.tiktok_link %></h4>
+  </div>
+
+</div>
+<div class="col md-6">
+  <div class="btn-group" style="display: flex;justify-content: space-evenly">
+    <%# if user_signed_in? %>
+    <div>
+      <%= link_to "Edit", edit_talent_path%>
     </div>
+    <div>
+      <%= link_to "Delete", talent_path, method: :delete, data: { confirm: "Are you sure?"}%>
+    </div>
+    <div>
+      <%= link_to "Back", talents_path %>
+    </div>
+    <%# end %>
   </div>
 </div>
