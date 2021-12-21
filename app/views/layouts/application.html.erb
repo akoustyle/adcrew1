@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
+    <%= render 'shared/sidenavbar' %>
       <div class="main-container">
         <%= yield %>
       </div>
@@ -88,6 +88,30 @@
           clickable: true,
         },
       });
+    </script>
+    <script>
+      function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main-sidebar").style.marginRigth = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main-sidebar").style.marginRigth= "0";
+      }
+    </script>
+    <script>$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});</script>
+    <script>
+    const dates = document.querySelectorAll('.shop')
+
+    for(let i = 0; i < dates.length; i++) {
+    dates[i].innerHTML = "Shop"
+}
     </script>
   </body>
 </html>
