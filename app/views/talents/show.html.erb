@@ -1,44 +1,22 @@
-<div>
-  <div class="col-md-6 col-md-offset-3">
-    <div class="panel panel-default">
-      <div class="panel heading campaign_image center">
-        <%#= image_tag @campaign.image.url(:medium) %>
-      </div>
-      <div class="panel-body">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)">
-          <h1><%= @talent.name %> </h1>
-          <p><%= @talent.about %></p>
-         </div>
-      </div>
-      <div class="panel-footer">
-        <div class="row">
-          <div class="col-md-6">
-            <div id="user">
-              <p> <%= @talent.title %></p>
-              <div style="width:400px; height:400px">
-                <%# <%= @talent.video.attached? ? cl_video_tag(url_for(@talent.video), style: "width:100%; height:auto", controls: '') : asset_path('video1.mp4')%>
-                <%= cl_video_tag(url_for('video1.mp4'), style: "width:100%; height:auto", controls: '') %>
-                <video controls width="480" height="288">
-                  <source src="images/video1.mp4" type="video/mp4" />
-                </video>
 
-              </div>
-            </div>
-          </div>
-          <% @talent.photos.each do |photo| %>
-		  		  <%= cl_image_tag photo.key, style: "height: 85vh" %>
-		      <% end %>
-          <div class="col md-6">
-            <div class="btn-group pull-right">
-              <%# if user_signed_in? %>
-                <%= link_to "Edit", edit_talent_path, class: "btn btn-info" %>
-                <%= link_to "Delete", talent_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
-                <%= link_to "Back", talents_path, class: "btn btn-primary" %>
-              <%# end %>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)">
     </div>
   </div>
+  <div class="col-md-8">
+    <div class="talent-stat">
+      <h2 class="talent-name"><%= @talent.name %></h2>
+      <h3 class="talent-title"><span><%= @talent.title %></span></h3>
+      <h4 class="talent-insta"><%= @talent.insta_link %></h4>
+      <h4 class="talent-youtube"><%= @talent.youtube_link %></h4>
+      <h4 class="talent-tiktok"><%= @talent.tiktok_link %></h4>
+    </div>
+  </div>
+</div>
+<div class="links btn-group">
+  <%# if user_signed_in? %>
+    <%= link_to "Edit", edit_talent_path, class: "btn btn-info" %>
+    <%= link_to "Delete", talent_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
+    <%= link_to "Back", talents_path, class: "btn btn-primary" %>
 </div>
