@@ -37,12 +37,11 @@ require "json"
 # def follower()
 
 # end
-user = 'UCEnFzIYw3BrndPCddyQ6c5A'
-key = 'AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg'
-url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{user}&key=#{key}"
+user = 'UCq5hh3lQDm41FrNchLBrJqw'
+url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{user}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
 user_serialized = URI.open(url).read
 user = JSON.parse(user_serialized)
 
-puts "#{user['items']} - #{user['items']}"
+#puts "#{user['items']} - #{user['items']}"
 puts user['items'].first['statistics']['subscriberCount']
 puts user['items'].first['statistics']['videoCount']

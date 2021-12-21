@@ -1,5 +1,5 @@
 require "open-uri"
-require "nokogiri"
+require "json"
 
 # class ScrapeAllrecipesService
 #   def initialize(ingredient)
@@ -31,22 +31,33 @@ require "nokogiri"
 #   end
 # end
 
-def scrape_etsy(keyword)
-  # forge the URL
-  url = "https://www.instagram.com/#{keyword}/"
-  # open the URL
-  response = URI.open(url).read
-  # convert the response into a Nokogiri document
-  html_doc = Nokogiri::HTML(response)
-  # search in the doc each element with class '.k9GMp'
-  # initialize a talent array
-  talent_info = []
-  html_doc.search('.k9GMp ').each do |element|
-    nb_followers = element.search('.g47SY ').text.strip.to_i
-    # etsy_price = element.search('.currency-value').text.strip.to_i
-    # create a gift with those information
-    talent_info << { nb: nb_followers }
-  end
-  # return an array of talent info
-  talent_info
+# def scrape_youtube(youtube_nickname)
+#   # forge the URL
+#   url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{keyword}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+#   # open the URL
+#  user_serialized = URI.open(url).read
+#   # convert the response into a Nokogiri document
+# user = JSON.parse(user_serialized)
+#   # search in the doc each element with class '.k9GMp'
+#   # initialize a talent array
+#   talent_info = []
+#   html_doc.search('.k9GMp ').each do |element|
+#     nb_followers = element.search('.g47SY ').text.strip.to_i
+#     # etsy_price = element.search('.currency-value').text.strip.to_i
+#     # create a gift with those information
+#     talent_info << { nb: nb_followers }
+#   end
+#   # return an array of talent info
+#   talent_info
+# end
+
+def scrape_youtube(keyword)
+url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{keyword}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+user_serialized = URI.open(url).read
+user = JSON.parse(user_serialized)
+
+puts "#{user['subscriber-count']} - #{user['videoCount']}"
+# id=UCq5hh3lQDm41FrNchLBrJqw
+# url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq5hh3lQDm41FrNchLBrJqw&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
 end
+puts scrape_youtube(UCq5hh3lQDm41FrNchLBrJqw)
