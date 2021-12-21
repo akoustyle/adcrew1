@@ -11,10 +11,12 @@ class TalentsController < ApplicationController
   def new
    @talent = Talent.new
   #@talent = current_user.talents.build
+  @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
   def create
     @talent = Talent.new(talent_params)
+    @talent.pole_id = params[:pole_id]
     #@talent = current_user.talents.build(talent_params)
     if @talent.save
         redirect_to @talent, notice: "Yessss! It was posted"
@@ -24,9 +26,12 @@ class TalentsController < ApplicationController
   end
 
   def edit
+      @poles = Pole.all.map{ |p| [p.name, p.id] }
+
   end
 
   def update
+    @talent.pole_id = params[:pole_id]
     if @talent.update(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
     else
@@ -42,7 +47,7 @@ class TalentsController < ApplicationController
   private
 
   def talent_params
-    params.require(:talent).permit(:name, :about, :title, :insta_link, :tiktok_link, :youtube_link, :video, photos:[])
+    params.require(:talent).permit(:name, :about, :title, :insta_link, :tiktok_link, :youtube_link, :video, :pole_id, photos:[])
   end
 
   def find_talent
