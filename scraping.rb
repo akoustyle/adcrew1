@@ -34,14 +34,13 @@ require "json"
 #   # puts element.attribute('href').value
 # end
 
-# def follower()
-
-# end
-user = 'UCq5hh3lQDm41FrNchLBrJqw'
+def follower(user)
+# user = 'UCq5hh3lQDm41FrNchLBrJqw'
 url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{user}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
 user_serialized = URI.open(url).read
 user = JSON.parse(user_serialized)
-
-#puts "#{user['items']} - #{user['items']}"
 puts user['items'].first['statistics']['subscriberCount']
 puts user['items'].first['statistics']['videoCount']
+end
+puts follower('UCJZv4d5rbIKd4QHMPkcABCw')
+#puts "#{user['items']} - #{user['items']}"
