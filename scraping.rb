@@ -34,7 +34,7 @@ require "json"
 #   # puts element.attribute('href').value
 # end
 
-def follower(user)
+def yFollower(user)
 # user = 'UCq5hh3lQDm41FrNchLBrJqw'
 url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{user}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
 user_serialized = URI.open(url).read
@@ -42,5 +42,18 @@ user = JSON.parse(user_serialized)
 puts user['items'].first['statistics']['subscriberCount']
 puts user['items'].first['statistics']['videoCount']
 end
-puts follower('UCJZv4d5rbIKd4QHMPkcABCw')
+puts yFollower('UCJZv4d5rbIKd4QHMPkcABCw')
+
 #puts "#{user['items']} - #{user['items']}"
+
+# def tFollower()
+# url = "https://www.tiktok.com/@terrycrews"
+# headers = {
+#     "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+# }
+# soup = BeautifulSoup(requests.get(url, headers=headers).content, "html.parser")
+# print(soup.select_one('[title="Followers"]').text)
+# end
+
+
+#https://github.com/szdc/tiktok-api/blob/master/src/types/user.d.ts
