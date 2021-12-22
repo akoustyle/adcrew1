@@ -4,10 +4,10 @@ class TalentsController < ApplicationController
   def index
     if params[:pole].blank?
       @talents = Talent.all.order(created_at: :desc)
-   else
-    @pole_id = Pole.find_by(name: params[:pole]).id
-    @talents = Talent.where(:pole_id => @pole_id).order(created_at: :desc)
-   end
+    else
+      @pole_id = Pole.find_by(name: params[:pole]).id
+      @talents = Talent.where(:pole_id => @pole_id).order(created_at: :desc)
+    end
   end
 
   def show
