@@ -30,16 +30,17 @@
 //   color: #BF0F12;
 // }
 #footer {
-  background-color: #0000 !important;
-  display: flex !important;
-  position: absolute;
-  bottom: -100px;
+  background: #0000;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  left:0;
   width: 100%;
-  align-items: center !important;
-  justify-content: space-between !important;
-  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
   padding: 0px 50px;
-  color: white !important;
+  color: white;
   margin-top:25px;
 }
 .footer-links {
