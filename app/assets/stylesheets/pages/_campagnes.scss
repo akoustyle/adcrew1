@@ -1,0 +1,26 @@
+.campagne-header {
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  flex-direction: column;
+  padding: 20px;
+}
+.campagne-title h1 {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.campagne-title span {
+  color: red;
+  font-weight: 500;
+}
+.campagne-wording p {
+  font-size: 15px;
+  font-weight: 400;
+}
+.line-campagnes {
+  width:100vw;
+  border-bottom:solid;
+  margin-bottom: 100px;
+  margin: 0 20px;
+}

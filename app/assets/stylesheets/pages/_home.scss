@@ -1,12 +1,12 @@
 // Specific CSS for your home-page
 
 h1 {
-  color: white;
+  color: black;
   font-size: 60px;
 }
 
 h2 {
-  color: #ECEDF2;
+  color: black;
 }
 
 i {
@@ -84,12 +84,11 @@ i:hover {
   background-color: #003597 !important;
   margin-top: 50px !important;
 }
-
-#footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 50px 0;
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 

@@ -1,19 +1,25 @@
 
 <body>
-  <div class="banner">
+  <%# <div class="banner">
     <section id="section10" class="demo">
       <a href="#scrolling1"><span></span>Scroll</a>
     </section>
-    </div>
+  </div> %>
+  <%# <video  controls class="media-object" alt="Banner-video" <%= image_tag "video1.mp4"%>
+  <%# </video> %>
+  <div class="video-banner">
+    <%= video_tag "video1.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
+  </div>
 
     <div id="scrolling1"class="features">
-      <div class="container1">
-        <div class="wording">
+      <div class="container-home">
+        <div class="home-section">
           <h2>Qui sommes-nous?</h2>
           <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam corporis ipsa, ipsum doloremque ab pariatur repellendus recusandae culpa animi delectus consectetur consequuntur! Nihil, asperiores rerum. Quaerat ex cum placeat!</span>
-          <button><%= link_to "En savoir plus", team_path %></button>
+          <button class="btn-neumorphism"><%= link_to "En savoir plus", team_path %></button>
         </div>
-        <div class="wording-image">
+        <div class="home-section-video">
+          <%= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@
    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body id="gradient">
     <%= render 'shared/sidenavbar' %>
       <div class="main-container">
         <%= yield %>
@@ -64,20 +64,20 @@
     var swiper = new Swiper(".mySwiper", {
         loop: true,
         slidesPerView: 3,
-        spaceBetween: 5,
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: false,
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
+        spaceBetween: 30,
+        // effect: "coverflow",
+        // grabCursor: true,
+        // centeredSlides: false,
+        // coverflowEffect: {
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1,
+        //   slideShadows: true,
+        // },
         autoplay: {
           delay: 3500,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         },
         navigation: {
           nextEl: ".swiper-button-next",

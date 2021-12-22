@@ -19,6 +19,10 @@
 //   box-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 40px $COLOR, 0 0 55px $COLOR;
 //   transform: translateX(-50%) translateY(-50%)
 // }
+:root{
+    --anim-duration: 2s;
+}
+
 
 body {
   width: 100%;
@@ -26,8 +30,27 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   // background-image: asset-url('gradient-bg.png');
-  background-color: linear-gradient(to top, black, 20%, cyan);
   color:black;
-  background-size: cover;
+  background-size: 400% 400%;
   background-repeat: no-repeat;
+  // background-color: #e42b03;
+  background: linear-gradient(56deg, #e42b03 0%, #f7f7f7 41%);
+  // animation: gradient 5s ease infinite;
+  &:before {
+  animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+  }
+  &:after {
+    animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+  }
+}
+@keyframes OpacityAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
