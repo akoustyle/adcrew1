@@ -42,6 +42,8 @@
 
   <div class="tab-pane fade" id="pills-urban" role="tabpanel" aria-labelledby="pills-urban-tab">
     <div class="cards">
+      <div class="urban-pole-description">
+      </div>
       <% @talents.where(pole_id: 6).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
@@ -52,9 +54,14 @@
 
   <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
     <div class="cards">
+      <div class="pole-description">
+        <h3><%#= @talents.where(pole_id: 7).pole_id.name %></h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quaerat aspernatur quo debitis! Reprehenderit vel ipsa fugiat debitis amet! Eum labore ipsam maxime delectus expedita, distinctio fugit nam earum. Aliquid, eum explicabo ab dolorem, minus consequuntur saepe ipsa architecto, voluptatibus error itaque accusamus. Quaerat, corporis distinctio numquam atque deserunt dignissimos!</p>
+      </div>
       <% @talents.where(pole_id: 7).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-          <span><%= link_to talent.name, talent %></span>
+          <span><%= link_to talent.name, talent %><%= talent.pole.name %></span>
+
         </div>
       <% end %>
     </div>
@@ -62,6 +69,8 @@
 
   <div class="tab-pane fade" id="pills-positivism" role="tabpanel" aria-labelledby="pills-positivism-tab">
     <div class="cards">
+      <div class="pole-description">
+      </div>
       <% @talents.where(pole_id: 8).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
@@ -72,6 +81,8 @@
 
   <div class="tab-pane fade" id="pills-green" role="tabpanel" aria-labelledby="pills-green-tab">
     <div class="cards">
+      <div class="pole-description">
+      </div>
       <% @talents.where(pole_id: 5).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
