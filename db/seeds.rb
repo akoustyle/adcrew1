@@ -44,13 +44,13 @@ puts "saving Adcrew x penninghen..."
 campaign_two.save!
 puts 'Done !'
 puts 'Creating collabs...'
-collab_one = Collab.create(talent_id: talent_one.id, campaign_id: campaign_one.id)
+collab_one = Collab.create(talent: talent_one, campaign: campaign_one)
 puts "saving collab 1..."
 collab_one.save!
-collab_two = Collab.create(talent_id: talent_two.id, campaign_id: campaign_one.id)
+collab_two = Collab.create(talent: talent_two, campaign: campaign_one)
 puts "saving collab 2..."
 collab_two.save!
-collab_three = Collab.create(talent_id: talent_two.id, campaign_id: campaign_two.id)
+collab_three = Collab.create(talent: talent_two, campaign_id: campaign_two)
 puts "saving collab 3..."
 collab_three.save!
 puts 'Done !'
