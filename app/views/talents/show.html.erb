@@ -24,7 +24,7 @@
 </div>
 <div class="col md-6">
   <div class="btn-group" style="display: flex;justify-content: space-evenly">
-    <%# if user_signed_in? %>
+    <% if user_signed_in? %>
     <div>
       <%= link_to "Edit", edit_talent_path%>
     </div>
@@ -34,6 +34,6 @@
     <div>
       <%= link_to "Back", talents_path %>
     </div>
-    <%# end %>
+    <% end %>
   </div>
 </div>

@@ -34,5 +34,6 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
+    <% if user_signed_in? %>
      <%= link_to "Gram it", new_campaign_path %>
+    <% end %>

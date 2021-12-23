@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -20,7 +23,7 @@
     color: #fff;
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: teal;
+    background-color: transparent;
     background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDA0NjcyNw&ixlib=rb-1.2.1&q=85');
     background-attachment: fixed;
     background-size: cover;
@@ -60,14 +63,14 @@
       width: 100%;
       height: 100%;
       opacity: 0.3;
-      background: linear-gradient(180deg, hsl(0.8, 0%, 0%) 5%, hsl(0.8, 0%, 0%));
+      background: linear-gradient(45deg, black, transparent);
       backdrop-filter: blur(6px);
       transition-property: opacity;
       transition-duration: .4s;
       transition-timing-function: ease-out;
       z-index: -1;
       //Prefixes
-      background: -webkit-linear-gradient(top, hsl(0.8, 0%, 0%) 5%, hsl(0.8, 0%, 0%));
+      background: -webkit-linear-gradient(45deg, black, transparent);
       -webkit-backdrop-filter: blur(6px);
       -webkit-transition-property: opacity;
       -webkit-transition-duration: .4s;
