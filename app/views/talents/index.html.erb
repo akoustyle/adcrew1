@@ -47,7 +47,7 @@
       <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
     </div>
     <div class="cards">
-      <% @talents.where(pole_id: 1).each do |talent| %>
+      <% @talents.where(pole_id: 14).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>
@@ -61,7 +61,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
     </div>
     <div class="cards">
-      <% @talents.where(pole_id: 2).each do |talent| %>
+      <% @talents.where(pole_id: 15).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>
@@ -75,7 +75,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
     </div>
     <div class="cards">
-      <% @talents.where(pole_id: 3).each do |talent| %>
+      <% @talents.where(pole_id: 16).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>
@@ -89,7 +89,7 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
     </div>
     <div class="cards">
-      <% @talents.where(pole_id: 4).each do |talent| %>
+      <% @talents.where(pole_id: 13).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>
