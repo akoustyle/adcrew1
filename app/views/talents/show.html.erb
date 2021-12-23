@@ -4,7 +4,7 @@
     <%# @talent.photos.each do |photo| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%#= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)" >
         <div style="width: 400px; heigth: 600px">
-          <%= video_tag(@talent.video, style:'width:100%;height:auto', controls: '', autoplay: :autoplay, muted: :muted) %>
+          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto', controls: '', autoplay: :autoplay, muted: :muted) %>
         </div>
       </div>
 		<%# end %>
