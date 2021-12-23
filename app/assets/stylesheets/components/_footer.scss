@@ -38,7 +38,7 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 50px;
   padding: 0px 50px;
   color: white;
   margin-top:25px;
@@ -67,3 +67,94 @@
 //   text-align: center;
 //   padding: 50px 0;
 // }
+.wrapper-footer {
+  display: inline-flex;
+}
+.wrapper-footer .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper-footer .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper-footer .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper-footer .icon:hover span,
+.wrapper-footer .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-footer .facebook:hover,
+.wrapper-footer .facebook:hover .tooltip,
+.wrapper-footer .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper-footer .linkedin:hover,
+.wrapper-footer .linkedin:hover .tooltip,
+.wrapper-footer .linkedin:hover .tooltip::before {
+  background-color: #0966C2;
+  color: #ffffff;
+}
+
+.wrapper-footer .instagram:hover,
+.wrapper-footer .instagram:hover .tooltip,
+.wrapper-footer .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper-footer .tiktok:hover,
+.wrapper-footer .tiktok:hover .tooltip,
+.wrapper-footer .tiktok:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper-footer .youtube:hover,
+.wrapper-footer .youtube:hover .tooltip,
+.wrapper-footer .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
