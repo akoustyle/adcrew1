@@ -7,6 +7,8 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import "swiper/swiper-bundle.min.css";
+import Swiper from 'swiper';
 
 Rails.start()
 Turbolinks.start()
@@ -23,8 +25,17 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { previewImageOnFileSelect } from '../components/photo_preview';
+import { preview2ImageOnFileSelect } from '../components/photo_preview2';
+import { preview3ImageOnFileSelect } from '../components/photo_preview3';
+import { initswiper} from '../components/initswiper';
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  previewImageOnFileSelect();
+  preview2ImageOnFileSelect();
+  preview3ImageOnFileSelect();
+  initswiper();
 });

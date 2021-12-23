@@ -1,16 +1,16 @@
 <div class="talent-header">
   <div class="talent-title">
     <span>Talents</span>
-    <h1>Notre famille ADCREW</h1>
+    <h1>Notre famille AD CREW</h1>
   </div>
   <div class="talent-wording">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam ea recusandae neque? Optio consequatur omnis iste exercitationem vero nemo dignissimos cumque assumenda fugit sunt cum suscipit iure, cupiditate labore deserunt excepturi sapiente. Cum facere aspernatur laboriosam culpa quos, optio iste quae temporibus animi asperiores similique. Suscipit ea praesentium molestiae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae!</p>
   </div>
   <div class="line-talents"></div>
 </div>
 
 <%= link_to "Gram it", new_talent_path %>
-<div>
+<div class="talents-tab">
   <ul class="nav nav-pills mb-1 d-flex justify-content-around" id="pills-tab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="pills-coiffures-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
@@ -41,10 +41,12 @@
   </div>
 
   <div class="tab-pane fade" id="pills-urban" role="tabpanel" aria-labelledby="pills-urban-tab">
+    <div class="pole-description">
+      <span>POLE URBAN</span>
+      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
+    </div>
     <div class="cards">
-      <div class="urban-pole-description">
-      </div>
-      <% @talents.where(pole_id: 6).each do |talent| %>
+      <% @talents.where(pole_id: 1).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>
@@ -53,25 +55,26 @@
   </div>
 
   <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
+    <div class="pole-description">
+      <span>POLE FASHION</span>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
+    </div>
     <div class="cards">
-      <div class="pole-description">
-        <h3><%#= @talents.where(pole_id: 7).pole_id.name %></h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed quaerat aspernatur quo debitis! Reprehenderit vel ipsa fugiat debitis amet! Eum labore ipsam maxime delectus expedita, distinctio fugit nam earum. Aliquid, eum explicabo ab dolorem, minus consequuntur saepe ipsa architecto, voluptatibus error itaque accusamus. Quaerat, corporis distinctio numquam atque deserunt dignissimos!</p>
-      </div>
-      <% @talents.where(pole_id: 7).each do |talent| %>
+      <% @talents.where(pole_id: 2).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-          <span><%= link_to talent.name, talent %><%= talent.pole.name %></span>
-
+          <span><%= link_to talent.name, talent %></span>
         </div>
       <% end %>
     </div>
   </div>
 
   <div class="tab-pane fade" id="pills-positivism" role="tabpanel" aria-labelledby="pills-positivism-tab">
+    <div class="pole-description">
+      <span>POLE POSITIVISM</span>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
+    </div>
     <div class="cards">
-      <div class="pole-description">
-      </div>
-      <% @talents.where(pole_id: 8).each do |talent| %>
+      <% @talents.where(pole_id: 3).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>
@@ -80,10 +83,12 @@
   </div>
 
   <div class="tab-pane fade" id="pills-green" role="tabpanel" aria-labelledby="pills-green-tab">
+    <div class="pole-description">
+      <span>POLE GREEN</span>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
+    </div>
     <div class="cards">
-      <div class="pole-description">
-      </div>
-      <% @talents.where(pole_id: 5).each do |talent| %>
+      <% @talents.where(pole_id: 4).each do |talent| %>
         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
           <span><%= link_to talent.name, talent %></span>
         </div>

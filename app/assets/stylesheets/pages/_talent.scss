@@ -4,6 +4,7 @@
   text-align: start;
   flex-direction: column;
   padding: 20px;
+  margin: 0 75px;
 }
 .talent-title h1 {
   font-size: 25px;
@@ -19,8 +20,10 @@
   font-weight: 400;
 }
 .line-talents {
-  width:100vw;
+  width:85vw;
   border-bottom:solid;
-  margin-bottom: 100px;
-  margin: 0 20px;
+}
+.pole-description {
+  text-align:left;
+  padding: 20px 71px;
 }

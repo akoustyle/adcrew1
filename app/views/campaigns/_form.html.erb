@@ -1,26 +1,28 @@
-<%= simple_form_for @campaign do |c| %>
-  <%# <div id="errors">
-    <h2>
-      <%= pluralize(@campaigns.errors.count, "error") %>
-        <%# <ul>
-          <% @campaigns.errors.full_message.each do |msg| %>
-             <%# <li>
-            <%= msg %>
-            <%# </li>
-          <% end  %>
-         <%# </ul>
-    </h2>
-  </div> %>
+<div class="conatiner">
+  <%= simple_form_for @campaign do |c| %>
+    <%# <div id="errors">
+      <h2>
+        <%= pluralize(@campaigns.errors.count, "error") %>
+          <%# <ul>
+            <% @campaigns.errors.full_message.each do |msg| %>
+              <%# <li>
+              <%= msg %>
+              <%# </li>
+            <% end  %>
+          <%# </ul>
+      </h2>
+    </div> %>
 
-  <div class="form-group">
-    <%= c.input :name, input_html: { class: 'form-control'} %>
-    <%= c.input :objectif, input_html: { class: 'form-control'} %>
-    <%= c.input :activation, input_html: { class: 'form-control'} %>
-    <%= c.input :reach, input_html: { class: 'form-control'} %>
-    <%= c.input :tag, input_html: { class: 'form-control'} %>
-    <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'form-control'}, label: "Background photo" %>
-    <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'form-control'}, label: "Middle photo" %>
-    <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'form-control'}, label: "Top photo" %>
-    <%= c.button :submit, class: 'btn btn-info' %>
-  </div>
-<% end %>
+    <div class="form-group">
+      <%= c.input :name, input_html: { class: 'form-control'} %>
+      <%= c.input :objectif, input_html: { class: 'form-control'} %>
+      <%= c.input :activation, input_html: { class: 'form-control'} %>
+      <%= c.input :reach, input_html: { class: 'form-control'} %>
+      <%= c.input :tag, input_html: { class: 'form-control'} %>
+      <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Bg-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview" %>
+      <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input2'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a mid-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview2" %>
+      <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input3'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Top-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview3" %>
+      <%= c.button :submit, class: 'btn btn-info' %>
+    </div>
+  <% end %>
+</div>
