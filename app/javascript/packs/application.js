@@ -7,8 +7,6 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-import "swiper/swiper-bundle.min.css";
-import Swiper from 'swiper';
 
 Rails.start()
 Turbolinks.start()
