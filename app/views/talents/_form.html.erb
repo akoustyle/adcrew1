@@ -1,7 +1,7 @@
 <div class="container">
   <%= simple_form_for @talent do |t| %>
     <div class="form-group">
-      <%= select_tag(:pole_id, options_for_select(@poles), :prompt => "Select Pole") %>
+      <%#= select_tag(:pole_id, options_for_select(@poles), :prompt => "Select Pole") %>
       <%#= t.select :pole_id, @poles %>
       <%= t.input :name, input_html: { class: 'form-control'} %>
       <%= t.input :about, input_html: { class: 'form-control'} %>
