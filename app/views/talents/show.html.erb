@@ -15,10 +15,12 @@
     <h4><%= @talent.insta_link %></h4>
     <h4><%= @talent.youtube_link %></h4>
     <h4><%= @talent.tiktok_link %></h4>
+    <h4><%= @talent.categorys %></h4>
+
   </div>
   <%#= cl_upload_tag(@talent.video.key) %>
   <div style="width: 400px; heigth: 900px">
-    <%= video_tag(url_for(@talent.video), style:'width:100%') %>
+    <%= video_tag(url_for(@talent.video), style:'width:100%') if @talent.video != nil %>
   </div>
 
 </div>

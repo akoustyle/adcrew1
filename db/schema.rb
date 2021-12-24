@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_24_121349) do
+ActiveRecord::Schema.define(version: 2021_12_24_135726) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,12 +62,6 @@ ActiveRecord::Schema.define(version: 2021_12_24_121349) do
     t.index ["talent_id"], name: "index_collabs_on_talent_id"
   end
 
-  create_table "poles", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "talents", force: :cascade do |t|
     t.string "name"
     t.text "about"
@@ -82,6 +76,7 @@ ActiveRecord::Schema.define(version: 2021_12_24_121349) do
     t.string "youtube_eng"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "category"
   end
 
   create_table "users", force: :cascade do |t|
