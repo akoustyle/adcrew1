@@ -1,5 +1,5 @@
 class Talent < ApplicationRecord
-  has_many :collabs, dependent: :nullify
+  has_many :collabs, dependent: :destroy
   has_many_attached :photos
   has_one_attached :video
 
