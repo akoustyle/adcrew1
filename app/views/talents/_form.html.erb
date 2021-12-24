@@ -1,7 +1,7 @@
 <div class="container">
   <%= simple_form_for @talent do |t| %>
     <div class="form-group">
-      <%= t.input :category, collection: ["green", "urban", "fashion", "positivism"], input_html: { data: { controller: 'select2', select2_options_value: {tags: true}}} %>
+      <%= t.input :category, collection: ["green", "urban", "fashion", "positivism"] %>
       <%#= t.select :category, input_html: { class: 'form-control'}  %>
       <%= t.input :name, input_html: { class: 'form-control'} %>
       <%= t.input :about, input_html: { class: 'form-control'} %>
