@@ -10,6 +10,7 @@ require 'faker'
 Talent.destroy_all
 Campaign.destroy_all
 Collab.destroy_all
+User.destroy_all
 
 category = ["green", "urban", "fashion", "positivism"].sample
 puts 'Creating talents...'
@@ -31,13 +32,13 @@ puts "saving Adcrew x penninghen..."
 campaign_two.save!
 puts 'Done !'
 puts 'Creating collabs...'
-collab_one = Collab.create(talent: talent_one, campaign: campaign_one)
+collab_one = Collab.create(talent_id: talent_one.id, campaign_id: campaign_one.id)
 puts "saving collab 1..."
 collab_one.save!
-collab_two = Collab.create(talent: talent_two, campaign: campaign_one)
+collab_two = Collab.create(talent_id: talent_two.id, campaign_id: campaign_one.id)
 puts "saving collab 2..."
 collab_two.save!
-collab_three = Collab.create(talent: talent_two, campaign: campaign_two)
+collab_three = Collab.create(talent_id: talent_two.id, campaign_id: campaign_two.id)
 puts "saving collab 3..."
 collab_three.save!
 puts 'Done !'
