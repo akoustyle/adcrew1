@@ -36,4 +36,3 @@ document.addEventListener('turbolinks:load', () => {
   preview3ImageOnFileSelect();
 
 });
-import "controllers"
