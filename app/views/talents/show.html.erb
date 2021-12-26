@@ -1,21 +1,18 @@
 
 <div class="container d-flex">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <%# @talent.photos.each do |photo| %>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%#= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)" >
-        <div style="width: 400px; heigth: 600px">
-          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto', controls: '', autoplay: :autoplay, muted: :muted) %>
+        <div style="width: 100vw; heigth: 100vh">
+          <%= video_tag(url_for(@talent.video), style:'width:100%;height:100%', controls: '', autoplay: :autoplay, muted: :muted) %>
         </div>
       </div>
 		<%# end %>
   </div>
-  <div class="col-md-8">
-    <h1> <%= @talent.name %></h1>
-    <h3><strong><%= @talent.title %></strong></h3>
-    <h4><%= @talent.insta_link %></h4>
-    <h4><%= @talent.youtube_link %></h4>
-    <h4><%= @talent.tiktok_link %></h4>
-    <h4><%= @talent.category %></h4>
+  <div class="col-md-6">
+    <div class="talent-image" style="width: 400px; heigth: 400px; background: radial-gradient(circle, red 10%, transparent 60%); position: absolute;top:2vh;left:23vw">
+      <%= cl_image_tag @talent.photos.last.key, style:'width:100%;height:auto' %>
+    </div>
 
   </div>
   <%#= cl_upload_tag(@talent.video.key) %>
@@ -39,3 +36,56 @@
     <% end %>
   </div>
 </div>
+<%# <div class="container">
+  <div class="grid-talent">
+    <div class="grid-talent-card video-talent">
+      <span><%= @talent.name %></span>
+      <span><%#= @talent.title %> </span>
+      <%#= video_tag(url_for(@talent.video), style:'width:100%;height:100%', controls: '', autoplay: :autoplay, muted: :muted) %>
+    <%# </div>
+    <div class="grid-talent-card stats"> %>
+      <%#= cl_image_tag @talent.photos.last.key, style:'width:100%;height:auto' %>
+    <%# </div>
+    <div class="grid-talent-card description">
+    </div>
+  </div>
+</div> %>
+<div class="container">
+
+      <div class="dashboard">
+        <div class="dashboard-card main">
+          <div class="dashboard-card-content">
+            <img src="images/seb.jpeg" alt="" width="150" class="img-circle">
+            <h2>Sebastien Saunier</h2>
+            <p>CTO at Le Wagon</p>
+            <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
+          </div>
+        </div>
+        <div class="dashboard-card stat">
+          <div class="dashboard-card-content">
+            <h3>3,536</h3>
+            <p>contributions</p>
+          </div>
+        </div>
+        <div class="dashboard-card stat">
+          <div class="dashboard-card-content">
+            <h3>758</h3>
+            <p>followers</p>
+          </div>
+        </div>
+        <div class="dashboard-card stat">
+          <div class="dashboard-card-content">
+            <h3>119</h3>
+            <p>repositories</p>
+          </div>
+        </div>
+        <div class="dashboard-card description">
+          <div class="dashboard-card-content">
+            <h3>More about Sebastien</h3>
+            <p class="text-justify">
+              I am a full-stack developer with 9 years of experience working in startups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
