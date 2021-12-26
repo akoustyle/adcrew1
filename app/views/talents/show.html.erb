@@ -1,23 +1,34 @@
 
-<div class="container d-flex">
-  <div class="col-md-6">
+<div class="container d-flex" style="margin-bottom: 250px;" >
+  <div class="col-md-4">
     <%# @talent.photos.each do |photo| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%#= @talent.photos.attached? ? cl_image_path(@talent.photos.first.key) : asset_path('background.jpeg') %>)" >
+      <div class="card-category" >
         <div style="width: 100vw; heigth: 100vh">
-          <%= video_tag(url_for(@talent.video), style:'width:100%;height:100%', controls: '', autoplay: :autoplay, muted: :muted) %>
+          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto', controls: '', autoplay: :autoplay, muted: :muted) %>
         </div>
       </div>
 		<%# end %>
   </div>
-  <div class="col-md-6">
-    <div class="talent-image" style="width: 400px; heigth: 400px; background: radial-gradient(circle, red 10%, transparent 60%); position: absolute;top:2vh;left:23vw">
+  <div class="col-md-8">
+    <div class="talent-image" style="width: 400px; heigth: 400px; background: radial-gradient(circle, red 15%, transparent 61%); position: absolute;top:2vh;left:23vw">
       <%= cl_image_tag @talent.photos.last.key, style:'width:100%;height:auto' %>
     </div>
 
   </div>
   <%#= cl_upload_tag(@talent.video.key) %>
-  <div style="width: 400px; heigth: 900px">
-    <%= video_tag(url_for(@talent.video), style:'width:100%') if @talent.video != nil %>
+  <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 25vh; right: 5vw;">
+    <span><i class="fab fa-youtube-square red-color"></i></span>
+    <p><%= @talent.youtube_link %> abonnés</p>
+  </div>
+
+  <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 40vh; right: 1vw;">
+    <span><i class="fab fa-instagram"></i></span>
+    <p><%= @talent.insta_link %> abonnés</p>
+  </div>
+
+  <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 53vh; right: 2vw;">
+    <span><i class="fab fa-tiktok"></i></span>
+    <p><%= @talent.tiktok_link %> abonnés</p>
   </div>
 
 </div>
@@ -50,42 +61,3 @@
     </div>
   </div>
 </div> %>
-<div class="container">
-
-      <div class="dashboard">
-        <div class="dashboard-card main">
-          <div class="dashboard-card-content">
-            <img src="images/seb.jpeg" alt="" width="150" class="img-circle">
-            <h2>Sebastien Saunier</h2>
-            <p>CTO at Le Wagon</p>
-            <a href="#" class="btn btn-primary btn-lg">Get in touch</a>
-          </div>
-        </div>
-        <div class="dashboard-card stat">
-          <div class="dashboard-card-content">
-            <h3>3,536</h3>
-            <p>contributions</p>
-          </div>
-        </div>
-        <div class="dashboard-card stat">
-          <div class="dashboard-card-content">
-            <h3>758</h3>
-            <p>followers</p>
-          </div>
-        </div>
-        <div class="dashboard-card stat">
-          <div class="dashboard-card-content">
-            <h3>119</h3>
-            <p>repositories</p>
-          </div>
-        </div>
-        <div class="dashboard-card description">
-          <div class="dashboard-card-content">
-            <h3>More about Sebastien</h3>
-            <p class="text-justify">
-              I am a full-stack developer with 9 years of experience working in startups.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
