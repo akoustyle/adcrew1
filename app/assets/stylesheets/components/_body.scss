@@ -34,7 +34,7 @@ body {
   background-size: 400% 400%;
   background-repeat: no-repeat;
   // background-color: #e42b03;
-  background: linear-gradient(56deg, rgb(204,15,101) 0.9%,rgb(214,70,102) 2%,rgb(224, 125, 103) 5%,rgb(234,179,103) 8%,rgb(255,255,255)41%);
+  background: linear-gradient(56deg, #e42b03 0%, #f7f7f7 41%);
   // animation: gradient 5s ease infinite;
   &:before {
   animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
@@ -58,12 +58,8 @@ body {
   display: none;
 }
 .red-color {
-    color:red;
+  color: red;
 }
-.red-color {
-  color:blue;
-}
-
-.darkred-color {
-    color:darkred;
+.blue-color {
+  color: blue;
 }
