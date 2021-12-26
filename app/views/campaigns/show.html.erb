@@ -5,25 +5,20 @@
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-          <h1><%= @campaign.name %> </h1>
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.last.key) : asset_path('background.jpeg') %>)">
+          <h3><%= @campaign.name %> </h3>
           <p><%= @campaign.objectif %></p>
           <%#= cl_image_tag @campaign.photo.key, height: 300, width: 400, crop: :fill %>
         </div>
       </div>
       <div class="panel-footer">
         <div class="row">
-          <div class="col-md-6">
-            <div id="user">
-              <p> Post by <%= @campaign.tag %></p>
-            </div>
-          </div>
           <div class="col md-6">
-            <div class="btn-group pull-right">
+            <div class="btn-group" style="display: flex;justify-content: space-evenly">
               <% if user_signed_in? %>
-                <%= link_to "Edit", edit_campaign_path, class: "btn btn-info" %>
-                <%= link_to "Delete", campaign_path, method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger" %>
-                <%= link_to "Back to the list", campaigns_path, class: "btn btn-primary" %>
+                <%= link_to "Edit", edit_campaign_path %>
+                <%= link_to "Delete", campaign_path, method: :delete, data: { confirm: "Are you sure?"} %>
+                <%= link_to "Back to the list", campaigns_path %>
               <% end %>
             </div>
           </div>
@@ -39,7 +34,7 @@
     <article class="feature" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.first.key) : asset_path('background.jpeg') %>)">
     </article>
   </div>
-  <% @campaign.photos.each do |photo| %>
+  <% @campaign.photos.first(3).each do |photo| %>
 		<%= cl_image_tag photo.key, style: "height: 45vh" %>
 	<% end %>
   <div id="rightCol">
@@ -54,57 +49,3 @@
 <div id="mainFooter"></div><!--Ici se termine le mainFooter-->
 
 <!--Ici commmence le grid des campagnes-->
-
-<div class="grid">
-  <div class="item1">
-    <span><%= @campaign.name %></span>
-    <%= cl_image_tag(@campaign.photos.first.key) %>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="alt">
-    <span>Art & Decor</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="item-1">
-    <span>Storage</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="item-1">
-    <span>Flooring</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="item-1">
-    <span>CSS Grid Tricks</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="alt">
-    <span>Furniture</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="alt">
-    <span>Entertainment</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="">
-    <span>Accessories</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="alt">
-    <span>Tables</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-  <div class="item-1 alt">
-    <span>Rugs</span>
-    <span class="shop"></span>
-    <div class="overlay"></div>
-  </div>
-</div>
