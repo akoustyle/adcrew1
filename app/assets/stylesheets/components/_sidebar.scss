@@ -46,7 +46,24 @@
   color: rgb(61, 1, 1);
 }
 
-#main-sidebar {
+.main-sidebar {
+  transition: margin-left .5s;
+  padding: 16px;
+  display: flex;
+  justify-content:space-between;
+  overflow-y: scroll;
+  background-color: transparent;
+  // width: 250px;
+  // position: fixed;
+  // top: 0;
+  // color:white;
+  // right: -250px;
+  // height: 100vh;
+  z-index: 9999;
+  // background: #E94740;
+  // opacity: 0.95;
+}
+.main-sidebar-home {
   transition: margin-left .5s;
   padding: 16px;
   position: fixed;
