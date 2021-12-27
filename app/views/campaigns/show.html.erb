@@ -4,13 +4,6 @@
       <div class="panel heading campaign_image center">
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
-      <div class="panel-body">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%#= @campaign.photos.attached? ? cl_image_path(@campaign.photos.last.key) : asset_path('background.jpeg') %>)">
-          <h3><%#= @campaign.name %> </h3>
-          <p><%#= @campaign.objectif %></p>
-          <%#= cl_image_tag @campaign.photo.key, height: 300, width: 400, crop: :fill %>
-        </div>
-      </div>
       <div class="panel-footer">
         <div class="row">
           <div class="col md-6">
@@ -43,14 +36,27 @@
 <div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
 <section id="pageContent">
   <div id="leftCol">
-    <article class="feature" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-    </article>
+    <div class="bg-photo">
+      <%= cl_image_tag @campaign.photos.first.key, style: "height: 75vh" %>
+    </div>
+    <div class="mid-photo">
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
+    </div>
+    <div class="polaroid" style="padding: 10px 10px 25px 10px; background: #eee; border: 1px solid #fff; float: left;padding: 10px 10px 54px 10px;background: #eee;border: 1px solid #fff;transform: rotate(
+5deg);position: absolute;top: 15vh;left: 40vw">
+      <%= cl_image_tag @campaign.photos.last.key, style: "width: 20vw;height: 30vh" %>
+    </div>
   </div>
-  <% @campaign.photos.first(3).each do |photo| %>
-		<%= cl_image_tag photo.key, style: "height: 45vh" %>
-	<% end %>
+
+
+
   <div id="rightCol">
     <figure  class="features">
+      <div>
+        <%= link_to campaigns_path do %>
+          <%= image_tag 'back-front-premium.png', width: 30 %>
+        <% end %>
+      </div>
       <h1><%= @campaign.name %></h1>
       <h2><%= @campaign.objectif %> </h2>
       <h2> <%= @campaign.activation %></h2>
