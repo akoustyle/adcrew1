@@ -7,6 +7,7 @@
   </div> %>
   <%# <video  controls class="media-object" alt="Banner-video" <%= image_tag "video1.mp4"%>
   <%# </video> %>
+  <%= content_for(:navbar_class, "main-sidebar-home") %>
   <div class="video-banner">
     <%= video_tag "video3.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
   </div>
