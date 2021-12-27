@@ -53,9 +53,9 @@
 }
 #leftCol img:hover {
   filter: grayscale(0%);
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
+  // -ms-transform: scale(1.5); /* IE 9 */
+  // -webkit-transform: scale(1.5); /* Safari 3-8 */
+  // transform: scale(1.5);
 }
 .polaroid {
   padding: 10px 10px 55px 10px;
@@ -67,7 +67,7 @@
   top: -11vh;
   left: 48vw;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  filter: grayscale(100%)
+  filter: grayscale(100%);
 }
 .campaign-stat {
   position: absolute;
