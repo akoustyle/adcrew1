@@ -50,7 +50,7 @@
 
 
   <div id="rightCol">
-    <figure  class="features">
+    <figure  class="features-campaign">
       <div style="position: absolute;top: 21vh;left:92vw">
         <%= link_to campaigns_path do %>
           <%= image_tag 'back-front-premium.png', width: 15 %>
@@ -60,13 +60,15 @@
         <h1 style="font-family: Sketchalot"><%= @campaign.name %></h1>
       </div>
       <div class="campaign-info">
-        <h2><%= @campaign.objectif %> </h2>
+        <h3><span style="color: red">Objectif</span></h3>
+        <h3><%= @campaign.objectif %> </h3>
       </div>
       <div class="campaign-info">
-        <h2> <%= @campaign.activation %></h2>
+        <h3><span style="color: red">Activation</span></h3>
+        <h3> <%= @campaign.activation %></h3>
       </div>
       <div class="campaign-stat">
-        <h2> Total reach <span style="color: red"><%= @campaign.reach %>M</span> </h2>
+        <h3> Total reach <span style="color: red"><%= @campaign.reach %>M</span> </h3>
       </div>
     </figure>
   </div>

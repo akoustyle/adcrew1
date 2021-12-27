@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position:relative;
 }
 .mid-photo {
   position:absolute;
@@ -65,5 +66,10 @@
 }
 .campaign-stat {
   position: absolute;
-
+  bottom: -10vh;
+  left: 90vw;
+}
+.features-campaign {
+  padding: 50px;
+  text-align:right;
 }
