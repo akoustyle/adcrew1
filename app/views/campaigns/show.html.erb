@@ -5,9 +5,9 @@
         <%#= image_tag @campaign.image.url(:medium) %>
       </div>
       <div class="panel-body">
-        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.last.key) : asset_path('background.jpeg') %>)">
-          <h3><%= @campaign.name %> </h3>
-          <p><%= @campaign.objectif %></p>
+        <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%#= @campaign.photos.attached? ? cl_image_path(@campaign.photos.last.key) : asset_path('background.jpeg') %>)">
+          <h3><%#= @campaign.name %> </h3>
+          <p><%#= @campaign.objectif %></p>
           <%#= cl_image_tag @campaign.photo.key, height: 300, width: 400, crop: :fill %>
         </div>
       </div>
@@ -18,20 +18,20 @@
               <% if user_signed_in? %>
               <div>
                   <%= link_to edit_campaign_path do %>
-                    <%= image_tag 'pencil-front-clay.png', width: 30 %>
+                    <%= image_tag 'pencil-front-premium.png', width: 30 %>
                   <% end %>
               </div>
               <div>
                 <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
-                  <%= image_tag 'trash-can-front-clay.png', width: 30 %>
-                <% end %>
-              </div>
-              <div>
-                <%= link_to campaigns_path do %>
-                  <%= image_tag 'back-front-clay.png', width: 30 %>
+                  <%= image_tag 'trash-can-front-premium.png', width: 30 %>
                 <% end %>
               </div>
               <% end %>
+              <div>
+                <%= link_to campaigns_path do %>
+                  <%= image_tag 'back-front-premium.png', width: 30 %>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>

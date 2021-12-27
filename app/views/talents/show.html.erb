@@ -41,17 +41,17 @@
     <% if user_signed_in? %>
     <div>
       <%= link_to edit_talent_path do %>
-        <%= image_tag 'pencil-front-clay.png', width: 30 %>
+        <%= image_tag 'pencil-front-premium.png', width: 30 %>
       <% end %>
     </div>
     <div>
       <%= link_to talent_path, method: :delete, data: { confirm: "Are you sure?"} do %>
-        <%= image_tag 'trash-can-front-clay.png', width: 30 %>
+        <%= image_tag 'trash-can-front-premium.png', width: 30 %>
       <% end %>
     </div>
     <div>
       <%= link_to talents_path do %>
-        <%= image_tag 'back-front-clay.png', width: 30 %>
+        <%= image_tag 'back-front-premium.png', width: 30 %>
       <% end %>
     </div>
     <% end %>

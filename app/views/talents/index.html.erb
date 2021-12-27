@@ -9,7 +9,11 @@
   <div class="line-talents"></div>
 </div>
 <% if user_signed_in? %>
-<%= link_to "Gram it", new_talent_path %>
+  <div class="talent-new" style="margin: 0 90px">
+    <%= link_to new_talent_path do%>
+      <%= image_tag 'pencil-front-premium.png', alt: 'New talent', width: 30 %>
+    <% end %>
+  </div>
 <% end %>
 <div class="talents-tab">
   <ul class="nav nav-pills mb-1 d-flex justify-content-around" id="pills-tab" role="tablist">
