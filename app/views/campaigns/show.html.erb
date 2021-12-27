@@ -42,8 +42,8 @@
     <div class="mid-photo">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
     </div>
-    <div class="polaroid" style="height:24vh">
-      <%= cl_image_tag @campaign.photos.last.key %>
+    <div class="polaroid" style="height:24vh; width: 16vw">
+      <%= cl_image_tag @campaign.photos.last.key, style: "height: 16vh" %>
     </div>
   </div>
 
