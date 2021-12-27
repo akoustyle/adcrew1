@@ -12,7 +12,7 @@
   <a href="#"> <%= link_to "Contact", contact_path %> </a>
 </div>
 
-<div id="main-sidebar">
+<div class="main-sidebar <%= yield(:navbar_class) %>">
   <div class="logo">
     <%= link_to root_path do %>
       <%= image_tag 'logo.png', alt:"ADCREW Agency", width: 100 %>
