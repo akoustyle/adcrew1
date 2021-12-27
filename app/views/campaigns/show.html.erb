@@ -37,13 +37,13 @@
 <section id="pageContent">
   <div id="leftCol">
     <div class="bg-photo">
-      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100vh; width: 50vw" %>
+      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100vh; width: 50vw;filter: grayscale(100%)" %>
     </div>
     <div class="mid-photo">
-      <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh;filter: grayscale(100%)" %>
     </div>
     <div class="polaroid" style="height:24vh; width: 16vw">
-      <%= cl_image_tag @campaign.photos.last.key, style: "height: 16vh" %>
+      <%= cl_image_tag @campaign.photos.last.key, style: "height: 16vh;filter: grayscale(100%)" %>
     </div>
   </div>
 
@@ -51,7 +51,7 @@
 
   <div id="rightCol">
     <figure  class="features">
-      <div style="position: absolute;top:-220px;left:30vw">
+      <div style="position: absolute;top: 21vh;left:92vw">
         <%= link_to campaigns_path do %>
           <%= image_tag 'back-front-premium.png', width: 15 %>
         <% end %>
