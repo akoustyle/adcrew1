@@ -37,7 +37,7 @@
 <section id="pageContent">
   <div id="leftCol">
     <div class="bg-photo">
-      <%= cl_image_tag @campaign.photos.first.key, style: "height: 75vh" %>
+      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100vh" %>
     </div>
     <div class="mid-photo">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
@@ -57,10 +57,18 @@
           <%= image_tag 'back-front-premium.png', width: 30 %>
         <% end %>
       </div>
-      <h1><%= @campaign.name %></h1>
-      <h2><%= @campaign.objectif %> </h2>
-      <h2> <%= @campaign.activation %></h2>
-      <h2> Total reach <%= @campaign.reach %>M </h2>
+      <div class="campaign-title">
+        <h1><%= @campaign.name %></h1>
+      </div>
+      <div class="campaign-info">
+        <h2><%= @campaign.objectif %> </h2>
+      </div>
+      <div class="campaign-info">
+        <h2> <%= @campaign.activation %></h2>
+      </div>
+      <div class="campaign-stat">
+        <h2> Total reach <%= @campaign.reach %>M </h2>
+      </div>
     </figure>
   </div>
 </section><!--Ici se termine le pageContent-->
