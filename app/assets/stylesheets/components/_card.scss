@@ -71,6 +71,10 @@
   color: white;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  filter:grayscale(100%)
+}
+.wagon-card:hover {
+  filter:grayscale(0%);
 }
 
 .wagon-card-container {
