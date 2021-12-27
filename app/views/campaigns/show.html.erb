@@ -16,9 +16,21 @@
           <div class="col md-6">
             <div class="btn-group" style="display: flex;justify-content: space-evenly">
               <% if user_signed_in? %>
-                <%= link_to "Edit", edit_campaign_path %>
-                <%= link_to "Delete", campaign_path, method: :delete, data: { confirm: "Are you sure?"} %>
-                <%= link_to "Back to the list", campaigns_path %>
+              <div>
+                  <%= link_to edit_campaign_path do %>
+                    <%= image_tag 'pencil-front-clay.png', width: 30 %>
+                  <% end %>
+              </div>
+              <div>
+                <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
+                  <%= image_tag 'trash-can-front-clay.png', width: 30 %>
+                <% end %>
+              </div>
+              <div>
+                <%= link_to campaigns_path do %>
+                  <%= image_tag 'back-front-clay.png', width: 30 %>
+                <% end %>
+              </div>
               <% end %>
             </div>
           </div>
