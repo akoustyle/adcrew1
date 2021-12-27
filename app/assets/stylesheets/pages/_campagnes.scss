@@ -51,7 +51,7 @@
   filter: grayscale(100%);
   transition: transform .1s;
 }
-#rightCol img:hover {
+#lefttCol img:hover {
   filter: grayscale(0%);
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
