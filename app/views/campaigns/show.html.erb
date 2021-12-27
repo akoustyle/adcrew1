@@ -43,7 +43,7 @@
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
     </div>
     <div class="polaroid">
-      <%= cl_image_tag @campaign.photos.last.key, style: "width: 20vw;height: 30vh" %>
+      <%= cl_image_tag @campaign.photos.last.key %>
     </div>
   </div>
 
@@ -51,9 +51,9 @@
 
   <div id="rightCol">
     <figure  class="features">
-      <div>
+      <div style="position: absolute;top:-220px;left:30vw>
         <%= link_to campaigns_path do %>
-          <%= image_tag 'back-front-premium.png', width: 30 %>
+          <%= image_tag 'back-front-premium.png', width: 15 %>
         <% end %>
       </div>
       <div class="campaign-title">

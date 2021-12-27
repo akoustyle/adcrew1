@@ -40,12 +40,13 @@
 }
 .mid-photo {
   position:absolute;
-  bottom: -180px;
+  bottom: 0;
   left: 520px;
   border: 2px solid #fff;
 }
 .mid-photo img {
-  width: 20vw;
+  width: 16vw;
+  height: 24vh;
 }
 .polaroid {
   padding: 10px 10px 55px 10px;
@@ -54,6 +55,6 @@
   float:left;
   transform:rotate(5deg);
   position: absolute;
-  top: 29vh;
+  top: -11vh;
   left: 48vw;
 }
