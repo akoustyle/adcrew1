@@ -10,23 +10,23 @@
 		<%# end %>
   </div>
   <div class="col-md-8">
-    <div class="talent-image" style="width: 400px; heigth: 400px; background: radial-gradient(circle, red 15%, transparent 61%); position: absolute;top:2vh;left:23vw">
+    <div class="talent-image" style="width: 400px; heigth: 400px; background: radial-gradient(circle, red 15%, transparent 61%); position: absolute;top:5vh;left:25vw">
       <%= cl_image_tag @talent.photos.last.key, style:'width:100%;height:auto' %>
     </div>
 
   </div>
   <%#= cl_upload_tag(@talent.video.key) %>
-  <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 25vh; right: 5vw;">
+  <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 32vh; right: 5vw;">
     <span><i class="fab fa-youtube-square red-color"></i></span>
     <p><%= @talent.youtube_link %> abonnés</p>
   </div>
 
-  <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 40vh; right: 1vw;">
+  <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 51vh; right: 1vw;">
     <span><i class="fab fa-instagram red-color"></i></span>
     <p><%= @talent.insta_link %> abonnés</p>
   </div>
 
-  <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 53vh; right: 2vw;">
+  <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 75vh; right: 4vw;">
     <span><i class="fab fa-tiktok red-color"></i></span>
     <p><%= @talent.tiktok_link %> abonnés</p>
   </div>
