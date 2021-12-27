@@ -49,6 +49,7 @@
   width: 16vw;
   height: 24vh;
   filter: grayscale(100%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   transition: transform .1s;
 }
 #leftCol img:hover {
