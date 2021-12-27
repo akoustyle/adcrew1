@@ -40,13 +40,19 @@
   <div class="btn-group" style="display: flex;justify-content: space-evenly">
     <% if user_signed_in? %>
     <div>
-      <%= link_to "Edit", edit_talent_path%>
+      <%= link_to edit_talent_path do %>
+        <%= image_tag 'pencil-front-clay.png', width: 30 %>
+      <% end %>
     </div>
     <div>
-      <%= link_to "Delete", talent_path, method: :delete, data: { confirm: "Are you sure?"}%>
+      <%= link_to talent_path, method: :delete, data: { confirm: "Are you sure?"} do %>
+        <%= image_tag 'trash-can-front-clay.png', width: 30 %>
+      <% end %>
     </div>
     <div>
-      <%= link_to "Back", talents_path %>
+      <%= link_to talents_path do %>
+        <%= image_tag 'back-front-clay.png', width: 30 %>
+      <% end %>
     </div>
     <% end %>
   </div>
