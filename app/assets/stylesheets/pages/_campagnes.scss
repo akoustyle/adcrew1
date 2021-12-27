@@ -24,3 +24,16 @@
   border-bottom:solid;
   margin-bottom: 50px;
 }
+#pageContent {
+  display: flex;
+  justify-content: space-between;
+}
+#leftCol {
+  display: flex;
+  flex-wrap: wrap;
+}
+#rightCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
