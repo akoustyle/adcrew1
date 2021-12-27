@@ -47,6 +47,7 @@
 .mid-photo img {
   width: 16vw;
   height: 24vh;
+  filter: grayscale(100%)
 }
 .polaroid {
   padding: 10px 10px 55px 10px;
@@ -57,6 +58,7 @@
   position: absolute;
   top: -11vh;
   left: 48vw;
+  filter: grayscale(100%)
 }
 .campaign-stat {
   position: absolute;
