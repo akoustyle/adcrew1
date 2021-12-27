@@ -21,9 +21,9 @@
               </div>
               <% end %>
               <div>
-                <%= link_to campaigns_path do %>
-                  <%= image_tag 'back-front-premium.png', width: 30 %>
-                <% end %>
+                <%#= link_to campaigns_path do %>
+                  <%#= image_tag 'back-front-premium.png', width: 30 %>
+                <%# end %>
               </div>
             </div>
           </div>
@@ -42,7 +42,7 @@
     <div class="mid-photo">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh;filter: grayscale(100%)" %>
     </div>
-    <div class="polaroid" style="height:24vh; width: 16vw">
+    <div class="polaroid" style="height:24vh; width: 20vw">
       <%= cl_image_tag @campaign.photos.last.key, style: "height: 16vh;filter: grayscale(100%)" %>
     </div>
   </div>
