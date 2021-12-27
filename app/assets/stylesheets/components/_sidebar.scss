@@ -49,8 +49,10 @@
 #main-sidebar {
   transition: margin-left .5s;
   padding: 16px;
+  position: fixed;
+  width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content:space-between;
   overflow-y: scroll;
   background-color: transparent;
   // width: 250px;

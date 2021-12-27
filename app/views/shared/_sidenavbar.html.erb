@@ -14,7 +14,9 @@
 
 <div id="main-sidebar">
   <div class="logo">
-    <h1><%= link_to "ADCREW", root_path %></h1>
+    <%= link_to root_path do %>
+      <%= image_tag 'logo.png', alt:"ADCREW Agency", width: 100 %>
+    <% end %>
   </div>
   <button class="openbtn" style="background: transparent" onclick="openNav()">&#x268C;</button>
 </div>
