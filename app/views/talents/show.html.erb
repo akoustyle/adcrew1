@@ -1,4 +1,3 @@
-<%= content_for(:navbar_class, "navbar-home") %>
 
 <div class="container d-flex" style="margin-bottom: 150px;" >
   <div class="col-md-4">
@@ -11,7 +10,7 @@
 		<%# end %>
   </div>
   <div class="col-md-8">
-    <div class="talent-name" style="position: absolute;top:0;left:300px">
+    <div class="talent-name" style="position: absolute;top:0;left:260px">
       <span style="font-weight: bold; font-family: work sans"><%= @talent.name %></span><br>
       <span style="font-weigth: 200; font-style: italic"><%= @talent.title %></span>
     </div>
@@ -21,12 +20,12 @@
 
   </div>
   <%#= cl_upload_tag(@talent.video.key) %>
-  <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 32vh; right: 5vw;">
+  <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 32vh; right: 2vw;">
     <span><i class="fab fa-youtube-square red-color"></i></span>
     <p><%= @talent.youtube_link %> abonnés</p>
   </div>
 
-  <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 51vh; right: 1vw;">
+  <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 51vh; right: -2vw;">
     <span><i class="fab fa-instagram red-color"></i></span>
     <p><%= @talent.insta_link %> abonnés</p>
   </div>
