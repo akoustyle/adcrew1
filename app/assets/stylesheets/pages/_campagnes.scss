@@ -48,10 +48,14 @@
 .mid-photo img {
   width: 16vw;
   height: 24vh;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  transition: transform .1s;
 }
 #rightCol img:hover {
   filter: grayscale(0%);
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
 .polaroid {
   padding: 10px 10px 55px 10px;
