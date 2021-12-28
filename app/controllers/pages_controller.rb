@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @campaigns = Campaign.all
   end
 
   def team
@@ -10,12 +11,9 @@ class PagesController < ApplicationController
   end
 
   def prod
+    @campaigns = Campaign.all
   end
 
   def contact
-  end
-
-  def index
-    @campaigns = Campaign.all
   end
 end
