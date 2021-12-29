@@ -27,8 +27,8 @@
   <body id="gradient">
     <%= render 'shared/sidenavbar' %>
       <div class="main-container">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
+        <p class="notice" style="position:absolute"><%= notice %></p>
+        <p class="alert" style="position:absolute"><%= alert %></p>
         <%= yield %>
       </div>
     <%= render 'shared/footer' %>
