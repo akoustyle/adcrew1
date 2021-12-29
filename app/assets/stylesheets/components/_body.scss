@@ -36,7 +36,9 @@ body {
   // background-color: #e42b03;
   // background: linear-gradient(56deg, #e42b03 0%, #f7f7f7 41%);
   background: linear-gradient(27deg, rgba(255,255,255,1), rgba(255,25,0,0) 70%), linear-gradient(127deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 80.71%), linear-gradient(9deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 80.71%), linear-gradient(17deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 80.71%), linear-gradient(336deg, rgba(255,255,255,1), rgba(0,0,255,0) 70.71%);
-  animation: gradient 5s ease infinite;
+  -webkit-animation: gradient 17s ease infinite;
+  -moz-animation: gradient 17s ease infinite;
+  animation: gradient 17s ease infinite;
   // &:before {
   // animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
   // }
@@ -44,16 +46,31 @@ body {
   //   animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
   // }
 }
+// @keyframes gradient {
+//     0% {
+//         background-position: 0% 50%;
+//     }
+//     50% {
+//         background-position: 100% 50%;
+//     }
+//     100% {
+//         background-position: 0% 50%;
+//     }
+// }
+@-webkit-keyframes gradient {
+    0%{background-position:50% 0%;}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
 }
 .hidden {
   display: none;
