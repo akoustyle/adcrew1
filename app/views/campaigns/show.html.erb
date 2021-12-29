@@ -37,13 +37,13 @@
 <section id="pageContent">
   <div id="leftCol">
     <div class="bg-photo">
-      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100vh; width: 50vw;filter: grayscale(100%)" %>
+      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100vh; width: 50vw" %>
     </div>
     <div class="mid-photo">
-      <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh;filter: grayscale(100%)" %>
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
     </div>
     <div class="polaroid" style="height:24vh; width: 19vw">
-      <%= cl_image_tag @campaign.photos.last.key, style: "height: 18vh; width: 17vw;filter: grayscale(100%)" %>
+      <%= cl_image_tag @campaign.photos.last.key, style: "height: 18vh; width: 17vw" %>
     </div>
   </div>
 
