@@ -5,7 +5,7 @@
     <div class="card-prod">
       <div class="Box">
         <%# <img src="https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> %>
-        <%= cl_image_tag(campaign.photos.first.key) %>
+        <%= cl_image_tag(campaign.photos.first.key), width: 500 %>
       </div>
       <div class="details">
         <h2><%= campaign.name %></h2>
