@@ -10,27 +10,27 @@
   <div class="stat" style="position: relative; margin-left: 195px;width: 400px">
     <div class="talent-name" style="position: absolute;top:-20px;left:-140px">
       <span style="font-weight: bold; font-family: Sketchalot"><%= @talent.name %></span><br>
-      <span style="font-weigth: 200; font-style: italic"><%= @talent.title %></span>
+      <span style="font-weigth: 200; font-style: italic;colro:white"><%= @talent.title %></span>
     </div>
     <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
     <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
       <a href="#", target="_blank">
-        <span><i class="fab fa-youtube-square red-color"></i></span>
-        <p><%= @talent.youtube_link %> abonnés</p>
+        <span><i class="fab fa-youtube-square"></i></span>
+        <p style="color:white"><%= @talent.youtube_link %> abonnés</p>
       </a>
     </div>
 
     <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; right: -140px;">
       <a href="#", target="_blank">
-        <span><i class="fab fa-instagram red-color"></i></span>
-        <p><%= @talent.insta_link %> abonnés</p>
+        <span><i class="fab fa-instagram"></i></span>
+        <p style="color:white"><%= @talent.insta_link %> abonnés</p>
       </a>
     </div>
 
     <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; right: -79px;">
       <a href="#", target="_blank">
-        <span><i class="fab fa-tiktok red-color"></i></span>
-        <p><%= @talent.tiktok_link %> abonnés</p>
+        <span><i class="fab fa-tiktok"></i></span>
+        <p style="color:white"><%= @talent.tiktok_link %> abonnés</p>
       </a>
     </div>
   </div>
