@@ -1,41 +1,33 @@
 
-<div class="container d-flex" style="margin-bottom: 50px;" >
-  <div class="col-md-4">
+<div class="container d-flex justify-content-space-between" style="width: 100vw;margin-bottom: 50px;" >
     <%# @talent.photos.each do |photo| %>
-      <div class="card-category" >
-        <div style="width: 100vw; heigth: 100vh">
-          <%= video_tag(url_for(@talent.video), style:'width:130%;height:auto', controls: '', autoplay: :autoplay, muted: :muted) %>
+        <div style="width: 500px; heigth: auto">
+          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto', controls: '', autoplay: :autoplay, muted: :muted) %>
         </div>
-      </div>
 		<%# end %>
-  </div>
-  <div class="col-md-8">
+
+  <%#= cl_upload_tag(@talent.video.key) %>
+  <div class="stat" style="position: relative; width: 400px; background: radial-gradient(circle, red 10%, transparent 58%)">
     <div class="talent-name" style="position: absolute;top:0;left:260px">
       <span style="font-weight: bold; font-family: Sketchalot"><%= @talent.name %></span><br>
       <span style="font-weigth: 200; font-style: italic"><%= @talent.title %></span>
     </div>
-    <div class="talent-image" style="width: 400px; heigth: auto; background: radial-gradient(circle, red 15%, transparent 61%); position: absolute;top:-5vh;left:25vw">
-      <%= cl_image_tag @talent.photos.last.key, style:'width:100%;height:100%' %>
-    </div>
-
-  </div>
-  <%#= cl_upload_tag(@talent.video.key) %>
-  <div class="stat" style="position: relative">
-    <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 0vh; right: -5vw;">
+    <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
+    <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -20px;">
       <a href="#", target="_blank">
         <span><i class="fab fa-youtube-square red-color"></i></span>
         <p><%= @talent.youtube_link %> abonnés</p>
       </a>
     </div>
 
-    <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 26vh; right: -10vw;">
+    <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; right: -140px;">
       <a href="#", target="_blank">
         <span><i class="fab fa-instagram red-color"></i></span>
         <p><%= @talent.insta_link %> abonnés</p>
       </a>
     </div>
 
-    <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 47vh; right: -5vw;">
+    <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 380px; right: -33px;">
       <a href="#", target="_blank">
         <span><i class="fab fa-tiktok red-color"></i></span>
         <p><%= @talent.tiktok_link %> abonnés</p>
