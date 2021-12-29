@@ -34,7 +34,8 @@ body {
   background-size: 400% 400%;
   background-repeat: no-repeat;
   // background-color: #e42b03;
-  background: linear-gradient(56deg, #e42b03 0%, #f7f7f7 41%);
+  // background: linear-gradient(56deg, #e42b03 0%, #f7f7f7 41%);
+  background: linear-gradient(27deg, rgba(255,255,255,1), rgba(255,25,0,0) 70%), linear-gradient(127deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 80.71%), linear-gradient(9deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 80.71%), linear-gradient(17deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 80.71%), linear-gradient(336deg, rgba(255,255,255,1), rgba(0,0,255,0) 70.71%);
   // animation: gradient 5s ease infinite;
   &:before {
   animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
