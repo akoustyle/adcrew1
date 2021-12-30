@@ -18,16 +18,3 @@
     <% end %>
   </div>
 </div>
-
-<div class="wrapper-prod">
-  <% @campaigns.where(tag:true).each do |campaign|  %>
-    <div class="card-prod">
-      <%= cl_image_tag campaign.photos.first.key %>
-      <div class="info">
-        <h1><%= campaign.name %></h1>
-        <p><%= campaign.objectif %></p>
-        <button><%= link_to "Read more", campaign %></button>
-      </div>
-    </div>
-  <% end %>
-</div>
