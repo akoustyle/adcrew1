@@ -36,18 +36,19 @@
 </div>
 <div class="container-card">
   <div class="options">
-    <div class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
-        <div class="shadow"></div>
-        <div class="label">
-          <div class="icon">
-              <i class="fas fa-walking"></i>
+    <% @campaigns.where(tag:true).each do |campaign|  %>
+      <div class="option active" style="--optionBackground:url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>);">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+                <i class="fas fa-walking"></i>
+            </div>
+            <div class="info">
+                <div class="main">Blonkisoaz</div>
+                <div class="sub">Omuke trughte a otufta</div>
+            </div>
           </div>
-          <div class="info">
-              <div class="main">Blonkisoaz</div>
-              <div class="sub">Omuke trughte a otufta</div>
-          </div>
-        </div>
-    </div>
+      </div>
     <div class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
         <div class="shadow"></div>
         <div class="label">
