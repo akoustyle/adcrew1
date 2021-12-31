@@ -8,6 +8,16 @@
   width: 100%;
   margin-bottom: 100px;
 }
+.banner-talent {
+  text-align: center;
+  background-image: asset-url("team-banner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 200px;
+  width: 100%;
+  // margin-bottom: 100px;
+}
 
 .banner h1 {
   margin-bottom: 20px;
