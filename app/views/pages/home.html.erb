@@ -28,17 +28,19 @@
       <h2 data-animate="fadeInUp" class="title">Nos campagnes AD CREW</h2>
         <p data-animate="fadeInUp" class="lead">We have worked on dozens of projects so we have picked only the latest for you.</p>
     </div>
-     <div class="wrapper-prod">
-      <% @campaigns.where(tag:true).each do |campaign|  %>
-        <div class="card-prod">
-            <%= cl_image_tag campaign.photos.first.key %>
-          <div class="info">
-            <h1><%= campaign.name %></h1>
-            <p><%= campaign.objectif %></p>
-            <button><%= link_to "Read more", campaign %></button>
+    <div class="container">
+      <div class="wrapper-prod">
+        <% @campaigns.where(tag:true).each do |campaign|  %>
+          <div class="card-prod">
+              <%= cl_image_tag campaign.photos.first.key %>
+            <div class="info">
+              <h1><%= campaign.name %></h1>
+              <p><%= campaign.objectif %></p>
+              <button><%= link_to "Read more", campaign %></button>
+            </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
     <%# <div class="features">
       <h1>Nos Campagnes</h1>
