@@ -33,7 +33,7 @@
         <p style="color:white"><%= @talent.tiktok_link %> abonnés</p>
       </a>
     </div>
-    <div class="talent-about d-flex justify-content-space-evenly align-items-center" style="position:absolute;left:105px">
+    <div class="talent-about d-flex justify-content-space-evenly align-items-center" style="position:absolute;left:25px">
         <div>
           About
         </div>
@@ -47,7 +47,7 @@
   </div>
   </div>
 <div class="col md-6">
-  <div class="btn-group" style="display: flex;justify-content: space-evenly">
+  <div class="btn-group" style="display: flex;justify-content: flex-start">
     <% if user_signed_in? %>
     <div>
       <%= link_to edit_talent_path do %>
