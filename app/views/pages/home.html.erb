@@ -13,7 +13,7 @@
   </div>
 
     <div id="scrolling1"class="features">
-      <div class="container-home">
+      <div class="container-home container">
         <div class="home-section">
           <h2>Qui sommes-nous?</h2>
           <span style="text-align:left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam corporis ipsa, ipsum doloremque ab pariatur repellendus recusandae culpa animi delectus consectetur consequuntur! Nihil, asperiores rerum. Quaerat ex cum placeat!</span>
@@ -30,7 +30,7 @@
     </div>
     <div class="container">
       <div class="wrapper-prod">
-        <% @campaigns.where(tag:true).each do |campaign|  %>
+        <% @campaigns.where(tag:true).first(3).each do |campaign|  %>
           <div class="card-prod">
               <%= cl_image_tag campaign.photos.first.key %>
             <div class="info">
