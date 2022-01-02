@@ -1,121 +1,3 @@
-.team-column {
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card-team {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-
-.container-team {
-  padding: 0 16px;
-}
-
-.container-team::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.team-title {
-  color: grey;
-}
-
-.team-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button-team:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-.dude {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 240px;
-  height: 360px;
-  overflow: hidden;
-  .blur-wrapper {
-    width: calc(100% + 30px);
-    height: calc(100% + 30px);
-    margin-top: -15px;
-    margin-left: -15px;
-    transition: filter 500ms ease;
-  }
-  .dude__image {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-  .dude__title {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-    opacity: 0;
-    background-color: rgba(0,0,0,0.65);
-    transition: opacity 500ms ease;
-    .centerxy {
-      width: calc(100% - 30px);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    h3 {
-      font-weight: 700;
-      font-style: normal;
-    }
-    h4 {
-      font-weight: 100;
-      font-style: normal;
-    }
-    h3, h4 {
-      color: #FFFFFF;
-      font-size: 30px;
-      margin: 0 0 10px 0;
-    }
-  }
-  &:hover {
-    .blur-wrapper {
-      filter: blur(10px);
-    }
-    .dude__title {
-      opacity: 1;
-    }
-  }
-}
 
 .container-team {
   display: flex;
@@ -148,7 +30,7 @@
 
     .imgBx {
       transform: scale(1.1);
-      filter:blur(30%);
+      filter:blur(60%);
     }
   }
 
@@ -168,7 +50,7 @@
   }
 
   .card-footer {
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     bottom: 0;
     z-index: 1;
@@ -186,4 +68,7 @@
       padding: 2.5px 0;
     }
   }
+}
+.container h1 h2 h3 h4 {
+  line-height: 0.9;
 }
