@@ -6,9 +6,9 @@
   <div class="talent-wording">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae!</p>
   </div>
-  <div class="line-talents"></div>
+  <div class="line-talents" style="margin-bottom:10px"></div>
   <% if user_signed_in? %>
-    <div class="talent-new" style="margin: 0 90px">
+    <div class="talent-new">
       <%= link_to new_talent_path do%>
         <%= image_tag 'plus-front-premium.png', alt: 'New talent', width: 30 %>
       <% end %>
