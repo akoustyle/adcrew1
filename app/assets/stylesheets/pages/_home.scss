@@ -49,12 +49,14 @@ i:hover {
 .wrapper-prod {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .card-prod {
 	width: 260px;
 	height: 360px;
+  margin-bottom: 40px;
 	border-radius: 1px;
 	padding: 1.5rem;
 	background: white;
