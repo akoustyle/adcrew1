@@ -29,9 +29,14 @@
   justify-content: space-between;
 }
 #leftCol {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
+  // display: flex;
+  // flex-wrap: wrap;
+  // position: relative;
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  height: calc(100vh - 80px);
+  margin-top: 20px;
 }
 #rightCol {
   display: flex;
@@ -39,46 +44,18 @@
   align-items: center;
   position:relative;
 }
+.bg-photo {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+}
 .mid-photo {
-  position:absolute;
-  bottom: 0;
-  left: 520px;
-  border: 2px solid #fff;
-  transform:rotate(-1.4deg)
-}
-.mid-photo:before, .mid-photo:after {
-  content: "";
-  height: 98%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-.mid-photo:before {
-  background: #fafafa;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  left: -5px;
-  top: 4px;
-  transform: rotate(-3.5deg);
-}
-.mid-photo:after {
-  background: #f6f6f6;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  right: -3px;
-  top: 1px;
-  transform: rotate(2.4deg);
-}
-.mid-photo img {
-  width: 16vw;
-  height: 24vh;
-  filter: grayscale(100%);
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transition: transform .1s;
-}
-#leftCol img:hover {
-  filter: grayscale(0%);
-  // -ms-transform: scale(1.5); /* IE 9 */
-  // -webkit-transform: scale(1.5); /* Safari 3-8 */
-  // transform: scale(1.5);
+  // position:absolute;
+  // bottom: 0;
+  // left: 520px;
+  // border: 2px solid #fff;
+  // transform:rotate(-1.4deg)
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 3;
 }
 .polaroid {
   padding: 10px 10px 55px 10px;
@@ -92,6 +69,46 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   filter: grayscale(100%);
 }
+@media(max-width:992px) {
+  #leftCol {
+    display:block;
+  }
+}
+// .mid-photo:before, .mid-photo:after {
+//   content: "";
+//   height: 98%;
+//   position: absolute;
+//   width: 100%;
+//   z-index: -1;
+// }
+// .mid-photo:before {
+//   background: #fafafa;
+//   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+//   left: -5px;
+//   top: 4px;
+//   transform: rotate(-3.5deg);
+// }
+// .mid-photo:after {
+//   background: #f6f6f6;
+//   box-shadow: 0 0 3px rgba(0,0,0,0.2);
+//   right: -3px;
+//   top: 1px;
+//   transform: rotate(2.4deg);
+// }
+// .mid-photo img {
+//   width: 16vw;
+//   height: 24vh;
+//   filter: grayscale(100%);
+//   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+//   transition: transform .1s;
+// }
+#leftCol img:hover {
+  filter: grayscale(0%);
+  // -ms-transform: scale(1.5); /* IE 9 */
+  // -webkit-transform: scale(1.5); /* Safari 3-8 */
+  // transform: scale(1.5);
+}
+
 .campaign-stat {
   position: absolute;
   bottom: -0;
