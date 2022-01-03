@@ -36,14 +36,20 @@
 <div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
 <section id="pageContent">
   <div id="leftCol">
-    <div class="bg-photo">
-      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100vh; width: 50vw" %>
+    <div class="bottom-photo3">
+      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%"%>
+    </div>
+    <div class="bottom-photo1">
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%" %>
+    </div>
+    <div class="bottom-photo2">
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%" %>
     </div>
     <div class="mid-photo">
-      <%= cl_image_tag @campaign.photos.second.key, style: "height: 45vh" %>
+      <%= cl_image_tag @campaign.photos.third.key, style: "height: 100%" %>
     </div>
-    <div class="polaroid" style="height:24vh; width: 19vw">
-      <%= cl_image_tag @campaign.photos.last.key, style: "height: 18vh; width: 17vw" %>
+    <div class="polaroid" style="height:170px; width: 190px">
+      <%= cl_image_tag @campaign.photos.last.key, style: "height: 100%; width: 17vw" %>
     </div>
   </div>
 
