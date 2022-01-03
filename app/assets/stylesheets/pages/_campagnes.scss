@@ -84,6 +84,19 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   // filter: grayscale(100%);
 }
+.campaign-title {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 1
+}
+.campaign-reach {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1
+}
+.campaign-objectif {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 2;
+}
+
 @media(max-width:992px) {
   #leftCol {
     display:block;
