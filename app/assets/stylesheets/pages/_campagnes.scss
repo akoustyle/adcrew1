@@ -39,6 +39,7 @@
   grid-gap: 10px;
   height: calc(100vh - 80px);
   margin: auto 230px;
+  position:relative;
 }
 #rightCol {
   display: flex;
@@ -90,7 +91,8 @@
 }
 .campaign-title {
   grid-row: 2 / span 2;
-  grid-column: 2 / span 1
+  grid-column: 2 / span 2;
+  z-index: 1;
 }
 .campaign-reach {
   grid-row: 1 / span 1;
@@ -99,6 +101,11 @@
 .campaign-objectif {
   grid-row: 2 / span 1;
   grid-column: 2 / span 2;
+  z-index: 1;
+  transform: rotate(-15deg);
+  position:absolute;
+  top:-40px;
+  left:90px;
 }
 
 @media(max-width:992px) {
