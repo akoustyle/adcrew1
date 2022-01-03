@@ -5,6 +5,15 @@
     <div class="bottom-photo3" style="height: 250px">
       <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%;width:100%"%>
     </div>
+    <div class="campaign-title">
+      <h3><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.name %></span></h3>
+    </div>
+    <div class="campaign-reach">
+      <h3>Total reach <span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.reach %>M</span></h3>
+    </div>
+    <div class="campaign-objectif">
+      <p><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.objectif %></span></p>
+    </div>
     <div class="bottom-photo1" style="height: 250px">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
     </div>
