@@ -1,20 +1,45 @@
 <%# <div class="banner">
 </div> %>
-<div class="container-card">
-  <div class="options">
-    <% @campaigns.where(tag:true).each do |campaign|  %>
-      <div class="option active" style="--optionBackground:url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>);">
-          <div class="shadow"></div>
-          <div class="label">
-            <div class="icon">
-                <i class="fas fa-walking"></i>
-            </div>
-            <div class="info">
-                <div class="main"><%= campaign.name %></div>
-                <div class="sub"><%= campaign.objectif %></div>
-            </div>
-          </div>
-      </div>
+
+<div class="campagne-header container">
+  <div class="campagne-title">
+    <span>Production</span>
+    <h1> Projet ADCREW</h1>
+  </div>
+  <div class="campagne-wording">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam ea recusandae neque? Optio consequatur omnis iste exercitationem vero nemo dignissimos cumque assumenda fugit sunt cum suscipit iure, cupiditate labore deserunt excepturi sapiente. Cum facere aspernatur laboriosam culpa quos, optio iste quae temporibus animi asperiores similique. Suscipit ea praesentium molestiae.</p>
+  </div>
+  <div class="line-campagnes"></div>
+  <div class="campaign-new">
+    <% if user_signed_in? %>
+      <%= link_to new_campaign_path do %>
+        <%= image_tag 'plus-front-premium.png', width: 30 %>
+      <% end %>
     <% end %>
   </div>
 </div>
+
+
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <% @campaigns.where(tag:true).each do |campaign|%>
+            <div class="swiper-slide wagon-cards">
+              <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
+                <%# <div class="tag">
+                  <div class="campaign-tag"> %>
+                    <%= link_to campaign.name, campaign %>
+                  <%# </div>
+                  <div class="campaign-tag">
+                    <%# <i class="fas fa-map-marker-alt"></i><%= Geocoder::Calculations.distance_between([@user_campaign.latitude, @user_campaign.longitude], [campaign.latitude,campaign.longitude]).truncate(1) %>
+                  <%# </div>
+                </div> %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
