@@ -72,3 +72,15 @@
 .container h1 h2 h3 h4 {
   line-height: 0.9;
 }
+
+.grid-ceo {
+  display: grid;
+  grid-template-columns: repeat(3fr);
+  grid-template-rows: auto;
+}
+.image-ceo {
+  grid-column: 1 / span 2;
+}
+.wording-ceo {
+  grid-column: 3 / span 1;
+}
