@@ -88,6 +88,9 @@
   #leftCol {
     display:block;
   }
+  #pageContent {
+    flex-direction: column;
+  }
 }
 // .mid-photo:before, .mid-photo:after {
 //   content: "";
@@ -124,11 +127,11 @@
   // transform: scale(1.5);
 }
 
-.campaign-stat {
-  position: absolute;
-  bottom: -0;
-  left: 17vw;
-}
+// .campaign-stat {
+//   position: absolute;
+//   bottom: -0;
+//   left: 17vw;
+// }
 .features-campaign {
   padding: 50px;
   text-align:right;

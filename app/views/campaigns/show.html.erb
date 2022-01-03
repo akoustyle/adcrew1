@@ -2,19 +2,19 @@
 <div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
 <section id="pageContent">
   <div id="leftCol">
-    <div class="bottom-photo3" style="height: 250px">
+    <div class="bottom-photo3" style="height: 300px">
       <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%;width:100%"%>
     </div>
-    <div class="bottom-photo1" style="height: 250px">
+    <div class="bottom-photo1" style="height: 300px">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
     </div>
-    <div class="bottom-photo2" style="height: 250px">
+    <div class="bottom-photo2" style="height: 300px">
       <%= cl_image_tag @campaign.photos.fourth.key, style: "height: 100%;width:100%" %>
     </div>
     <div class="mid-photo">
       <%= cl_image_tag @campaign.photos.third.key, style: "height: 100%;width:100%" %>
     </div>
-    <div class="polaroid" style="height:170px; width: 190px">
+    <div class="polaroid" style="height:200px; width: 200px">
       <%= cl_image_tag @campaign.photos.last.key, style: "height: 100%; width: 100%" %>
     </div>
   </div>
