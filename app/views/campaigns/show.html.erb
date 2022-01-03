@@ -1,52 +1,18 @@
-<div>
-  <div class="col-md-6 col-md-offset-3">
-    <div class="panel panel-default">
-      <div class="panel heading campaign_image center">
-        <%#= image_tag @campaign.image.url(:medium) %>
-      </div>
-      <div class="panel-footer">
-        <div class="row">
-          <div class="col md-6">
-            <div class="btn-group" style="display: flex;justify-content: space-evenly">
-              <% if user_signed_in? %>
-              <div>
-                  <%= link_to edit_campaign_path do %>
-                    <%= image_tag 'pencil-front-premium.png', width: 30 %>
-                  <% end %>
-              </div>
-              <div>
-                <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
-                  <%= image_tag 'trash-can-front-premium.png', width: 30 %>
-                <% end %>
-              </div>
-              <% end %>
-              <div>
-                <%#= link_to campaigns_path do %>
-                  <%#= image_tag 'back-front-premium.png', width: 30 %>
-                <%# end %>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
 <section id="pageContent">
   <div id="leftCol">
     <div class="bottom-photo3">
-      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%"%>
+      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%;width:100%"%>
     </div>
     <div class="bottom-photo1">
-      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%" %>
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
     </div>
     <div class="bottom-photo2">
-      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%" %>
+      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
     </div>
     <div class="mid-photo">
-      <%= cl_image_tag @campaign.photos.third.key, style: "height: 100%" %>
+      <%= cl_image_tag @campaign.photos.third.key, style: "height: 100%;width:100%" %>
     </div>
     <div class="polaroid" style="height:170px; width: 190px">
       <%= cl_image_tag @campaign.photos.last.key, style: "height: 100%; width: 17vw" %>
@@ -82,3 +48,37 @@
 <div id="mainFooter"></div><!--Ici se termine le mainFooter-->
 
 <!--Ici commmence le grid des campagnes-->
+<div>
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+      <div class="panel heading campaign_image center">
+        <%#= image_tag @campaign.image.url(:medium) %>
+      </div>
+      <div class="panel-footer">
+        <div class="row">
+          <div class="col md-6">
+            <div class="btn-group" style="display: flex;justify-content: space-evenly">
+              <% if user_signed_in? %>
+              <div>
+                  <%= link_to edit_campaign_path do %>
+                    <%= image_tag 'pencil-front-premium.png', width: 30 %>
+                  <% end %>
+              </div>
+              <div>
+                <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
+                  <%= image_tag 'trash-can-front-premium.png', width: 30 %>
+                <% end %>
+              </div>
+              <% end %>
+              <div>
+                <%#= link_to campaigns_path do %>
+                  <%#= image_tag 'back-front-premium.png', width: 30 %>
+                <%# end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
