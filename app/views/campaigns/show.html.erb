@@ -22,7 +22,7 @@
 
 
   <div id="rightCol">
-    <figure  class="features-campaign">
+    <figure  class="features-campaign" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.last.key) : asset_path('background.jpeg') %>)">
       <div style="position: absolute;top: 0vh;left:29vw">
         <%= link_to campaigns_path do %>
           <%= image_tag 'back-front-premium.png', width: 15 %>
