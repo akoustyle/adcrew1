@@ -33,8 +33,9 @@
   // flex-wrap: wrap;
   // position: relative;
   display: grid;
-  grid-template-columns: 400px 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
   height: calc(100vh - 80px);
   margin-top: 20px;
 }
@@ -127,4 +128,5 @@
 .features-campaign {
   padding: 50px;
   text-align:right;
+  position:relative;
 }
