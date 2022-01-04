@@ -16,9 +16,9 @@
     <h3><span style="border-bottom: solid 5px red"><%= @campaigns.where(tag:true).first.name %></span></h3>
   </div>
   <div class="prod-description">
-    <p><%= @campaigns.where(tag:true).first.objectif %>.</p>
-    <p><%= @campaigns.where(tag:true).first.activation %>.</p>
-    <p><%= @campaigns.where(tag:true).first.reach %>.</p>
+    <p>Objectif<br><%= @campaigns.where(tag:true).first.objectif %>.</p>
+    <p>Activation <br><%= @campaigns.where(tag:true).first.activation %>.</p>
+    <p>Total reach <%= @campaigns.where(tag:true).first.reach %>M</p>
   </div>
 </div>
 
