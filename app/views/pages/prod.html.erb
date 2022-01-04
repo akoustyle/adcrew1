@@ -11,10 +11,10 @@
     <%= image_tag 'skaterboy.jpg', style:'height:300px' %>
   </div>
   <div class="prod-title">
-    <h3><span style="border-bottom: solid 5px red"><%= @campaign.where(tag:true).first.name %></span></h3>
+    <h3><span style="border-bottom: solid 5px red"><%= @campaigns.where(tag:true).first.name %></span></h3>
   </div>
   <div class="prod-description">
-    <p><%= @camapaign.where(tag:true).first.objectif %>.</p>
+    <p><%= @campaigns.where(tag:true).first.objectif %>.</p>
   </div>
 </div>
 
