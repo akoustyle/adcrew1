@@ -30,40 +30,26 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="col-xs-10 col-sm-6 col-md-4">
             <div class="feature">
               <div class="feature-title">
-                <img src="images/auto.png" alt="" class="icon">
-                <h3>Assurance Auto</h3>
+                <%= image_tag 'featured.jpg', style:'width:250px;height:400px' %>
               </div>
-              <p>Dernier modèle ou vieille guimbarde, votre voiture est souvent comme votre seconde maison. Pensez à la protéger ainsi que ses occupants avec une bonne assurance auto.</p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="col-xs-10 col-sm-6 col-md-4">
             <div class="feature">
               <div class="feature-title">
-                <img src="images/bancaire.png" alt="" class="icon">
-                <h3>Assurance Vie</h3>
+                <%= image_tag 'featured.jpg', style:'width:250px;height:400px' %>
               </div>
-              <p>Avec l'assurance vie AXA, nous vous proposons des solutions pour concrétiser ces  projets et avancer dans la vie. Prenons le temps de nous rencontrer pour en discuter !</p>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="col-xs-10 col-sm-6 col-md-4">
             <div class="feature">
               <div class="feature-title">
-                <img src="images/habitation.png" alt="" class="icon">
-                <h3>Assurance Habitation</h3>
+                <h3><span style="border-bottom: solid 5px red"><%= @campaigns.where(tag:true).first.name %></span></h3>
               </div>
-              <p>Maison à la campagne ou appartement citadin, votre logement, c'est votre cocon. Protéger votre domicile avec une assurance habitation qui vous ressemble, c’est essentiel !</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="feature">
-              <div class="feature-title">
-                <img src="images/maladie.png" alt="" class="icon">
-                <h3>Complémentaire santé</h3>
-              </div>
-              <p>En choisissant une assurance complémentaire, vous bénéficiez ainsi d’une meilleure prise en charge de votre santé, pour vous et votre famille.</p>
+              <p><%= @campaigns.where(tag:true).first.objectif %>.</p>
             </div>
           </div>
         </div>
