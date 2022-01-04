@@ -1,23 +1,86 @@
-<%# <div class="banner">
-</div> %>
-
-<div class="campagne-header container">
-  <div class="campagne-title">
-    <span>Production</span>
-    <h1> Projet ADCREW</h1>
+<%= content_for(:navbar_class, "main-sidebar-home") %>
+<div class="banner-talent">
+</div>
+<div class="container" style="margin: 50px 85px">
+  <h1 style="text-align:center">ADCREW c'est <span style="border-bottom: solid 5px red;width: 130px">une famille</span></h1>
+  <p style="margin-top: 20px;text-align:center">C'est l'histoire d'une agence de communication 3.0 qui a vu le jour en 2017 à l'instar de deux parisiennes, Jessica et Maud. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae iste nulla sint temporibus praesentium voluptate ipsum! Fugit repellendus voluptate commodi eos natus delectus quo illum, veritatis, praesentium ut perspiciatis. </p>
+</div>
+<div class="container grid-ceo" style="margin: 100px 85px">
+  <div class="image-ceo">
+    <%= image_tag 'featured.jpg', style:'width:500px' %>
   </div>
-  <div class="campagne-wording">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam ea recusandae neque? Optio consequatur omnis iste exercitationem vero nemo dignissimos cumque assumenda fugit sunt cum suscipit iure, cupiditate labore deserunt excepturi sapiente. Cum facere aspernatur laboriosam culpa quos, optio iste quae temporibus animi asperiores similique. Suscipit ea praesentium molestiae.</p>
-  </div>
-  <div class="line-campagnes"></div>
-  <div class="campaign-new">
-    <% if user_signed_in? %>
-      <%= link_to new_campaign_path do %>
-        <%= image_tag 'plus-front-premium.png', width: 30 %>
-      <% end %>
-    <% end %>
+  <div class="wording-ceo" style="padding-left:80px;padding-top:40px">
+    <h3 style="text-align:right"><span style="border-bottom: solid 5px red">Une histoire de femme</span></h3>
+    <p style="text-align:right">En fait... c'est d'abord une histoire de femmes, de femmes emtrepreneurs, passionnées de digitale qui se sont lancées à la conquête d'une nouvelle manière de communiquer.</p>
   </div>
 </div>
+
+<div class="container">
+  <h2 style="text-align:left;border-bottom: solid 5px red;width: 130px">La Team</h2>
+  <p style="text-align:left">L'ambiance chaleureuse de l'équipe, les valeurs auxquelles nous croyons et que nous défendons insufflent une énergie bienveillante et familiale à l'agence.</p>
+</div>
+
+<div class="banner">
+      <img src="images/axa-logo.png" alt="">
+      <h1>Vous venez d'être recruté chez AXA ?</h1>
+      <h2>Permettez-nous de prendre soin de vous !</h2>
+
+      <a class="typeform-share button" href="https://thanh818518.typeform.com/to/uxNbw1" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Je veux être contacté.e</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    </div>
+
+    <div class="features">
+      <h1>Nos solutions</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <div class="feature-title">
+                <img src="images/auto.png" alt="" class="icon">
+                <h3>Assurance Auto</h3>
+              </div>
+              <p>Dernier modèle ou vieille guimbarde, votre voiture est souvent comme votre seconde maison. Pensez à la protéger ainsi que ses occupants avec une bonne assurance auto.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <div class="feature-title">
+                <img src="images/bancaire.png" alt="" class="icon">
+                <h3>Assurance Vie</h3>
+              </div>
+              <p>Avec l'assurance vie AXA, nous vous proposons des solutions pour concrétiser ces  projets et avancer dans la vie. Prenons le temps de nous rencontrer pour en discuter !</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <div class="feature-title">
+                <img src="images/habitation.png" alt="" class="icon">
+                <h3>Assurance Habitation</h3>
+              </div>
+              <p>Maison à la campagne ou appartement citadin, votre logement, c'est votre cocon. Protéger votre domicile avec une assurance habitation qui vous ressemble, c’est essentiel !</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="feature">
+              <div class="feature-title">
+                <img src="images/maladie.png" alt="" class="icon">
+                <h3>Complémentaire santé</h3>
+              </div>
+              <p>En choisissant une assurance complémentaire, vous bénéficiez ainsi d’une meilleure prise en charge de votre santé, pour vous et votre famille.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <p>AXA Landing Page / 2019</p>
+      <ul class="social-icons">
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fas fa-envelope-open-text"></i></li>
+      </ul>
+    </div>
 
 
     <div class="container">
