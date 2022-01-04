@@ -25,7 +25,7 @@ import "bootstrap";
 import { previewImageOnFileSelect } from '../components/photo_preview';
 import { preview2ImageOnFileSelect } from '../components/photo_preview2';
 import { preview3ImageOnFileSelect } from '../components/photo_preview3';
-
+import { initSwiper } from '../components/initSwiper';
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -34,5 +34,6 @@ document.addEventListener('turbolinks:load', () => {
   previewImageOnFileSelect();
   preview2ImageOnFileSelect();
   preview3ImageOnFileSelect();
+  initSwiper();
 
 });
