@@ -2,16 +2,19 @@
 <div class="banner-talent">
 </div>
 <div class="container" style="margin: 50px 85px">
-  <h1 style="text-align:center">ADCREW c'est <span style="border-bottom: solid 5px red;width: 130px">une famille</span></h1>
+  <h1 style="text-align:center">ADCREW c'est <span style="border-bottom: solid 5px red;width: 130px">une agence qui produit</span></h1>
   <p style="margin-top: 20px;text-align:center">C'est l'histoire d'une agence de communication 3.0 qui a vu le jour en 2017 à l'instar de deux parisiennes, Jessica et Maud. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae iste nulla sint temporibus praesentium voluptate ipsum! Fugit repellendus voluptate commodi eos natus delectus quo illum, veritatis, praesentium ut perspiciatis. </p>
 </div>
-<div class="container grid-ceo" style="margin: 100px 85px">
-  <div class="image-ceo">
-    <%= image_tag 'featured.jpg', style:'width:500px' %>
+<div class="container grid-prod1">
+  <div class="image-prod1">
+    <%= image_tag 'featured.jpg', style:'height:300px' %>
+    <%= image_tag 'skaterboy.jpg', style:'height:300px' %>
   </div>
-  <div class="wording-ceo" style="padding-left:80px;padding-top:40px">
-    <h3 style="text-align:right"><span style="border-bottom: solid 5px red">Une histoire de femme</span></h3>
-    <p style="text-align:right">En fait... c'est d'abord une histoire de femmes, de femmes emtrepreneurs, passionnées de digitale qui se sont lancées à la conquête d'une nouvelle manière de communiquer.</p>
+  <div class="prod-title">
+    <h3><span style="border-bottom: solid 5px red"><%= @campaign.where(tag:true).first.name %></span></h3>
+  </div>
+  <div class="prod-description">
+    <p><%= @camapaign.where(tag:true).first.objectif %>.</p>
   </div>
 </div>
 
@@ -19,14 +22,6 @@
   <h2 style="text-align:left;border-bottom: solid 5px red;width: 130px">La Team</h2>
   <p style="text-align:left">L'ambiance chaleureuse de l'équipe, les valeurs auxquelles nous croyons et que nous défendons insufflent une énergie bienveillante et familiale à l'agence.</p>
 </div>
-
-<div class="banner">
-      <img src="images/axa-logo.png" alt="">
-      <h1>Vous venez d'être recruté chez AXA ?</h1>
-      <h2>Permettez-nous de prendre soin de vous !</h2>
-
-      <a class="typeform-share button" href="https://thanh818518.typeform.com/to/uxNbw1" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Je veux être contacté.e</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-    </div>
 
     <div class="features">
       <h1>Nos solutions</h1>
