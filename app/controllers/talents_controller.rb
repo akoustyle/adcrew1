@@ -48,6 +48,17 @@ class TalentsController < ApplicationController
     redirect_to talents_path
   end
 
+  # def scrape_youtube(keyword)
+  #   url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{keyword}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+  #   user_serialized = URI.open(url).read
+  #   user = JSON.parse(user_serialized)
+
+  #   puts user['items'].first['statistics']['subscriberCount']
+  #   # id=UCq5hh3lQDm41FrNchLBrJqw
+  #   # url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq5hh3lQDm41FrNchLBrJqw&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+  # end
+  #   # puts scrape_youtube('UCYfhRFzLInc3PPawJ3we0-w')
+
   private
 
   def talent_params
@@ -57,4 +68,5 @@ class TalentsController < ApplicationController
   def find_talent
     @talent = Talent.find(params[:id])
   end
+
 end

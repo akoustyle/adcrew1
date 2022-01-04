@@ -56,8 +56,8 @@ url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{keywo
 user_serialized = URI.open(url).read
 user = JSON.parse(user_serialized)
 
-puts "#{user['subscriber-count']} - #{user['videoCount']}"
+puts user['items'].first['statistics']['subscriberCount']
 # id=UCq5hh3lQDm41FrNchLBrJqw
 # url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq5hh3lQDm41FrNchLBrJqw&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
 end
-puts scrape_youtube(UCq5hh3lQDm41FrNchLBrJqw)
+puts scrape_youtube('UCYfhRFzLInc3PPawJ3we0-w')
