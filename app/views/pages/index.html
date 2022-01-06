@@ -1,0 +1,99 @@
+<%= content_for(:navbar_class, "main-sidebar-home" ) %>
+  <div class="banner-talent">
+  </div>
+  <div class="container" style="margin: 50px 85px">
+    <h1 style="text-align:center">ADCREW c'est <span style="border-bottom: solid 5px red;width: 130px">une agence qui
+        produit</span></h1>
+    <p style="margin-top: 20px;text-align:center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+      repudiandae iste nulla sint temporibus praesentium voluptate ipsum! Fugit repellendus voluptate commodi eos natus
+      delectus quo illum, veritatis, praesentium ut perspiciatis. </p>
+  </div>
+  <div class="container grid-prod1 mt-5 mb-5">
+    <div class="imageprod1">
+      <%= image_tag 'featured.jpg' , style:'height:100%;width:100%' %>
+    </div>
+    <div class="imageprod2">
+      <%= image_tag 'skaterboy.jpg' , style:'height:100%;width:100%' %>
+    </div>
+    <div class="prod-title">
+      <h3><span style="border-bottom: solid 5px red">
+          <%= @campaigns.where(tag:true).first.name %>
+        </span></h3>
+    </div>
+    <div class="prod-description">
+      <h4>Objectif<br>
+        <%= @campaigns.where(tag:true).first.objectif %>.
+      </h4>
+      <h4>Activation <br>
+        <%= @campaigns.where(tag:true).first.activation %>
+      </h4>.
+      <h4>Total reach <%= @campaigns.where(tag:true).first.reach %>M</h4>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="container">
+      <div class="row" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)">
+        <div class="col-xs-10 col-sm-6 col-md-4">
+          <div class="feature">
+            <div class="feature-title">
+              <%= cl_image_tag @campaigns.where(tag:true).second.photos.first.key, style:'width:250px;height:400px' %>
+                <%#= image_tag 'featured.jpg' , style:'width:250px;height:400px' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-4">
+          <div class="feature">
+            <div class="feature-title">
+              <%= cl_image_tag @campaigns.where(tag:true).second.photos.second.key, style:'width:250px;height:400px' %>
+                <%#= image_tag 'featured.jpg' , style:'width:250px;height:400px' %>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-4">
+          <div class="feature">
+            <div class="feature-title">
+              <h3><span style="border-bottom: solid 5px red;font-weight:bold">
+                  <%= @campaigns.where(tag:true).second.name %>
+                </span></h3>
+            </div>
+            <h4>
+              <%= @campaigns.where(tag:true).second.objectif %>.
+            </h4>
+            <h4>
+              <%= @campaigns.where(tag:true).second.activation %>.
+            </h4>
+            <h4>Total reach<%= @campaigns.where(tag:true).second.reach %>M</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <% @campaigns.where(tag:true).each do |campaign|%>
+          <div class="swiper-slide wagon-cards">
+            <div class="wagon-card"
+              style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
+              <%# <div class="tag">
+                <div class="campaign-tag"> %>
+                  <%= link_to campaign.name, campaign %>
+                    <%# </div>
+                      <div class="campaign-tag">
+                        <%# <i class="fas fa-map-marker-alt"></i>
+                          <%= Geocoder::Calculations.distance_between([@user_campaign.latitude,
+                            @user_campaign.longitude], [campaign.latitude,campaign.longitude]).truncate(1) %>
+                            <%# </div>
+                      </div> %>
+                </div>
+            </div>
+            <% end %>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div>
+    </div>
