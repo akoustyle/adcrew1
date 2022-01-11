@@ -52,10 +52,13 @@ require "json"
 # end
 
 def scrape_youtube(keyword)
+  #forge the url
 url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{keyword}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+# open the url
 user_serialized = URI.open(url).read
+# convert the response
 user = JSON.parse(user_serialized)
-
+# return the amount of followers
 puts user['items'].first['statistics']['subscriberCount']
 # id=UCq5hh3lQDm41FrNchLBrJqw
 # url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq5hh3lQDm41FrNchLBrJqw&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
