@@ -9,7 +9,7 @@
   <%# </video> %>
   <%= content_for(:navbar_class, "main-sidebar-home") %>
   <div class="video-banner">
-    <%= video_tag "video3.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
+    <%#= video_tag "video3.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
   </div>
 
     <div id="scrolling1"class="features container">
@@ -20,7 +20,7 @@
           <button class="btn-neumorphism"><%= link_to "En savoir plus", team_path %></button>
         </div>
         <div class="home-section-video">
-          <%= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
+          <%#= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
       <div class="wrapper-prod">
         <% @campaigns.first(4).each do |campaign|  %>
           <div class="card-prod">
-              <%= cl_image_tag campaign.photos.first.key %>
+              <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
             <div class="info">
               <h1><%= campaign.name %></h1>
               <p><%= campaign.objectif %></p>

@@ -54,8 +54,8 @@ ActiveRecord::Schema.define(version: 2021_12_24_135726) do
   end
 
   create_table "collabs", force: :cascade do |t|
-    t.bigint "talent_id", null: false
-    t.bigint "campaign_id", null: false
+    t.bigint "talent_id"
+    t.bigint "campaign_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["campaign_id"], name: "index_collabs_on_campaign_id"
