@@ -11,6 +11,7 @@ class TalentsController < ApplicationController
   end
 
   def show
+    # @talent.scrape_youtube
   end
 
   def new
