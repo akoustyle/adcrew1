@@ -26,6 +26,8 @@ import { previewImageOnFileSelect } from '../components/photo_preview';
 import { preview2ImageOnFileSelect } from '../components/photo_preview2';
 import { preview3ImageOnFileSelect } from '../components/photo_preview3';
 import { initSwiper } from '../components/initSwiper';
+import { initSidenav } from '../components/sidenav';
+import { initMouseTracking } from '../components/mouse_tracking';
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -35,5 +37,6 @@ document.addEventListener('turbolinks:load', () => {
   preview2ImageOnFileSelect();
   preview3ImageOnFileSelect();
   initSwiper();
-
+  initSidenav();
+  initMouseTracking();
 });

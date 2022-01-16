@@ -8,20 +8,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <!--swiper js -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%#= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%#= stylesheet_pack_tag 'application' %>
   </head>
 
   <body id="gradient">
@@ -32,17 +21,7 @@
         <%= yield %>
       </div>
     <%= render 'shared/footer' %>
-    <%#= render 'shared/footer' %>
-       <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+<!--
     <%# <script src="./javascript/slideshow.js"></script> %>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -63,68 +42,6 @@
             });
         });
     </script>
-    <%# <script>
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        slidesPerView: 4,
-        spaceBetween: 10,
-        // effect: "coverflow",
-        // grabCursor: true,
-        // centeredSlides: false,
-        // coverflowEffect: {
-        //   rotate: 50,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 1,
-        //   slideShadows: true,
-        // },
-        breakpoints: {
-        // when window width is >= 320px
-          320: {
-          slidesPerView: 1,
-          spaceBetween: 15
-          },
-        // when window width is >= 480px
-          480: {
-          slidesPerView: 2,
-          spaceBetween: 20
-          },
-        // when window width is >= 640px
-          840: {
-          slidesPerView: 3,
-          spaceBetween: 25
-          },
-        // when window width is >= 640px
-          1040: {
-          slidesPerView: 4,
-          spaceBetween: 30
-          }
-        },
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script> %>
-    <script>
-      function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main-sidebar").style.marginRigth = "250px";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main-sidebar").style.marginRigth= "0";
-      }
-    </script>
     <script>$(function() {
   $('a[href*=#]').on('click', function(e) {
     e.preventDefault();
@@ -139,21 +56,7 @@
 }
     </script>
     <script>
-      $(document).mousemove(function(event) {
-    windowWidth = $(window).width();
-    windowHeight = $(window).height();
 
-    mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-    mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-
-  $('.body').css('background', 'gradient(a ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
-});
-    </script>
-    <script>
-      $(".option").click(function(){
-   $(".option").removeClass("active");
-   $(this).addClass("active");
-    });
-    </script>
+    </script> -->
   </body>
 </html>
