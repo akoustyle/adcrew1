@@ -1,7 +1,7 @@
 import $ from "jquery";
 
-const initMouseTracking = () => {
-  $(document).mousemove((event) => {
+const initMouseTracking = ((event) => {
+  // $(document).mouseMove((event) => {
     const windowWidth = $(window).width();
     const windowHeight = $(window).height();
 
@@ -10,6 +10,5 @@ const initMouseTracking = () => {
 
     $('.body').css('background', 'gradient(a ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
   });
-}
 
 export { initMouseTracking };
