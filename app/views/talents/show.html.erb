@@ -13,7 +13,7 @@
       <span style="font-weigth: 200; font-style: italic;colro:white"><%= @talent.title %></span>
     </div>
     <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
-    <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
+    <div class="youtube" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
       <a href="#", target="_blank">
         <span><i class="fab fa-youtube-square"></i></span>
         <p style="color:white"><%= @talent.subscriber_count_youtube %> abonnés</p>
@@ -33,7 +33,25 @@
         <p style="color:white"><%= @talent.tiktok_link %> abonnés</p>
       </a>
     </div>
-    <div class="talent-about d-flex justify-content-space-evenly align-items-center" style="position:absolute;left:25px">
+    <div class="statistic d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; left: 0;">
+      <a href="#", target="_blank">
+        <span><i class="fab fa-sort-amount-up"></i></span>
+        <p style="color:white">Statistiques</p>
+      </a>
+    </div>
+    <div class="media d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; left: -100px;">
+      <a href="#", target="_blank">
+        <span><i class="fab fa-download"></i></span>
+        <p style="color:white">Media kit</p>
+      </a>
+    </div>
+    <div class="about d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; left: 0;">
+      <a href="#", target="_blank">
+        <span><i class="fab fa-user"></i></span>
+        <p style="color:white">A propos</p>
+      </a>
+    </div>
+    <%# <div class="talent-about d-flex justify-content-space-evenly align-items-center" style="position:absolute;left:25px">
         <div>
           About
         </div>
@@ -43,7 +61,7 @@
         <div>
           Statistic
         </div>
-    </div>
+    </div> %>
   </div>
 </div>
     <%# <div class="talents-tab">

@@ -19,7 +19,19 @@ class Talent < ApplicationRecord
     return user['items'].first['statistics']['subscriberCount']
     # id=UCq5hh3lQDm41FrNchLBrJqw
     # url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq5hh3lQDm41FrNchLBrJqw&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
-  end
+    end
+
+    # def subscriber_count_tiktok
+    #   return 0 if youtube_link.nil?
+
+    # url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{youtube_link}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+    # user_serialized = URI.open(url).read
+    # user = JSON.parse(user_serialized)
+
+    # return user['items'].first['statistics']['subscriberCount']
+    # # id=UCq5hh3lQDm41FrNchLBrJqw
+    # # url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCq5hh3lQDm41FrNchLBrJqw&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+    # end
 
 
     # puts scrape_youtube('UCYfhRFzLInc3PPawJ3we0-w')
