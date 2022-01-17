@@ -13,44 +13,44 @@
       <span style="font-weigth: 200; font-style: italic;colro:white"><%= @talent.title %></span>
     </div>
     <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
-    <div class="youtube" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
-      <a href="#", target="_blank">
-        <span><i class="fab fa-youtube-square"></i></span>
-        <p style="color:white"><%= @talent.subscriber_count_youtube %> abonnés</p>
-      </a>
-    </div>
+    <a href="#", target="_blank">
+      <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
+        <span><i class="fab fa-youtube"></i></span>
+        <p style="color:white;margin-left:10px"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+      </div>
+    </a>
 
-    <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; right: -140px;">
-      <a href="#", target="_blank">
+    <a href="#", target="_blank">
+      <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; right: -140px;">
         <span><i class="fab fa-instagram"></i></span>
-        <p style="color:white"><%= @talent.insta_link %> abonnés</p>
-      </a>
-    </div>
+        <p style="color:white;margin-left:10px"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+      </div>
+    </a>
 
-    <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; right: -79px;">
-      <a href="#", target="_blank">
+    <a href="#", target="_blank">
+      <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; right: -79px;">
         <span><i class="fab fa-tiktok"></i></span>
-        <p style="color:white"><%= @talent.tiktok_link %> abonnés</p>
-      </a>
-    </div>
-    <div class="statistic d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; left: 0;">
-      <a href="#", target="_blank">
-        <span><i class="fab fa-sort-amount-up"></i></span>
-        <p style="color:white">Statistiques</p>
-      </a>
-    </div>
-    <div class="media d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; left: -100px;">
-      <a href="#", target="_blank">
-        <span><i class="fab fa-download"></i></span>
-        <p style="color:white">Media kit</p>
-      </a>
-    </div>
-    <div class="about d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; left: 0;">
-      <a href="#", target="_blank">
-        <span><i class="fab fa-user"></i></span>
-        <p style="color:white">A propos</p>
-      </a>
-    </div>
+        <p style="color:white;margin-left:10px"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+      </div>
+    </a>
+    <a href="#", target="_blank">
+      <div class="statistic d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; left: 0;">
+        <span><i class="fas fa-chart-pie"></i></span>
+        <p style="color:white;margin-left:10px">Statistiques</p>
+      </div>
+    </a>
+    <a href="#", target="_blank">
+      <div class="media d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; left: -100px;">
+        <span><i class="fas fa-download"></i></span>
+        <p style="color:white;margin-left:10px">Media kit</p>
+      </div>
+    </a>
+    <a href="#", target="_blank">
+      <div class="about d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; left: -13px;">
+        <span><i class="fas fa-user"></i></span>
+        <p style="color:white;margin-left:10px">A propos</p>
+      </div>
+    </a>
     <%# <div class="talent-about d-flex justify-content-space-evenly align-items-center" style="position:absolute;left:25px">
         <div>
           About
