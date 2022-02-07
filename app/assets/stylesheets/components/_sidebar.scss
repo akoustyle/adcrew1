@@ -50,6 +50,7 @@
 .main-sidebar {
   transition: margin-left .5s;
   padding: 16px;
+  margin-top: -20px;
   display: flex;
   justify-content:space-between;
   overflow-y: scroll;
@@ -64,6 +65,7 @@
   // background: #E94740;
   // opacity: 0.95;
 }
+
 .main-sidebar-home {
   transition: margin-left .5s;
   padding: 16px;

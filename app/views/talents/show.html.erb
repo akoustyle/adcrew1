@@ -45,23 +45,30 @@
         <p style="color:white;margin-left:10px">Media kit</p>
       </div>
     </a>
-    <a href="#", target="_blank">
-      <div class="about d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; left: -13px;">
+    <!-- Button trigger modal -->
+      <div class="about d-flex" data-toggle="modal" data-target="#exampleModalLong" style="width: 150px; height: 50px; position: absolute;top: 420px; left: -13px;">
         <span><i class="fas fa-user"></i></span>
         <p style="color:white;margin-left:10px">A propos</p>
       </div>
-    </a>
-    <%# <div class="talent-about d-flex justify-content-space-evenly align-items-center" style="position:absolute;left:25px">
-        <div>
-          About
-        </div>
-        <div>
-          Media kit
-        </div>
-        <div>
-          Statistic
-        </div>
-    </div> %>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><%= @talent.name%></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, praesentium necessitatibus. Ullam, consequatur tenetur. Unde consequatur qui vero debitis. Iusto nemo dolorum nostrum expedita modi molestias quos rem, cum et.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
     <%# <div class="talents-tab">
