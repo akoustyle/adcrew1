@@ -2,7 +2,9 @@
 <div class="container d-flex justify-content-space-between align-items-center" style="width: 100vw;margin-bottom: 50px;" >
     <%# @talent.photos.each do |photo| %>
         <div style="width: 500px; heigth: auto">
-          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto;margin-left:-50px;margin-right:150px', controls: '', muted: :muted) %>
+          <% if @talent.video.attached? %>
+            <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto;margin-left:-50px;margin-right:150px', controls: '', muted: :muted) %>
+          <% end %>
         </div>
 		<%# end %>
 
@@ -12,7 +14,9 @@
       <span style="font-weight: bold; font-family: Sketchalot"><%= @talent.name %></span><br>
       <span style="font-weigth: 200; font-style: italic;colro:white"><%= @talent.title %></span>
     </div>
-    <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
+    <% if @talent.photos.attached? %>
+      <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
+    <% end %>
     <a href="#", target="_blank">
       <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
         <span><i class="fab fa-youtube"></i></span>
