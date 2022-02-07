@@ -15,6 +15,18 @@ const initSwiper = () => {
         //   modifier: 1,
         //   slideShadows: true,
         // },
+         autoplay: {
+          delay: 500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         breakpoints: {
         // when window width is >= 320px
           320: {
@@ -36,18 +48,6 @@ const initSwiper = () => {
           slidesPerView: 4,
           spaceBetween: 30
           }
-        },
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
         },
       });
 }

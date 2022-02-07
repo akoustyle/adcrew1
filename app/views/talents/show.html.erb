@@ -2,7 +2,7 @@
 <div class="container d-flex justify-content-space-between align-items-center" style="width: 100vw;margin-bottom: 50px;" >
     <%# @talent.photos.each do |photo| %>
         <div style="width: 500px; heigth: auto">
-          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto;margin-left:-50px;margin-right:150px', controls: '', autoplay: :autoplay, muted: :muted) %>
+          <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto;margin-left:-50px;margin-right:150px', controls: '', muted: :muted) %>
         </div>
 		<%# end %>
 

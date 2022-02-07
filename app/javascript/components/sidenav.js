@@ -4,6 +4,7 @@ const initSidenav = () => {
     openButton.addEventListener('click', () => {
       document.getElementById("mySidebar").style.width = "250px";
       document.querySelector(".main-sidebar").style.marginRigth = "250px";
+      // document.querySelector("main-container").style.opacity = "0.1";
     })
   }
 
