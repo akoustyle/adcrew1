@@ -22,18 +22,20 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <% @campaigns.each do |campaign|%>
-            <div class="swiper-slide wagon-cards">
-              <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-                <%# <div class="tag">
-                  <div class="campaign-tag"> %>
-                    <%= link_to campaign.name, campaign %>
-                  <%# </div>
-                  <div class="campaign-tag">
-                    <%# <i class="fas fa-map-marker-alt"></i><%= Geocoder::Calculations.distance_between([@user_campaign.latitude, @user_campaign.longitude], [campaign.latitude,campaign.longitude]).truncate(1) %>
-                  <%# </div>
-                </div> %>
+            <%#= link_to campaign do  %>
+              <div class="swiper-slide wagon-cards">
+                <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
+                  <%# <div class="tag">
+                    <div class="campaign-tag"> %>
+                      <%= link_to campaign.name, campaign %>
+                    <%# </div>
+                    <div class="campaign-tag">
+                      <%# <i class="fas fa-map-marker-alt"></i><%= Geocoder::Calculations.distance_between([@user_campaign.latitude, @user_campaign.longitude], [campaign.latitude,campaign.longitude]).truncate(1) %>
+                    <%# </div>
+                 </div> %>
+                </div>
               </div>
-            </div>
+            <%# end %>
           <% end %>
         </div>
         <div class="swiper-button-next"></div>

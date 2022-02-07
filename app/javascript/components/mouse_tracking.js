@@ -1,14 +1,16 @@
-import $ from "jquery";
+// import $ from "jquery";
 
-const initMouseTracking = ((event) => {
-  // $(document).mouseMove((event) => {
-    const windowWidth = $(window).width();
-    const windowHeight = $(window).height();
+// // fonction mouse move with add-listenerd
+// const initMouseTracking = ((event) => {
+//   // $(document).mouseMove((event) => {
 
-    const mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-    const mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+//     const windowWidth = $(window).width();
+//     const windowHeight = $(window).height();
 
-    $('.body').css('background', 'gradient(a ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
-  });
+//     const mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+//     const mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
 
-export { initMouseTracking };
+//     $('.body').css('background', 'gradient(a ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
+//   });
+
+// export { initMouseTracking };

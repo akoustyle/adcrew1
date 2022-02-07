@@ -1,62 +1,75 @@
 
-<div id="mainHeader"></div><!-- Ici se termine le mainHeader-->
-<section id="pageContent">
+<%# <div id="mainHeader"></div><!-- Ici se termine le mainHeader--> %>
+<%# <section id="pageContent">
   <div id="grid-campaign">
     <div class="bottom-photo3" style="height: 250px">
       <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%;width:100%"%>
-    </div>
+    <%# </div>
     <div class="campaign-title">
       <h3><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.name %></span></h3>
-    </div>
+    <%# </div>
     <div class="campaign-reach">
-      <h3>Total reach <span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.reach %>M</span></h3>
-    </div>
+      <h3>Total reach <span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.reach %></span></h3>
+    <%# </div>
     <div class="campaign-objectif">
       <p><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.objectif %></span></p>
-    </div>
+    <%# </div>
     <div class="bottom-photo1" style="height: 250px">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
-    </div>
+    <%# </div>
     <div class="bottom-photo2" style="height: 250px">
       <%= cl_image_tag @campaign.photos.fourth.key, style: "height: 100%;width:100%" %>
-    </div>
+    <%# </div>
     <div class="mid-photo">
       <%= cl_image_tag @campaign.photos.third.key, style: "height: 100%;width:100%" %>
-    </div>
+    <%# </div>
     <div class="polaroid" style="height:200px; width: 200px">
       <%= cl_image_tag @campaign.photos.last.key, style: "height: 100%; width: 100%" %>
+    <%# </div>
+  </div>
+</section><!--Ici se termine le pageContent--> %>
+<%# <div id="mainFooter"></div><!--Ici se termine le mainFooter--> %>
+<!---Ici commence le deuxieme grid layout for campaigns-->
+<div class="container">
+  <div id="pageContent">
+    <div class="container">
+      <div class="grid-layout">
+        <div class="grid__item a" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.fourth.key) : asset_path('background.jpeg') %>)"><div class=""></div>...</div>
+      <div class="grid__item b" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.third.key) : asset_path('background.jpeg') %>)"><div class=""></div><h6>Total reach <span style="font-weight: bold;color:white; font-family: Sketchalot"><%= number_to_human(@campaign.reach, presicion: 2, seprarator: ',', siginficant: false) %></span></h6></div>
+      <div class="grid__item c"><div class="" ></div><span style="font-weight: bold;color:white; font-family: Sketchalot"><%= @campaign.name %></span></div>
+      <div class="grid__item d" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.second.key) : asset_path('background.jpeg') %>)"><div class=""></div>...</div>
+      <div class="grid__item e"><div class=""></div></div>
+      </div>
     </div>
   </div>
-</section><!--Ici se termine le pageContent-->
-<div id="mainFooter"></div><!--Ici se termine le mainFooter-->
-
-<!--Ici commmence le grid des campagnes-->
-<div>
-  <div class="col-md-6 col-md-offset-3">
-    <div class="panel panel-default">
-      <div class="panel heading campaign_image center">
-        <%#= image_tag @campaign.image.url(:medium) %>
-      </div>
-      <div class="panel-footer">
-        <div class="row">
-          <div class="col md-6">
-            <div class="btn-group" style="display: flex;justify-content: space-evenly">
-              <% if user_signed_in? %>
-              <div>
-                  <%= link_to edit_campaign_path do %>
-                    <%= image_tag 'pencil-front-premium.png', width: 30 %>
+  <!--Ici se termine le deuxieme grid layout des campagnes-->
+  <div>
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+        <div class="panel heading campaign_image center">
+          <%#= image_tag @campaign.image.url(:medium) %>
+        </div>
+        <div class="panel-footer">
+          <div class="row">
+            <div class="col md-6">
+              <div class="btn-group" style="display: flex;justify-content: space-evenly">
+                <% if user_signed_in? %>
+                <div>
+                    <%= link_to edit_campaign_path do %>
+                      <%= image_tag 'pencil-front-premium.png', width: 30 %>
+                    <% end %>
+                </div>
+                <div>
+                  <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
+                    <%= image_tag 'trash-can-front-premium.png', width: 30 %>
                   <% end %>
-              </div>
-              <div>
-                <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
-                  <%= image_tag 'trash-can-front-premium.png', width: 30 %>
+                </div>
                 <% end %>
-              </div>
-              <% end %>
-              <div>
-                <%#= link_to campaigns_path do %>
-                  <%#= image_tag 'back-front-premium.png', width: 30 %>
-                <%# end %>
+                <div>
+                  <%= link_to campaigns_path do %>
+                    <%= image_tag 'back-front-premium.png', width: 30 %>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>
