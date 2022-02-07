@@ -22,6 +22,32 @@
   transition: 0.3s;
 }
 
+
+//////////////NAVBAR//////////////
+
+.navbar {
+  padding: 0.5rem 40px !important;
+}
+
+.logo {
+  font-family: $text-font;
+  color: $red;
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); 
+  & span {
+    font-weight: 300;
+  }
+}
+
+.openbtn {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  &:hover {
+    color: $red;
+  }
+}
+
+
 .sidebar a:hover {
   color: #f1f1f1;
 }
@@ -34,57 +60,44 @@
   margin-right: 50px;
 }
 
-.openbtn {
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  background: transparent !important;
-}
+// .main-sidebar {
+//   transition: margin-left .5s;
+//   padding: 16px;
+//   margin-top: -20px;
+//   display: flex;
+//   justify-content:space-between;
+//   overflow-y: scroll;
+//   background-color: transparent;
+//   // width: 250px;
+//   // position: fixed;
+//   // top: 0;
+//   // color:white;
+//   // right: -250px;
+//   // height: 100vh;
+//   z-index: 999;
+//   // background: #E94740;
+//   // opacity: 0.95;
+// }
 
-.openbtn:hover {
-  color: rgb(61, 1, 1);
-}
-
-.main-sidebar {
-  transition: margin-left .5s;
-  padding: 16px;
-  margin-top: -20px;
-  display: flex;
-  justify-content:space-between;
-  overflow-y: scroll;
-  background-color: transparent;
-  // width: 250px;
-  // position: fixed;
-  // top: 0;
-  // color:white;
-  // right: -250px;
-  // height: 100vh;
-  z-index: 999;
-  // background: #E94740;
-  // opacity: 0.95;
-}
-
-.main-sidebar-home {
-  transition: margin-left .5s;
-  padding: 16px;
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content:space-between;
-  overflow-y: scroll;
-  background-color: transparent;
-  // width: 250px;
-  // position: fixed;
-  // top: 0;
-  // color:white;
-  // right: -250px;
-  // height: 100vh;
-  // z-index: 999;
-  // background: #E94740;
-  // opacity: 0.95;
-}
+// .main-sidebar-home {
+//   transition: margin-left .5s;
+//   padding: 16px;
+//   position: fixed;
+//   width: 100%;
+//   display: flex;
+//   justify-content:space-between;
+//   overflow-y: scroll;
+//   background-color: transparent;
+//   // width: 250px;
+//   // position: fixed;
+//   // top: 0;
+//   // color:white;
+//   // right: -250px;
+//   // height: 100vh;
+//   // z-index: 999;
+//   // background: #E94740;
+//   // opacity: 0.95;
+// }
 .sidebar-header h3 {
   color:white;
   font-weight: 600;
