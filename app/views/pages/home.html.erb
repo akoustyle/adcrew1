@@ -1,14 +1,33 @@
-
 <body>
-  <%# <div class="banner">
-    <section id="section10" class="demo">
-      <a href="#scrolling1"><span></span>Scroll</a>
+
+<div class="scroll">
+  <div class="smooth">
+    <section id="home">
+      <div class="scroll video-banner">
+          <div class="banner-icons">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
     </section>
-  </div> %>
-  <%# <video  controls class="media-object" alt="Banner-video" <%= image_tag "video1.mp4"%>
-  <%# </video> %>
-  <%= content_for(:navbar_class, "main-sidebar-home") %>
-  <div class="video-banner">
+    <section id="about">
+      <h2>Section about</h2>
+    </section>
+    <section id="price">
+      <h2>Section price</h2>
+    </section>
+    <section id="contact">
+      <h2>Section contact</h2>
+    </section>
+  </div>
+</div>
+
+  <%#= content_for(:navbar_class, "main-sidebar-home") %>
+
+<!--   <div class="scroll video-banner">
     <%= image_tag "https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", style: "filter: grayscale(100%);" %>
     <div class="banner-icons">
       <ul class="social-icons">
@@ -19,50 +38,37 @@
     </div>
   </div>
 
-    <div id="scrolling1"class="features container">
-      <div class="container-home">
-        <div class="home-section">
-          <h2>Qui sommes-nous?</h2>
-          <span style="text-align:left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam corporis ipsa, ipsum doloremque ab pariatur repellendus recusandae culpa animi.</span>
-          <button class="btn-neumorphism"><%= link_to "En savoir plus", team_path %></button>
-        </div>
-        <div class="home-section-video">
-          <%#= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
-        </div>
+  <div id="scrolling1"class="features container">
+    <div class="container-home">
+      <div class="home-section">
+        <h2>Qui sommes-nous?</h2>
+        <span style="text-align:left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam corporis ipsa, ipsum doloremque ab pariatur repellendus recusandae culpa animi.</span>
+        <button class="btn-neumorphism"><%= link_to "En savoir plus", team_path %></button>
+      </div>
+      <div class="home-section-video">
+        <%#= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
       </div>
     </div>
-    <div class="mb-5 text-center" style="margin-top:100px">
-      <h2 data-animate="fadeInUp" class="title">Nos campagnes AD CREW</h2>
-        <p data-animate="fadeInUp" class="lead">We have worked on dozens of projects so we have picked only the latest for you.</p>
-    </div>
-    <div class="container">
-      <div class="wrapper-prod">
-        <% @campaigns.first(4).each do |campaign|  %>
-          <div class="card-prod">
-              <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
-            <div class="info">
-              <h1><%= campaign.name %></h1>
-              <p><%= campaign.objectif %></p>
-              <button><%= link_to "Read more", campaign %></button>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
-    <%# <div class="features">
-      <h1>Nos Campagnes</h1>
+  </div>
 
-      <div class="container2">
-        <div class="campagnes-home">
-          <h2>Studio</h2>
-          <h3>Nos Campagnes AD CREW</h3>
+  <div class="mb-5 text-center" style="margin-top:100px">
+    <h2 data-animate="fadeInUp" class="title">Nos campagnes AD CREW</h2>
+      <p data-animate="fadeInUp" class="lead">We have worked on dozens of projects so we have picked only the latest for you.</p>
+  </div>
+
+  <div class="container">
+    <div class="wrapper-prod">
+      <% @campaigns.first(4).each do |campaign|  %>
+        <div class="card-prod">
+            <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
+          <div class="info">
+            <h1><%= campaign.name %></h1>
+            <p><%= campaign.objectif %></p>
+            <button><%= link_to "Read more", campaign %></button>
+          </div>
         </div>
-        <div class="campagne-image">
-          <%= image_tag('camp1.png') %>
-          <%#= image_tag('camp2.png') %>
-          <%#= image_tag('camp3.png') %>
-        <%# </div>
-      </div>
-    </div> %>
+      <% end %>
+    </div>
+  </div> -->
 
 </body>

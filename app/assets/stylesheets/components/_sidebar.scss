@@ -1,28 +1,3 @@
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  right: 0;
-  background: transparent;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  opacity: 0.99;
-}
-
-.sidebar a {
-  padding: 0 8px 0 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-
 //////////////NAVBAR//////////////
 
 .navbar {
@@ -47,18 +22,72 @@
   }
 }
 
+//////////////SIDEBAR//////////////
 
-.sidebar a:hover {
-  color: #f1f1f1;
+// .sidebar {
+//   display: none;
+//   backdrop-filter: blur(0px);
+// }
+
+.sidebar {
+  display: none;
 }
 
-.sidebar .closebtn {
-  position: absolute;
+.sidebar.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  // width: 100vw;
+
+  position: fixed;
+  z-index: 9999;
   top: 0;
-  left: 25px;
-  font-size: 36px;
-  margin-right: 50px;
+  right: 0;
+  overflow-x: hidden;
+
+  background: transparent;
+  animation: 0.3s blur forwards;
+
+  & .navbar .closebtn {
+    padding: 5px 15px;
+  }
 }
+
+@keyframes blur { 
+  from { 
+    backdrop-filter: blur(1px);
+  } 
+  to { 
+    backdrop-filter: blur(15px);
+  } 
+}
+
+.sidebar ul {
+  padding: 0;
+  & li {
+    list-style: none;
+    text-decoration: none;
+  }
+}
+
+.closebtn {
+  font-size: 38px;
+  color: white;
+  &:hover {
+    color: $red;
+  }
+}
+
+.sidebar .side-links a {
+  color: white;
+  font-family: $text-font;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
 
 // .main-sidebar {
 //   transition: margin-left .5s;
@@ -98,17 +127,17 @@
 //   // background: #E94740;
 //   // opacity: 0.95;
 // }
-.sidebar-header h3 {
-  color:white;
-  font-weight: 600;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 20px;
-}
-.sidebar-header p {
-  color:white;
-  font-weight: 100;
-  padding: 20px;
-}
+// .sidebar-header h3 {
+//   color:white;
+//   font-weight: 600;
+//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+//   padding: 20px;
+// }
+// .sidebar-header p {
+//   color:white;
+//   font-weight: 100;
+//   padding: 20px;
+// }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
