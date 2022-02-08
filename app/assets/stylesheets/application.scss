@@ -16,3 +16,20 @@
 html, body, a, h1, h2, h3, p, a:hover {
 	cursor: crosshair !important;
 }
+
+h1 {
+	font-family: $header-font;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 2;
+	font-family: $header-font;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 300;
+	font-family: $text-font;
+}

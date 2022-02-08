@@ -4,6 +4,8 @@
   <div class="smooth">
     <section id="home">
       <div class="scroll video-banner">
+          <div class="background">
+          </div>
           <div class="banner-icons">
             <ul class="social-icons">
               <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -11,16 +13,43 @@
               <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
-        </div>
+      </div>
     </section>
     <section id="about">
-      <h2>Section about</h2>
+      <div class="content">
+        <div class="text-content">
+          <h2>L'AGENCE</h2>
+          <p>
+            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs. L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
+          </p>
+          <a href="#">En savoir plus</a>
+        </div>
+      </div>
+      <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
     </section>
-    <section id="price">
-      <h2>Section price</h2>
+    <section id="campaign">
+      <div class="mb-5 text-center" style="margin-top:100px">
+        <h2>NOS CAMPAGNES</h2>
+        <p>
+          We have worked on dozens of projects so we have picked only the latest for you.
+        </p>
+        <div class="wrapper-prod">
+          <% @campaigns.first(4).each do |campaign|  %>
+            <div class="card-prod">
+                <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
+              <div class="info">
+                <h1><%= campaign.name %></h1>
+                <p><%= campaign.objectif %></p>
+                <button><%= link_to "Read more", campaign %></button>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </section>
     <section id="contact">
       <h2>Section contact</h2>
+      <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
     </section>
   </div>
 </div>
