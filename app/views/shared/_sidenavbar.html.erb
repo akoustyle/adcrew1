@@ -9,17 +9,20 @@
   </div>
 
   <div id="mySidebar" class="sidebar">
-    <div class="sidebar-header">
-      <h3>Coucou</h3>
-      <p>INFLUENCE & STRATEGY 360</p>
-    </div>
+    <div class="main-sidebar navbar fixed-top">
+      <div class="logo">
+        <%= link_to root_path do %>
+          <h1 class="logo">AD<span>CREW</span></h1>
+        <% end %>
+      </div>
+      <a class="closebtn">&times;</a>
+    </div> 
 
-    <a class="closebtn">&times;</a>
-    <a href="#"> <%= link_to "ADCREW", root_path %></a>
-    <a href="#"> <%= link_to "Prod", prod_path  %></a>
-    <a href="#"> <%= link_to "Talents", talents_path  %></a>
-    <a href="#"><%= link_to "Campagnes", campaigns_path %></a>
-    <a href="#"><%= link_to "Team", team_path %></a>
-    <a href="#"> <%= link_to "Contact", contact_path %> </a>
+    <ul class="side-links">
+      <li> <%= link_to "Prod", prod_path %></li>
+      <li> <%= link_to "Talents", talents_path %></li>
+      <li> <%= link_to "Campagnes", campaigns_path %></li>
+      <li> <%= link_to "Team", team_path %></li>
+      <li> <%= link_to "Contact", contact_path %></li>
+    </ul>
   </div>
-
