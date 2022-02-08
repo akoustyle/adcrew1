@@ -33,3 +33,28 @@ p {
 	font-weight: 300;
 	font-family: $text-font;
 }
+
+.main-background {
+  position: absolute;
+  animation: 30s movingBG infinite;
+  filter: url('#red-sunset');
+  filter: blur(50px);
+  width: 70%;
+  z-index: -1000;
+  opacity: 0.5;
+}
+
+@keyframes movingBG { 
+  from { 
+    top: 500px;
+    right: 0px;
+  } 
+  50% {
+  	top: 200px;
+    right: 100px;
+  }
+  to { 
+    top: 500px;
+    right: 0px;
+  } 
+}

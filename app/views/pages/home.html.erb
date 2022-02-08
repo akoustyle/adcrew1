@@ -85,8 +85,6 @@
 
     <% talent_array = ["https://images.unsplash.com/photo-1643522041917-738fe312d5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1597253702831-d6a6d0be4f21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1553544260-f87e671974ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1568306281824-7afe898030d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1590919549124-c0721c146191?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIwfHxmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1597196526281-fe4861daa915?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI4fHxmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1540827109409-17f40944f276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMxfHxmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1534481909716-9a482087f27d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMG1hbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbiUyMG1hbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1535530705774-695729778c55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZhc2hpb24lMjBtYWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"] %>
 
-    <% raise %>
-
     <section id="talent">
 
       <div class="content">
@@ -100,12 +98,12 @@
       </div>
       <div class="content">
         <div class="img-wrapper">
-          <img src=<%= talent_array.sample %>, alt="">
+          <div class="gif-talent" id="gif-one"></div>
           <p class="note">
             Lorem ipsum dolor sit amet consectetur adipisicing, elit. Iure consequatur tempore, alias maxime totam ipsa praesentium quaerat velit voluptatem numquam ex soluta sint officia? Possimus <span> nemo pariatur </span> aperiam, tenetur velit! Repudiandae natus quod alias facilis dignissimos esse repellendus accusantium nobis eius! Sit alias dolor ipsam minus deserunt esse, nemo!
           </p>
-          <img src=<%= talent_array.sample %>, alt="">
-          <img src=<%= talent_array.sample %>, alt="">
+          <div class="gif-talent" id="gif-two"></div>
+          <div class="gif-talent" id="gif-three"></div>
           <div class="rounded-shape">
           </div>
         </div>

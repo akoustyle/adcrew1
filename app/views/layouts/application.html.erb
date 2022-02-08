@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ADCREW | INFLUENCE & STRATEGY</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="AD CREW est une agence parisienne spécialisée dans le marketing d’influence.">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <!-- Facebook Open graph data-->
-    <meta property="og:title" content="ADCREW | INFLUENCE & STRATEGY">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.adcrew-paris.com">
-    <meta property="og:image" content="http://www.portfolio-oneal.me/app/assets/images/logo.png">
-    <meta property="og:description"
-      content="Hello I am Oneal, I am a Web developper, catch up if you have something digital in mind!!">
-    <meta property="og:site_name" content="ADCREW | INFLUENCE & STRATEGY">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="57x57" href="app/assests/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="app/assets/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="app/assets/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="app/assets/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="app/assets/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="app/assets/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="app/assets/images/logo-tag.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="app/assets/images/logo-tag.png">
-    <link rel="icon"  type="image/png" sizes="32x32" href="app/assets/images/logo-tag.png">
-    <link rel="icon"  type="image/png" sizes="96x96" href="app/assets/images/logo-tag.png">
-    <link rel="icon"  type="image/png" sizes="16x16" href="app/assets/images/logo-tag.png">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <%#= stylesheet_pack_tag 'application' %>
-  </head>
+    <head>
+        <title>ADCREW | INFLUENCE & STRATEGY</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="AD CREW est une agence parisienne spécialisée dans le marketing d’influence.">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <!-- Facebook Open graph data-->
+        <meta property="og:title" content="ADCREW | INFLUENCE & STRATEGY">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.adcrew-paris.com">
+        <meta property="og:image" content="http://www.portfolio-oneal.me/app/assets/images/logo.png">
+        <meta property="og:description"
+          content="Hello I am Oneal, I am a Web developper, catch up if you have something digital in mind!!">
+        <meta property="og:site_name" content="ADCREW | INFLUENCE & STRATEGY">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="apple-touch-icon" sizes="57x57" href="app/assests/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="app/assets/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="app/assets/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="app/assets/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="app/assets/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="app/assets/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="app/assets/images/logo-tag.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="app/assets/images/logo-tag.png">
+        <link rel="icon"  type="image/png" sizes="32x32" href="app/assets/images/logo-tag.png">
+        <link rel="icon"  type="image/png" sizes="96x96" href="app/assets/images/logo-tag.png">
+        <link rel="icon"  type="image/png" sizes="16x16" href="app/assets/images/logo-tag.png">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+        <%#= stylesheet_pack_tag 'application' %>
+    </head>
 
-  <body id="gradient">
-    <%= render 'shared/sidenavbar' %>
-      <div class="main-container">
-        <p class="notice" style="position:absolute"><%= notice %></p>
-        <p class="alert" style="position:absolute"><%= alert %></p>
-        <%= yield %>
-      </div>
-    <%= render 'shared/final-footer' %>
-<!--
+    <body id="gradient">
+        <img src="https://global-uploads.webflow.com/5e3396fc2524a2846621fa7d/5e52de113373091cf7f68abc_gradient-4.png" class="main-background"/>
+        <%= render 'shared/sidenavbar' %>
+        <div class="main-container">
+            <p class="notice" style="position:absolute"><%= notice %></p>
+            <p class="alert" style="position:absolute"><%= alert %></p>
+            <%= yield %>
+         </div>
+        <%= render 'shared/final-footer' %>
+    <!--
     <%# <script src="./javascript/slideshow.js"></script> %>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -66,20 +67,20 @@
         });
     </script>
     <script>$(function() {
-  $('a[href*=#]').on('click', function(e) {
+    $('a[href*=#]').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});</script>
+    });
+    });</script>
     <script>
     const dates = document.querySelectorAll('.shop')
 
     for(let i = 0; i < dates.length; i++) {
     dates[i].innerHTML = "Shop"
-}
+    }
     </script>
     <script>
 
     </script> -->
-  </body>
+    </body>
 </html>
