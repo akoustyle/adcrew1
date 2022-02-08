@@ -25,7 +25,7 @@
           <a href="#">En savoir plus</a>
         </div>
       </div>
-      <%= image_tag "https://source.unsplash.com/1600x900/?agency", alt: "alttext" %>
+      <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
     </section>
 <!--     <section id="campaign">
       <div class="content">
@@ -58,7 +58,7 @@
         </div>
       </div>
     </section> -->
-    <section id="team">
+    <section id="campaign">
       <div class="content">
         <div class="text-content">
           <a href="#">Découvrir nos campagnes</a>
@@ -82,11 +82,17 @@
         </div>
       </div>
     </section>
-    <section id="team">
+
+    <% talent_array = ["https://images.unsplash.com/photo-1643522041917-738fe312d5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1597253702831-d6a6d0be4f21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1553544260-f87e671974ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1568306281824-7afe898030d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODR8fGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1590919549124-c0721c146191?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTIwfHxmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1597196526281-fe4861daa915?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI4fHxmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1540827109409-17f40944f276?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMxfHxmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1534481909716-9a482087f27d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbiUyMG1hbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbiUyMG1hbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60", "https://images.unsplash.com/photo-1535530705774-695729778c55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGZhc2hpb24lMjBtYWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"] %>
+
+    <% raise %>
+
+    <section id="talent">
+
       <div class="content">
         <div class="text-content">
-          <a href="#">Découvrir nos campagnes</a>
-          <h2>NOS VALEURS</h2>
+          <a href="#">Découvrir nos talents</a>
+          <h2>NOS TALENTS</h2>
           <p class="pt-3">
             AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
           </p>
@@ -94,28 +100,28 @@
       </div>
       <div class="content">
         <div class="img-wrapper">
-          <%= image_tag "https://source.unsplash.com/1600x900/?cosmetics", alt: "alttext" %>
+          <img src=<%= talent_array.sample %>, alt="">
           <p class="note">
             Lorem ipsum dolor sit amet consectetur adipisicing, elit. Iure consequatur tempore, alias maxime totam ipsa praesentium quaerat velit voluptatem numquam ex soluta sint officia? Possimus <span> nemo pariatur </span> aperiam, tenetur velit! Repudiandae natus quod alias facilis dignissimos esse repellendus accusantium nobis eius! Sit alias dolor ipsam minus deserunt esse, nemo!
           </p>
-          <%= image_tag "https://images.unsplash.com/photo-1570431309787-5874f7dd7593?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDMyNTYwMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
-          <%= image_tag "https://images.unsplash.com/photo-1583900985737-6d0495555783?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWx8fHx8fHwxNjQ0MzIxOTU4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+          <img src=<%= talent_array.sample %>, alt="">
+          <img src=<%= talent_array.sample %>, alt="">
           <div class="rounded-shape">
           </div>
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="moto">
       <div class="content">
         <div class="text-content">
-          <h2>L'AGENCE</h2>
+          <h2>NOS VALEURS</h2>
           <p class="pt-3">
             AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs. L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
           </p>
           <a href="#">En savoir plus</a>
         </div>
       </div>
-      <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+      <%= image_tag "https://images.unsplash.com/photo-1643522041917-738fe312d5a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80", alt: "alttext" %>
     </section>
   </div>
 </div>
