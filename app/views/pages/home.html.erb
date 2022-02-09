@@ -1,125 +1,90 @@
 <body>
 
-<div class="scroll">
-  <div class="smooth">
-    <section id="home">
-      <div class="scroll video-banner">
-          <div class="background">
-          </div>
-          <div class="banner-icons">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="content">
-        <div class="text-content">
-          <h2>L'AGENCE</h2>
-          <p class="pt-3">
-            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs. L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
-          </p>
-          <a href="#">En savoir plus</a>
+  <div class="scroll">
+    <div class="smooth">
+      <section class="home" id="home">
+        <div class="scroll video-banner">
+            <div class="background">
+            </div>
+            <div class="banner-icons">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
         </div>
-      </div>
-      <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
-    </section>
-<!--     <section id="campaign">
-      <div class="content">
-        <div class="text-content">
-          <a href="#">Découvrir nos campagnes</a>
-          <h2>NOS CAMPAGNES</h2>
-          <p class="pt-3">
-            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
-          </p>
-        </div>
-        <div class="wrapper-prod">
-            <% @campaigns.first(4).each do |campaign|  %>
-              <div class="card-prod">
-                <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
-                <div class="info">
-                  <h1><%= campaign.name %></h1>
-                  <p><%= campaign.objectif %></p>
-                  <button><%= link_to "Read more", campaign %></button>
-                </div>
-              </div>
-            <% end %>
-        </div>
-      </div>
-      <div class="content">
-        <div class="img-wrapper">
-          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
-          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
-          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
-          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
-        </div>
-      </div>
-    </section> -->
-    <section id="campaign">
-      <div class="content">
-        <div class="text-content">
-          <a href="#">Découvrir nos campagnes</a>
-          <h2>NOS CAMPAGNES</h2>
-          <p class="pt-3">
-            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
-          </p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="img-wrapper">
-          <%= image_tag "https://source.unsplash.com/1600x900/?cosmetics", alt: "alttext" %>
-          <%= image_tag "https://images.unsplash.com/photo-1570431309787-5874f7dd7593?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDMyNTYwMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
-          <%= image_tag "https://images.unsplash.com/photo-1583900985737-6d0495555783?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWx8fHx8fHwxNjQ0MzIxOTU4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
-          <p class="note">
-            # BELIEVE IN YOUR DREAMS <br>
-            CAUSE AD CREW BELIEVE IN <br> <span>YOU <3</span>
-          </p>
-          <div class="rounded-shape">
+      </section>
+      <section class="home" id="about">
+        <div class="content">
+          <div class="text-content">
+            <h2>L'AGENCE</h2>
+            <p class="pt-3">
+              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs. L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
+            </p>
+            <a href="#">En savoir plus</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="talent">
-
-      <div class="content">
-        <div class="text-content">
-          <a href="#">Découvrir nos talents</a>
-          <h2>NOS TALENTS</h2>
-          <p class="pt-3">
-            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
-          </p>
-        </div>
-      </div>
-      <div class="content">
-        <div class="img-wrapper">
-          <div class="gif-talent" id="gif-one"></div>
-          <p class="note">
-            Lorem ipsum dolor sit amet consectetur adipisicing, elit. Iure consequatur tempore, alias maxime totam ipsa praesentium quaerat velit voluptatem numquam ex soluta sint officia? Possimus <span> nemo pariatur </span> aperiam, tenetur velit! Repudiandae natus quod alias facilis dignissimos esse repellendus accusantium nobis eius! Sit alias dolor ipsam minus deserunt esse, nemo!
-          </p>
-          <div class="gif-talent" id="gif-two"></div>
-          <div class="gif-talent" id="gif-three"></div>
-          <div class="rounded-shape">
+        <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
+      </section>
+      <section class="home" id="campaign">
+        <div class="content">
+          <div class="text-content">
+            <a href="#">Découvrir nos campagnes</a>
+            <h2>NOS CAMPAGNES</h2>
+            <p class="pt-3">
+              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="moto">
-      <div class="content">
-        <div class="text-content">
-          <h2>NOS VALEURS</h2>
-          <div class="pt-3 moto">
-            <p><span class="moto-title mb-3"></span><span class="moto-content pl-3"></span></p>
+        <div class="content">
+          <div class="img-wrapper">
+            <%= image_tag "https://source.unsplash.com/1600x900/?cosmetics", alt: "alttext" %>
+            <%= image_tag "https://images.unsplash.com/photo-1570431309787-5874f7dd7593?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDMyNTYwMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%= image_tag "https://images.unsplash.com/photo-1583900985737-6d0495555783?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWx8fHx8fHwxNjQ0MzIxOTU4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <p class="note">
+              # BELIEVE IN YOUR DREAMS <br>
+              CAUSE AD CREW BELIEVE IN <br> <span>YOU <3</span>
+            </p>
+            <div class="rounded-shape">
+            </div>
           </div>
         </div>
-      </div>
-      <%= image_tag "https://images.unsplash.com/photo-1533122250115-6bb28e9a48c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60", alt: "alttext" %>
-    </section>
+      </section>
+      <section class="home" id="talent">
+        <div class="content">
+          <div class="text-content">
+            <a href="#">Découvrir nos talents</a>
+            <h2>NOS TALENTS</h2>
+            <p class="pt-3">
+              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-wrapper">
+            <div class="gif-talent" id="gif-one"></div>
+            <p class="note">
+              Lorem ipsum dolor sit amet consectetur adipisicing, elit. Iure consequatur tempore, alias maxime totam ipsa praesentium quaerat velit voluptatem numquam ex soluta sint officia? Possimus <span> nemo pariatur </span> aperiam, tenetur velit! Repudiandae natus quod alias facilis dignissimos esse repellendus accusantium nobis eius! Sit alias dolor ipsam minus deserunt esse, nemo!
+            </p>
+            <div class="gif-talent" id="gif-two"></div>
+            <div class="gif-talent" id="gif-three"></div>
+          </div>
+        </div>
+      </section>
+      <section class="home" id="moto">
+        <div class="content">
+          <div class="text-content">
+            <h2>NOS VALEURS</h2>
+            <div class="pt-3 moto">
+              <p><span class="moto-title mb-3"></span><span class="moto-content pl-3"></span></p>
+            </div>
+          </div>
+        </div>
+        <%= image_tag "https://images.unsplash.com/photo-1533122250115-6bb28e9a48c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60", alt: "alttext" %>
+      </section>
+    </div>
   </div>
-</div>
 
   <%#= content_for(:navbar_class, "main-sidebar-home") %>
 
@@ -166,5 +131,38 @@
       <% end %>
     </div>
   </div> -->
+
+
+<!--     <section class="home" id="campaign">
+      <div class="content">
+        <div class="text-content">
+          <a href="#">Découvrir nos campagnes</a>
+          <h2>NOS CAMPAGNES</h2>
+          <p class="pt-3">
+            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+          </p>
+        </div>
+        <div class="wrapper-prod">
+            <% @campaigns.first(4).each do |campaign|  %>
+              <div class="card-prod">
+                <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
+                <div class="info">
+                  <h1><%= campaign.name %></h1>
+                  <p><%= campaign.objectif %></p>
+                  <button><%= link_to "Read more", campaign %></button>
+                </div>
+              </div>
+            <% end %>
+        </div>
+      </div>
+      <div class="content">
+        <div class="img-wrapper">
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+        </div>
+      </div>
+    </section> -->
 
 </body>
