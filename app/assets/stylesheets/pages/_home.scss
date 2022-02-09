@@ -657,3 +657,58 @@ section {
 
 }
 
+///////////VALEURS///////////
+
+.moto {
+	height: 80px;
+}
+
+.moto-title::before {
+	color: $red;
+    content: "CRÉATIVITÉ";
+    animation: valeurTitle infinite 10s;
+}
+
+.moto-content::before {
+	font-family: $note-font;
+	font-size: 24px;
+	line-height: 1;
+    content: "Nous mettons à disposition de votre image production et stratégie digitale.";
+    animation: valeurContent infinite 10s;
+}
+
+@keyframes valeurTitle {
+    0% {
+        content: "CRÉATIVITÉ";
+    }
+
+    25% {
+        content: "PROFESSIONNALISME";
+    }
+
+    50% {
+        content: "BIENVEILLANCE";
+    }
+
+    75% {
+        content: "TRANSPARENCE";
+    }
+}
+
+@keyframes valeurContent {
+    0% {
+        content: "Nous mettons à disposition de votre image production et stratégie digitale.";
+    }
+
+    25% {
+        content: "Une équipe experte et réactive répond à vos besoins.";
+    }
+
+    50% {
+        content: "L'humain est notre priorité.";
+    }
+
+    75% {
+        content: "Une communication authentique et des process structurés nous assurent la confiance de nos clients.";
+    }
+}
