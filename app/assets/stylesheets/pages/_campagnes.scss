@@ -85,7 +85,7 @@ section.campaigns {
           font-size: 14px;
           color: $red;
           &:hover {
-            border-bottom: 1px $red solid;
+            border-bottom: none;
           }
         }
       }
@@ -98,25 +98,6 @@ section.campaigns {
       grid-gap: 6px;
       width: 85vw;
       margin: 30px 0;
-
-      & .gif-talent {
-        filter: grayscale(100%);
-        height: 430px;
-          background-size: cover;
-          background-position: center;
-          &#gif-one {
-            background-image: url(https://source.unsplash.com/1600x900/?cosmetics); //
-          }
-          &#gif-two {
-            background-image: url(https://source.unsplash.com/1600x900/?fashion); //
-          }
-          &#gif-three {
-            background-image: url(https://source.unsplash.com/1600x900/?model); //
-          }
-          &#gif-four {
-            background-image: url(https://source.unsplash.com/1600x900/?makeup); //
-          }
-      }
       & .note {
         margin: 30px 10px;
         width: 24%;

@@ -50,47 +50,44 @@
             <a href="#">ALL</a>
             <a href="#">LAST CAMPAIGNS</a>
             <a href="#">AD CREW CAMPAIGNS</a>
+            <%# if user_signed_in? %>
+              <%= link_to 'ADD A CAMPAIGN', new_campaign_path %>
+            <%# end %>
           </div>
         </div>
       </div>
       <div class="content">
         <div class="img-wrapper">
-          <div class="gif-talent" id="gif-one"></div>
-          <div class="gif-talent" id="gif-three"></div>
-          <div class="gif-talent" id="gif-two"></div>
-          <div class="gif-talent" id="gif-four"></div>
-          <div class="gif-talent" id="gif-two"></div>
-          <div class="gif-talent" id="gif-one"></div>
-          </div>
+          <% @campaigns.each do |campaign|%>
+
+            <%= link_to campaign_path(campaign) do %>
+              <div class="campaign-card">
+                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
+                  <div class="card-info">
+                    <div class="top py-1">
+                      <div class="info">
+                        <% if campaign.tag %> <p class="px-3 tag">ADCREW campaign</p> <% end %>
+                      </div>
+                    </div>
+
+                    <h2 class="info title"> <%= campaign.name%> </h2>
+
+                    <div class="bottom">
+                      <div class="info justify-content-center">
+                        <% campaign.collabs.each do |collab| %>
+                          <p><%= collab.talent.name %></p>
+                        <% end %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+            
+          <% end %>
         </div>
       </div>
     </section>
 
   </div>
 </div>
-
-    <div class="container">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <% @campaigns.each do |campaign|%>
-            <%#= link_to campaign do  %>
-              <div class="swiper-slide wagon-cards">
-                <div class="wagon-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : asset_path('background.jpeg') %>)">
-                  <%# <div class="tag">
-                    <div class="campaign-tag"> %>
-                      <%= link_to campaign.name, campaign %>
-                    <%# </div>
-                    <div class="campaign-tag">
-                      <%# <i class="fas fa-map-marker-alt"></i><%= Geocoder::Calculations.distance_between([@user_campaign.latitude, @user_campaign.longitude], [campaign.latitude,campaign.longitude]).truncate(1) %>
-                    <%# </div>
-                 </div> %>
-                </div>
-              </div>
-            <%# end %>
-          <% end %>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
