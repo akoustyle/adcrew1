@@ -184,7 +184,7 @@
   // scroll-padding: 5vh 0;
 }
 
-section {
+section.home {
 
 	display: flex;
 	height: 100vh;
@@ -433,6 +433,7 @@ section {
 	      	filter: grayscale(100%);
 		}
 	}
+
 }
 
 @keyframes gifMakerOne { 
