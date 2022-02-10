@@ -134,10 +134,14 @@ section.campaign {
       // align-items: center;
       & .text-content {
         border-bottom: 1px black solid;
-          width: 85vw;
-          & p {
-            width: 35vw;
+        width: 85vw;
+        & p {
+          width: 35vw;
+          margin: 0;
+          & i {
+            font-size: 14px;
           }
+        }
         //text-align: center;
         & a {
           font-size: 14px;

@@ -87,9 +87,11 @@
           <div class="text-content">
             <a href="#">Back</a>
             <h2><%= @campaign.name %></h2>
-            <p class="pt-3">
-              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
-            </p>
+            <div class="py-3">
+              <p><i class="fa-solid fa-bullseye pr-1 text-dark"></i><%= @campaign.objectif %></p>
+              <p><i class="fa-solid fa-globe pr-1 text-dark"></i><%= @campaign.activation %></p>
+              <p><i class="fa-solid fa-circle-dot pr-1 text-dark"></i><%= @campaign.reach %></p>
+            </div>
           </div>
         </div>
         <div class="content">
@@ -126,7 +128,6 @@
                   <div class="card-info">
                     <div class="top py-1">
                       <div class="info">
-                        <p class="px-3 tag">coucou</p>
                       </div>
                     </div>
 
@@ -134,7 +135,7 @@
 
                     <div class="bottom">
                       <div class="info justify-content-center">
-                          <p>coucou</p>
+                          <p><%= collab.talent.category %></p>
                       </div>
                     </div>
                   </div>
