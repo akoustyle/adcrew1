@@ -1,4 +1,4 @@
-<div class="talent-header container">
+<!-- <div class="talent-header container">
   <div class="talent-title">
     <span>Talents</span>
     <h1>Notre famille AD CREW</h1>
@@ -111,3 +111,79 @@
     </div>
   </div>
 </div>
+ -->
+
+ <div class="scroll">
+   <div class="smooth">
+
+     <section class="campaigns" id="preview-campaign">
+       <div class="content">
+         <div class="text-content">
+           <h2>NOS TALENTS</h2>
+           <p class="pt-3">
+             AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+           </p>
+         </div>
+       </div>
+       <div class="content">
+         <div class="img-wrapper">
+           <div class="gif-talent" id="gif-one"></div>
+           <p class="note">
+             Lorem ipsum dolor sit amet consectetur adipisicing, elit. Iure consequatur tempore, alias maxime totam ipsa praesentium quaerat velit voluptatem numquam ex soluta sint officia? Possimus <span> nemo pariatur </span> aperiam, tenetur velit! Repudiandae natus quod alias facilis dignissimos esse repellendus accusantium nobis eius! Sit alias dolor ipsam minus deserunt esse, nemo!
+           </p>
+           <div class="gif-talent" id="gif-two"></div>
+           <div class="gif-talent" id="gif-three"></div>
+           <div class="rounded-shape">
+           </div>
+         </div>
+       </div>
+     </section>
+
+     <section class="campaigns" id="campaign">
+       <div class="content">
+         <div class="text-content">
+           <div class="d-flex justify-content-between">
+            <a href="#">ALL</a>
+            <a href="#">GREEN</a>
+            <a href="#">POSITIVE</a>
+            <a href="#">URBAN</a>
+            <a href="#">FASHION</a>
+             <%# if user_signed_in? %>
+            <%= link_to 'ADD A TALENT', new_talent_path %>
+             <%# end %>
+           </div>
+         </div>
+       </div>
+       <div class="content">
+         <div class="img-wrapper">
+           <% @talents.each do |talent|%>
+
+             <%= link_to talent_path(talent) do %>
+               <div class="campaign-card">
+                 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                   <div class="card-info">
+                     <div class="top py-1">
+                       <div class="info">
+                         <p class="px-3 tag"><%= talent.category %></p>
+                       </div>
+                     </div>
+
+                     <h2 class="info title"> <%= talent.name%> </h2>
+
+                     <div class="bottom">
+                       <div class="info justify-content-center">
+                        <p><%= talent.category %></p>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             <% end %>
+
+           <% end %>
+         </div>
+       </div>
+     </section>
+
+   </div>
+ </div>

@@ -28,18 +28,14 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  font-family: 'Osmose', sans-serif;
   // background-image: asset-url('gradient-bg.png');
-  color:black;
-  background-size: 400% 400%;
-  background-repeat: no-repeat;
   // background-color: #e42b03;
   // background: linear-gradient(56deg, #e42b03 0%, #f7f7f7 41%);
-  background: linear-gradient(27deg, rgba(255,255,255,1), rgba(255,25,0,0) 40%), linear-gradient(127deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 90.71%), linear-gradient(9deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 90.71%), linear-gradient(17deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 95.71%), linear-gradient(336deg, rgba(255,255,255,1), rgba(0,0,255,0) 20.71%);
-  -webkit-animation: gradient 17s ease infinite;
-  -moz-animation: gradient 17s ease infinite;
-  animation: gradient 17s ease infinite;
-  // &:before {
+  // background: linear-gradient(27deg, rgba(255,255,255,1), rgba(255,25,0,0) 40%), linear-gradient(127deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 90.71%), linear-gradient(9deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 90.71%), linear-gradient(17deg, rgba(255,255,255,1), rgba(255,0,0,0.5) 95.71%), linear-gradient(336deg, rgba(255,255,255,1), rgba(0,0,255,0) 20.71%);
+  // -webkit-animation: gradient 17s ease infinite;
+  // -moz-animation: gradient 17s ease infinite;
+  // animation: gradient 17s ease infinite;
+  // // &:before {
   // animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
   // }
   // &:after {

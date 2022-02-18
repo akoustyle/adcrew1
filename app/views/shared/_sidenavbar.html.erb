@@ -1,22 +1,27 @@
-<div id="mySidebar" class="sidebar">
-  <div class="sidebar-header">
-    <h3>ADCREW</h3>
-    <p>INFLUENCE & STRATEGY 360</p>
-  </div>
-  <a class="closebtn">&times;</a>
-  <a href="#"> <%= link_to "ADCREW", root_path %></a>
-  <a href="#"> <%= link_to "Prod", prod_path  %></a>
-  <a href="#"> <%= link_to "Talents", talents_path  %></a>
-  <a href="#"><%= link_to "Campagnes", campaigns_path %></a>
-  <a href="#"><%= link_to "Team", team_path %></a>
-  <a href="#"> <%= link_to "Contact", contact_path %> </a>
-</div>
 
-<div class="main-sidebar <%= yield(:navbar_class) %>">
-  <div class="logo">
-    <%= link_to root_path do %>
-      <%= image_tag 'logo.png', alt:"ADCREW Agency", width: 200 %>
-    <% end %>
+  <div class="main-sidebar navbar fixed-top <%#= yield(:navbar_class) %>">
+    <div class="logo">
+      <%= link_to root_path do %>
+        <h1 class="logo">AD<span>CREW</span></h1>
+      <% end %>
+    </div>
+    <a class="openbtn">&#x268C;</a>
   </div>
-  <button class="openbtn" style="background: transparent">&#x268C;</button>
-</div>
+
+  <div id="mySidebar" class="sidebar">
+    <div class="main-sidebar navbar fixed-top">
+      <div class="logo">
+        <%= link_to root_path do %>
+          <h1 class="logo">AD<span>CREW</span></h1>
+        <% end %>
+      </div>
+      <a class="closebtn">&times;</a>
+    </div> 
+
+    <ul class="side-links">
+      <li> <%= link_to "Talents", talents_path %></li>
+      <li> <%= link_to "Campagnes", campaigns_path %></li>
+      <li> <%= link_to "Team", team_path %></li>
+      <li> <%= link_to "Contact", contact_path %></li>
+    </ul>
+  </div>

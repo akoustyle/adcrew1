@@ -1,20 +1,16 @@
 const initSidenav = () => {
-  const openButton = document.querySelector('.main-sidebar .openbtn');
-  if (openButton) {
-    openButton.addEventListener('click', () => {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.querySelector(".main-sidebar").style.marginRigth = "250px";
-      // document.querySelector("main-container").style.opacity = "0.1";
-    })
-  }
+  const openButton = document.querySelector('.openbtn');
+  openButton.addEventListener('click', () => {
+    document.getElementById("mySidebar").style.width = "100vw";
+    document.getElementById("mySidebar").classList.add("active");
+    // document.querySelector("main-container").style.opacity = "0.1";
+  });
 
-  const closeButton = document.querySelector('.sidebar .closebtn');
-  if (closeButton) {
-    closeButton.addEventListener('click', () => {
-      document.getElementById("mySidebar").style.width = "0px";
-      document.querySelector(".main-sidebar").style.marginRigth= "0px";
-    })
-  }
+  const closeButton = document.querySelector('.closebtn');
+  closeButton.addEventListener('click', () => {
+    document.getElementById("mySidebar").style.width = "0vw";
+    document.getElementById("mySidebar").classList.remove("active");
+  });
 }
 
 export { initSidenav };
