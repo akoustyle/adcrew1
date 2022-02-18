@@ -12,3 +12,127 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+////////////GLOBAL////////////
+
+html, body, a, h1, h2, h3, p, a:hover {
+	cursor: crosshair !important;
+}
+
+h1 {
+	font-family: $header-font;
+}
+
+h2 {
+	font-size: 34px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: $header-font;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 300;
+	font-family: $text-font;
+}
+
+///////////BACKGROUND//////////
+
+.main-bg {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: -1000;
+}
+
+.noise {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(164deg, white, rgba(0, 0, 0, 0)), url(https://grainy-gradients.vercel.app/noise.svg);
+}
+
+.bg-wrapper {
+  position: absolute;
+  animation: 35s movingBG infinite;
+  width: 100%;
+  height: 100%;
+  filter: blur(120px);
+  opacity: 0;
+}
+
+.plane {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+#a {
+
+  .plane-1 {
+    z-index: 1;
+    background-image:
+      radial-gradient(circle at 50% 50%, rgba(255,190,15,0.8) 35%, transparent 46%),
+      radial-gradient(circle at 50% 49%, rgba(255,190,15,0.8) 40%, transparent 52%);
+  }
+  
+  .plane-2 {
+    z-index: 2;
+    background-image:
+      radial-gradient(circle at 43% 51%, rgba(235,65,90,1) 24%, transparent 34%),
+      radial-gradient(circle at 46% 51%, rgba(235,65,90,1) 15%, transparent 40%),
+      radial-gradient(circle at 46% 52%, rgba(235,65,90,0.7) 10%, transparent 48%);
+  }
+  
+  .plane-3 {
+    z-index: 3;
+    background-image: radial-gradient(circle at 38% 52%, rgba(245,15,135,1) 23%, transparent 26%);
+  }
+  
+  .plane-4 {
+    z-index: 4;
+    background-image:
+      radial-gradient(circle at 33% 55%, rgba(255, 27, 0, 0.8) 13%, transparent 15%),
+      radial-gradient(circle at 34% 54%, rgba(255, 27, 0, 0.6) 12%, transparent 17%),
+      radial-gradient(circle at 34% 55%, rgba(255, 0, 64, 0.7) 12%, transparent 20%),
+      radial-gradient(circle at 38% 52%, rgba(255, 0, 64, 0.7) 17%, transparent 24%);
+  }
+  
+  .plane-5 {
+    z-index: 5;
+    background-image: radial-gradient(circle at 31% 56%, rgba(255, 27, 0, 1) 9%, transparent 12%);
+  }
+  
+  &:hover {
+    .plane-1 { transform: rotate(30deg); }
+    .plane-2 { transform: rotate(-60deg) scale(1.05) translate(1.5%,1.5%); }
+    .plane-3 { transform: rotate(-30deg); }
+    .plane-4 { transform: rotate(-30deg) translate(5%,-1.5%); }
+    .plane-5 { transform: rotate(-30deg) translate(5%,-1.5%); }
+  }
+}
+
+@keyframes movingBG { 
+  0% { 
+    bottom: -600px;
+  	left: 800px;
+  } 
+  50% {
+  	bottom: -400px;
+  	left: -500px;
+  }
+  75% { 
+    bottom: -500px;
+  	left: 800px;
+  } 
+  100% { 
+    bottom: -600px;
+  	left: 800px;
+  } 
+}

@@ -1,15 +1,99 @@
-
 <body>
-  <%# <div class="banner">
-    <section id="section10" class="demo">
-      <a href="#scrolling1"><span></span>Scroll</a>
-    </section>
-  </div> %>
-  <%# <video  controls class="media-object" alt="Banner-video" <%= image_tag "video1.mp4"%>
-  <%# </video> %>
-  <%= content_for(:navbar_class, "main-sidebar-home") %>
-  <div class="video-banner">
-    <%= image_tag "home-video-banner.gif" %>
+
+  <div class="scroll">
+    <div class="smooth">
+      <section class="home" id="home">
+        <div class="scroll video-banner">
+            <div class="background">
+            </div>
+            <div class="banner-icons">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+        </div>
+      </section>
+      <section class="home" id="about">
+        <div class="content">
+          <div class="text-content">
+            <h2>L'AGENCE</h2>
+            <p class="pt-3">
+              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs. L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
+            </p>
+            <a href="#">En savoir plus</a>
+          </div>
+        </div>
+        <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
+      </section>
+      <section class="home" id="campaign">
+        <div class="content">
+          <div class="text-content">
+            <a href="#">Découvrir nos campagnes</a>
+            <h2>NOS CAMPAGNES</h2>
+            <p class="pt-3">
+              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-wrapper">
+            <%= image_tag "https://source.unsplash.com/1600x900/?cosmetics", alt: "alttext" %>
+            <%= image_tag "https://images.unsplash.com/photo-1570431309787-5874f7dd7593?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDMyNTYwMw&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%= image_tag "https://images.unsplash.com/photo-1583900985737-6d0495555783?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWx8fHx8fHwxNjQ0MzIxOTU4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <p class="note">
+              # BELIEVE IN YOUR DREAMS <br>
+              CAUSE AD CREW BELIEVE IN <br> <span>YOU <3</span>
+            </p>
+            <div class="rounded-shape">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home" id="talent">
+        <div class="content">
+          <div class="text-content">
+            <a href="#">Découvrir nos talents</a>
+            <h2>NOS TALENTS</h2>
+            <p class="pt-3">
+              AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-wrapper">
+            <div class="gif-talent" id="gif-one"></div>
+            <p class="note">
+              Lorem ipsum dolor sit amet consectetur adipisicing, elit. Iure consequatur tempore, alias maxime totam ipsa praesentium quaerat velit voluptatem numquam ex soluta sint officia? Possimus <span> nemo pariatur </span> aperiam, tenetur velit! Repudiandae natus quod alias facilis dignissimos esse repellendus accusantium nobis eius! Sit alias dolor ipsam minus deserunt esse, nemo!
+            </p>
+            <div class="gif-talent" id="gif-two"></div>
+            <div class="gif-talent" id="gif-three"></div>
+          </div>
+        </div>
+      </section>
+      <section class="home" id="moto">
+        <div class="content">
+          <div class="text-content">
+            <h2>NOS VALEURS</h2>
+            <div class="pt-3 moto">
+              <p><span class="moto-title mb-3"></span><span class="moto-content pl-3"></span></p>
+            </div>
+            <div class="rounded-shape">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 939.46 338.24"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M.19,8.45c44.31-8.76,108.33-14.29,175,10,120.31,43.84,119.72,137.6,250,228,22.18,15.39,154.29,104.29,327.7,88.81,81.85-7.3,145.51-35.4,184.6-56.68"/><path class="cls-1" d="M871.54,270.6a442.39,442.39,0,0,1,66.52,7.71q-12.3,29.78-24.62,59.55"/></g></g></svg>
+            </div>
+          </div>
+        </div>
+        <%= image_tag "https://images.unsplash.com/photo-1533122250115-6bb28e9a48c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGFic3RyYWN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60", alt: "alttext" %>
+      </section>
+    </div>
+  </div>
+
+  <%#= content_for(:navbar_class, "main-sidebar-home") %>
+
+<!--   <div class="scroll video-banner">
+    <%= image_tag "https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80", style: "filter: grayscale(100%);" %>
     <div class="banner-icons">
       <ul class="social-icons">
         <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -19,50 +103,70 @@
     </div>
   </div>
 
-    <div id="scrolling1"class="features container">
-      <div class="container-home">
-        <div class="home-section">
-          <h2>Qui sommes-nous?</h2>
-          <span style="text-align:left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam corporis ipsa, ipsum doloremque ab pariatur repellendus recusandae culpa animi.</span>
-          <button class="btn-neumorphism"><%= link_to "En savoir plus", team_path %></button>
-        </div>
-        <div class="home-section-video">
-          <%#= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
-        </div>
+  <div id="scrolling1"class="features container">
+    <div class="container-home">
+      <div class="home-section">
+        <h2>Qui sommes-nous?</h2>
+        <span style="text-align:left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quibusdam corporis ipsa, ipsum doloremque ab pariatur repellendus recusandae culpa animi.</span>
+        <button class="btn-neumorphism"><%= link_to "En savoir plus", team_path %></button>
+      </div>
+      <div class="home-section-video">
+        <%#= video_tag "video4.mp4", autoplay: :autoplay, loop: :loop, muted: :muted %>
       </div>
     </div>
-    <div class="mb-5 text-center" style="margin-top:100px">
-      <h2 data-animate="fadeInUp" class="title">Nos campagnes AD CREW</h2>
-        <p data-animate="fadeInUp" class="lead">We have worked on dozens of projects so we have picked only the latest for you.</p>
-    </div>
-    <div class="container">
-      <div class="wrapper-prod">
-        <% @campaigns.first(4).each do |campaign|  %>
-          <div class="card-prod">
-              <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
-            <div class="info">
-              <h1><%= campaign.name %></h1>
-              <p><%= campaign.objectif %></p>
-              <button><%= link_to "Read more", campaign %></button>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
-    <%# <div class="features">
-      <h1>Nos Campagnes</h1>
+  </div>
 
-      <div class="container2">
-        <div class="campagnes-home">
-          <h2>Studio</h2>
-          <h3>Nos Campagnes AD CREW</h3>
+  <div class="mb-5 text-center" style="margin-top:100px">
+    <h2 data-animate="fadeInUp" class="title">Nos campagnes AD CREW</h2>
+      <p data-animate="fadeInUp" class="lead">We have worked on dozens of projects so we have picked only the latest for you.</p>
+  </div>
+
+  <div class="container">
+    <div class="wrapper-prod">
+      <% @campaigns.first(4).each do |campaign|  %>
+        <div class="card-prod">
+            <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
+          <div class="info">
+            <h1><%= campaign.name %></h1>
+            <p><%= campaign.objectif %></p>
+            <button><%= link_to "Read more", campaign %></button>
+          </div>
         </div>
-        <div class="campagne-image">
-          <%= image_tag('camp1.png') %>
-          <%#= image_tag('camp2.png') %>
-          <%#= image_tag('camp3.png') %>
-        <%# </div>
+      <% end %>
+    </div>
+  </div> -->
+
+
+<!--     <section class="home" id="campaign">
+      <div class="content">
+        <div class="text-content">
+          <a href="#">Découvrir nos campagnes</a>
+          <h2>NOS CAMPAGNES</h2>
+          <p class="pt-3">
+            AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+          </p>
+        </div>
+        <div class="wrapper-prod">
+            <% @campaigns.first(4).each do |campaign|  %>
+              <div class="card-prod">
+                <%= cl_image_tag campaign.photos.first.key if campaign.photos.first.present? %>
+                <div class="info">
+                  <h1><%= campaign.name %></h1>
+                  <p><%= campaign.objectif %></p>
+                  <button><%= link_to "Read more", campaign %></button>
+                </div>
+              </div>
+            <% end %>
+        </div>
       </div>
-    </div> %>
+      <div class="content">
+        <div class="img-wrapper">
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+          <%= image_tag "https://source.unsplash.com/random", alt: "alttext" %>
+        </div>
+      </div>
+    </section> -->
 
 </body>

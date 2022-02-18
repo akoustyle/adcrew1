@@ -6,13 +6,13 @@
       <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%;width:100%"%>
     <%# </div>
     <div class="campaign-title">
-      <h3><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.name %></span></h3>
+      <h3><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.name %><!-- </span></h3> -->
     <%# </div>
     <div class="campaign-reach">
-      <h3>Total reach <span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.reach %></span></h3>
+      <h3>Total reach <span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.reach %><!-- </span></h3> -->
     <%# </div>
     <div class="campaign-objectif">
-      <p><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.objectif %></span></p>
+      <p><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.objectif %><!-- </span></p> -->
     <%# </div>
     <div class="bottom-photo1" style="height: 250px">
       <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
@@ -30,7 +30,8 @@
 </section><!--Ici se termine le pageContent--> %>
 <%# <div id="mainFooter"></div><!--Ici se termine le mainFooter--> %>
 <!---Ici commence le deuxieme grid layout for campaigns-->
-<div class="container">
+
+<!-- <div class="container">
   <div id="pageContent">
     <div class="container">
       <div class="grid-layout">
@@ -42,7 +43,6 @@
       </div>
     </div>
   </div>
-  <!--Ici se termine le deuxieme grid layout des campagnes-->
   <div>
     <div class="col-md-6 col-md-offset-3">
       <div class="panel panel-default">
@@ -76,5 +76,77 @@
         </div>
       </div>
     </div>
+  </div>
+</div> -->
+
+<div class="scroll">
+  <div class="smooth">
+
+    <section class="campaign" id="show-campaign">
+        <div class="content">
+          <div class="text-content">
+            <a href="#">Back</a>
+            <h2><%= @campaign.name %></h2>
+            <div class="py-3">
+              <p><i class="fa-solid fa-bullseye pr-1 text-dark"></i><%= @campaign.objectif %></p>
+              <p><i class="fa-solid fa-globe pr-1 text-dark"></i><%= @campaign.activation %></p>
+              <p><i class="fa-solid fa-circle-dot pr-1 text-dark"></i><%= @campaign.reach %></p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-wrapper">
+            <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <p class="note">
+              AUTHENTIQUE PAR NATURE <br>
+              SIMPLEMENT EFFICACE
+            </p>
+            <div class="rounded-shape">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="campaign" id="talents-involved">
+      <div class="content">
+        <div class="text-content">
+          <div class="d-flex justify-content-between">
+            <p>Les talents impliqués dans cette campagne</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="img-wrapper">
+          <% @campaign.collabs.each do |collab|%>
+
+            <%= link_to talent_path(collab.talent) do %>
+              <div class="campaign-card">
+                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                  <div class="card-info">
+                    <div class="top py-1">
+                      <div class="info">
+                      </div>
+                    </div>
+
+                    <h2 class="info title"> <%= collab.talent.name%> </h2>
+
+                    <div class="bottom">
+                      <div class="info justify-content-center">
+                          <p><%= collab.talent.category %></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+            
+          <% end %>
+        </div>
+      </div>
+    </section>
+
   </div>
 </div>
