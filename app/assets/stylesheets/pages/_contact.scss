@@ -41,7 +41,88 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+section.contact {
+	display: flex;
+	height: 100vh;
 
+	scroll-snap-align: center;
+
+	.note {
+		font-family: $note-font;
+	}
+
+	&:nth-child(1) {
+		justify-content: space-between;
+		align-items: center;
+
+		& .background {
+			width: 100vw;
+			height: 100vh;
+			filter: grayscale(100%);
+			background-image: url(https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+			background-size: cover;
+		}
+	}
+
+	&:nth-child(2) {
+		justify-content: space-between;
+		align-items: center;
+
+		& .content {
+		display: flex;
+		width: 50vw;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		& .text-content {
+			width: 35vw;
+			//text-align: center;
+			& a {
+				font-size: 14px;
+				color: $red;
+				&:hover {
+					border-bottom: 1px $red solid;
+				}
+			}
+		}
+		}
+		& img {
+			height: 100%;
+			width: 50vw;
+		object-fit: cover;
+		filter: grayscale(100%);
+		}
+	}
+
+	&:nth-child(3) {
+		flex-direction: column;
+		padding-top: 13vh;
+		margin-bottom: 260px;
+
+		& .content {
+			display: flex;
+			// width: 50vw;
+			// height: 100vh;
+			justify-content: center;
+			// align-items: center;
+			& .text-content {
+				border-bottom: 1px black solid;
+			    width: 85vw;
+			    & p {
+			    	width: 60vw;
+			    }
+				//text-align: center;
+				& a {
+					font-size: 14px;
+					color: $red;
+					&:hover {
+						border-bottom: 1px $red solid;
+					}
+				}
+			}
+		}
+  }
+}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {

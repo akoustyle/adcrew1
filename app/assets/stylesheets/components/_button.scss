@@ -1,8 +1,8 @@
 .btn-neumorphism {
   height: 50px;
-  width: 130px;
+  width: 65px;
   border-radius: 30px;
-  background: white !important;
+  // background: white !important;
   border-color:transparent !important;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@
 .btn-neumorphism:hover{
 // background: radial-gradient(circle,  red 0%, #e0e5ec 60%);
 color: red;
+text-decoration: underline;
   // animation: colorchange 3s linear infinite;
 }
 // @keyframes colorchange {
