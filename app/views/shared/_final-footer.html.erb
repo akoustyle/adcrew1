@@ -27,11 +27,11 @@
               <li><a href="#">Talent</a></li>
               <li><a href="#">Mentions legales</a></li>
               <li><a> <% if user_signed_in? %>
-                <%= link_to "Sign out", destroy_user_session_path %>
+                <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
               <% else %>
                 <%= link_to "Sign in", new_user_session_path %>
               <% end %>
-               </a></li>
+              </a></li>
             </ul>
           </div>
 
