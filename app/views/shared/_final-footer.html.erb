@@ -17,14 +17,14 @@
 
           <div class="col-xs-6 col-md-3" style="text-align:center">
             <h6>Contactez-nous</h6>
-            <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> contact@adcrew-paris.com
+            <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
           </div>
 
           <div class="col-xs-6 col-md-3" style="text-align:center">
             <h6>À propos</h6>
             <ul class="footer-links">
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Talent</a></li>
+              <li><a> <%= link_to 'Campagnes', campaigns_path %></a></li>
+              <li><a> <%= link_to 'Talents', talents_path %> </a></li>
               <li><a href="#">Mentions legales</a></li>
               <li><a> <% if user_signed_in? %>
                 <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
@@ -37,9 +37,9 @@
 
            <div class="col-md-3 col-xs-6" style="text-align:center">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li><a class="instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
           </div>
         </div>
@@ -49,7 +49,7 @@
         <div class="legal-links container" style="text-align:center">
           <div class="copyright">
             <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-              <a href="#">Adcrew</a>.
+              <a> <%= link_to "Adcrew", root_path %></a>.
             </p>
           </div>
         <div class="Made">

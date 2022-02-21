@@ -22,7 +22,7 @@
             <p class="pt-3">
               AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs. L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
             </p>
-            <a href="#">En savoir plus</a>
+            <a><%= link_to "En savoir plus", team_path %></a>
           </div>
         </div>
         <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
@@ -30,7 +30,7 @@
       <section class="home" id="campaign">
         <div class="content">
           <div class="text-content">
-            <a href="#">Découvrir nos campagnes</a>
+            <a><%= link_to "Découvrir nos campagnes", campaigns_path %></a>
             <h2>NOS CAMPAGNES</h2>
             <p class="pt-3">
               AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
@@ -55,7 +55,7 @@
       <section class="home" id="talent">
         <div class="content">
           <div class="text-content">
-            <a href="#">Découvrir nos talents</a>
+            <a> <%= link_to "Découvrir nos talents", talents_path %></a>
             <h2>NOS TALENTS</h2>
             <p class="pt-3">
               AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
