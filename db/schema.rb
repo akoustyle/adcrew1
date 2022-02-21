@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_24_135726) do
+ActiveRecord::Schema.define(version: 2022_02_21_224755) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,15 +51,23 @@ ActiveRecord::Schema.define(version: 2021_12_24_135726) do
     t.boolean "tag"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "sentence"
+    t.string "sentence2"
   end
 
   create_table "collabs", force: :cascade do |t|
-    t.bigint "talent_id"
-    t.bigint "campaign_id"
+    t.bigint "talent_id", null: false
+    t.bigint "campaign_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["campaign_id"], name: "index_collabs_on_campaign_id"
     t.index ["talent_id"], name: "index_collabs_on_talent_id"
+  end
+
+  create_table "poles", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "talents", force: :cascade do |t|

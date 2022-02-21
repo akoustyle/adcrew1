@@ -51,9 +51,10 @@
 
   .container .img-wrapper {
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width:60vw;
+    gap: 15px;
+    width:80vw;
     & .imgBx {
       transition: 0.3s;
       content:"";
@@ -101,12 +102,12 @@
 .wording-ceo {
   grid-column: 3 / span 1;
 }
-.note-team {
-  width:14vw;
+.content .img-wrapper .note-team {
+  width:29vw;
   padding:1px;
   & p {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 300;
-    font-family: $note-font;
+    font-family: "Reenie Beanie";
   }
 }
