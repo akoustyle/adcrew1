@@ -43,6 +43,10 @@ talent_seven = Talent.create(name: "Mathilde", about: "Aventurière et solaire 
 puts "saving Mathilde..."
 talent_seven.save!
 
+talent_heigth = Talent.create(name: "Patrick", about: "Grand amateur de cuisine , Patrick partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceur", audience_male: "89%", audience_female: "41%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+puts "saving Patrick..."
+talent_heigth.save!
+
 puts 'Done !'
 
 puts 'Creating campaigns...'
@@ -66,6 +70,18 @@ campaign_five = Campaign.create(name: "Cacharel", objectif: "Check everything is
 puts "saving Cacharel..."
 campaign_five.save!
 
+campaign_six = Campaign.create(name: "Canon", objectif: "Check everything is working properly", activation: "Print & Digital", reach: "800000", sentence: Faker::Quote.famous_last_words, sentence2: Faker::TvShows::Friends.quote, tag: false)
+puts "saving Canon..."
+campaign_six.save!
+
+campaign_seven = Campaign.create(name: "Yves Rocher", objectif: "Check everything is working properly", activation: "Print & Digital", reach: "7000", sentence: Faker::Quote.famous_last_words, sentence2: Faker::TvShows::Friends.quote, tag: false)
+puts "saving Yves Rocher..."
+campaign_seven.save!
+
+campaign_height = Campaign.create(name: "Maybelline", objectif: "Check everything is working properly", activation: "Print & Digital", reach: "710000", sentence: Faker::Quote.famous_last_words, sentence2: Faker::TvShows::Friends.quote, tag: false)
+puts "saving Maybelline..."
+campaign_height.save!
+
 puts 'Done !'
 
 puts 'Creating collabs...'
@@ -77,44 +93,48 @@ collab_two = Collab.create(talent_id: talent_two.id, campaign_id: campaign_one.i
 puts "saving collab 2..."
 collab_two.save!
 
-collab_four = Collab.create(talent_id: talent_two.id, campaign_id: campaign_two.id)
-puts "saving collab 3..."
+collab_three = Collab.create(talent_id: talent_height.id, campaign_id: campaign_height.id)
+puts "saving collab 4..."
+collab_three.save!
+
+collab_four = Collab.create(talent_id: talent_two.id, campaign_id: campaign_heigth.id)
+puts "saving collab 4..."
 collab_four.save!
 
 collab_five = Collab.create(talent_id: talent_three.id, campaign_id: campaign_three.id)
-puts "saving collab 3..."
+puts "saving collab 5..."
 collab_five.save!
 
 collab_six = Collab.create(talent_id: talent_seven.id, campaign_id: campaign_four.id)
-puts "saving collab 3..."
+puts "saving collab 6..."
 collab_six.save!
 
 collab_seven = Collab.create(talent_id: talent_four.id, campaign_id: campaign_four.id)
-puts "saving collab 3..."
+puts "saving collab 7..."
 collab_seven.save!
 
 collab_eight = Collab.create(talent_id: talent_five.id, campaign_id: campaign_four.id)
-puts "saving collab 3..."
+puts "saving collab 8..."
 collab_eight.save!
 
 collab_nine = Collab.create(talent_id: talent_six.id, campaign_id: campaign_five.id)
-puts "saving collab 3..."
+puts "saving collab 9..."
 collab_nine.save!
 
 collab_ten = Collab.create(talent_id: talent_one.id, campaign_id: campaign_four.id)
-puts "saving collab 3..."
+puts "saving collab 10..."
 collab_ten.save!
 
 collab_eleven = Collab.create(talent_id: talent_three.id, campaign_id: campaign_five.id)
-puts "saving collab 3..."
+puts "saving collab 11..."
 collab_eleven.save!
 
-collab_twelve = Collab.create(talent_id: talent_seven.id, campaign_id: campaign_one.id)
-puts "saving collab 3..."
+collab_twelve = Collab.create(talent_id: talent_seven.id, campaign_id: campaign_six.id)
+puts "saving collab 12..."
 collab_twelve.save!
 
-collab_thirteen = Collab.create(talent_id: talent_five.id, campaign_id: campaign_three.id)
-puts "saving collab 3..."
+collab_thirteen = Collab.create(talent_id: talent_five.id, campaign_id: campaign_seven.id)
+puts "saving collab 13..."
 collab_thirteen.save!
 
 puts 'Done !'
