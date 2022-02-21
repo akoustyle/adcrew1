@@ -36,7 +36,8 @@ i:hover {
 }
 .pole-description {
   text-align:left;
-  padding: 20px 82px;
+  padding: 5px 5px;
+  width: 27vw
 }
 .tiktok span:hover {
   color: blue;
@@ -52,4 +53,11 @@ i:hover {
 }
 .youtube {
   display: flex;
+}
+.img-wrapper .note-talent {
+  margin: 30px 10px;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Reenie Beanie";
 }
