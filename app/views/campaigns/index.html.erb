@@ -50,9 +50,9 @@
             <a href="#">ALL</a>
             <a href="#">LAST CAMPAIGNS</a>
             <a href="#">AD CREW CAMPAIGNS</a>
-            <%# if user_signed_in? %>
+            <% if user_signed_in? %>
               <%= link_to 'ADD A CAMPAIGN', new_campaign_path %>
-            <%# end %>
+            <% end %>
           </div>
         </div>
       </div>
