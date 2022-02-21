@@ -148,9 +148,9 @@
             <a href="#">POSITIVE</a>
             <a href="#">URBAN</a>
             <a href="#">FASHION</a>
-             <%# if user_signed_in? %>
+             <% if user_signed_in? %>
             <%= link_to 'ADD A TALENT', new_talent_path %>
-             <%# end %>
+             <% end %>
            </div>
          </div>
        </div>
@@ -160,7 +160,7 @@
 
              <%= link_to talent_path(talent) do %>
                <div class="campaign-card">
-                 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                    <div class="card-info">
                      <div class="top py-1">
                        <div class="info">
