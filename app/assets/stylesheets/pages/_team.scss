@@ -49,6 +49,23 @@
     }
   }
 
+  .container .img-wrapper {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:60vw;
+    & .imgBx {
+      transition: 0.3s;
+      content:"";
+      width:100%;
+      height:100%;
+      & img {
+        z-index: 100;
+        box-shadow: 0 10px 40px #00000017;
+      }
+    }
+  }
+
   .card-footer {
     font-size: 10px;
     position: absolute;
@@ -83,4 +100,13 @@
 }
 .wording-ceo {
   grid-column: 3 / span 1;
+}
+.note-team {
+  width:14vw;
+  padding:1px;
+  & p {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: $note-font;
+  }
 }
