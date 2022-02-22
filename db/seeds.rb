@@ -19,33 +19,33 @@ talent_one = Talent.create(name: "Fanny", about: "Hello I'm a sport trainer, bum
 puts "saving Fanny..."
 talent_one.save!
 
-talent_two = Talent.create(name: "Noa Souffir", about: "Newbie in the freelance world 👩‍💻, I have a Master degree in Art Direction, at Penninghen Paris and expect to use these two skills, design and development to follow the process of visual identity, from the conception to the creation, through both print and digital.", title: "influenceuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_two = Talent.create(name: "Noa Souffir", about: "Newbie in the freelance world 👩‍💻, I have a Master degree in Art Direction, at Penninghen Paris and expect to use these two skills, design and development to follow the process of visual identity, from the conception to the creation, through both print and digital.", title: "influenceuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: "UCk8nAg4WD7Gcml7TK8yVtbQ", youtube_eng: "34%", category: category.sample)
 puts "saving Noa..."
 talent_two.save!
 
-talent_three = Talent.create(name: "Lucas", about: "Lucas est un jeune Youtubeur, souvent décrit comme humoriste par les internautes.", title: "youtubeur", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_three = Talent.create(name: "Lucas", about: "Lucas est un jeune Youtubeur, souvent décrit comme humoriste par les internautes.", title: "youtubeur", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
 puts "saving Lucas..."
 talent_three.save!
 
-talent_four = Talent.create(name: "Clara", about: "Elle affectionne tout particulièrement les marques avec une réelle éthique. Cela n'empêche qu'elle soit une véritable mordue de mode.", title: "influenceuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_four = Talent.create(name: "Clara", about: "Elle affectionne tout particulièrement les marques avec une réelle éthique. Cela n'empêche qu'elle soit une véritable mordue de mode.", title: "influenceuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link:"UCq5hh3lQDm41FrNchLBrJqw", tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
 puts "saving Clara..."
 talent_four.save!
 
-talent_five = Talent.create(name: "Rubi", about: "Jeune Parisienne d’origine française et brésilienne, Rubi a un univers bien à elle.", title: "youtubeuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_five = Talent.create(name: "Rubi", about: "Jeune Parisienne d’origine française et brésilienne, Rubi a un univers bien à elle.", title: "youtubeuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: 'UCk8nAg4WD7Gcml7TK8yVtbQ', youtube_eng: "34%", category: category.sample)
 puts "saving Rubi..."
 talent_five.save!
 
-talent_six = Talent.create(name: "Manon", about: "Sur Instagram et sur Tik Tok elle partage avec beaucoup d'humour ses looks et ses tips pour vivre de façon plus responsable.", title: "tiktokeuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_six = Talent.create(name: "Manon", about: "Sur Instagram et sur Tik Tok elle partage avec beaucoup d'humour ses looks et ses tips pour vivre de façon plus responsable.", title: "tiktokeuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: "UCk8nAg4WD7Gcml7TK8yVtbQ", youtube_eng: "34%", category: category.sample)
 puts "saving Manon..."
 talent_six.save!
 
-talent_seven = Talent.create(name: "Mathilde", about: "Aventurière et solaire , Mathilde partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_seven = Talent.create(name: "Mathilde", about: "Aventurière et solaire , Mathilde partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceuse", audience_male: "19%", audience_female: "81%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
 puts "saving Mathilde..."
 talent_seven.save!
 
-talent_heigth = Talent.create(name: "Patrick", about: "Grand amateur de cuisine , Patrick partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceur", audience_male: "89%", audience_female: "41%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: Faker::Name.name, youtube_eng: "34%", category: category.sample)
+talent_height = Talent.create(name: "Patrick", about: "Grand amateur de cuisine , Patrick partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceur", audience_male: "89%", audience_female: "41%", insta_link: Faker::Name.name, insta_eng: "76%", tiktok_link: Faker::Name.name, tiktok_eng: "2%", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
 puts "saving Patrick..."
-talent_heigth.save!
+talent_height.save!
 
 puts 'Done !'
 
@@ -74,7 +74,7 @@ campaign_six = Campaign.create(name: "Canon", objectif: "Check everything is wor
 puts "saving Canon..."
 campaign_six.save!
 
-campaign_seven = Campaign.create(name: "Yves Rocher", objectif: "Check everything is working properly", activation: "Print & Digital", reach: "7000", sentence: Faker::Quote.famous_last_words, sentence2: Faker::TvShows::Friends.quote, tag: false)
+campaign_seven = Campaign.create(name: "Yves Rocher", objectif: "Check everything is working properly", activation: "Print & Digital", reach: "7000", sentence: Faker::Quote.famous_last_words, sentence2: Faker::TvShows::Friends.quote, tag: true)
 puts "saving Yves Rocher..."
 campaign_seven.save!
 
@@ -97,7 +97,7 @@ collab_three = Collab.create(talent_id: talent_height.id, campaign_id: campaign_
 puts "saving collab 4..."
 collab_three.save!
 
-collab_four = Collab.create(talent_id: talent_two.id, campaign_id: campaign_heigth.id)
+collab_four = Collab.create(talent_id: talent_two.id, campaign_id: campaign_height.id)
 puts "saving collab 4..."
 collab_four.save!
 
