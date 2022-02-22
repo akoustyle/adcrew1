@@ -203,8 +203,10 @@ section.campaign {
         text-align: left;
         font-size: 27px;
         position: absolute;
-        top: 233px;
-        right: 550px;
+        width:350px;
+        max-width:500px;
+        top: 150px;
+        left: 250px;
         transform: rotate(-5deg);
         line-height: 1;
         color: white;
