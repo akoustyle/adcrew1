@@ -15,7 +15,7 @@ User.destroy_all
 category = ["green", "urban", "fashion", "positivism"]
 puts 'Creating talents...'
 
-talent_one = Talent.create(name: "Fanny", about: "Hello I'm a sport trainer, bump into coding during the sanitary situation, got ambition and eager to do more in that professionnal environment.", title: "influenceuse", audience_male: "45%", audience_female: "65%", insta_link: Faker::Name.name, insta_eng: "22%", tiktok_link: Faker::Name.name, tiktok_eng: "46%", youtube_link: Faker::Name.name, youtube_eng: "73%", category: category.sample)
+talent_one = Talent.create(name: "Fanny", about: "Hello I'm a sport trainer, bump into coding during the sanitary situation, got ambition and eager to do more in that professionnal environment.", title: "influenceuse", audience_male: "45%", audience_female: "65%", insta_link: Faker::Name.name, insta_eng: "22%", tiktok_link: Faker::Name.name, tiktok_eng: "46%", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "73%", category: category.sample)
 puts "saving Fanny..."
 talent_one.save!
 
