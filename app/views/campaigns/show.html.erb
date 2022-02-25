@@ -128,22 +128,22 @@
       </div>
       <div class="content">
         <div class="img-wrapper">
-          <% @campaign.talents.each do |talent|%>
+          <% @campaign.collabs.each do |collab|%>
 
-            <%= link_to talent_path(talent) do %>
+            <%= link_to talent_path(collab.talent) do %>
               <div class="campaign-card">
-                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                   <div class="card-info">
                     <div class="top py-1">
                       <div class="info">
                       </div>
                     </div>
 
-                    <h2 class="info title"> <%= talent.name%> </h2>
+                    <h2 class="info title"> <%= collab.talent.name%> </h2>
 
                     <div class="bottom">
                       <div class="info justify-content-center">
-                          <p><%= talent.category %></p>
+                          <p><%= collab.talent.category %></p>
                       </div>
                     </div>
                   </div>

@@ -14,7 +14,7 @@ class CampaignsController < ApplicationController
   end
 
   def create
-    @talent = Talent.find_by(name: params[:campaign][:talents])
+    @talent = Talent.find_by(name: campaign_params[:talents])
     @campaign = Campaign.new(campaign_params)
     #@campaign = current_user.campaigns.build(campaign_params)
     if @campaign.save
