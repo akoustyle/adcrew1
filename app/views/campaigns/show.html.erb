@@ -99,6 +99,11 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
+          <%# <%=if @campaign.photos.attached? ? %>
+              <%# <%= cl_image_tag @campaign.photos.first.key %>
+            <%# <% else %>
+              <%# <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%# end %>
             <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
@@ -123,22 +128,22 @@
       </div>
       <div class="content">
         <div class="img-wrapper">
-          <% @campaign.collabs.each do |collab|%>
+          <% @campaign.talents.each do |talent|%>
 
-            <%= link_to talent_path(collab.talent) do %>
+            <%= link_to talent_path(talent) do %>
               <div class="campaign-card">
-                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                   <div class="card-info">
                     <div class="top py-1">
                       <div class="info">
                       </div>
                     </div>
 
-                    <h2 class="info title"> <%= collab.talent.name%> </h2>
+                    <h2 class="info title"> <%= talent.name%> </h2>
 
                     <div class="bottom">
                       <div class="info justify-content-center">
-                          <p><%= collab.talent.category %></p>
+                          <p><%= talent.category %></p>
                       </div>
                     </div>
                   </div>
