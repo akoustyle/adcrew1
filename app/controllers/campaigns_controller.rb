@@ -14,11 +14,14 @@ class CampaignsController < ApplicationController
   end
 
   def create
-    @talent = Talent.find_by(name: params[:campaign][:talents])
+    @talent = Talent.find_by(params[:talents])
     @campaign = Campaign.new(campaign_params)
     #@campaign = current_user.campaigns.build(campaign_params)
-    if @campaign.save
-        redirect_to @campaign, notice: "Yessss! It was posted"
+    if !@campaign
+      @campaign = Campaign.new
+      @campaign.collab = @collab
+      @campaign.save
+      redirect_to @campaign, notice: "Yessss! It was posted"
     else
       render "new"
     end
@@ -43,7 +46,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :tag, photos:[])
+    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :talents, :tag, photos:[])
   end
 
   def find_campaign
