@@ -290,7 +290,7 @@ DEPENDENCIES
   font-awesome-sass
   globalize3
   listen (~> 3.3)
-  pg
+  pg (~> 1.1)
   pry-byebug
   pry-rails
   puma (~> 5.0)
@@ -311,4 +311,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.28
+   2.3.8
