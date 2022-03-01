@@ -7,14 +7,14 @@ class Talent < ApplicationRecord
   has_one_attached :video
 
 
-  # validates :photos, attached: true, limit: { min: 1, max: 3 }, content_type: [:png, :jpeg, :jpg]
+  #validates :photos, attached: true, limit: { min: 1, max: 3 }, content_type: [:png, :jpeg, :jpg]
   # validates :video, attached: true, content_type: [:mp3, :mp4]
 
     def subscriber_count_youtube
       if youtube_link == "" || youtube_link == nil
         return 0
       else
-        url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{youtube_link}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg"
+        url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{youtube_link}&key=AIzaSyCwCsUf1XjoFM3SaapkCsXH2gF7lVnckHg" || url = "https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{youtube_link}&key=1//04lo16PEy-vGaCgYIARAAGAQSNwF-L9IrOW0AVz4FUrzn837_--fFsWzUQAii60E46g1Tofv24jxxvpI8hCj11vOlU7cGZdUeoxU"
         user_serialized = URI.open(url).read
         user = JSON.parse(user_serialized)
 
