@@ -28,7 +28,7 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
-
+# yaml world
 en:
   hello: "Hello world"
   number:
@@ -42,3 +42,10 @@ en:
           billion: B
           trillion: T
           quadrillion: Q
+# equivalent in ruby world => Hash
+#locale = {
+  # en: {
+  #  hello: "Hello world"
+  #}
+#}
+#hreflang TO had metatag

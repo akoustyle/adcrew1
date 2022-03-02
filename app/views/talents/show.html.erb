@@ -1,61 +1,70 @@
 
-<div class="container d-flex justify-content-space-between align-items-center " style="width: 100vw;margin: 50px auto; padding:10px" >
-    <%# @talent.photos.each do |photo| %>
-        <div style="width: 500px; heigth: auto">
-          <% if @talent.video.attached? %>
-            <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto;margin-left:-50px;margin-right:150px', controls: '', muted: :muted) %>
-          <% end %>
+  <div class="container d-flex justify-content-space-between align-items-center " style="width: 100vw;margin: 50px auto; padding:10px" >
+      <%# @talent.photos.each do |photo| %>
+      <div class="content" style="margin-top:10px">
+        <div class="text-content">
+          <a><%= link_to "Back", talents_path %></a>
+            <% if user_signed_in? %>
+              <a><%= link_to "Edit", edit_campaign_path %></a>
+            <% end %>
         </div>
-		<%# end %>
+      </div>
+          <div style="width: 500px; heigth: auto">
+            <% if @talent.video.attached? %>
+              <%= video_tag(url_for(@talent.video), style:'width:100%;height:auto;margin-left:-50px;margin-right:150px', controls: '', muted: :muted) %>
+            <% end %>
+          </div>
+      <%# end %>
 
-  <%#= cl_upload_tag(@talent.video.key) %>
-  <div class="stat" style="position: relative; margin-left: 195px;width: 400px">
-    <div class="talent-name" style="position: absolute;top:-20px;left:-140px">
-      <span style="font-weight: bold; font-family: Sketchalot"><%= @talent.name %></span><br>
-      <span style="font-weigth: 200; font-style: italic;colro:balck"><%= @talent.title %></span>
+    <%#= cl_upload_tag(@talent.video.key) %>
+    <div class="stat" style="position: relative; margin-left: 195px;width: 400px">
+      <div class="talent-name" style="position: absolute;top:-20px;left:-140px">
+        <span style="font-weight: bold; font-family: Sketchalot"><%= @talent.name %></span><br>
+        <span style="font-weigth: 200; font-style: italic;colro:balck"><%= @talent.title %></span>
+      </div>
+      <% if @talent.photos.attached? %>
+        <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
+      <% end %>
+      <a href="#", target="_blank">
+        <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
+          <span><i class="fab fa-youtube"></i></span>
+          <p style="color:balck;margin-left:10px"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+        </div>
+      </a>
+
+      <a href="#", target="_blank">
+        <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; right: -140px;">
+          <span><i class="fab fa-instagram"></i></span>
+          <p style="color:balck;margin-left:10px"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+        </div>
+      </a>
+
+      <a href="#", target="_blank">
+        <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; right: -79px;">
+          <span><i class="fab fa-tiktok"></i></span>
+          <p style="color:balck;margin-left:10px"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+        </div>
+      </a>
+      <a href="#", target="_blank">
+        <div class="statistic d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; left: 0;">
+          <span><i class="fas fa-chart-pie"></i></span>
+          <p style="color:balck;margin-left:10px">Statistiques</p>
+        </div>
+      </a>
+      <a href="#", target="_blank">
+        <div class="media d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; left: -100px;">
+          <span><i class="fas fa-download"></i></span>
+          <p style="color:balck;margin-left:10px">Media kit</p>
+        </div>
+      </a>
+      <!-- Button trigger modal -->
+        <div class="about d-flex" data-toggle="modal" data-target="#exampleModalLong" style="width: 150px; height: 50px; position: absolute;top: 420px; left: -13px;">
+          <span><i class="fas fa-user"></i></span>
+          <p style="color:balck;margin-left:10px">A propos</p>
+        </div>
     </div>
-    <% if @talent.photos.attached? %>
-      <%= cl_image_tag @talent.photos.last.key, style:'width:400px;height:auto' %>
-    <% end %>
-    <a href="#", target="_blank">
-      <div class="youtube d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; right: -59px;">
-        <span><i class="fab fa-youtube"></i></span>
-        <p style="color:balck;margin-left:10px"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
-      </div>
-    </a>
-
-    <a href="#", target="_blank">
-      <div class="insta d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; right: -140px;">
-        <span><i class="fab fa-instagram"></i></span>
-        <p style="color:balck;margin-left:10px"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
-      </div>
-    </a>
-
-    <a href="#", target="_blank">
-      <div class="tiktok d-flex" style="width: 150px; height: 50px; position: absolute;top: 420px; right: -79px;">
-        <span><i class="fab fa-tiktok"></i></span>
-        <p style="color:balck;margin-left:10px"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
-      </div>
-    </a>
-    <a href="#", target="_blank">
-      <div class="statistic d-flex" style="width: 150px; height: 50px; position: absolute;top: 40px; left: 0;">
-        <span><i class="fas fa-chart-pie"></i></span>
-        <p style="color:balck;margin-left:10px">Statistiques</p>
-      </div>
-    </a>
-    <a href="#", target="_blank">
-      <div class="media d-flex" style="width: 150px; height: 50px; position: absolute;top: 238px; left: -100px;">
-        <span><i class="fas fa-download"></i></span>
-        <p style="color:balck;margin-left:10px">Media kit</p>
-      </div>
-    </a>
-    <!-- Button trigger modal -->
-      <div class="about d-flex" data-toggle="modal" data-target="#exampleModalLong" style="width: 150px; height: 50px; position: absolute;top: 420px; left: -13px;">
-        <span><i class="fas fa-user"></i></span>
-        <p style="color:balck;margin-left:10px">A propos</p>
-      </div>
   </div>
-</div>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -117,27 +126,6 @@
       </div>
     </div>
   </div> %>
-<div class="col md-6">
-  <div class="btn-group" style="display: flex;justify-content: flex-start">
-    <% if user_signed_in? %>
-    <div>
-      <%= link_to edit_talent_path do %>
-        <%= image_tag 'pencil-front-premium.png', width: 30 %>
-      <% end %>
-    </div>
-    <div>
-      <%= link_to talent_path, method: :delete, data: { confirm: "Are you sure?"} do %>
-        <%= image_tag 'trash-can-front-premium.png', width: 30 %>
-      <% end %>
-    </div>
-    <div>
-      <%= link_to talents_path do %>
-        <%= image_tag 'back-front-premium.png', width: 30 %>
-      <% end %>
-    </div>
-    <% end %>
-  </div>
-</div>
 <%# <div class="container">
   <div class="grid-talent">
     <div class="grid-talent-card video-talent">
