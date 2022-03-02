@@ -1,0 +1,13 @@
+fr:
+  hello: "Bonjour worle mondeld"
+  number:
+    human:
+      decimal_units:
+        format: "%n%u"
+        units:
+          unit: ""
+          thousand: K
+          million: M
+          billion: B
+          trillion: T
+          quadrillion: Q
