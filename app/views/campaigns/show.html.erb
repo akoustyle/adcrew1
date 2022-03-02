@@ -34,13 +34,7 @@
 <!-- <div class="container">
   <div id="pageContent">
     <div class="container">
-      <div class="grid-layout">
-        <div class="grid__item a" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.fourth.key) : asset_path('background.jpeg') %>)"><div class=""></div>...</div>
-      <div class="grid__item b" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.third.key) : asset_path('background.jpeg') %>)"><div class=""></div><h6>Total reach <span style="font-weight: bold;color:white; font-family: Sketchalot"><%= number_to_human(@campaign.reach, presicion: 2, seprarator: ',', siginficant: false) %></span></h6></div>
-      <div class="grid__item c"><div class="" ></div><span style="font-weight: bold;color:white; font-family: Sketchalot"><%= @campaign.name %></span></div>
-      <div class="grid__item d" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.second.key) : asset_path('background.jpeg') %>)"><div class=""></div>...</div>
-      <div class="grid__item e"><div class=""></div></div>
-      </div>
+
     </div>
   </div>
   <div>
