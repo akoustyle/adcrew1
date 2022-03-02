@@ -9,13 +9,18 @@ class CampaignsController < ApplicationController
   end
 
   def new
-   @campaign = Campaign.new
+    @campaign = Campaign.new
+    @collabs = Collab.all.map{ |p| [p.talent] }
+
+  #  @collab_id = Collab.find_by(name: params[:collab]).id
   #@campaign = current_user.campaigns.build
   end
 
   def create
-    # @collab = Collab.find_by(name: params[:collabs][:talents])
+    @collab = Collab.find_by(params[:collabs]).id
     @campaign = Campaign.new(campaign_params)
+    # @campaign.collabs = params[:collabs]
+
     #@campaign = current_user.campaigns.build(campaign_params)
     if @campaign.save
       # @campaign = Campaign.new
@@ -46,7 +51,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :collabs, :tag, photos:[])
+    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :collabs, :collab_id, :tag, photos:[])
   end
 
   def find_campaign
