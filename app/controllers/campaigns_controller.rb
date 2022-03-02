@@ -14,7 +14,7 @@ class CampaignsController < ApplicationController
   end
 
   def create
-    @talent = Talent.find_by(params[:talents])
+    @collab = Talent.find_by(params[:collabs])
     @campaign = Campaign.new(campaign_params)
     #@campaign = current_user.campaigns.build(campaign_params)
     if !@campaign
@@ -46,7 +46,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :talents, :tag, photos:[])
+    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :collabs, :tag, photos:[])
   end
 
   def find_campaign
