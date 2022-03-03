@@ -22,10 +22,10 @@ class CampaignsController < ApplicationController
     # @campaign.collabs = params[:collabs]
 
     #@campaign = current_user.campaigns.build(campaign_params)
-    if @campaign.save
+    if !@campaign
       # @campaign = Campaign.new
-      # @campaign.collabs = @collab
-      # @campaign.save
+      @campaign.collabs = @collab
+      @campaign.save
       redirect_to @campaign, notice: "Yessss! It was posted"
     else
       render "new"
