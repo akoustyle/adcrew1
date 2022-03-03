@@ -18,9 +18,9 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
-            <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
-            <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
-            <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%= cl_image_tag @campaign.photos.first.key, alt: "alttext" %>
+            <%= cl_image_tag @campaign.photos.second.key, alt: "alttext" %>
+            <%= cl_image_tag @campaign.photos.third.key, alt: "alttext" %>
             <p class="note">
               <%= @campaign.sentence %> <br>
               <%= @campaign.sentence2 %>

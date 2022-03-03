@@ -22,11 +22,8 @@ gem 'turbolinks', '~> 5'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
-<<<<<<< HEAD
-=======
 gem 'rails-i18n'
 # gem 'globalize3'
->>>>>>> 98bb5e300db446f9bf8a73fb926867e7a7a9823b
 
 
 # Use Active Storage variant
