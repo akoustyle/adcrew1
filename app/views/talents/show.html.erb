@@ -2,9 +2,9 @@
   <div class="smooth">
     <section class="talent" id="talent">
       <% if @talent.photos.last != nil %>
-        <%= cl_image_tag @talent.photos.first.key, alt: "alttext" %>
-      <% else %>
         <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+      <% else %>
+        <%= cl_image_tag @talent.photos.first.key, alt: "alttext" %>
         <p class="note" style="transform: translate(-50%, -50%); position: absolute; text-align: center; top: 50%; left: 25%; width: 20%;"> <%= @talent.about %> </p>
         <%#= image_tag "https://source.unsplash.com/1600x900/?model", alt: "alttext" %>
       <% end %>
