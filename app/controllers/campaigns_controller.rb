@@ -17,7 +17,7 @@ class CampaignsController < ApplicationController
   end
 
   def create
-    @collab = Collab.find_by(params[:collabs]).id
+    @collab = Collab.find_by(params[:collabs])
     @campaign = Campaign.new(campaign_params)
     # @campaign.collabs = params[:collabs]
 
