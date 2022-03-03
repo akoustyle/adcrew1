@@ -14,14 +14,14 @@
           <div class="d-flex justify-content-between align-items-center">
             <h2><%= @talent.name.upcase%></h2>
               <% if  @talent.category == "green" %>
-                <p> <%= @talent.category.upcase %> 
+                <p> <%= @talent.category.upcase %>
                   <i class="fa-solid fa-seedling ml-1"></i>
                 </p>
               <% elsif @talent.category == "fashion" %>
                 <p> <%= @talent.category.upcase %> </p>
-              <% elsif @talent.category == "urban" %> 
+              <% elsif @talent.category == "urban" %>
                 <p> <%= @talent.category.upcase %> </p>
-              <% else %> 
+              <% else %>
                 <p> <%= @talent.category.upcase %> </p>
               <% end %>
           </div>
@@ -36,7 +36,7 @@
                   </div>
                 </a>
 
-                <a href="#" style="position: absolute; top: -50px; left: 240px;">
+                <a href="#" style="position: absolute; top: -50px; left: 270px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fab fa-instagram"></i>
                     <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %></p>
@@ -62,7 +62,7 @@
                     <i class="fas fa-download"></i>
                     <p style="margin-left: 10px; margin-bottom: 0px;">Media kit</p>
                   </div>
-                </a>            
+                </a>
               </div>
             </div>
             <div class="talent-standing">
