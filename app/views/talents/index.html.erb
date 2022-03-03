@@ -163,18 +163,24 @@
                 <%= link_to talent_path(talent) do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                      <% if talent.category == "green" %>
+                        <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                      <% end %>
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <p class="px-3 tag"><%= talent.category %></p>
+                            <p class="px-3 tag">
+                            </p>
                           </div>
                         </div>
 
-                        <h2 class="info title"> <%= talent.name%> </h2>
+                        <div>
+                          <h2 class="info title"> <%= talent.name%> </h2>
+                          <p class="info justify-content-center"><%= talent.category.upcase %></p>
+                        </div>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
-                          <p><%= talent.category %></p>
                           </div>
                         </div>
                       </div>
@@ -188,27 +194,29 @@
 
           <div class="tab-pane fade" id="pills-green" role="tabpanel" aria-labelledby="pills-green-tab">
             <div class="img-wrapper">
-            <div class="pole-description">
-              <span>POLE GREEN</span>
-              <p class="note-talent">AD CREW se positionne comme la référence dans le domaine du Green. <br>Via ses diverses campagnes de sensibilisation mais aussi de terrain, elle se démarque sur le marché de l’éco-responsabilité et de l’écologie en prônant des valeurs fortes dans le but de faire bouger les mœurs.</p>
-            </div>
-              <% @talents.where(category: 'green').each do |talent|%>
+              <% @talents.where(category: 'green').each do |talent| %>
 
                 <%= link_to talent_path(talent) do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                      <% if talent.category == "green" %>
+                        <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                      <% end %>
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <p class="px-3 tag"><%= talent.category %></p>
+                            <p class="px-3 tag">
+                            </p>
                           </div>
                         </div>
 
-                        <h2 class="info title"> <%= talent.name%> </h2>
+                        <div>
+                          <h2 class="info title"> <%= talent.name%> </h2>
+                          <p class="info justify-content-center"><%= talent.category.upcase %></p>
+                        </div>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
-                          <p><%= talent.category %></p>
                           </div>
                         </div>
                       </div>
@@ -222,27 +230,29 @@
 
           <div class="tab-pane fade" id="pills-positivism" role="tabpanel" aria-labelledby="pills-positivism-tab">
             <div class="img-wrapper">
-              <div class="pole-description">
-              <span>POLE POSITIVISM</span>
-              <p class="note-talent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-            </div>
               <% @talents.where(category: 'positivism').each do |talent|%>
 
                 <%= link_to talent_path(talent) do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                      <% if talent.category == "green" %>
+                        <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                      <% end %>
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <p class="px-3 tag"><%= talent.category %></p>
+                            <p class="px-3 tag">
+                            </p>
                           </div>
                         </div>
 
-                        <h2 class="info title"> <%= talent.name%> </h2>
+                        <div>
+                          <h2 class="info title"> <%= talent.name%> </h2>
+                          <p class="info justify-content-center"><%= talent.category.upcase %></p>
+                        </div>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
-                          <p><%= talent.category %></p>
                           </div>
                         </div>
                       </div>
@@ -256,27 +266,30 @@
 
           <div class="tab-pane fade" id="pills-urban" role="tabpanel" aria-labelledby="pills-urban-tab">
             <div class="img-wrapper">
-              <div class="pole-description">
-              <span>POLE URBAN</span>
-              <p class="note-talent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-            </div>
+              
               <% @talents.where(category: 'urban').each do |talent|%>
 
                 <%= link_to talent_path(talent) do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                      <% if talent.category == "green" %>
+                        <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                      <% end %>
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <p class="px-3 tag"><%= talent.category %></p>
+                            <p class="px-3 tag">
+                            </p>
                           </div>
                         </div>
 
-                        <h2 class="info title"> <%= talent.name%> </h2>
+                        <div>
+                          <h2 class="info title"> <%= talent.name%> </h2>
+                          <p class="info justify-content-center"><%= talent.category.upcase %></p>
+                        </div>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
-                          <p><%= talent.category %></p>
                           </div>
                         </div>
                       </div>
@@ -290,27 +303,30 @@
 
           <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
             <div class="img-wrapper">
-              <div class="pole-description">
-              <span>POLE FASHION</span>
-              <p class="note-talent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-            </div>
+              
               <% @talents.where(category: 'fashion').each do |talent|%>
 
-                <%= link_to talent_path(talent, target: "_blank") do %>
+                <%= link_to talent_path(talent) do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                      <% if talent.category == "green" %>
+                        <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                      <% end %>
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <p class="px-3 tag"><%= talent.category %></p>
+                            <p class="px-3 tag">
+                            </p>
                           </div>
                         </div>
 
-                        <h2 class="info title"> <%= talent.name%> </h2>
+                        <div>
+                          <h2 class="info title"> <%= talent.name%> </h2>
+                          <p class="info justify-content-center"><%= talent.category.upcase %></p>
+                        </div>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
-                          <p><%= talent.category %></p>
                           </div>
                         </div>
                       </div>
