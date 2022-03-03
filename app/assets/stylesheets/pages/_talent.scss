@@ -36,6 +36,7 @@ section.talent {
 
       & .text-content {
         width: 35vw;
+        z-index: 10000;
         //text-align: center;
         & .social-links > a {
           color: $black;
