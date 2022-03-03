@@ -23,8 +23,5 @@ module AdcrewApp1
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    # config.i18n.available.locales = [:fr, :en]
-    # config.i18n.default.locale = :en
-    # config.i18n.fallbacks = true
   end
 end
