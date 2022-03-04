@@ -38,3 +38,10 @@ fr:
     tab4: "URBAN"
     tab5: "FASHION"
     tab6: "Ajouter un talent"
+    show:
+      links:
+        index: "Retour"
+        edit: "Modifier"
+      social: "d'abonnés"
+      media: "Kit media"
+      stat: "Statistiques"
