@@ -28,3 +28,13 @@ fr:
         index: "Retour"
         edit: "Modifier"
       paragraphe: "Les talents impliqués dans cette campagne"
+  talents:
+    title: "NOS TALENTS"
+    paragraphe: "AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs."
+    note: "ADCrew offre a ses influenceurs des prestations variées, de la stratégie digitale à la création de posts sponsorisés, en mettant en relation des marques avec nses talents pour des placements de produits Celebrity Marketing."
+    tab1: "Tous"
+    tab2: "GREEN"
+    tab3: "POSITIVE"
+    tab4: "URBAN"
+    tab5: "FASHION"
+    tab6: "Ajouter un talent"
