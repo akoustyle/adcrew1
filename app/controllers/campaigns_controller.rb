@@ -17,10 +17,10 @@ class CampaignsController < ApplicationController
     @collab = Talent.find_by(params[:collabs])
     @campaign = Campaign.new(campaign_params)
     #@campaign = current_user.campaigns.build(campaign_params)
-    if !@campaign
-      @campaign = Campaign.new
-      @campaign.collab = @collab
-      @campaign.save
+   if  @campaign.save
+      # @campaign = Campaign.new
+      # @campaign.collab = @collab
+      # @campaign.save
       redirect_to @campaign, notice: "Yessss! It was posted"
     else
       render "new"

@@ -1,99 +1,49 @@
 <%= content_for(:navbar_class, "main-sidebar-home") %>
 <div class="scroll">
   <div class="smooth">
-    <section class="home" id="home">
-      <div class="scroll video-banner">
-          <div class="background">
-          </div>
-          <div class="banner-icons">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-      </div>
-    </section>
-    <section class="home" id="about">
+    <section class="team" id="team">
       <div class="content">
         <div class="text-content">
-          <h2>L'HISTOIRE DE L'AGENCE</h2>
-          <p class="pt-3">
-            AD CREW est née de la rencontre de deux femmes entrepreneures en 2017.
-            Collaborant ensemble lors d’une opération de communication sur le marché américain et réalisant qu’elles partagent les mêmes valeurs, elles décident de monter dans la foulée leur propre agence de stratégie digitale.
-          </p>
-        </div>
-      </div>
-      <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
-    </section>
-    <section class="home" id="talent">
-      <div class="content">
-        <div class="text-content">
-          <h2>Une histoire de femme</h2>
+          <h2>UNE HISTOIRE DE FEMME</h2>
           <p class="pt-3">
             En fait... c'est d'abord une histoire de femmes, de femmes entrepreneurs, passionnées de digitale qui se sont lancées à la conquête d'une nouvelle manière de communiquer.
           </p>
         </div>
       </div>
-      <div class="content container">
-        <div class="img-wrapper">
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path('maud.png') %>'); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                    <p class="px-3 tag">CEO</p>
-                  </div>
-                </div>
-
-                <h2 class="info title">Maud H.L.</h2>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  <p>CEO</p>
-                  </div>
-                </div>
+      <div class="content">
+          <div class="img-wrapper">
+            <div class="gif-talent" id="maud">
+              <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -39px;">
+                <p style="font-family: 'Lexend Mega'; line-height: 1.9;"><strong> Maud H . L . </strong></p>
+                <p class="ml-2">CEO</p>
               </div>
             </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path('jessica.jpg') %>'); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                    <p class="px-3 tag">CEO</p>
-                  </div>
-                </div>
-
-                <h2 class="info title">Jessica Cohen Bouaziz</h2>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  <p>CEO</p>
-                  </div>
-                </div>
+            <div class="gif-talent" id="jessica">
+              <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -39px;">
+                <p style="font-family: 'Lexend Mega'; line-height: 1.9;"><strong> Jessica Cohen Bouaziz </strong></p>
+                <p class="ml-2">CEO</p>
               </div>
             </div>
+            <p class="note">
+              Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !
+            </p>
+            <div class="gif-talent"></div>
           </div>
-          <p class="note-team">
-            Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !
-          </p>
-        </div>
       </div>
     </section>
-    <section class="home" id="talent">
+    <section class="team" id="team">
+
       <div class="content">
         <div class="text-content">
-          <a><%= link_to "Contactez-nous", contact_path %></a>
-          <h2>La team </h2>
-          <p class="pt-3">
-            L'ambiance chaleureuse de l'équipe, les valeurs auxquelles nous croyons, et que nous défendons insufflent une énergie bienveillante et familiale à l'agence.<br>
-            Le nom de l’agence provient de la contraction d’Advertising Crew qui vient confirmer l’importance de la notion de famille et d’équipe chère aux dirigeantes.
-          </p>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <p class="mb-0">LA TEAM</p>
+            <%= link_to "Contactez-nous", contact_path %>
+          </div>
         </div>
       </div>
-      <div class="content container">
-        <div class="img-wrapper">
+
+      <div class="content">
+<!--         <div class="img-wrapper">
           <div class="team-card2">
             <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path('maureen.jpg') %>'); background-position: center; background-size: cover">
               <div class="card-info">
@@ -189,82 +139,212 @@
               </div>
             </div>
           </div>
+        </div> -->
+        <div class="img-wrapper">
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('maureen.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Maureen </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('alix.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Alix </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('chloe.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Chloé </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('leonie.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Léonie </h2>
+                  <p class="info justify-content-center">Chef de prod</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('manon.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Manon </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('melchior.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Melchior </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('nao.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Nao </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('sofia.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Sofia </h2>
+                  <p class="info justify-content-center">Gestion & Comptablilité</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('victoria.jpg') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Victoria </h2>
+                  <p class="info justify-content-center">Talent Manager</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('carla.png') %>); background-position: center; background-size: cover">
+              <div class="card-info">
+                <div class="top py-1">
+                  <div class="info">
+                  </div>
+                </div>
+
+                <div>
+                  <h2 class="info title"> Carla </h2>
+                  <p class="info justify-content-center">Chef de Projet</p>
+                </div>
+
+                <div class="bottom">
+                  <div class="info justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
       </div>
     </section>
-
-    <%# <section class="home" id="talent">
-      <div class="content">
-        <div class="text-content">
-          <a><%= link_to "Contactez-nous", contact_path %></a>
-          <%# <h2>La team #talentmanager</h2>
-          <p class="pt-3">
-            L'ambiance chaleureuse de l'équipe, les valeurs auxquelles nous croyons, et que nous défendons insufflent une énergie bienveillante et familiale à l'agence.
-          </p>
-        </div>
-      </div>
-      <div class="content container">
-        <div class="img-wrapper">
-          <div class="team-card2">
-            <%# <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path('leonie.png') %>
-              <%# <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                    <p class="px-3 tag">Chef de Production</p>
-                  </div>
-                </div>
-
-                <h2 class="info title">LEONIE</h2>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  <p>CP</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card2">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path('carla.png') %>
-              <%# <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                    <p class="px-3 tag">Chef de Projet</p>
-                  </div>
-                </div>
-
-                <h2 class="info title">CARLA</h2>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  <p>CP</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card2">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path('sofia.png') %>'); background-position: center; background-size: cover">
-              <%# <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                    <p class="px-3 tag">Gestion & Compatbilité</p>
-                  </div>
-                </div>
-
-                <h2 class="info title">SOFIA</h2>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  <p></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> %>
-
   </div>
 </div>

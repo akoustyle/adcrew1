@@ -37,6 +37,10 @@ p {
 	font-family: $text-font;
 }
 
+.img-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 ///////////BACKGROUND//////////
 
 .main-bg {

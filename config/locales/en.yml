@@ -28,24 +28,18 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
-# yaml world
+
 en:
-  hello: "Hello world"
-  number:
-    human:
-      decimal_units:
-        format: "%n%u"
-        units:
-          unit: ""
-          thousand: K
-          million: M
-          billion: B
-          trillion: T
-          quadrillion: Q
-# equivalent in ruby world => Hash
-#locale = {
-  # en: {
-  #  hello: "Hello world"
-  #}
-#}
-#hreflang TO had metatag
+  home:
+    title: "The agency"
+    number:
+      human:
+        decimal_units:
+          format: "%n%u"
+          units:
+            unit: ""
+            thousand: K
+            million: M
+            billion: B
+            trillion: T
+            quadrillion: Q
