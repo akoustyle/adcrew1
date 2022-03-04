@@ -33,9 +33,9 @@
 <section class="contact" id="talent">
   <div class="content">
     <div class="text-content">
-      <h2>CONTACTEZ-NOUS</h2>
+      <h2><%= t('contact.title') %></h2>
       <p class="pt-3">
-        Swing by for a cup of coffee, or leave us a message
+        <%= t('contact.paragraphe') %>
       </p>
       <div class="pt-3 moto">
         <p><span class="moto-title mb-3"></span><span class="moto-content pl-3"></span></p>
@@ -46,19 +46,19 @@
     <div class="row">
       <div class="column">
         <form action="/action_page.php">
-          <label for="fname">First Name</label>
+          <label for="fname"><%= t('contact.form.name') %></label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
+          <label for="lname"><%= t('contact.form.last_name') %></label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="pole">Pole</label>
+          <label for="pole"><%= t('contact.form.category') %></label>
           <select id="pole" name="pole">
             <option value="green">Green</option>
             <option value="fashion">Fashion</option>
             <option value="urban">Urban</option>
             <option value="positivism">Positivism</option>
-            <option value="autre">Autre</option>
+            <option value="autre"><%= t('contact.form.select') %></option>
           </select>
-          <label for="subject">Subject</label>
+          <label for="subject"><%= t('contact.form.sujet') %></label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
           <input type="submit" value="Envoyer" class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red">
         </form>
