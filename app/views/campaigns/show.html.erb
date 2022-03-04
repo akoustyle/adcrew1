@@ -1,84 +1,3 @@
-
-<%# <div id="mainHeader"></div><!-- Ici se termine le mainHeader--> %>
-<%# <section id="pageContent">
-  <div id="grid-campaign">
-    <div class="bottom-photo3" style="height: 250px">
-      <%= cl_image_tag @campaign.photos.first.key, style: "height: 100%;width:100%"%>
-    <%# </div>
-    <div class="campaign-title">
-      <h3><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.name %><!-- </span></h3> -->
-    <%# </div>
-    <div class="campaign-reach">
-      <h3>Total reach <span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.reach %><!-- </span></h3> -->
-    <%# </div>
-    <div class="campaign-objectif">
-      <p><span style="font-weight: bold; font-family: Sketchalot"><%= @campaign.objectif %><!-- </span></p> -->
-    <%# </div>
-    <div class="bottom-photo1" style="height: 250px">
-      <%= cl_image_tag @campaign.photos.second.key, style: "height: 100%;width:100%" %>
-    <%# </div>
-    <div class="bottom-photo2" style="height: 250px">
-      <%= cl_image_tag @campaign.photos.fourth.key, style: "height: 100%;width:100%" %>
-    <%# </div>
-    <div class="mid-photo">
-      <%= cl_image_tag @campaign.photos.third.key, style: "height: 100%;width:100%" %>
-    <%# </div>
-    <div class="polaroid" style="height:200px; width: 200px">
-      <%= cl_image_tag @campaign.photos.last.key, style: "height: 100%; width: 100%" %>
-    <%# </div>
-  </div>
-</section><!--Ici se termine le pageContent--> %>
-<%# <div id="mainFooter"></div><!--Ici se termine le mainFooter--> %>
-<!---Ici commence le deuxieme grid layout for campaigns-->
-
-<!-- <div class="container">
-  <div id="pageContent">
-    <div class="container">
-      <div class="grid-layout">
-        <div class="grid__item a" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.fourth.key) : asset_path('background.jpeg') %>)"><div class=""></div>...</div>
-      <div class="grid__item b" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.third.key) : asset_path('background.jpeg') %>)"><div class=""></div><h6>Total reach <span style="font-weight: bold;color:white; font-family: Sketchalot"><%= number_to_human(@campaign.reach, presicion: 2, seprarator: ',', siginficant: false) %></span></h6></div>
-      <div class="grid__item c"><div class="" ></div><span style="font-weight: bold;color:white; font-family: Sketchalot"><%= @campaign.name %></span></div>
-      <div class="grid__item d" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= @campaign.photos.attached? ? cl_image_path(@campaign.photos.second.key) : asset_path('background.jpeg') %>)"><div class=""></div>...</div>
-      <div class="grid__item e"><div class=""></div></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="col-md-6 col-md-offset-3">
-      <div class="panel panel-default">
-        <div class="panel heading campaign_image center">
-          <%#= image_tag @campaign.image.url(:medium) %>
-        </div>
-        <div class="panel-footer">
-          <div class="row">
-            <div class="col md-6">
-              <div class="btn-group" style="display: flex;justify-content: space-evenly">
-                <% if user_signed_in? %>
-                <div>
-                    <%= link_to edit_campaign_path do %>
-                      <%= image_tag 'pencil-front-premium.png', width: 30 %>
-                    <% end %>
-                </div>
-                <div>
-                  <%= link_to campaign_path, method: :delete, data: { confirm: "Are you sure?"} do %>
-                    <%= image_tag 'trash-can-front-premium.png', width: 30 %>
-                  <% end %>
-                </div>
-                <% end %>
-                <div>
-                  <%= link_to campaigns_path do %>
-                    <%= image_tag 'back-front-premium.png', width: 30 %>
-                  <% end %>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <div class="scroll">
   <div class="smooth">
 
@@ -99,11 +18,9 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
-          <%# <%=if @campaign.photos.attached? ? %>
-              <%# <%= cl_image_tag @campaign.photos.first.key %>
-            <%# <% else %>
-              <%# <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
-            <%# end %>
+            <%#= cl_image_tag @campaign.photos.first.key, alt: "alttext" %>
+            <%#= cl_image_tag @campaign.photos.second.key, alt: "alttext" %>
+            <%#= cl_image_tag @campaign.photos.last.key, alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
@@ -133,17 +50,24 @@
             <%= link_to talent_path(collab.talent) do %>
               <div class="campaign-card">
                 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+
+                  <% if collab.talent.category == "green" %>
+                    <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                  <% end %>
+
                   <div class="card-info">
                     <div class="top py-1">
                       <div class="info">
                       </div>
                     </div>
 
-                    <h2 class="info title"> <%= collab.talent.name%> </h2>
+                    <div>
+                      <h2 class="info title"> <%= collab.talent.name%> </h2>
+                      <p class="info justify-content-center"><%= collab.talent.category.upcase %></p>
+                    </div>
 
                     <div class="bottom">
                       <div class="info justify-content-center">
-                          <p><%= collab.talent.category %></p>
                       </div>
                     </div>
                   </div>

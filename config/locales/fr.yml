@@ -1,13 +1,14 @@
 fr:
-  hello: "Bonjour worle mondeld"
-  number:
-    human:
-      decimal_units:
-        format: "%n%u"
-        units:
-          unit: ""
-          thousand: K
-          million: M
-          billion: B
-          trillion: T
-          quadrillion: Q
+  home:
+    title: "L'AGENCE"
+    paragraphe: "AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs."
+    links:
+      team: "En savoir plus"
+      campagnes: "Découvrir nos campagnes"
+      talents: "Découvrir nos talents"
+    title2: "Nos campagnes"
+    title3: "Nos talents"
+    paragraphe2: "L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins."
+    paragraphe3: "L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques."
+    note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
+    title4: "Nos valeurs"
