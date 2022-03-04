@@ -25,7 +25,7 @@
         <div class="text-content">
           <h2><%= t('campagnes.title') %></h2>
           <p class="pt-3">
-            AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure.
+            <%= t('campagnes.paragraphe') %>
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@
           <div class="gif-talent" id="gif-one"></div>
           <div class="gif-talent" id="gif-two"></div>
           <p class="note">
-            Réalisation de campagnes publicitaires,Proposition d’égéries (célébrités, influenceurs), Shootings (Lookbooks Presse/ Commerciaux/ Sites web), Campagnes d’affichage (Street Marketing, Kiosque, Bus, TV...)
+            <%= t('campagnes.note') %>
           </p>
           <div class="gif-talent" id="gif-three"></div>
           <div class="rounded-shape">
@@ -47,11 +47,11 @@
       <div class="content">
         <div class="text-content">
           <div class="d-flex justify-content-between nav nav-pills" id="pills-tab" role="tablist">
-            <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">ALL</a>
-            <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false">LAST CAMPAIGNS</a>
-            <a class="nav-link active" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="true">AD CREW CAMPAIGNS</a>
+            <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false"><%= t('campagnes.tab1') %></a>
+            <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
+            <a class="nav-link active" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="true"><%= t('campagnes.tab3') %></a>
             <% if user_signed_in? %>
-              <%= link_to 'ADD A CAMPAIGN', new_campaign_path %>
+              <%= link_to t('campagnes.tab4'), new_campaign_path %>
             <% end %>
           </div>
         </div>
@@ -68,11 +68,11 @@
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag">ADCREW campaign</p> <% end %>
+                            <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
                           </div>
                         </div>
 
-                        <h2 class="info title"> <%= campaign.name%> </h2>
+                        <h2 class="info title"> <%= campaign.name %> </h2>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
@@ -99,7 +99,7 @@
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag">ADCREW campaign</p> <% end %>
+                            <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
                           </div>
                         </div>
 
@@ -130,7 +130,7 @@
                       <div class="card-info">
                         <div class="top py-1">
                           <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag">ADCREW campaign</p> <% end %>
+                            <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
                           </div>
                         </div>
 

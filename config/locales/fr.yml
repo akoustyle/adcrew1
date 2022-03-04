@@ -12,3 +12,14 @@ fr:
     paragraphe3: "L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques."
     note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
     title4: "Nos valeurs"
+  campagnes:
+    title: "Une agence qui produit"
+    paragraphe: "AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure."
+    note: "Réalisation de campagnes publicitaires,Proposition d’égéries (célébrités, influenceurs), Shootings (Lookbooks Presse/ Commerciaux/ Sites web), Campagnes d’affichage (Street Marketing, Kiosque, Bus, TV...)"
+    tab1: "TOUTES LES CAMPAGNES"
+    tab2: "LES DERNIERES CAMPAGNES"
+    tab3: "LES CAMPAGNES AD CREW"
+    tab4: "AJOUTER UNE CAMPAGNE"
+    index:
+      adcampagnes: "Campagne AD CREW"
+      name: '%{name}'
