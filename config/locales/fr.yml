@@ -23,3 +23,8 @@ fr:
     index:
       adcampagnes: "Campagne AD CREW"
       name: '%{name}'
+    show:
+      links:
+        index: "Retour"
+        edit: "Modifier"
+      paragraphe: "Les talents impliqués dans cette campagne"

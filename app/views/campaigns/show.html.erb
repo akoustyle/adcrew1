@@ -4,9 +4,9 @@
     <section class="campaign" id="show-campaign">
         <div class="content">
           <div class="text-content">
-            <a><%= link_to "Back", campaigns_path %></a>
+            <a><%= link_to t('campagnes.show.links.index'), campaigns_path %></a>
             <% if user_signed_in? %>
-              <a><%= link_to "Edit", edit_campaign_path %></a>
+              <a><%= link_to t('campagnes.show.links.edit'), edit_campaign_path %></a>
             <% end %>
             <h2><%= @campaign.name %></h2>
             <div class="py-3">
@@ -39,7 +39,7 @@
       <div class="content">
         <div class="text-content">
           <div class="d-flex justify-content-between">
-            <p>Les talents impliqués dans cette campagne</p>
+            <p><%= t('campagnes.show.paragraphe') %></p>
           </div>
         </div>
       </div>
