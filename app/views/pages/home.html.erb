@@ -22,7 +22,7 @@
             <p class="pt-3">
               <%= t('home.paragraphe') %>
             </p>
-            <a><%= link_to "En savoir plus", team_path %></a>
+            <a><%= link_to t('home.links.team'), team_path %></a>
           </div>
         </div>
         <%= image_tag "https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80", alt: "alttext" %>
@@ -30,10 +30,10 @@
       <section class="home" id="campaign">
         <div class="content">
           <div class="text-content">
-            <a><%= link_to "Découvrir nos campagnes", campaigns_path %></a>
-            <h2>NOS CAMPAGNES</h2>
+            <a><%= link_to t('home.links.campagnes'), campaigns_path %></a>
+            <h2><%= t('home.title2') %></h2>
             <p class="pt-3">
-              L’agence accompagne les clients dans le développement de leur communication à travers des campagnes stratégiques en adéquation avec leurs besoins.
+              <%= t('home.paragraphe2') %>
             </p>
           </div>
         </div>
@@ -55,10 +55,10 @@
       <section class="home" id="talent">
         <div class="content">
           <div class="text-content">
-            <a> <%= link_to "Découvrir nos talents", talents_path %></a>
-            <h2>NOS TALENTS</h2>
+            <a> <%= link_to t('home.links.talents'), talents_path %></a>
+            <h2><%= t('home.title3') %></h2>
             <p class="pt-3">
-              L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques.
+              <%= t('home.paragraphe3') %>
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@
           <div class="img-wrapper">
             <div class="gif-talent" id="gif-one"></div>
             <p class="note">
-              Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes.
+              <%= t('home.note') %>
             </p>
             <div class="gif-talent" id="gif-two"></div>
             <div class="gif-talent" id="gif-three"></div>
@@ -76,7 +76,7 @@
       <section class="home" id="moto">
         <div class="content">
           <div class="text-content">
-            <h2>NOS VALEURS</h2>
+            <h2><%= t('home.title4') %></h2>
             <div class="pt-3 moto">
               <p><span class="moto-title mb-3"></span><span class="moto-content pl-3"></span></p>
             </div>
