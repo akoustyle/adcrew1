@@ -4,9 +4,9 @@
     <section class="team" id="team">
       <div class="content">
         <div class="text-content">
-          <h2>UNE HISTOIRE DE FEMME</h2>
+          <h2><%= t('team.title') %></h2>
           <p class="pt-3">
-            En fait... c'est d'abord une histoire de femmes, de femmes entrepreneurs, passionnées de digitale qui se sont lancées à la conquête d'une nouvelle manière de communiquer.
+            <%= t('team.paragraphe') %>
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@
               </div>
             </div>
             <p class="note">
-              Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !
+              <%= t('team.note') %>
             </p>
             <div class="gif-talent"></div>
           </div>
@@ -36,8 +36,8 @@
       <div class="content">
         <div class="text-content">
           <div class="d-flex justify-content-between align-items-center mb-2">
-            <p class="mb-0">LA TEAM</p>
-            <%= link_to "Contactez-nous", contact_path %>
+            <p class="mb-0"><%= t('team.team') %></p>
+            <%= link_to t('team.links.contact'), contact_path %>
           </div>
         </div>
       </div>
