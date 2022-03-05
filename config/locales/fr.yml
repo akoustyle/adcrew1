@@ -62,3 +62,17 @@ fr:
       sujet: "Sujet"
       select: "Autre"
       submit: "Envoyer"
+  footer:
+    title: "CONTACTEZ-NOUS"
+    title2: "À PROPOS"
+    links:
+      campaigns: "Campganes"
+      talents: "Talents"
+      signout: "Se deconneter"
+      signin: "Se connecter"
+  sidebar:
+    links:
+      campaigns: "CAMPAGNES"
+      talents: "TALENTS"
+      crew: "TEAM"
+      contact: "CONTACT"
