@@ -23,7 +23,10 @@ gem 'turbolinks', '~> 5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'rails-i18n'
+# gem 'globalize'
 # gem 'globalize3'
+# gem 'activemodel-serializers-xml'
+
 
 
 # Use Active Storage variant
