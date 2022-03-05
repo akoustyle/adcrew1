@@ -12,3 +12,67 @@ fr:
     paragraphe3: "L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques."
     note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
     title4: "Nos valeurs"
+  campagnes:
+    title: "Une agence qui produit"
+    paragraphe: "AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure."
+    note: "Réalisation de campagnes publicitaires,Proposition d’égéries (célébrités, influenceurs), Shootings (Lookbooks Presse/ Commerciaux/ Sites web), Campagnes d’affichage (Street Marketing, Kiosque, Bus, TV...)"
+    tab1: "TOUTES LES CAMPAGNES"
+    tab2: "LES DERNIERES CAMPAGNES"
+    tab3: "LES CAMPAGNES AD CREW"
+    tab4: "AJOUTER UNE CAMPAGNE"
+    index:
+      adcampagnes: "Campagne AD CREW"
+      name: '%{name}'
+    show:
+      links:
+        index: "Retour"
+        edit: "Modifier"
+      paragraphe: "Les talents impliqués dans cette campagne"
+  talents:
+    title: "NOS TALENTS"
+    paragraphe: "AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs."
+    note: "ADCrew offre a ses influenceurs des prestations variées, de la stratégie digitale à la création de posts sponsorisés, en mettant en relation des marques avec nses talents pour des placements de produits Celebrity Marketing."
+    tab1: "Tous"
+    tab2: "GREEN"
+    tab3: "POSITIVE"
+    tab4: "URBAN"
+    tab5: "FASHION"
+    tab6: "Ajouter un talent"
+    show:
+      links:
+        index: "Retour"
+        edit: "Modifier"
+      social: "d'abonnés"
+      media: "Kit media"
+      stat: "Statistiques"
+  team:
+    title: "UNE HISTOIRE DE FEMME"
+    paragraphe: "En fait... c'est d'abord une histoire de femmes, de femmes entrepreneurs, passionnées de digitale qui se sont lancées à la conquête d'une nouvelle manière de communiquer."
+    note: "Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !"
+    team: "LA TEAM"
+    links:
+      contact: "Contactez-nous"
+  contact:
+    title: "CONTACTEZ-NOUS"
+    paragraphe: "Passez prendre une tasse de café ou laissez-nous un message"
+    form:
+      name: "Prénom"
+      last_name: "Nom"
+      category: "Categorie"
+      sujet: "Sujet"
+      select: "Autre"
+      submit: "Envoyer"
+  footer:
+    title: "CONTACTEZ-NOUS"
+    title2: "À PROPOS"
+    links:
+      campaigns: "Campganes"
+      talents: "Talents"
+      signout: "Se deconneter"
+      signin: "Se connecter"
+  sidebar:
+    links:
+      campaigns: "CAMPAGNES"
+      talents: "TALENTS"
+      crew: "TEAM"
+      contact: "CONTACT"

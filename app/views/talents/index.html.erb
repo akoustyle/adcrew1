@@ -119,9 +119,9 @@
      <section class="campaigns" id="preview-campaign">
        <div class="content">
          <div class="text-content">
-           <h2>NOS TALENTS</h2>
+           <h2><%= t('talents.title') %></h2>
            <p class="pt-3">
-             AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs.
+             <%= t('talents.paragraphe') %>
            </p>
          </div>
        </div>
@@ -129,7 +129,7 @@
          <div class="img-wrapper">
            <div class="gif-talent" id="gif-one"></div>
            <p class="note">
-            ADCrew offre a ses influenceurs des prestations variées, de la stratégie digitale à la création de posts sponsorisés, en mettant en relation des marques avec nses talents pour des placements de produits Celebrity Marketing.
+            <%= t('talents.note') %>
            </p>
            <div class="gif-talent" id="gif-two"></div>
            <div class="gif-talent" id="gif-three"></div>
@@ -143,11 +143,11 @@
       <div class="content">
         <div class="text-content">
           <div class="nav nav-pills d-flex justify-content-between" id="pills-tab" role="tablist">
-            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">ALL</a>
-            <a class="nav-link" id="pills-green-tab" data-toggle="pill" href="#pills-green" role="tab" aria-controls="pills-green" aria-selected="false">GREEN</a>
-            <a class="nav-link" id="pills-positivism-tab" data-toggle="pill" href="#pills-positivism" role="tab" aria-controls="pills-positivism" aria-selected="false">POSITIVE</a>
-            <a class="nav-link" id="pills-urban-tab" data-toggle="pill" href="#pills-urban" role="tab" aria-controls="pills-urban" aria-selected="false">URBAN</a>
-            <a class="nav-link" id="pills-fashion-tab" data-toggle="pill" href="#pills-fashion" role="tab" aria-controls="pills-fashion" aria-selected="false">FASHION</a>
+            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true"><%= t('talents.tab1') %></a>
+            <a class="nav-link" id="pills-green-tab" data-toggle="pill" href="#pills-green" role="tab" aria-controls="pills-green" aria-selected="false"><%= t('talents.tab2') %></a>
+            <a class="nav-link" id="pills-positivism-tab" data-toggle="pill" href="#pills-positivism" role="tab" aria-controls="pills-positivism" aria-selected="false"><%= t('talents.tab3') %></a>
+            <a class="nav-link" id="pills-urban-tab" data-toggle="pill" href="#pills-urban" role="tab" aria-controls="pills-urban" aria-selected="false"><%= t('talents.tab4') %></a>
+            <a class="nav-link" id="pills-fashion-tab" data-toggle="pill" href="#pills-fashion" role="tab" aria-controls="pills-fashion" aria-selected="false"><%= t('talents.tab5') %></a>
             <% if user_signed_in? %>
             <%= link_to 'ADD A TALENT', new_talent_path %>
             <% end %>
@@ -194,7 +194,7 @@
 
           <div class="tab-pane fade" id="pills-green" role="tabpanel" aria-labelledby="pills-green-tab">
             <div class="img-wrapper">
-              
+
               <% @talents.where(category: 'green').each do |talent| %>
 
                 <%= link_to talent_path(talent) do %>
@@ -267,7 +267,7 @@
 
           <div class="tab-pane fade" id="pills-urban" role="tabpanel" aria-labelledby="pills-urban-tab">
             <div class="img-wrapper">
-              
+
               <% @talents.where(category: 'urban').each do |talent|%>
 
                 <%= link_to talent_path(talent) do %>
@@ -304,7 +304,7 @@
 
           <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
             <div class="img-wrapper">
-              
+
               <% @talents.where(category: 'fashion').each do |talent|%>
 
                 <%= link_to talent_path(talent) do %>

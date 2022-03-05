@@ -16,20 +16,20 @@
           </div>
 
           <div class="col-xs-6 col-md-3" style="text-align:center">
-            <h6>Contactez-nous</h6>
+            <h6><%= t('footer.title') %></h6>
             <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
           </div>
 
           <div class="col-xs-6 col-md-3" style="text-align:center">
-            <h6>À propos</h6>
+            <h6><%= t('footer.title2') %></h6>
             <ul class="footer-links">
-              <li><a> <%= link_to 'Campagnes', campaigns_path %></a></li>
-              <li><a> <%= link_to 'Talents', talents_path %> </a></li>
+              <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
+              <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
               <li><a href="#">Mentions legales</a></li>
               <li><a> <% if user_signed_in? %>
-                <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+                <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
               <% else %>
-                <%= link_to "Sign in", new_user_session_path %>
+                <%= link_to t('footer.links.signin'), new_user_session_path %>
               <% end %>
               </a></li>
             </ul>
