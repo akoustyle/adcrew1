@@ -198,13 +198,21 @@ section.home {
 		justify-content: space-between;
 		align-items: center;
 
-		& .background {
+		& .background video {
 			width: 100vw;
 			height: 100vh;
 			filter: grayscale(100%);
 			background-image: url(https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+      // background-image: url(random_video.mp4);
+      // <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
 			background-size: cover;
 		}
+    & video {
+      height: 100%;
+      width: 100vw;
+      object-fit: cover;
+      filter: grayscale(100%) contrast(120%);
+    }
 	}
 
 	&:nth-child(2) {
