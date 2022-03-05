@@ -9,8 +9,8 @@
       <% end %>
       <div class="content">
         <div class="text-content">
-          <%= link_to "Back", talents_path %>
-          <%= link_to "Edit", edit_talent_path %>
+          <%= link_to t('talents.show.links.index'), talents_path %>
+          <%= link_to t('talents.show.links.edit'), edit_talent_path %>
           <div class="d-flex justify-content-between align-items-center">
             <h2><%= @talent.name.upcase%></h2>
               <% if  @talent.category == "green" %>
@@ -32,35 +32,35 @@
                 <a href="#" style="position: absolute; top: 50px; left: 330px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fab fa-youtube"></i>
-                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> abonnés</p>
+                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                   </div>
                 </a>
 
                 <a href="#" style="position: absolute; top: -50px; left: 270px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fab fa-instagram"></i>
-                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %></p>
+                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                   </div>
                 </a>
 
                 <a href="#" style="position: absolute; top: 200px; left: 280px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fab fa-tiktok"></i>
-                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %></p>
+                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                   </div>
                 </a>
 
                 <a href="#" style="position: absolute; top: 300px; left: -70px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fas fa-chart-pie"></i>
-                    <p style="margin-left: 10px; margin-bottom: 0px;">Statistiques</p>
+                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.statistiques') %></p>
                   </div>
                 </a>
 
                 <a href="#" style="position: absolute; top: 200px; left: -120px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fas fa-download"></i>
-                    <p style="margin-left: 10px; margin-bottom: 0px;">Media kit</p>
+                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
                   </div>
                 </a>
               </div>

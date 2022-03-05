@@ -16,12 +16,12 @@
         <% end %>
       </div>
       <a class="closebtn">&times;</a>
-    </div> 
+    </div>
 
     <ul class="side-links">
-      <li> <%= link_to "Talents", talents_path %></li>
-      <li> <%= link_to "Campagnes", campaigns_path %></li>
-      <li> <%= link_to "Team", team_path %></li>
-      <li> <%= link_to "Contact", contact_path %></li>
+      <li> <%= link_to t('sidebar.links.campaigns'), campaigns_path %></li>
+      <li> <%= link_to t('sidebar.links.talents'), talents_path %></li>
+      <li> <%= link_to t('sidebar.links.crew'), team_path %></li>
+      <li> <%= link_to t('sidebar.links.contact'), contact_path %></li>
     </ul>
   </div>
