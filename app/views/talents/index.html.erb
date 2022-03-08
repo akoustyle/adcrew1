@@ -160,7 +160,7 @@
             <div class="img-wrapper">
               <% @talents.each do |talent|%>
 
-                <%= link_to talent_path(talent) do %>
+                <%= link_to talent_path(talent), target:"_blank" do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                       <% if talent.category == "green" %>
@@ -197,7 +197,7 @@
 
               <% @talents.where(category: 'green').each do |talent| %>
 
-                <%= link_to talent_path(talent) do %>
+                <%= link_to talent_path(talent), target:"_blank" do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                       <% if talent.category == "green" %>
@@ -233,7 +233,7 @@
             <div class="img-wrapper">
               <% @talents.where(category: 'positivism').each do |talent|%>
 
-                <%= link_to talent_path(talent) do %>
+                <%= link_to talent_path(talent), target:"_blank" do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                       <% if talent.category == "green" %>
@@ -270,7 +270,7 @@
 
               <% @talents.where(category: 'urban').each do |talent|%>
 
-                <%= link_to talent_path(talent) do %>
+                <%= link_to talent_path(talent), target:"_blank" do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                       <% if talent.category == "green" %>
@@ -307,7 +307,7 @@
 
               <% @talents.where(category: 'fashion').each do |talent|%>
 
-                <%= link_to talent_path(talent) do %>
+                <%= link_to talent_path(talent), target:"_blank" do %>
                   <div class="campaign-card">
                     <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
                       <% if talent.category == "green" %>

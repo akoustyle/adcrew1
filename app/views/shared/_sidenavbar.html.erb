@@ -23,5 +23,7 @@
       <li> <%= link_to t('sidebar.links.talents'), talents_path %></li>
       <li> <%= link_to t('sidebar.links.crew'), team_path %></li>
       <li> <%= link_to t('sidebar.links.contact'), contact_path %></li>
+      <p class="menu-btn"><%= link_to 'fr', root_path(locale: :fr) %></p>
+      <p class="menu-btn"><%= link_to 'en', root_path(locale: :en) %></p>
     </ul>
   </div>
