@@ -47,9 +47,10 @@
       <div class="column">
         <form action="/action_page.php">
           <label for="fname"><%= t('contact.form.name') %></label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <%# <input type="text" id="fname" name="firstname" placeholder="Your name.."> %>
+          <input type="text" id="fname" name="firstname" placeholder= <%= t('contact.form.placeholder') %> >
           <label for="lname"><%= t('contact.form.last_name') %></label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder=<%= t('contact.form.placeholder2') %>>
           <label for="pole"><%= t('contact.form.category') %></label>
           <select id="pole" name="pole">
             <option value="green">Green</option>
@@ -59,8 +60,8 @@
             <option value="autre"><%= t('contact.form.select') %></option>
           </select>
           <label for="subject"><%= t('contact.form.sujet') %></label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Envoyer" class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red">
+          <textarea id="subject" name="subject" placeholder=<%= t('contact.form.placeholder3') %> style="height:170px"></textarea>
+          <input type="submit" value=<%= t('contact.form.submit') %> class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red">
         </form>
       </div>
       <div class="column">

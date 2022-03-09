@@ -58,6 +58,9 @@ fr:
     form:
       name: "Prénom"
       last_name: "Nom"
+      placeholder: "Prénom..."
+      placeholder2: "Nom..."
+      placeholder3: "Écrivez..."
       category: "Categorie"
       sujet: "Sujet"
       select: "Autre"
