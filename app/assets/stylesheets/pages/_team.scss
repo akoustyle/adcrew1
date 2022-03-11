@@ -42,7 +42,7 @@ section.team {
       & .gif-talent {
         filter: grayscale(100%);
         margin: 30px 0;
-        height: 420px;
+        height: 400px;
         width: 24%;
           background-size: cover;
           background-position: center;
@@ -97,9 +97,10 @@ section.team {
       margin: 30px 0;
       & .note {
         margin: 0px 0px;
-        width: 100%;
+        width: 110%;
         font-size: 18px;
         text-transform: uppercase;
+        font-family: inherit;
         & span {
           text-decoration: line-through;
         }
