@@ -21,7 +21,8 @@
       <%= c.input :tag, input_html: { class: 'form-control'} %>
       <%= c.input :sentence, input_html: { class: 'form-control'} %>
       <%= c.input :sentence2, input_html: { class: 'form-control'} %>
-      <%= c.association :collabs, collection: Talent.all.pluck(:name), input_html: { class: 'multiselectuser'} %>
+      <%= c.association :collabs, collection: Talent.all.pluck(:name, :id), input_html: { class: 'multiselectuser'} %>
+      <%= c.input :video, as: :file, input_html: { class: 'form-control'}  %>
       <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Bg-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview" %>
       <%#= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input2'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a mid-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview2" %>
       <%#= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input3'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Top-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview3" %>

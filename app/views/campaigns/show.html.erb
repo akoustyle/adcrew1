@@ -7,6 +7,7 @@
             <a><%= link_to t('campagnes.show.links.index'), campaigns_path %></a>
             <% if user_signed_in? %>
               <a><%= link_to t('campagnes.show.links.edit'), edit_campaign_path %></a>
+              <a><%#= link_to "destroy", campaign_path, method: :destroy, data: { confirm: "Are you sure?"} %></a>
             <% end %>
             <h2><%= @campaign.name %></h2>
             <div class="py-3">
@@ -21,9 +22,15 @@
             <%#= cl_image_tag @campaign.photos.first.key, alt: "alttext" %>
             <%#= cl_image_tag @campaign.photos.second.key, alt: "alttext" %>
             <%#= cl_image_tag @campaign.photos.last.key, alt: "alttext" %>
-            <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <%#= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <% if @campaign.video != nil %>
+              <%= cl_video_tag (url(@campaign.video) %>
+            <% else %>
+              <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+              <%#= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
+            <% end %>
             <p class="note">
               <%= @campaign.sentence %> <br>
               <%= @campaign.sentence2 %>
