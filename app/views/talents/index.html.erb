@@ -1,147 +1,37 @@
-<!-- <div class="talent-header container">
-  <div class="talent-title">
-    <span>Talents</span>
-    <h1>Notre famille AD CREW</h1>
-  </div>
-  <div class="talent-wording">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestiae!</p>
-  </div>
-  <div class="line-talents" style="margin-bottom:10px"></div>
-  <% if user_signed_in? %>
-    <div class="talent-new">
-      <%= link_to new_talent_path do%>
-        <%= image_tag 'plus-front-premium.png', alt: 'New talent', width: 30 %>
-      <% end %>
-    </div>
-  <% end %>
-  <div class="talents-tab">
-    <ul class="nav nav-pills mb-1 d-flex justify-content-around" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-green-tab" data-toggle="pill" href="#pills-green" role="tab" aria-controls="pills-green" aria-selected="false">Green</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-urban-tab" data-toggle="pill" href="#pills-urban" role="tab" aria-controls="pills-urban" aria-selected="false">Urban</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-fashion-tab" data-toggle="pill" href="#pills-fashion" role="tab" aria-controls="pills-fashion" aria-selected="false">Fashion</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-positivism-tab" data-toggle="pill" href="#pills-positivism" role="tab" aria-controls="pills-positivism" aria-selected="false">Positivism</a>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" data-controller="all">
-    <div class="cards">
-      <% @talents.each do |talent| %>
-        <%= link_to talent, target:"_blank" do %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-          <span><%=talent.name %></span>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="tab-pane fade" id="pills-urban" role="tabpanel" aria-labelledby="pills-urban-tab">
-    <div class="pole-description">
-      <span>POLE URBAN</span>
-      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-    </div>
-    <div class="cards">
-      <% @talents.where(category: 'urban').each do |talent| %>
-        <%= link_to talent, target:"_blank" do %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-            <span><%= talent.name %></span>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
-    <div class="pole-description">
-      <span>POLE FASHION</span>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-    </div>
-    <div class="cards">
-      <% @talents.where(category: 'fashion').each do |talent| %>
-      <%= link_to talent, target:"_blank" do %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-            <span><%= talent.name %></span>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="tab-pane fade" id="pills-positivism" role="tabpanel" aria-labelledby="pills-positivism-tab">
-    <div class="pole-description">
-      <span>POLE POSITIVISM</span>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-    </div>
-    <div class="cards">
-      <% @talents.where(category: 'positivism').each do |talent| %>
-        <%= link_to talent, target:"_blank" do %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-            <span><%= talent.name %></span>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-
-  <div class="tab-pane fade" id="pills-green" role="tabpanel" aria-labelledby="pills-green-tab">
-    <div class="pole-description">
-      <span>POLE GREEN</span>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quasi nostrum temporibus. Odit laborum quibusdam illum labore dicta asperiores magni quisquam fugit, nobis deserunt praesentium! Natus neque facilis illum aut eos quasi incidunt quam. Ab, doloremque ratione suscipit maiores asperiores similique, nostrum architecto sequi, adipisci sunt numquam dolore rerum vitae!</p>
-    </div>
-    <div class="cards">
-      <% @talents.where(category: 'green').each do |talent| %>
-        <%= link_to talent, target:"_blank" do %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : asset_path('background.jpeg') %>)">
-            <span><%= talent.name %></span>
-          </div>
-        <% end %>
-      <% end %>
-    </div>
-  </div>
-</div>
- -->
 
  <div class="scroll">
    <div class="smooth">
 
-     <section class="campaigns" id="preview-campaign">
+     <%# <section class="campaigns" id="preview-campaign">
        <div class="content">
-         <div class="text-content">
-           <h2><%= t('talents.title') %></h2>
-           <p class="pt-3">
-             <%= t('talents.paragraphe') %>
-           </p>
-         </div>
+        <div class="text-content">
+           <%# <h2>= t('talents.title')</h2>
+           <%# <p class="pt-3">
+             <%#= t('talents.paragraphe') %>
+           <%# </p> %>
+        <%# </div>
        </div>
-       <div class="content">
+       <%# <div class="content">
          <div class="img-wrapper">
            <div class="gif-talent" id="gif-one"></div>
            <p class="note">
-            <%= t('talents.note') %>
-           </p>
+            <%#= t('talents.note') %>
+           <%# </p>
            <div class="gif-talent" id="gif-two"></div>
            <div class="gif-talent" id="gif-three"></div>
            <div class="rounded-shape">
            </div>
          </div>
-       </div>
-     </section>
+       </div> %>
+     <%# </section> %>
 
-    <section class="campaigns" id="campaign">
+    <section class="talents" id="campaign">
       <div class="content">
         <div class="text-content">
+           <h2><%= t('talents.title') %></h2>
+           <p class="pt-3">
+             <%= t('talents.paragraphe') %>
+           </p>
           <div class="nav nav-pills d-flex justify-content-between" id="pills-tab" role="tablist">
             <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true"><%= t('talents.tab1') %></a>
             <a class="nav-link" id="pills-green-tab" data-toggle="pill" href="#pills-green" role="tab" aria-controls="pills-green" aria-selected="false"><%= t('talents.tab2') %></a>

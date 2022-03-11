@@ -16,11 +16,11 @@ class CampaignsController < ApplicationController
   def create
     @collab = Talent.find_by(params[:collabs])
     @campaign = Campaign.new(campaign_params)
-    #@campaign = current_user.campaigns.build(campaign_params)
-   if  @campaign.save
-      # @campaign = Campaign.new
-      # @campaign.collab = @collab
-      # @campaign.save
+    if @campaign.save
+      params[:campaign][:collab_ids].each do |id|
+        next if id.blank?
+        Collab.create(campaign: @campaign, talent_id: id)
+      end
       redirect_to @campaign, notice: "Yessss! It was posted"
     else
       render "new"
@@ -28,6 +28,9 @@ class CampaignsController < ApplicationController
   end
 
   def edit
+    @collab = Talent.find_by(params[:collabs])
+    find_campaign
+
   end
 
   def update
@@ -39,6 +42,8 @@ class CampaignsController < ApplicationController
   end
 
   def destroy
+    @campaign = Campaign.find(params[:id])
+    authorize @campaign
     @campaign.destroy
     redirect_to campaigns_path
   end
@@ -46,7 +51,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :collabs, :tag, photos:[])
+    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :tag, photos:[])
   end
 
   def find_campaign
