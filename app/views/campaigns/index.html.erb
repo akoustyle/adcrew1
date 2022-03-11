@@ -52,7 +52,7 @@
             <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
             <a class="nav-link active" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="true"><%= t('campagnes.tab3') %></a>
             <% if user_signed_in? %>
-              <%= link_to t('campagnes.tab4'), new_campaign_path %>
+              <a class="nav-link"><%= link_to t('campagnes.tab4'), new_campaign_path %></a>
             <% end %>
           </div>
         </div>

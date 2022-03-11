@@ -1,36 +1,18 @@
 fr:
   home:
-    number:
-          human:
-            decimal_units:
-              format: "%n%u"
-              units:
-                unit: ""
-                mille: k
-                million: M
-                billion: B
-                trillion: T
-                quadrillion: Q
     title: "L'AGENCE"
-    paragraphe: "AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs."
+    paragraphe: "AD CREW est une agence experte en marketing d’influence. Elle se positionne comme la référence dans le domaine du Green.Via ses diverses campagnes de sensibilisation mais aussi de terrain, elle se démarque sur le marché de l’éco-responsabilité et de l’écologie en prônant des valeurs fortes dans le but de faire bouger les mœurs. Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes. Elle défend ainsi des actes pour la défense de l’environnement et de la planète. "
     links:
       team: "En savoir plus"
       campagnes: "Découvrir nos campagnes"
       talents: "Découvrir nos talents"
     title2: "Nos campagnes"
-    title3: "26 influenceurs en exclusivités et un réseau de plus de 15 000 influenceurs basés
-dans plus 10 pays"
-    paragraphe2: "Ad Crew accompagne ses nombreux clients dans leurs campagnes de
-communication digitale via la création de contenu stratégique sur mesure. L’équipe
-collabore au quotidien avec des influenceurs, blogueurs et personnalités du
-monde entier dans le but d’apporter de la perspective et
-de la visibilité aux marques."
+    title3: "26 influenceurs en exclusivités et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays"
+    paragraphe2: "Ad Crew accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure. L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques."
     paragraphe3: "L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques."
     note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
     title4: "Nos valeurs"
-    paragraphe4: "AD Crew a des valeurs fortes prônées tout au long des missions : confiance ,
-éthique, respect, éco- responsabilité, inclusion, environnement, diversité avec une
-équipe impliquée afin de satisfaire ses clients en leur proposant du sur mesure."
+    paragraphe4: "AD Crew a des valeurs fortes prônées tout au long des missions : confiance , éthique, respect, éco- responsabilité, inclusion, environnement, diversité avec une équipe impliquée afin de satisfaire ses clients en leur proposant du sur mesure."
   campagnes:
     title: "Une agence qui produit"
     paragraphe: "AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure."
@@ -66,7 +48,7 @@ de la visibilité aux marques."
       stat: "Statistiques"
   team:
     title: "UNE HISTOIRE DE FEMME"
-    paragraphe: "En fait... c'est d'abord une histoire de femmes, de femmes entrepreneurs, passionnées de digitale qui se sont lancées à la conquête d'une nouvelle manière de communiquer."
+    paragraphe_html: "AD CREW est née de la rencontre de deux femmes entrepreneures en 2017. <br>Collaborant ensemble lors d’une opération de communication sur le marché américain et réalisant qu’elles partagent les mêmes valeurs, elles décident de monter dans la foulée leur propre agence de stratégie digitale."
     note: "Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !"
     team: "LA TEAM"
     links:
