@@ -51,7 +51,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :tag, photos:[])
+    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :tag, :video, photos:[])
   end
 
   def find_campaign

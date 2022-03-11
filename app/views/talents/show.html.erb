@@ -1,11 +1,16 @@
 <div class="scroll">
   <div class="smooth">
     <section class="talent" id="talent">
-      <% if @talent.photos.last != nil %>
-        <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+      <%# if @talent.video.last != nil %>
+        <%#= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+      <%# else %>
+        <%#= cl_image_tag @talent.photos.first.key, alt: "alttext" %>
+        <%# <p class="note" style="transform: translate(-50%, -50%); position: absolute; text-align: center; top: 50%; left: 25%; width: 20%;"> <%= @talent.about %> </p>
+      <%# end %>
+      <% if @talent.video.attached? %>
+        <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% else %>
-        <%= cl_image_tag @talent.photos.first.key, alt: "alttext" %>
-        <p class="note" style="transform: translate(-50%, -50%); position: absolute; text-align: center; top: 50%; left: 25%; width: 20%;"> <%= @talent.about %> </p>
+          <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
       <div class="content">
         <div class="text-content">

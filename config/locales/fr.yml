@@ -1,5 +1,16 @@
 fr:
   home:
+    number:
+          human:
+            decimal_units:
+              format: "%n%u"
+              units:
+                unit: ""
+                mille: k
+                million: M
+                billion: B
+                trillion: T
+                quadrillion: Q
     title: "L'AGENCE"
     paragraphe: "AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs."
     links:
