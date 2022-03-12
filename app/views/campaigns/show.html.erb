@@ -79,7 +79,7 @@
         <div class="img-wrapper">
           <% @campaign.collabs.each do |collab|%>
 
-            <%= link_to talent_path(collab.talent) do %>
+            <%= link_to talent_path(collab.talent), target:"_blank" do %>
               <div class="campaign-card">
                 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
 
