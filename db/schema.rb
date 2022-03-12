@@ -43,11 +43,6 @@ ActiveRecord::Schema.define(version: 2022_03_05_190613) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "campaign_translations", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "campaigns", force: :cascade do |t|
     t.string "name"
     t.text "objectif"
