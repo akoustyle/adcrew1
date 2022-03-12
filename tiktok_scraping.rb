@@ -53,7 +53,6 @@ require "json"
     end
     results
   end
-end
 
 import requests from bs4 import BeautifulSoup
 
@@ -64,7 +63,7 @@ headers = {
 }
 
 soup = BeautifulSoup(requests.get(url, headers = headers).content, "html.parser")
-puts (soup.select_one('[title="Followers"]').text)
+puts(soup.select_one('[title="Followers"]').text)
 
 # def scrape_youtube(keyword)
 #   #forge the url
