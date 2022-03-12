@@ -11,7 +11,7 @@ section.team {
 
   &:nth-child(1) {
     flex-direction: column;
-    padding-top: 13vh;
+    padding-top: 10vh;
 
     & .content {
     display: flex;
@@ -23,7 +23,7 @@ section.team {
         border-bottom: 1px black solid;
           width: 85vw;
           & p {
-            width: 35vw;
+            width: 50vw;
           }
         //text-align: center;
         & a {
@@ -81,8 +81,10 @@ section.team {
         & a {
           font-size: 14px;
           color: $red;
+          z-index: 1000000;
           &:hover {
             border-bottom: none;
+            text-decoration: underline;
           }
         }
       }
