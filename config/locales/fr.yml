@@ -1,7 +1,7 @@
 fr:
   home:
     title: "L'AGENCE"
-    paragraphe: "AD CREW est une agence experte en marketing d’influence. Elle se positionne comme la référence dans le domaine du Green.Via ses diverses campagnes de sensibilisation mais aussi de terrain, elle se démarque sur le marché de l’éco-responsabilité et de l’écologie en prônant des valeurs fortes dans le but de faire bouger les mœurs. Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes. Elle défend ainsi des actes pour la défense de l’environnement et de la planète. "
+    paragraphe_html: "<p>AD CREW est une agence experte en marketing d’influence. Elle se positionne comme la référence dans le domaine du Green.</p><p>Via ses diverses campagnes de sensibilisation mais aussi de terrain, elle se démarque sur le marché de l’éco-responsabilité et de l’écologie en prônant des valeurs fortes dans le but de faire bouger les mœurs.</p><p> Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes. Elle défend ainsi des actes pour la défense de l’environnement et de la planète.</p> "
     links:
       team: "En savoir plus"
       campagnes: "Découvrir nos campagnes"
