@@ -45,6 +45,7 @@ class TalentsController < ApplicationController
   end
 
   def destroy
+    authorize @campaign
     @talent.destroy
     redirect_to talents_path
   end
