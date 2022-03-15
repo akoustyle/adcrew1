@@ -6,7 +6,7 @@ section.team {
   // scroll-snap-align: center;
 
   .note {
-    font-family: $note-font;
+    font-family: $text-font;
   }
 
   &:nth-child(1) {
@@ -56,8 +56,8 @@ section.team {
       & .note {
         margin: 30px 10px;
         width: 24%;
-        font-size: 18px;
-        text-transform: uppercase;
+        font-size: 14px;
+        // text-transform: uppercase;
         & span {
           text-decoration: line-through;
         }
