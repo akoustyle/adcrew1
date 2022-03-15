@@ -1,14 +1,14 @@
 en:
   home:
     title: "THE AGENCY"
-    paragraphe_html: "<p>AD CREW is an expert agency in influence marketing. She positions herself as the reference in the field of Green.</p><p>Through its various awareness campaigns but also in the field, it stands out in the eco-responsibility and ecology market by advocating strong values in order to change morals.</p><p> Concerned about the future that awaits the next generations, she makes a point of honor to encourage and incite to do the right things. It thus defends actions for the defense of the environment and the planet.</p>"
+    paragraphe_html: "<p>AD CREW is an expert agency in digital strategy that represents content creators.</p><p> Leader in the responsible influence market:<br> Inclusiveness, Eco-responsibility, diversity, committed messages and artistic vision are the values we defend on a daily basis. Helping talents who convey ideas in addition to a worked universe to develop their audience is our priority.</p> <p>We also support brands in the development of their long-term strategy, notably with the creation of original and avant-garde concepts for their digital campaigns, but also with strong proposals to adapt their image and values in a coherent and attractive way online and offline.</p><p>Let's influence the world with positive values!</p>"
     links:
       team: "Learn more"
       campagnes: "Discover our campaigns"
       talents: "Discover our talents"
     title2: "Our campaigns"
     title3: "26 exclusive influencers and a network of more than 15,000 influencers based in more than 10 countries"
-    paragraphe2: "Ad Crew supports its many clients in their digital communication campaigns through the creation of tailor-made strategic content. The team collaborates on a daily basis with influencers, bloggers and personalities from all over the world with the aim of bringing perspective and visibility to brands."
+    paragraphe2: "Ad Crew supports its many clients in their campaigns digital communication through the creation of tailor-made strategic content."
     paragraphe3: "The team collaborates on a daily basis with influencers, bloggers and personalities from all over the world with the aim of bringing perspective and visibility to brands."
     note: "Concerned about the future that awaits the next generations, the agency makes it a point of honor to encourage and encourage people to do the right things."
     title4: "Our values"
@@ -49,7 +49,7 @@ en:
   team:
     title: "A WOMAN'S STORY"
     paragraphe_html: "AD CREW was born from the meeting of two women entrepreneurs in 2017.<br>Collaborating together during a communication operation on the market American and realizing that they share the same values, they decide to immediately set up their own digital strategy agency."
-    note: "Their strength, their determination and their complementarity made this challenge a real success since the agency was able to establish itself as one of the leaders on the market in a very short time!"
+    note_html: "Their strength, their determination as well as their complementarity made this challenge a real success since the agency was able to establish itself as one of the leaders on the market in a very short time!<br><br>The name of the he agency comes from the contraction of Advertising Crew, which confirms the importance of the concept of family and team, dear to leaders."
     team: "THE TEAM"
     links:
       contact: "Contact us"
