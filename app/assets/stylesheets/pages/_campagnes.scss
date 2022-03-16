@@ -2,6 +2,7 @@ section.campaigns {
 
   display: flex;
   height: 100vh;
+  margin-bottom: 20vh;
 
   // scroll-snap-align: center;
 
@@ -23,7 +24,7 @@ section.campaigns {
         border-bottom: 1px black solid;
           width: 85vw;
           & p {
-            width: 35vw;
+            width: 70vw;
           }
         //text-align: center;
         & a {
