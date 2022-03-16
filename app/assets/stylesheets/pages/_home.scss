@@ -259,6 +259,7 @@ section.home {
 			& .text-content {
 				border-bottom: 1px black solid;
 			    width: 85vw;
+          z-index: 10;
 			    & p {
 			    	width: 45vw;
 			    }
@@ -312,7 +313,7 @@ section.home {
 			        right: 10px;
 			        top: -200px;
 
-			        z-index: -1000;
+			        // z-index: -1000;
 			        height: 630px;
 			        width: 500px;
 			        transform: rotate(1deg);
