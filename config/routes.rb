@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     # get '/:locale' => 'campaigns#index'
     # get '/:locale' => 'campaigns#show'
     root to: 'pages#home'
-    resources :campaigns, only: [:destroy, :new, :edit, :update, :show, :index]
+    resources :campaigns
     resources :talents
     get 'team', to: 'pages#team', as: :team
     get 'contact', to: 'pages#contact', as: :contact
