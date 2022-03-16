@@ -130,6 +130,7 @@ section.campaign {
       display: flex;
       // width: 50vw;
       // height: 100vh;
+      z-index: 100;
       justify-content: center;
       // align-items: center;
       & .text-content {
@@ -164,7 +165,7 @@ section.campaign {
         margin: 30px 0;
         height: 430px;
         width: 24%;
-          object-fit: cover;
+        object-fit: cover;
 
         &:nth-child(1) {
             position: absolute;
@@ -191,8 +192,6 @@ section.campaign {
               position: absolute;
               right: 10px;
               top: -200px;
-
-              z-index: -1000;
               height: 630px;
               width: 500px;
               transform: rotate(1deg);
