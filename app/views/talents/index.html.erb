@@ -35,11 +35,10 @@
           <div class="nav nav-pills d-flex justify-content-between" id="pills-tab" role="tablist">
             <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true"><%= t('talents.tab1') %></a>
             <a class="nav-link" id="pills-green-tab" data-toggle="pill" href="#pills-green" role="tab" aria-controls="pills-green" aria-selected="false"><%= t('talents.tab2') %></a>
-            <a class="nav-link" id="pills-positivism-tab" data-toggle="pill" href="#pills-positivism" role="tab" aria-controls="pills-positivism" aria-selected="false"><%= t('talents.tab3') %></a>
-            <a class="nav-link" id="pills-urban-tab" data-toggle="pill" href="#pills-urban" role="tab" aria-controls="pills-urban" aria-selected="false"><%= t('talents.tab4') %></a>
+            <a class="nav-link" id="pills-lifestyle-tab" data-toggle="pill" href="#pills-lifestyle" role="tab" aria-controls="pills-lifestyle" aria-selected="false"><%= t('talents.tab3') %></a>
             <a class="nav-link" id="pills-fashion-tab" data-toggle="pill" href="#pills-fashion" role="tab" aria-controls="pills-fashion" aria-selected="false"><%= t('talents.tab5') %></a>
             <% if user_signed_in? %>
-            <%= link_to 'ADD A TALENT', new_talent_path %>
+            <a class="nav-link" id="pills-new-tab" data-toggle="pill" role="tab" aria-controls="pills-new" aria-selected="false"><%= link_to t('talents.tab6'), new_talent_path %></a>
             <% end %>
           </div>
         </div>
@@ -119,46 +118,9 @@
             </div>
           </div>
 
-          <div class="tab-pane fade" id="pills-positivism" role="tabpanel" aria-labelledby="pills-positivism-tab">
+          <div class="tab-pane fade" id="pills-lifestyle" role="tabpanel" aria-labelledby="pills-lifestyle-tab">
             <div class="img-wrapper">
-              <% @talents.where(category: 'positivism').each do |talent|%>
-
-                <%= link_to talent_path(talent), target:"_blank" do %>
-                  <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
-                      <% if talent.category == "green" %>
-                        <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
-                      <% end %>
-                      <div class="card-info">
-                        <div class="top py-1">
-                          <div class="info">
-                            <p class="px-3 tag">
-                            </p>
-                          </div>
-                        </div>
-
-                        <div>
-                          <h2 class="info title"> <%= talent.name%> </h2>
-                          <p class="info justify-content-center"><%= talent.category.upcase %></p>
-                        </div>
-
-                        <div class="bottom">
-                          <div class="info justify-content-center">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
-
-              <% end %>
-            </div>
-          </div>
-
-          <div class="tab-pane fade" id="pills-urban" role="tabpanel" aria-labelledby="pills-urban-tab">
-            <div class="img-wrapper">
-
-              <% @talents.where(category: 'urban').each do |talent|%>
+              <% @talents.where(category: 'lifestyle').each do |talent|%>
 
                 <%= link_to talent_path(talent), target:"_blank" do %>
                   <div class="campaign-card">
