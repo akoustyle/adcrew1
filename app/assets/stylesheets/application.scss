@@ -19,6 +19,9 @@
 html, body, a, h1, h2, h3, p, a:hover {
 	cursor: crosshair !important;
 }
+body {
+  background-color: white;
+}
 
 h1 {
 	font-family: $header-font;
