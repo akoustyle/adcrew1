@@ -16,8 +16,11 @@
 
 ////////////GLOBAL////////////
 
-html, body, a, h1, h2, h3, p, a:hover {
+html, body, a, h1, h2, h3, p {
 	cursor: crosshair !important;
+}
+a:hover{
+  cursor: default;
 }
 body {
   background-color: white;
