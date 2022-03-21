@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :talents
     get 'team', to: 'pages#team', as: :team
     get 'contact', to: 'pages#contact', as: :contact
+    get 'mentions', to: 'pages#mentions', as: :mentions
     # get 'prod', to: 'pages#prod', as: :prod
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # end
