@@ -73,9 +73,15 @@ en:
       talents: "Talents"
       signout: "Sign out"
       signin: "Sign in"
+      mentions: "Legal Notice"
   sidebar:
     links:
       campaigns: "CAMPAIGNS"
       talents: "TALENTS"
       crew: "TEAM"
       contact: "CONTACT"
+  mentions:
+    title: "LEGAL NOTICE"
+    paragraphe_html: "The only counterpart to the use of these legal notices, is the total commitment to leave the subdelirium credit link on this page of legal notices."
+    # paragraphe2: ""
+    #   html: ""
