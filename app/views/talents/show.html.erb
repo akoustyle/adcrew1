@@ -10,7 +10,7 @@
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% else %>
-          <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+          <%= video_tag "random_video.mov", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
       <div class="content">
         <div class="text-content">
