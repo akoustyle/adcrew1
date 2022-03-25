@@ -37,7 +37,7 @@
             <div class="rounded-shape">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
               <div class="social-links">
-                <% if @talent.subscriber_count_youtube == "0" || @talent.subscriber_count_youtube == ""  %>
+                <% if @talent.subscriber_count_youtube == "0" || @talent.subscriber_count_youtube == "" %>
                   <a href="<%= @talent.link_youtube %>" style="position: absolute; top: 50px; left: 330px; display: none;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-youtube"></i>
@@ -54,7 +54,7 @@
                 <% end %>
 
                 <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
-                  <a href="<%= @talent.link_insta %>"  style="position: absolute; top: -50px; left: 270px; display: none;">
+                  <a href="<%= @talent.link_insta %>"  style="position: absolute; top: -50px; left: 270px; display: none;;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-instagram"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -70,7 +70,7 @@
                 <% end %>
 
                 <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
-                  <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 200px; left: 280px; display: none;">
+                  <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 200px; left: 280px; z-index: 1000; display: none;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-tiktok"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>

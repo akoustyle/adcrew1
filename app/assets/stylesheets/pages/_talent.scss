@@ -3,7 +3,7 @@ section.talents {
   display: flex;
   height: 100vh;
 
-  // scroll-snap-align: center;
+  scroll-snap-align: center;
 
   .note {
     font-family: $note-font;
