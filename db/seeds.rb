@@ -15,37 +15,45 @@ User.destroy_all
 category = ["green", "fashion", "lifestyle"]
 puts 'Creating talents...'
 
-talent_one = Talent.create(name: "Fanny", about: "Hello I'm a sport trainer, bump into coding during the sanitary situation, got ambition and eager to do more in that professionnal environment.", title: "influenceuse", audience_male: "45%", audience_female: "65%",link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "22%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "46%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "73%", category: category.sample)
-puts "saving Fanny..."
-talent_one.save!
+blackmaroccan = Talent.create(name: "@blackmaroccan", about: "Hello I'm a Safya ", title: "influenceuse", audience_male: "45%", audience_female: "65%",link_insta: "https://www.instagram.com/blackmaroccan/", insta_link: "22500", insta_eng: "22%", link_tiktok: "", tiktok_link: "", tiktok_eng: "", link_youtube: "https://www.youtube.com/channel/UCA-GavKSIJmHNfsNKwmeq9w/videos", youtube_link: "UCA-GavKSIJmHNfsNKwmeq9w", youtube_eng: "73%", category: "green")
+puts "saving Blackmaroccan..."
+blackmaroccan.save!
 
-talent_two = Talent.create(name: "Noa Souffir", about: "Newbie in the freelance world 👩‍💻, I have a Master degree in Art Direction, at Penninghen Paris and expect to use these two skills, design and development to follow the process of visual identity, from the conception to the creation, through both print and digital.", title: "influenceuse", audience_male: "19%", audience_female: "81%",link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCk8nAg4WD7Gcml7TK8yVtbQ", youtube_eng: "34%", category: category.sample)
-puts "saving Noa..."
-talent_two.save!
+jorjadela = Talent.create(name: "@jorjadela", about: "Hello I'm Justine", title: "influenceuse", audience_male: "19%", audience_female: "81%",link_insta: "https://www.instagram.com/jorjadela/", insta_link: "16700", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@jorjadela_?lang=fr", tiktok_link: "22600", tiktok_eng: "2%", link_youtube: "", youtube_link: "", youtube_eng: "", category: "green")
+puts "saving jorjadela..."
+jorjadela.save!
 
-talent_three = Talent.create(name: "Lucas", about: "Lucas est un jeune Youtubeur, souvent décrit comme humoriste par les internautes.", title: "youtubeur", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
-puts "saving Lucas..."
-talent_three.save!
+m_berenyce = Talent.create(name: "@m_berenyce", about: "Hello I'm Bérénice.", title: "influenceuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/m_berenyce/", insta_link: "15000", insta_eng: "76%", link_tiktok: "", tiktok_link: "", tiktok_eng: "", link_youtube: "https://www.youtube.com/channel/UCC4HF9Ir0EFipVngNHbcLew/videos", youtube_link: "UCC4HF9Ir0EFipVngNHbcLew", youtube_eng: "34%", category: "green")
+puts "saving berenyce..."
+m_berenyce.save!
 
-talent_four = Talent.create(name: "Clara", about: "Elle affectionne tout particulièrement les marques avec une réelle éthique. Cela n'empêche qu'elle soit une véritable mordue de mode.", title: "influenceuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
-puts "saving Clara..."
-talent_four.save!
+paulineleroy = Talent.create(name: "@_paulineleroy_", about: "Hello I'm Pauline.", title: "influenceuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/_paulineleroy_/", insta_link: "13400", insta_eng: "76%", link_tiktok: "", tiktok_link: "", tiktok_eng: "", link_youtube: "https://www.youtube.com/channel/UCJXW0Vtbfxd-UrkHH01qTNQ/videos", youtube_link: "UCJXW0Vtbfxd-UrkHH01qTNQ", youtube_eng: "34%", category: "green")
+puts "saving paulineleroy..."
+paulineleroy.save!
 
-talent_five = Talent.create(name: "Rubi", about: "Jeune Parisienne d’origine française et brésilienne, Rubi a un univers bien à elle.", title: "youtubeuse", audience_male: "19%", audience_female: "81%",link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: 'UCk8nAg4WD7Gcml7TK8yVtbQ', youtube_eng: "34%", category: category.sample)
-puts "saving Rubi..."
-talent_five.save!
+claravictorya = Talent.create(name: "@claravictorya", about: "Hello I'm Clara.", title: "influenceuse", audience_male: "19%", audience_female: "81%",link_insta: "https://www.instagram.com/claravictorya/", insta_link: "132000", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@clara.victorya?lang=fr", tiktok_link: "34900", tiktok_eng: "2%", link_youtube: "https://www.youtube.com/c/ClaraVictorya/videos", youtube_link: 'UCk8nAg4WD7Gcml7TK8yVtbQ', youtube_eng: "34%", category: "green")
+puts "saving claravictorya..."
+claravictorya.save!
 
-talent_six = Talent.create(name: "Manon", about: "Sur Instagram et sur Tik Tok elle partage avec beaucoup d'humour ses looks et ses tips pour vivre de façon plus responsable.", title: "tiktokeuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCk8nAg4WD7Gcml7TK8yVtbQ", youtube_eng: "34%", category: category.sample)
-puts "saving Manon..."
-talent_six.save!
+maoui2saintdenis = Talent.create(name: "@maoui2saintdenis", about: "Hello I'm Manon.", title: "influenceuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/maoui2saintdenis/", insta_link: "45200", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@maoui2saintdenis?lang=fr", tiktok_link: "158750", tiktok_eng: "2%", link_youtube: "", youtube_link: "", youtube_eng: "34%", category: "green")
+puts "saving maoui2saintdenis..."
+maoui2saintdenis.save!
 
-talent_seven = Talent.create(name: "Mathilde", about: "Aventurière et solaire , Mathilde partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
-puts "saving Mathilde..."
-talent_seven.save!
+rubipigeon = Talent.create(name: "@rubipigeon", about: "Hello I'm Rubi.", title: "influenceuse", audience_male: "19%", audience_female: "81%", link_insta: "https://www.instagram.com/rubipigeon/", insta_link: "42400", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@rubipigeon?lang=fr", tiktok_link: "8470", tiktok_eng: "2%", link_youtube: "https://www.youtube.com/c/RUSMINFR/videos", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: "green")
+puts "saving rubipigeon..."
+rubipigeon.save!
 
-talent_height = Talent.create(name: "Patrick", about: "Grand amateur de cuisine , Patrick partage à sa communauté son quotidien, sa famille et ses voyages.", title: "influenceur", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/adcrew_agency/", insta_link: Faker::Name.name, insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
-puts "saving Patrick..."
-talent_height.save!
+rosabohneur = Talent.create(name: "@rosabohneur", about: "Hello I'm Tess.", title: "influenceur", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/rosabohneur/", insta_link: "64400", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@ameliecara01", tiktok_link: Faker::Name.name, tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
+puts "saving rosabohneur..."
+rosabohneur.save!
+
+lesbonnesappes = Talent.create(name: "@lesbonnesappes", about: "Hello I'm Samantha.", title: "influenceur", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/lesbonnesappes/", insta_link: "49500", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@lesbonnesappes", tiktok_link: "81200", tiktok_eng: "2%", link_youtube: "https://www.youtube.com/user/passecomposeparis", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: category.sample)
+puts "saving lesbonnesappes..."
+lesbonnesappes.save!
+
+marionlouisa = Talent.create(name: "@_marionlouisa_", about: "Hello I'm Marion.", title: "influenceur", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/_marionlouisa_/", insta_link: "15800", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@marionlouisa?lang=fr", tiktok_link: "12600", tiktok_eng: "2%", link_youtube: "https://www.youtube.com/c/MarionLouisa/videos", youtube_link: "UCq5hh3lQDm41FrNchLBrJqw", youtube_eng: "34%", category: "green")
+puts "saving marionlouisa..."
+marionlouisa.save!
 
 puts 'Done !'
 
