@@ -12,9 +12,6 @@ Campaign.destroy_all
 Collab.destroy_all
 User.destroy_all
 
-category = ["green", "fashion", "lifestyle"]
-puts 'Creating talents...'
-
 blackmaroccan = Talent.create(name: "@blackmaroccan", about: "Safya est une jeune influenceuse streetwear et beauté sur Instagram. Passionnée par la mode et par la seconde-main, elle partage avec sa communauté toutes ses nouveautés et ses conseils pour développer un style pointu et éco- responsable. ", title: "influenceuse", audience_male: "45%", audience_female: "65%",link_insta: "https://www.instagram.com/blackmaroccan/", insta_link: "22500", insta_eng: "22%", link_tiktok: "", tiktok_link: "", tiktok_eng: "", link_youtube: "https://www.youtube.com/channel/UCA-GavKSIJmHNfsNKwmeq9w/videos", youtube_link: "UCA-GavKSIJmHNfsNKwmeq9w", youtube_eng: "73%", category: "green")
 puts "saving Blackmaroccan..."
 blackmaroccan.save!
