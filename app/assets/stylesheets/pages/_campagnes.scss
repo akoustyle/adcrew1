@@ -27,10 +27,13 @@ section.campaigns {
             width: 70vw;
           }
         //text-align: center;
+        & .nav-link:active{
+          background-color: transparent !important;
+          text-decoration: underline;
+        }
         & a {
           font-size: 14px;
           color: $red;
-          background-color: transparent !important;
           &:hover {
             border-bottom: 1px $red solid;
           }
