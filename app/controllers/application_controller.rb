@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   before_action :switch_locale
-<<<<<<< HEAD
   after_action :store_action
 
   def switch_locale
@@ -12,15 +11,6 @@ class ApplicationController < ActionController::Base
                   end
   end
 
-=======
-
-  def switch_locale
-    locale = params[:locale].to_s.strip.to_sym
-	  I18n.locale = I18n.available_locales.include?(locale) ?
-	      locale :
-	      I18n.default_locale
-  end
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
   # Get locale from top-level domain or return +nil+ if such locale is not available
   # You have to put something like:
   #   127.0.0.1 application.com
@@ -31,7 +21,6 @@ class ApplicationController < ActionController::Base
     { locale: I18n.locale == I18n.default_locale ? nil : I18n.locale }
   end
 
-<<<<<<< HEAD
   def store_action
     return unless request.get?
     if (request.path != "/users/sign_in" &&
@@ -44,6 +33,4 @@ class ApplicationController < ActionController::Base
       store_location_for(:user, request.fullpath)
     end
   end
-=======
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 end

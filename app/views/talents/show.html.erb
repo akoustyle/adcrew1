@@ -10,11 +10,7 @@
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% else %>
-<<<<<<< HEAD
-          <%= video_tag "random_video2.mov", autoplay: true, muted: true, loop: true, controls: false %>
-=======
           <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
       <% end %>
       <div class="content">
         <div class="text-content">
@@ -36,16 +32,11 @@
                 <p> <%= @talent.category.upcase %> </p>
               <% end %>
           </div>
-<<<<<<< HEAD
           <p style="font-size: 12px"><%= @talent.about %></p>
-=======
-          <p style="font-size: 9px"><%= @talent.about %></p>
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
           <div class="d-flex justify-content-center align-items-center">
             <div class="rounded-shape">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
               <div class="social-links">
-<<<<<<< HEAD
                 <% if @talent.youtube_link == "0" || @talent.youtube_link == "" %>
                   <a href="<%= @talent.link_youtube %>" style="position: absolute; top: 50px; left: 330px; display: none;">
                     <div class="d-flex" style="width: 200px;">
@@ -71,19 +62,6 @@
                   </a>
                 <% else %>
                   <a href="<%= @talent.link_insta %>"  style="position: absolute; top: -50px; left: 270px; z-index: 1000;">
-=======
-                <%# if @talent.subscriber_count_youtube != 0 %>
-                  <a href="<%#= @talent.link_youtube %>" style="position: absolute; top: 50px; left: 330px; z-index: 1000;">
-                    <div class="d-flex" style="width: 200px;">
-                      <i class="fab fa-youtube"></i>
-                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
-                    </div>
-                  </a>
-                <%# end %>
-
-                <% if @talent.insta_link != 0  %>
-                  <a href="<%#= @talent.link_insta %>"  style="position: absolute; top: -50px; left: 270px; z-index: 1000;">
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-instagram"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -91,7 +69,6 @@
                   </a>
                 <% end %>
 
-<<<<<<< HEAD
                 <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
                   <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 200px; left: 280px; z-index: 1000; display: none;">
                     <div class="d-flex" style="width: 200px;">
@@ -101,10 +78,6 @@
                   </a>
                 <% else %>
                   <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 200px; left: 280px; z-index: 1000;">
-=======
-                <% if @talent.tiktok_link != 0 %>
-                  <a href="<%#= @talent.link_tiktok %>"  style="position: absolute; top: 200px; left: 280px; z-index: 1000;">
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-tiktok"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -128,17 +101,12 @@
               </div>
             </div>
             <div class="talent-standing">
-<<<<<<< HEAD
               <% if @talent.photos.attached? %>
                 <%= cl_image_tag @talent.photos.last.key, alt: "alttext", class: "png-img", id: "png-mouseout" %>
                 <%= cl_image_tag @talent.photos.second.key, alt: "alttext", class: "png-img", id: "png-mousein" %>
               <% else %>
                 <%= image_tag 'silhouette3.png', alt:"alttext", class: "png-img" %>
               <% end %>
-=======
-              <%= cl_image_tag @talent.photos.last.key, alt: "alttext", class: "png-img", id: "png-mouseout" %>
-              <%= cl_image_tag @talent.photos.second.key, alt: "alttext", class: "png-img", id: "png-mousein" %>
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
             </div>
           </div>
         </div>

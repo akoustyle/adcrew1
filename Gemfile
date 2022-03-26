@@ -27,30 +27,19 @@ gem 'rails-i18n'
 # gem 'globalize3'
 # gem 'activemodel-serializers-xml'
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'cloudinary', '~> 1.16.0'
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
-<<<<<<< HEAD
-gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
-=======
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 gem 'bootstrap', '~> 5.0.2'
 
 group :development, :test do
@@ -59,11 +48,7 @@ group :development, :test do
   gem 'dotenv-rails'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-<<<<<<< HEAD
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
-=======
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 end
 
 group :development do
@@ -86,8 +71,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-<<<<<<< HEAD
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-=======
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
->>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
