@@ -3,7 +3,11 @@ section.team {
   display: flex;
   height: 100vh;
 
+<<<<<<< HEAD
   scroll-snap-align: center;
+=======
+  // scroll-snap-align: center;
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 
   .note {
     font-family: $text-font;
@@ -47,7 +51,11 @@ section.team {
           background-size: cover;
           background-position: center;
           &#maud {
+<<<<<<< HEAD
             background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(maud.jpg);
+=======
+            background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(maud.png);
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
           }
           &#jessica {
             background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(jessica.jpg);

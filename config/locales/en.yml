@@ -43,7 +43,11 @@ en:
         index: "Back"
         edit: "Edit"
       social: "followers"
+<<<<<<< HEAD
       media: "Media Kit"
+=======
+      media: "Media kIT"
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
       stat: "StatistiCS"
   team:
     title: "A WOMAN'S STORY"
@@ -81,6 +85,7 @@ en:
       crew: "TEAM"
       contact: "CONTACT"
   mentions:
+<<<<<<< HEAD
   #   title: "LEGAL NOTICE"
   #   paragraphe_html: "The only counterpart to the use of these legal notices, is the total commitment to leave the subdelirium credit link on this page of legal notices."
   #   paragraphe2_html: "<ol><li>Presentation of the site.</li>
@@ -127,3 +132,9 @@ en:
   #                     <li>Glossary.</li>
   #                       <p>User: Internet user connecting, using the aforementioned site.<br>Personal information: "information which allows, in any form whatsoever, directly or indirectly, the identification of the natural persons to whom it applies" (article 4 of law n° 78-17 of January 6, 1978).</p>
   #                   </ol>"
+=======
+    title: "LEGAL NOTICE"
+    paragraphe_html: "The only counterpart to the use of these legal notices, is the total commitment to leave the subdelirium credit link on this page of legal notices."
+    # paragraphe2: ""
+    #   html: ""
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5

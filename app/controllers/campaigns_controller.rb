@@ -1,5 +1,9 @@
 class CampaignsController < ApplicationController
+<<<<<<< HEAD
   before_action :find_campaign, only: %i[show edit update destroy]
+=======
+    before_action :find_campaign, only: [:show, :edit, :update, :destroy]
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
 
   def index
     @campaigns = Campaign.all
@@ -9,8 +13,13 @@ class CampaignsController < ApplicationController
   end
 
   def new
+<<<<<<< HEAD
     @campaign = Campaign.new
     # @campaign = current_user.campaigns.build
+=======
+   @campaign = Campaign.new
+  #@campaign = current_user.campaigns.build
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
   end
 
   def create
@@ -19,7 +28,10 @@ class CampaignsController < ApplicationController
     if @campaign.save
       params[:campaign][:collab_ids].each do |id|
         next if id.blank?
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
         Collab.create(campaign: @campaign, talent_id: id)
       end
       redirect_to @campaign, notice: "Yessss! It was posted"
@@ -31,6 +43,10 @@ class CampaignsController < ApplicationController
   def edit
     @collab = Talent.find_by(params[:collabs])
     find_campaign
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
   end
 
   def update
@@ -49,8 +65,12 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
+<<<<<<< HEAD
     params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :tag, :video,
                                      photos: [])
+=======
+    params.require(:campaign).permit(:name, :objectif, :activation, :reach, :sentence, :sentence2, :tag, :video, photos:[])
+>>>>>>> 8c133184c64ab67d11db1e9741e06f2d65ef08c5
   end
 
   def find_campaign
