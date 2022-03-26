@@ -94,7 +94,7 @@ section.campaigns {
           color: $red;
           background-color: transparent !important;
           &:hover {
-            border-bottom: none;
+            border-bottom: 1px $red solid;
           }
         }
       }

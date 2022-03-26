@@ -29,8 +29,11 @@ section.talents {
         & a {
           font-size: 14px;
           color: $red;
+          &:active{
+            background-color: transparent;
+          }
           &:hover {
-            border-bottom: 1px $red solid;
+            text-decoration: underline;
           }
         }
       }
@@ -168,6 +171,7 @@ section.talent {
         & a {
           font-size: 14px;
           color: $red;
+          background-color: transparent !important;
           &:hover {
             border-bottom: 1px $red solid;
           }
