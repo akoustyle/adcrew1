@@ -30,8 +30,12 @@ section.campaigns {
         & a {
           font-size: 14px;
           color: $red;
+          background-color: transparent !important;
           &:hover {
             border-bottom: 1px $red solid;
+          }
+          &:active {
+            text-decoration: underline;
           }
         }
       }
@@ -85,6 +89,7 @@ section.campaigns {
         & a {
           font-size: 14px;
           color: $red;
+          background-color: transparent !important;
           &:hover {
             border-bottom: none;
           }
