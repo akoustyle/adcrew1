@@ -86,7 +86,7 @@ section.talents {
           & p {
             width: 65vw;
           }
-        & .nav-link:active{
+        & .nav-pills .nav-link:active {
           background-color: transparent !important;
           // text-decoration: underline;
           color: $red !important;
