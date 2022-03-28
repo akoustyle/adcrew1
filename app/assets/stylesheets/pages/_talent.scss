@@ -84,6 +84,10 @@ section.talents {
           & p {
             width: 65vw;
           }
+        & .nav-link:active{
+          background-color: transparent !important;
+          text-decoration: underline;
+        }
         & a {
           font-size: 14px;
           color: $red;
