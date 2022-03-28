@@ -87,8 +87,9 @@ section.talents {
         & a {
           font-size: 14px;
           color: $red;
+          background-color: transparent !important;
           &:hover {
-            border-bottom: none;
+            text-decoration: underline;
           }
         }
       }
