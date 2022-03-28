@@ -86,15 +86,15 @@ section.talents {
           }
         & .nav-link:active{
           background-color: transparent !important;
-          text-decoration: underline;
-          color:red;
+          // text-decoration: underline;
+          color:red !important;
         }
         & a {
           font-size: 14px;
           background-color: transparent !important;
           &:hover {
             text-decoration: underline;
-            color:red;
+            color:$red;
           }
         }
       }

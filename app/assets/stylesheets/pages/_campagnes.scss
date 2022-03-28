@@ -94,7 +94,7 @@ section.campaigns {
           }
         & a {
           font-size: 14px;
-          // color: $red;
+          color: inherit;
           background-color: transparent !important;
           &:hover {
             color: $red;

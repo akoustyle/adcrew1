@@ -1,4 +1,15 @@
 en:
+  number:
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: B
+          million: M
+          quadrillion: Q
+          thousand: K
+          trillion: T
+          unit: ''
   home:
     title: "THE AGENCY"
     paragraphe_html: "<p>AD CREW is an expert agency in digital strategy that represents content creators.</p><p> Leader in the responsible influence market:<br> Inclusiveness, Eco-responsibility, diversity, committed messages and artistic vision are the values we defend on a daily basis. Helping talents who convey ideas in addition to a worked universe to develop their audience is our priority.</p> <p>We also support brands in the development of their long-term strategy, notably with the creation of original and avant-garde concepts for their digital campaigns, but also with strong proposals to adapt their image and values in a coherent and attractive way online and offline.</p><p>Let's influence the world with positive values!</p>"
