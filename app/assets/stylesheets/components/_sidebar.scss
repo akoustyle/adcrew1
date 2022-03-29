@@ -87,6 +87,9 @@
   font-family: $header-font;
   text-transform: uppercase;
   line-height: 2;
+  &:hover {
+    color: $red !important;
+  }
 }
 
 
