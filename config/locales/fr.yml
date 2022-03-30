@@ -1,21 +1,21 @@
 fr:
   home:
     title: "L'AGENCE"
-    paragraphe_html: "<p>AD CREW est une agence experte en stratégie digitale qui représente des créateurs de contenus.</p><p> Leader sur le marché de l’influence responsable :<br> Inclusivité , Eco responsabilité, diversité , messages engagés et vision artistique sont les valeurs que nous défendons au quotidien. Aider des talents qui véhiculent des idées en plus d’un univers travaillé à développer leur audience est notre priorité.</p> <p>Nous accompagnons aussi les marques sur le développement de leur stratégie à long terme avec notamment la création de concepts originaux et avant-gardistes pour leurs campagnes digitales. Mais aussi avec des propositions fortes pour adapter leur image et leurs valeurs de manière cohérentes et attractives online et Off line.</p><p>Let’s influence the world with positive values !</p>"
+    paragraphe_html: "AD CREW est une agence experte en stratégie digitale qui représente des créateurs de contenus. Leader sur le marché de l’influence responsable : inclusivité, éco-responsabilité et diversité sont les valeurs que nous défendons au quotidien. Notre priorité est d'aider des talents ayant un univers travaillé et véhiculant des idées à développer leur audience."
     links:
       team: "En savoir plus"
       campagnes: "Découvrir nos campagnes"
       talents: "Découvrir nos talents"
-    title2: "Nos campagnes"
-    title3: "26 influenceurs en exclusivités et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays"
-    paragraphe2: "Ad Crew accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure."
-    paragraphe3: "L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités du monde entier dans le but d’apporter de la perspective et de la visibilité aux marques."
+    title2: "NOS CAMPAGNES"
+    title3: "NOS TALENTS"
+    paragraphe2: "AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure, nous les guidons sur le développement de leur stratégie à long terme à travers de concepts originaux et avant-gardistes pour adapter leur image et leurs valeurs de manière cohérentes et attractives."
+    paragraphe3: "AD CREW c'est 26 influenceurs exclusifs et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays. L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités internationnales dans le but d’apporter de la perspective et de la visibilité aux marques."
     note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
-    title4: "Nos valeurs"
-    paragraphe4: "AD Crew a des valeurs fortes qu’elle prône à travers ses campagnes : Confiance, Éthique, Respect, Diversité."
+    title4: "NOS VALEURS"
+    paragraphe4: "Chez AD CREW nous mettons un point d'honneur à véhiculer des valeurs fortes : Confiance, Éthique, Respect, Diversité. Des valeurs que l'on affirme et souligne à travers nos campagnes."
   campagnes:
-    title: "Une agence qui réalise des productions sur mesure"
-    paragraphe_html: "<p>AD Crew est une agence qui accompagne et conseille les influenceurs dans leur carrière.</p> <p>Son pôle stratégique vous propose des campagnes d’influence clef en main. Du brief à la réalisation finale du projet, notre objectif est de vous fournir un casting d’influence personnalisé et des activations qui correspondent à votre ADN.</p><p>Au-delà du marketing d’influence, AD Crew dispose d’une équipe de production en interne. Reels, Tik Tok, campagne photo ou vidéo nous créons pour vous des contenus authentiques et impactants.</p>"
+    title: "UNE AGENCE DE PRODUCTION SUR MESURE"
+    paragraphe_html: "Notre pôle stratégique vous propose des campagnes d’influence clef en main, du brief à la réalisation finale du projet. Au-delà du marketing d’influence, AD CREW dispose d’une équipe de production en interne, permettant ainsi de créer des contenus authentiques et impactants.</p>"
     note: "Réalisation de campagnes publicitaires,Proposition d’égéries (célébrités, influenceurs), Shootings (Lookbooks Presse/ Commerciaux/ Sites web), Campagnes d’affichage (Street Marketing, Kiosque, Bus, TV...)"
     tab1: "TOUTES LES CAMPAGNES"
     tab2: "LES DERNIERES CAMPAGNES"
@@ -33,11 +33,11 @@ fr:
     title: "NOS TALENTS"
     paragraphe: "AD CREW est une agence parisienne spécialisée dans le marketing d’influence. Son rôle est de mettre en relation les marques et les influenceurs."
     note: "ADCrew offre a ses influenceurs des prestations variées, de la stratégie digitale à la création de posts sponsorisés, en mettant en relation des marques avec nses talents pour des placements de produits Celebrity Marketing."
-    tab1: "Tous"
+    tab1: "TOUS"
     tab2: "GREEN"
     tab3: "LIFESTYLE"
     tab5: "FASHION"
-    tab6: "Ajouter un talent"
+    tab6: "AJOUTER UN TALENT"
     show:
       links:
         index: "Retour"
@@ -47,8 +47,8 @@ fr:
       stat: "Statistiques"
   team:
     title: "UNE HISTOIRE DE FEMMES"
-    paragraphe_html: "AD CREW est née de la rencontre de deux femmes entrepreneures en 2017.<br>Collaborant ensemble lors d’une opération de communication sur le marché américain et réalisant qu’elles partagent les mêmes valeurs, elles décident de monter dans la foulée leur propre agence de stratégie digitale."
-    note_html: "Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !<br><br>Le nom de l’agence provient de la contraction d’Advertising Crew qui vient confirmer l’importance de la notion de famille et d’équipe, chère aux dirigeantes."
+    paragraphe_html: "AD CREW est née de la rencontre de deux femmes entrepreneures en 2017. Collaborant ensemble lors d’une opération de communication sur le marché américain, elles réalisent qu’elles partagent les mêmes valeurs et décident de monter leur propre agence de stratégie digitale. Leur force, leur détermination ainsi que leur complémentarité ont fait de ce challenge une vraie réussite puisque que l’agence a su s’imposer comme un des leaders sur le marché en très peu de temps !"
+    note_html: "Le nom de l’agence provient de la contraction d’Advertising Crew qui vient confirmer l’importance de la notion de famille et d’équipe, chère aux dirigeantes."
     team: "LA TEAM"
     links:
       contact: "Contactez-nous"
