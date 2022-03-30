@@ -258,4 +258,4 @@ first = User.new(
             password: "123456")
 puts "saving adc..."
 first.save!
-puts "Adc saved successfully!"
+puts "Adc saved successfully!!!!!"
