@@ -22,10 +22,10 @@ section.campaigns {
     // align-items: center;
       & .text-content {
         border-bottom: 1px black solid;
-          width: 85vw;
-          & p {
-            width: 70vw;
-          }
+        width: 85vw;
+        & p {
+          width: 45vw;
+        }
         //text-align: center;
         & .nav-link:active{
           background-color: transparent !important;
@@ -65,6 +65,9 @@ section.campaigns {
           }
           &#gif-three {
             animation: 10s gifMakerThree infinite;
+          }
+          &#gif-four {
+            animation: 10.2s gifMakerFour infinite;
           }
       }
       & .note {
@@ -174,7 +177,7 @@ section.campaign {
       position: relative;
 
       img, video {
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
         margin: 30px 0;
         height: 430px;
         width: 24%;
@@ -202,6 +205,7 @@ section.campaign {
         }
 
         &:nth-child(3) {
+          filter: grayscale(100%);
               position: absolute;
               right: 10px;
               top: -200px;

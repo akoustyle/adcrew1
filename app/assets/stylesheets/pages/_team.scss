@@ -6,7 +6,7 @@ section.team {
   scroll-snap-align: center;
 
   .note {
-    font-family: $text-font;
+    font-family: $note-font;
   }
 
   &:nth-child(1) {
@@ -39,6 +39,7 @@ section.team {
       display: flex;
       justify-content: space-between;
       width: 85vw;
+      margin: 30px 0;
       & .gif-talent {
         filter: grayscale(100%);
         margin: 30px 0;
@@ -53,11 +54,13 @@ section.team {
             background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(jessica.jpg);
           }
       }
+      & .side-text {
+        margin: 30px 0px;
+      }
       & .note {
-        margin: 30px 10px;
-        width: 24%;
-        font-size: 14px;
-        // text-transform: uppercase;
+        margin: 30px 0px;
+        font-size: 18px;
+        text-transform: uppercase;
         & span {
           text-decoration: line-through;
         }
@@ -81,7 +84,7 @@ section.team {
         & a {
           font-size: 14px;
           color: $red;
-          z-index: 1000000;
+          // z-index: 1000000;
           &:hover {
             border-bottom: none;
             text-decoration: underline;
@@ -107,6 +110,53 @@ section.team {
           text-decoration: line-through;
         }
       }
+    }
+  }
+
+  &:nth-child(3) {
+    justify-content: space-between;
+    align-items: center;
+
+    & .content {
+        display: flex;
+        width: 50vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        & .text-content {
+          width: 35vw;
+          position: relative;
+          //text-align: center;
+          & a {
+            font-size: 14px;
+            color: $red;
+            &:hover {
+              border-bottom: 1px $red solid;
+            }
+          }
+        .rounded-shape {
+            position: absolute;
+            top: -15px;
+            left: 358px;
+              transform: translate(-50%, -50%);
+              content: "";
+              // border: 1px solid #000;
+              height: 100px;
+            width: 390px;
+              border-radius: 90%;
+              transform: rotate(-10deg);
+              pointer-events: none;
+              z-index: 100;
+        }
+        }
+    }
+
+
+    & img {
+      height: 100%;
+      width: 50vw;
+          object-fit: cover;
+          filter: grayscale(100%);
     }
   }
 
