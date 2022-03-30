@@ -9,7 +9,7 @@
       <%# end %>
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
-      <% else %>
+      <% elsif %>
           <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
       <div class="content">
@@ -45,13 +45,28 @@
                   <a href="<%= @talent.link_youtube %>" style="position: absolute; top: 65px; right: -90px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-youtube"></i>
-                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.subscriber_count_youtube, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                     </div>
                   </a>
-                <%# end %>
+                <% else %>
+                  <a href="<%= @talent.link_youtube %>" style="position: absolute; top: 50px; left: 330px; z-index: 1000;">
+                    <div class="d-flex" style="width: 200px;">
+                      <i class="fab fa-youtube"></i>
+                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                    </div>
+                  </a>
+                <% end %>
 
-                <% if @talent.insta_link != 0  %>
-                  <a href="<%= @talent.link_insta %>"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
+                   <a href="<%= @talent.link_insta %>"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                    <div class="d-flex" style="width: 200px;">
+                      <i class="fab fa-instagram"></i>
+                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                    </div>
+                  </a>
+                <% else %>
+                   <a href="<%= @talent.link_insta %>"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-instagram"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -59,8 +74,15 @@
                   </a>
                 <% end %>
 
-                <% if @talent.tiktok_link != 0 %>
+                <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
                   <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
+                    <div class="d-flex" style="width: 200px;">
+                      <i class="fab fa-tiktok"></i>
+                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                    </div>
+                  </a>
+                <% else %>
+                 <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-tiktok"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>

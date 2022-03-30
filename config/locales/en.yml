@@ -1,4 +1,15 @@
 en:
+  number:
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: B
+          million: M
+          quadrillion: Q
+          thousand: K
+          trillion: T
+          unit: ''
   home:
     title: "THE AGENCY"
     paragraphe_html: "<p>AD CREW is an expert agency in digital strategy that represents content creators.</p><p> Leader in the responsible influence market:<br> Inclusiveness, Eco-responsibility, diversity, committed messages and artistic vision are the values we defend on a daily basis. Helping talents who convey ideas in addition to a worked universe to develop their audience is our priority.</p> <p>We also support brands in the development of their long-term strategy, notably with the creation of original and avant-garde concepts for their digital campaigns, but also with strong proposals to adapt their image and values in a coherent and attractive way online and offline.</p><p>Let's influence the world with positive values!</p>"
@@ -33,7 +44,7 @@ en:
     title: "OUR TALENTS"
     paragraphe: "AD CREW is a Parisian agency specializing in influencer marketing. Its role is to connect brands and influencers."
     note: "AD CREW offers its influencers a variety of services, from digital strategy to the creation of sponsored posts, by connecting brands with our talents for Celebrity Marketing product placements."
-    tab1: "All"
+    tab1: "ALL"
     tab2: "GREEN"
     tab3: "LIFESTYLE"
     tab5: "FASHION"
@@ -43,7 +54,7 @@ en:
         index: "Back"
         edit: "Edit"
       social: "followers"
-      media: "Media kIT"
+      media: "Media Kit"
       stat: "StatistiCS"
   team:
     title: "A WOMAN'S STORY"
@@ -81,50 +92,49 @@ en:
       crew: "TEAM"
       contact: "CONTACT"
   mentions:
-    title: "LEGAL NOTICE"
-    paragraphe_html: "The only counterpart to the use of these legal notices, is the total commitment to leave the subdelirium credit link on this page of legal notices."
-    # paragraphe2: ""
-    #   html: "<ol style='list-style-type: decimal;margin: 1rem auto'><li>Presentation of the site.</li>
-                # "<p><br>Under Article 6 of Law No. 2004-575 of June 21, 2004 on confidence in the digital economy, it is specified to users of the site www.adcrew-paris.com <br> The identity of the various stakeholders in the context of its implementation and monitoring:
-                  # "<ul style='list-style-type: disc'>
-                    # "<li>Owner: AD CREW – 83100077300018 – 2 rue d'Alexandrie Paris</li>
-                    # "<li>Designer: Oneal & Agathe</li>"
-                    # "<li>Publication manager: Jessica Cohen Bouaziz – jessica@adcrew-paris.com</li>"
-                    # <li>The publication manager is a natural person or a legal person.</li>
-                    # "<li>Webmaster: Elisa Michaud – contact@adcrew-paris.com</li>
-                    # <li>Hosted by: Duda – 577 College Ave., Palo Alto, CA 94306</li>
-                    # <li>Credits: The site has been modified by Elisa Michaud</li>"
-                  # </ul>"
-                # </p>"
+  #   title: "LEGAL NOTICE"
+  #   paragraphe_html: "The only counterpart to the use of these legal notices, is the total commitment to leave the subdelirium credit link on this page of legal notices."
+  #   paragraphe2_html: "<ol><li>Presentation of the site.</li>
+  #                     <p><br>Under Article 6 of Law No. 2004-575 of June 21, 2004 on confidence in the digital economy, it is specified to users of the site www.adcrew-paris.com <br> The identity of the various stakeholders in the context of its implementation and monitoring:
+  #                       <ul style='list-style-type: disc'>
+  #                         <li>Owner: AD CREW – 83100077300018 – 2 rue d'Alexandrie Paris</li>
+  #                         <li>Designer: Oneal & Agathe</li>
+  #                         <li>Publication manager: Jessica Cohen Bouaziz – jessica@adcrew-paris.com</li>
+  #                         <li>The publication manager is a natural person or a legal person.</li>
+  #                         <li>Webmaster: Elisa Michaud – contact@adcrew-paris.com</li>
+  #                         <li>Hosted by: Duda – 577 College Ave., Palo Alto, CA 94306</li>
+  #                         <li>Credits: The site has been modified by Elisa Michaud</li>
+  #                       </ul>
+  #                     </p>
 
-                # <li>General conditions of use of the site and the services offered.</li>
-                  # <p>
-                    # <br>The use of the site /www.adcrew-paris.com implies full acceptance of the general conditions of use described below. These conditions of use may be modified or supplemented at any time, users of the site www.adcrew-paris.com are therefore invited to consult them on a regular basis. This site is normally accessible to users at any time. An interruption due to technical maintenance may however be decided by AD CREW, which will then endeavor to communicate to users before the dates and times of the intervention. The www.adcrew-paris.com site is regularly updated by Jessica Cohen Bouaziz. In the same way, the legal notices can be modified at any time: they nevertheless impose themselves on the user who is invited to refer to them as often as possible in order to become acquainted with them.
-                  # </P>
-                # <li>Description of services provided.</li>
-                  # <p>The purpose of the www.adcrew-paris.com> site is to provide information on all of the company's activities. AD CREW strives to provide the website www.adcrew-paris.com/ with information that is as accurate as possible. However, it cannot be held responsible for omissions, inaccuracies and deficiencies in the update, whether by itself or by the third party partners who provide it with this information. All the information indicated on the site www.adcrew-paris.com is given as an indication, and is likely to evolve. Furthermore, the information on the site www.adcrew-paris.com is not exhaustive. They are given subject to modifications having been made since they were put online.</p>
-                # <li>Contractual limitations on technical data.</li>
-                  # <p>The site uses JavaScript technology. The website cannot be held responsible for material damage related to the use of the site. In addition, the user of the site agrees to access the site using recent equipment, not containing viruses and with an updated latest generation browser.</p>
-                # <li>Intellectual property and counterfeits..</li>
-                  # <p>AD CREW is the owner of the intellectual property rights or holds the rights of use on all the elements accessible on the site, in particular the texts, images, graphics, logo, icons, sounds, software.<br> Any reproduction , representation, modification, publication, adaptation of all or part of the elements of the site, whatever the means or process used, is prohibited, except with the prior written authorization of: AD CREW.<br> Any unauthorized use of the site or of any of the elements it contains will be considered as constituting an infringement and prosecuted in accordance with the provisions of articles L.335-2 and following of the Intellectual Property Code.</p>
-                # <li>Limitations of Liability.</li>
-                  # <p>AD CREW cannot be held liable for direct or indirect damage caused to the user's equipment, when accessing the site www.adcrew-paris.com, and resulting either from the use of equipment not meeting the specifications indicated in point 4, either the appearance of a bug or an incompatibility. AD CREW cannot also be held liable for consequential damages (such as loss of market or loss of opportunity) resulting from the use of the site www.adcrew-paris.com Interactive spaces (possibility to ask questions in the contact area) are available to users. AD CREW reserves the right to delete, without prior notice, any content deposited in this space which would contravene the legislation applicable in France, in particular the provisions relating to data protection. Where applicable, AD CREW also reserves the right to question the civil and/or criminal liability of the user, in particular in the event of a racist, abusive, defamatory or pornographic message, regardless of the medium used ( text, photography…).</p>
-                # <li>Management of personal data.</li>
-                  # <p>In France, personal data is notably protected by Law No. 78-87 of January 6, 1978, Law No. 2004-801 of August 6, 2004, Article L. 226-13 of the Penal Code and the European Directive of October 24, 1995. When using the www.adcrew-paris.com site, the following may be collected: the URL of the links through which the user accessed the www.adcrew site -paris.com, the user's access provider, the user's Internet Protocol (IP) address. In any case AD CREW only collects personal information relating to the user for the needs of certain services offered by the site www.adcrew-paris.com. The user provides this information with full knowledge of the facts, in particular when he enters it himself. It is then specified to the user of the site the obligation or not to provide this information. In accordance with the provisions of articles 38 and following of law 78-17 of January 6, 1978 relating to data processing, files and freedoms, all users have a right of access, rectification and opposition to personal data. concerning him, by making his written and signed request, accompanied by a copy of the identity document with signature of the holder of the document, specifying the address to which the answer must be sent. No personal information of the user of the site www.adcrew-paris.com is published without the user's knowledge, exchanged, transferred, assigned or sold on any medium whatsoever to third parties. Only the assumption of redemption of AD CREW and its rights would allow the transmission of such information to the prospective purchaser who would in turn be bound by the same obligation to store and modify data with respect to the user of the site. www.adcrew-paris.com.<br>Databases are protected by the provisions of the law of July 1, 1998 transposing Directive 96/9 of March 11, 1996 on the legal protection of databases.</p >
-                # <li>Hypertext links and cookies.</li>
-                  # <p>The www.adcrew-paris.com site contains a number of hypertext links to other sites, set up with the authorization of AD CREW. However, AD CREW does not have the possibility of verifying the content of the sites thus visited, and therefore assumes no responsibility for this fact.<br><br> Navigation on the site http://www.adcrew- paris.com is likely to cause the installation of cookie(s) on the user's computer. A cookie is a small file, which does not allow the identification of the user, but which records information relating to the navigation of a computer on a site. The data thus obtained are intended to facilitate subsequent navigation on the site, and are also intended to allow various measures of attendance.<br><br> Refusal to install a cookie may result in the impossibility of accessing certain services. However, the user can configure his computer as follows to refuse the installation of cookies:
-                    # <ul style="list-style-type: disc">
-                      # <li>Under Internet Explorer: tool tab (pictogram in the form of a cog at the top right) / internet options. Click on Privacy and choose Block all cookies. Validate on Ok.</li>
-                      # <li>In Firefox: at the top of the browser window, click on the Firefox button, then go to the Options tab. Click on the Privacy tab.</li>
-                      # <li>Set the Retention rules to: use custom settings for history. Finally uncheck it to disable cookies.</li>
-                      # <li>In Safari: Click at the top right of the browser on the menu icon (symbolized by a cog). Select Settings. Click Show advanced settings. In the "Privacy" section, click Content settings. In the "Cookies" section, you can block cookies.</li>
-                      # <li>In Chrome: Click at the top right of the browser on the menu icon (symbolized by three horizontal lines). Select Settings. Click Show advanced settings. In the "Privacy" section, click on preferences. In the "Privacy" tab, you can block cookies.</li>
-                    # </ul>
-                  # </p>
-                # <li>Applicable law and attribution of jurisdiction.</li>
-                  # <p>Any dispute in connection with the use of the site www.adcrew-paris.com is subject to French law. Exclusive jurisdiction is given to the competent courts of Paris.</p>
-                # <li>The main laws concerned.</li>
-                  # <p>Law n° 78-17 of January 6, 1978, notably modified by law n° 2004-801 of August 6, 2004 relating to data processing, files and freedoms.<br>Law n° 2004-575 of June 21, 2004 for confidence in the digital economy.</p>
-                # <li>Glossary.</li>
-                  # <p>User: Internet user connecting, using the aforementioned site.<br>Personal information: "information which allows, in any form whatsoever, directly or indirectly, the identification of the natural persons to whom it applies" (article 4 of law n° 78-17 of January 6, 1978).</p>
-              # </ol>"
+  #                     <li>General conditions of use of the site and the services offered.</li>
+  #                       <p>
+  #                         <br>The use of the site /www.adcrew-paris.com implies full acceptance of the general conditions of use described below. These conditions of use may be modified or supplemented at any time, users of the site www.adcrew-paris.com are therefore invited to consult them on a regular basis. This site is normally accessible to users at any time. An interruption due to technical maintenance may however be decided by AD CREW, which will then endeavor to communicate to users before the dates and times of the intervention. The www.adcrew-paris.com site is regularly updated by Jessica Cohen Bouaziz. In the same way, the legal notices can be modified at any time: they nevertheless impose themselves on the user who is invited to refer to them as often as possible in order to become acquainted with them.
+  #                       </P>
+  #                     <li>Description of services provided.</li>
+  #                       <p>The purpose of the www.adcrew-paris.com> site is to provide information on all of the company's activities. AD CREW strives to provide the website www.adcrew-paris.com/ with information that is as accurate as possible. However, it cannot be held responsible for omissions, inaccuracies and deficiencies in the update, whether by itself or by the third party partners who provide it with this information. All the information indicated on the site www.adcrew-paris.com is given as an indication, and is likely to evolve. Furthermore, the information on the site www.adcrew-paris.com is not exhaustive. They are given subject to modifications having been made since they were put online.</p>
+  #                     <li>Contractual limitations on technical data.</li>
+  #                       <p>The site uses JavaScript technology. The website cannot be held responsible for material damage related to the use of the site. In addition, the user of the site agrees to access the site using recent equipment, not containing viruses and with an updated latest generation browser.</p>
+  #                     <li>Intellectual property and counterfeits..</li>
+  #                       <p>AD CREW is the owner of the intellectual property rights or holds the rights of use on all the elements accessible on the site, in particular the texts, images, graphics, logo, icons, sounds, software.<br> Any reproduction , representation, modification, publication, adaptation of all or part of the elements of the site, whatever the means or process used, is prohibited, except with the prior written authorization of: AD CREW.<br> Any unauthorized use of the site or of any of the elements it contains will be considered as constituting an infringement and prosecuted in accordance with the provisions of articles L.335-2 and following of the Intellectual Property Code.</p>
+  #                     <li>Limitations of Liability.</li>
+  #                       <p>AD CREW cannot be held liable for direct or indirect damage caused to the user's equipment, when accessing the site www.adcrew-paris.com, and resulting either from the use of equipment not meeting the specifications indicated in point 4, either the appearance of a bug or an incompatibility. AD CREW cannot also be held liable for consequential damages (such as loss of market or loss of opportunity) resulting from the use of the site www.adcrew-paris.com Interactive spaces (possibility to ask questions in the contact area) are available to users. AD CREW reserves the right to delete, without prior notice, any content deposited in this space which would contravene the legislation applicable in France, in particular the provisions relating to data protection. Where applicable, AD CREW also reserves the right to question the civil and/or criminal liability of the user, in particular in the event of a racist, abusive, defamatory or pornographic message, regardless of the medium used ( text, photography…).</p>
+  #                     <li>Management of personal data.</li>
+  #                       <p>In France, personal data is notably protected by Law No. 78-87 of January 6, 1978, Law No. 2004-801 of August 6, 2004, Article L. 226-13 of the Penal Code and the European Directive of October 24, 1995. When using the www.adcrew-paris.com site, the following may be collected: the URL of the links through which the user accessed the www.adcrew site -paris.com, the user's access provider, the user's Internet Protocol (IP) address. In any case AD CREW only collects personal information relating to the user for the needs of certain services offered by the site www.adcrew-paris.com. The user provides this information with full knowledge of the facts, in particular when he enters it himself. It is then specified to the user of the site the obligation or not to provide this information. In accordance with the provisions of articles 38 and following of law 78-17 of January 6, 1978 relating to data processing, files and freedoms, all users have a right of access, rectification and opposition to personal data. concerning him, by making his written and signed request, accompanied by a copy of the identity document with signature of the holder of the document, specifying the address to which the answer must be sent. No personal information of the user of the site www.adcrew-paris.com is published without the user's knowledge, exchanged, transferred, assigned or sold on any medium whatsoever to third parties. Only the assumption of redemption of AD CREW and its rights would allow the transmission of such information to the prospective purchaser who would in turn be bound by the same obligation to store and modify data with respect to the user of the site. www.adcrew-paris.com.<br>Databases are protected by the provisions of the law of July 1, 1998 transposing Directive 96/9 of March 11, 1996 on the legal protection of databases.</p >
+  #                     <li>Hypertext links and cookies.</li>
+  #                       <p>The www.adcrew-paris.com site contains a number of hypertext links to other sites, set up with the authorization of AD CREW. However, AD CREW does not have the possibility of verifying the content of the sites thus visited, and therefore assumes no responsibility for this fact.<br><br> Navigation on the site http://www.adcrew- paris.com is likely to cause the installation of cookie(s) on the user's computer. A cookie is a small file, which does not allow the identification of the user, but which records information relating to the navigation of a computer on a site. The data thus obtained are intended to facilitate subsequent navigation on the site, and are also intended to allow various measures of attendance.<br><br> Refusal to install a cookie may result in the impossibility of accessing certain services. However, the user can configure his computer as follows to refuse the installation of cookies:
+  #                         <ul style="list-style-type: disc">
+  #                           <li>Under Internet Explorer: tool tab (pictogram in the form of a cog at the top right) / internet options. Click on Privacy and choose Block all cookies. Validate on Ok.</li>
+  #                           <li>In Firefox: at the top of the browser window, click on the Firefox button, then go to the Options tab. Click on the Privacy tab.</li>
+  #                           <li>Set the Retention rules to: use custom settings for history. Finally uncheck it to disable cookies.</li>
+  #                           <li>In Safari: Click at the top right of the browser on the menu icon (symbolized by a cog). Select Settings. Click Show advanced settings. In the "Privacy" section, click Content settings. In the "Cookies" section, you can block cookies.</li>
+  #                           <li>In Chrome: Click at the top right of the browser on the menu icon (symbolized by three horizontal lines). Select Settings. Click Show advanced settings. In the "Privacy" section, click on preferences. In the "Privacy" tab, you can block cookies.</li>
+  #                         </ul>
+  #                       </p>
+  #                     <li>Applicable law and attribution of jurisdiction.</li>
+  #                       <p>Any dispute in connection with the use of the site www.adcrew-paris.com is subject to French law. Exclusive jurisdiction is given to the competent courts of Paris.</p>
+  #                     <li>The main laws concerned.</li>
+  #                       <p>Law n° 78-17 of January 6, 1978, notably modified by law n° 2004-801 of August 6, 2004 relating to data processing, files and freedoms.<br>Law n° 2004-575 of June 21, 2004 for confidence in the digital economy.</p>
+  #                     <li>Glossary.</li>
+  #                       <p>User: Internet user connecting, using the aforementioned site.<br>Personal information: "information which allows, in any form whatsoever, directly or indirectly, the identification of the natural persons to whom it applies" (article 4 of law n° 78-17 of January 6, 1978).</p>
+  #                   </ol>"

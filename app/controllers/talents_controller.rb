@@ -1,13 +1,13 @@
 class TalentsController < ApplicationController
- before_action :find_talent, only: [:show, :edit, :update, :destroy]
+  before_action :find_talent, only: %i[show edit update destroy]
 
   def index
     # if params[:pole].blank?
-      @talents = Talent.all.order(created_at: :desc)
-  #  else
+    @talents = Talent.all.order(created_at: :desc)
+    #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id
     # @talents = Talent.where(:pole_id => @pole_id).order(created_at: :desc)
-  #  end
+    #  end
   end
 
   def show
@@ -15,24 +15,24 @@ class TalentsController < ApplicationController
   end
 
   def new
-   @talent = Talent.new
-  #@talent = current_user.talents.build
-  # @poles = Pole.all.map{ |p| [p.name, p.id] }
+    @talent = Talent.new
+    # @talent = current_user.talents.build
+    # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
   def create
     @talent = Talent.new(talent_params)
     # @talent.pole_id = params[:pole_id]
-    #@talent = current_user.talents.build(talent_params)
+    # @talent = current_user.talents.build(talent_params)
     if @talent.save
-        redirect_to @talent, notice: "Yessss! It was posted"
+      redirect_to @talent, notice: "Yessss! It was posted"
     else
       render "new"
     end
   end
 
   def edit
-      # @poles = Pole.all.map{ |p| [p.name, p.id] }
+    # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
   def update
@@ -64,11 +64,11 @@ class TalentsController < ApplicationController
   private
 
   def talent_params
-    params.require(:talent).permit(:name, :about, :title, :insta_link, :link_insta, :tiktok_link, :link_tiktok, :youtube_link, :link_youtube, :video, :category, photos:[])
+    params.require(:talent).permit(:name, :about, :title, :insta_link, :link_insta, :tiktok_link, :link_tiktok,
+                                   :youtube_link, :link_youtube, :video, :category, photos: [])
   end
 
   def find_talent
     @talent = Talent.find(params[:id])
   end
-
 end

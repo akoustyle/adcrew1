@@ -1,59 +1,59 @@
 <!-- Site footer -->
-    <section class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-3 logoBox" style="text-align:center">
-            <div class="logo">
-              <%= link_to root_path do %>
-                <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
-              <% end %>
-            </div>
-            <div class="logo-hover">
-              <%= link_to root_path do %>
-                <%= image_tag 'logo.png', alt:"ADCREW Agency", width: 200 %>
-              <% end %>
-            </div>
-          </div>
-
-          <div class="col-xs-6 col-md-3" style="text-align:center">
-            <h6><%= t('footer.title') %></h6>
-            <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
-          </div>
-
-          <div class="col-xs-6 col-md-3" style="text-align:center">
-            <h6><%= t('footer.title2') %></h6>
-            <ul class="footer-links">
-              <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
-              <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
-              <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
-              <li><a> <% if user_signed_in? %>
-                <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
-              <% else %>
-                <%= link_to t('footer.links.signin'), new_user_session_path %>
-              <% end %>
-              </a></li>
-            </ul>
-          </div>
-
-           <div class="col-md-3 col-xs-6" style="text-align:center">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </div>
+<section class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-3 logoBox" style="text-align:center">
+        <div class="logo">
+          <%= link_to root_path do %>
+            <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
+          <% end %>
         </div>
-        <hr>
-      </div>
-      <div>
-        <div class="legal-links container" style="text-align:center">
-          <div class="copyright">
-            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-              <a> <%= link_to "Adcrew", root_path %></a>.
-            </p>
-          </div>
-        <div class="Made">
-          <span>Made with <span class="heart">♥</span> by O&A</span>
+        <div class="logo-hover">
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png', alt:"ADCREW Agency", width: 200 %>
+          <% end %>
         </div>
       </div>
+
+      <div class="col-xs-6 col-md-3" style="text-align:center">
+        <h6><%= t('footer.title') %></h6>
+        <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
+      </div>
+
+      <div class="col-xs-6 col-md-3" style="text-align:center">
+        <h6><%= t('footer.title2') %></h6>
+        <ul class="footer-links">
+          <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
+          <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
+          <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
+          <li><a> <% if user_signed_in? %>
+            <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
+          <% else %>
+            <%= link_to t('footer.links.signin'), new_user_session_path %>
+          <% end %>
+          </a></li>
+        </ul>
+      </div>
+
+        <div class="col-md-3 col-xs-6" style="text-align:center">
+        <ul class="social-icons">
+          <%# <li><a class="facebook" href="#" target="_blank"><i class="fab fa-facebook"></i></a></li> %>
+          <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div>
+    <div class="legal-links container" style="text-align:center">
+      <div class="copyright">
+        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+          <a> <%= link_to "Adcrew", root_path %></a>.
+        </p>
+      </div>
+    <div class="Made">
+      <span>Made with <span class="heart">♥</span> by O&A</span>
+    </div>
+  </div>
 </section>

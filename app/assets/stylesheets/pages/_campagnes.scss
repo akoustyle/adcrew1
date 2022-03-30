@@ -27,11 +27,21 @@ section.campaigns {
           width: 45vw;
         }
         //text-align: center;
+        & .nav-link:active{
+          background-color: transparent !important;
+          text-decoration: underline;
+          color:red;
+        }
         & a {
           font-size: 14px;
-          color: $red;
+          // color: $red;
           &:hover {
-            border-bottom: 1px $red solid;
+            text-decoration: underline;
+            color:red;
+          }
+          &:active {
+            color:red;
+            text-decoration: underline;
           }
         }
       }
@@ -87,9 +97,11 @@ section.campaigns {
           }
         & a {
           font-size: 14px;
-          color: $red;
+          color: inherit;
+          background-color: transparent !important;
           &:hover {
-            border-bottom: none;
+            color: $red !important;
+            text-decoration: underline;
           }
         }
       }
