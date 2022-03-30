@@ -97,7 +97,7 @@ section.campaigns {
           color: inherit;
           background-color: transparent !important;
           &:hover {
-            color: $red;
+            color: $red !important;
             text-decoration: underline;
           }
         }

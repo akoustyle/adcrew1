@@ -95,8 +95,8 @@ section.talents {
           font-size: 14px;
           background-color: transparent !important;
           &:hover {
+            color: $red !important;
             text-decoration: underline;
-            color: $red;
           }
         }
       }
