@@ -78,19 +78,18 @@ section.talents {
         border-bottom: 1px black solid;
           width: 85vw;
           & p {
-            width: 65vw;
+            width: 35vw;
           }
-        & .nav-pills .nav-link:active {
-          background-color: transparent !important;
-          // text-decoration: underline;
-          color: $red !important;
-        }
         & a {
           font-size: 14px;
+          color: inherit;
           background-color: transparent !important;
           &:hover {
             color: $red !important;
             text-decoration: underline;
+          }
+          &.active {
+             color: $red !important;
           }
         }
       }
