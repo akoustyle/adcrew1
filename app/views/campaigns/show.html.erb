@@ -6,8 +6,10 @@
           <div class="text-content">
             <a><%= link_to t('campagnes.show.links.index'), campaigns_path %></a>
             <% if user_signed_in? %>
-              <a><%= link_to t('campagnes.show.links.edit'), edit_campaign_path %></a>
-              <a><%#= link_to "destroy", campaign_path, method: :destroy, data: { confirm: "Are you sure?"} %></a>
+              <%= link_to t('campagnes.show.links.edit'), edit_campaign_path %>
+              <% if user_signed_in? %>
+                <%= link_to "Supprimer", campaign_destroy_path(@campaign), method: :delete, data: { confirm: "Are you sure?" }%>
+              <% end %>
             <% end %>
             <h2><%= @campaign.name %></h2>
             <%#= cl_image_tag @campaign.photos.last.key, alt: "alttext" %>
