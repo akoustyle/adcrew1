@@ -103,6 +103,9 @@ section.campaigns {
             color: $red !important;
             text-decoration: underline;
           }
+          &.active {
+             color: $red !important;
+          }
         }
       }
     }

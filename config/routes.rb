@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   scope '(:locale)', locale: /fr|en/ do
-    resources :talents
-    resources :campaigns
+    resources :talents, only: [:index, :show, :new, :create, :update, :edit]
+    resources :campaigns, only: [:index, :show, :new, :create, :update, :edit]
 
     # get '/:locale' => 'talents#show'
     # get '/:locale' => 'campaigns#index'
@@ -14,6 +14,9 @@ Rails.application.routes.draw do
     get 'team', to: 'pages#team', as: :team
     get 'contact', to: 'pages#contact', as: :contact
     get 'mentions', to: 'pages#mentions', as: :mentions
+
+    delete '/talent/:id', to: 'talents#destroy', as: 'destroy'
+    delete '/campaign/:id', to: 'campaigns#destroy', as: 'campaign_destroy'
     # get 'prod', to: 'pages#prod', as: :prod
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   end
