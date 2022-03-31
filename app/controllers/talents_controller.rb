@@ -1,6 +1,6 @@
 class TalentsController < ApplicationController
   before_action :find_talent, only: %i[show edit update destroy]
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action :skip_authorization, only: [:index, :show]
 
   def index
     # if params[:pole].blank?
@@ -26,6 +26,8 @@ class TalentsController < ApplicationController
     @talent = Talent.new(talent_params)
     # @talent.pole_id = params[:pole_id]
     # @talent = current_user.talents.build(talent_params)
+    @talent.user = current_user if user_signed_in?
+
     authorize @talent
     if @talent.save
       redirect_to @talent, notice: "Yessss! It was posted"

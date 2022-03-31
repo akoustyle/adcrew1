@@ -11,20 +11,24 @@ class TalentPolicy < ApplicationPolicy
   end
 
   def create?
-    record.user == user
+    user.present? && user == record.user
+
   end
 
   def edit?
-    record.user == user
+    user.present? && user == record.user
+
   end
 
   def update?
-    record.user == user
-    # - record: the restaurant passed to the `authorize` method in controller
+    user.present? && user == record.user
+
+    # - talent: the restaurant passed to the `authorize` method in controller
     # - user:   the `current_user` signed in with Devise.
   end
 
   def destroy?
-    record.user == user
+    user.present? && user == record.user
+
   end
 end
