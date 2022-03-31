@@ -19,9 +19,7 @@
           <% end %>
 
           <% if user_signed_in? %>
-            <%= link_to destroy_path(@talent), method: :delete, data: { confirm: "Are you sure?" } do %>
-              <p>Supprimer</p>
-            <% end %>
+            <%= link_to "Supprimer", destroy_path(@talent), method: :delete, data: { confirm: "Are you sure?" }%>
           <% end %>
 
           <div class="d-flex justify-content-between align-items-center">
