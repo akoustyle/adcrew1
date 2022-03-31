@@ -10,7 +10,7 @@
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% elsif %>
-          <%= video_tag "random_video.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+          <%= video_tag "clip.mp4", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
       <div class="content">
         <div class="text-content">
@@ -38,12 +38,15 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
             </div>
             <div class="talent-standing">
-              <%#= talent.photos.attached? ? cl_image_path(talent.photos.last.key) : image_tag 'silhouette2.png', class: "png-img" %>
-              <%= cl_image_tag @talent.photos.last.key, alt: "alttext", class: "png-img", id: "png-mouseout" %>
-              <%#= cl_image_tag @talent.photos.second.key, alt: "alttext", class: "png-img", id: "png-mousein" %>
+              <% if @talent.photos.attached? %>
+                <%= cl_image_tag @talent.photos.last.key, alt: "alttext", class: "png-img", id: "png-mouseout" %>
+                <%= cl_image_tag @talent.photos.second.key, alt: "alttext", class: "png-img", id: "png-mousein" %>
+              <% else %>
+                <%= image_tag 'silhouette3.png', alt:"alttext", class: "png-img" %>
+              <% end %>
 
               <div class="social-links">
-                <% if @talent.youtube_link != 0 %>
+                <% if @talent.youtube_link == "0" || @talent.youtube_link == "" %>
                   <a href="<%= @talent.link_youtube %>" style="position: absolute; top: 65px; right: -90px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-youtube"></i>
@@ -51,7 +54,7 @@
                     </div>
                   </a>
                 <% else %>
-                  <a href="<%= @talent.link_youtube %>" style="position: absolute; top: 50px; left: 330px; z-index: 1000;">
+                  <a href="<%= @talent.link_youtube %>" target="_blank" style="position: absolute; top: 50px; left: 330px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-youtube"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -60,14 +63,14 @@
                 <% end %>
 
                 <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
-                   <a href="<%= @talent.link_insta %>"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                   <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-instagram"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                     </div>
                   </a>
                 <% else %>
-                   <a href="<%= @talent.link_insta %>"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                   <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
 
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-instagram"></i>
@@ -77,14 +80,14 @@
                 <% end %>
 
                 <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
-                  <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
+                  <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-tiktok"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                     </div>
                   </a>
                 <% else %>
-                 <a href="<%= @talent.link_tiktok %>"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
+                 <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-tiktok"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -92,14 +95,14 @@
                   </a>
                 <% end %>
 
-                <a href="#" style="position: absolute; top: 180px; left: -2px;">
+                <%# <a href="#" target="_blank" style="position: absolute; top: 180px; left: -2px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fas fa-chart-pie"></i>
                     <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.statistiques') %></p>
-                  </div>
-                </a>
+                  <%# </div>
+                </a> %>
 
-                <a href="#" style="position: absolute; top: 270px; left: -40px;">
+                <a href="#" target="_blank" style="position: absolute; top: 270px; left: -40px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fas fa-download"></i>
                     <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
