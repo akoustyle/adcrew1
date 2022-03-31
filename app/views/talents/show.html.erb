@@ -17,6 +17,7 @@
           <%= link_to t('talents.show.links.index'), talents_path %>
           <% if user_signed_in? %>
             <%= link_to t('talents.show.links.edit'), edit_talent_path %>
+            <%= link_to "delete", edit_talent_path %>
           <% end %>
           <div class="d-flex justify-content-between align-items-center">
             <h2><%= @talent.name.upcase%></h2>
