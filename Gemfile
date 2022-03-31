@@ -38,6 +38,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
+gem 'pundit'
 gem 'simple_form'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'bootstrap', '~> 5.0.2'
