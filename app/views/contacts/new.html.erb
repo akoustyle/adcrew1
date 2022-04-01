@@ -1,0 +1,91 @@
+<%#
+<div class="container">
+  <div style="text-align:center">
+    <h2><span style="border-bottom: solid red 5px">Contact Us</span></h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <iframe width="100%" height="100%" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBpTGHq6mL_JrLnLMbjlq1tHx9Z1vHu2Lk&q=104 rue Réaumur 75002 Paris" allowfullscreen>
+      </iframe>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">France</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit" class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red">
+      </form>
+    </div>
+  </div>
+</div> %>
+
+<section class="contact" id="talent">
+  <div class="content">
+    <div class="text-content">
+      <h2><%= t('contact.title') %></h2>
+      <p class="pt-3">
+        <%= t('contact.paragraphe') %>
+      </p>
+      <div class="pt-3 moto">
+        <p><span class="moto-title mb-3"></span><span class="moto-content pl-3"></span></p>
+      </div>
+    </div>
+  </div>
+  <div class="content container">
+    <div class="row">
+      <div class="column">
+        <%= form_for @contact do |f| %>
+          <div class="col-md-6">
+            <%= f.label :name %></br>
+            <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+            <%= f.label :email %></br>
+            <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
+            <%= f.label :message %></br>
+            <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
+              placeholder: "Send me a message"%></br>
+
+            <div class= "d-none">
+              <%= f.label :nickname %>
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+            </div>
+
+            <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+          </div>
+        <% end %>
+
+          <label for="fname"><%= t('contact.form.name') %></label>
+          <%# <input type="text" id="fname" name="firstname" placeholder="Your name.."> %>
+          <input type="text" id="fname" name="firstname" placeholder= <%= t('contact.form.placeholder') %> >
+          <label for="lname"><%= t('contact.form.last_name') %></label>
+          <input type="text" id="lname" name="lastname" placeholder=<%= t('contact.form.placeholder2') %>>
+          <label for="pole"><%= t('contact.form.category') %></label>
+          <select id="pole" name="pole">
+            <option value="green">Green</option>
+            <option value="fashion">Fashion</option>
+            <option value="Lifestyle">Lifestyle (urban - make up)</option>
+            <option value="autre"><%= t('contact.form.select') %></option>
+          </select>
+          <label for="subject"><%= t('contact.form.sujet') %></label>
+          <textarea id="subject" name="subject" placeholder=<%= t('contact.form.placeholder3') %> style="height:170px"></textarea>
+          <input type="submit" value=<%= t('contact.form.submit') %> class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red">
+        <% end %>
+      </div>
+      <div class="column">
+        <iframe width="100%" height="100%" frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0SzSJHhDb1W3KuSY8fwZQbancntTuWUs&q=104 rue Réaumur 75002 Paris" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
