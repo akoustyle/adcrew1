@@ -1,10 +1,10 @@
 class CampaignsController < ApplicationController
   before_action :find_campaign, only: %i[show edit update destroy]
-  before_action :skip_authorization, only: [:index, :show]
+  # before_action :skip_authorization, only: [:index, :show]
 
 
   def index
-    @campaigns = policy_scope(Campaign)
+    @campaigns = Campaign.all
   end
 
   def show
@@ -12,7 +12,7 @@ class CampaignsController < ApplicationController
 
   def new
     @campaign = Campaign.new
-    authorize @campaign
+    # authorize @campaign
     # @campaign = current_user.campaigns.build
   end
 
@@ -20,7 +20,7 @@ class CampaignsController < ApplicationController
     @collab = Talent.find_by(params[:collabs])
     @campaign = Campaign.new(campaign_params)
     @campaign.user = current_user if user_signed_in?
-    authorize @campaign
+    # authorize @campaign
     if @campaign.save
       params[:campaign][:collab_ids].each do |id|
         next if id.blank?
@@ -34,12 +34,12 @@ class CampaignsController < ApplicationController
 
   def edit
     @collab = Talent.find_by(params[:collabs])
-    authorize @campaign
+    # authorize @campaign
     find_campaign
   end
 
   def update
-    authorize @campaign
+    # authorize @campaign
     if @campaign.update(campaign_params)
       redirect_to @campaign, notice: "Congrats! Campaign was updated!"
     else
@@ -48,7 +48,7 @@ class CampaignsController < ApplicationController
   end
 
   def destroy
-    authorize @campaign
+    # authorize @campaign
     @campaign.destroy
     redirect_to campaigns_path
   end
@@ -61,6 +61,6 @@ class CampaignsController < ApplicationController
   end
 
   def find_campaign
-    @campaign = policy_scope(Campaign).find(params[:id])
+    @campaign = Campaign.find(params[:id])
   end
 end

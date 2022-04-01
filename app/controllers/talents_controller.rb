@@ -1,10 +1,10 @@
 class TalentsController < ApplicationController
   before_action :find_talent, only: %i[show edit update destroy]
-  before_action :skip_authorization, only: [:index, :show]
+  # before_action :skip_authorization, only: [:index, :show]
 
   def index
     # if params[:pole].blank?
-    @talents = policy_scope(Talent).order(created_at: :desc)
+    @talents = Talent.all.order(created_at: :desc)
     #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id
     # @talents = Talent.where(:pole_id => @pole_id).order(created_at: :desc)
@@ -17,7 +17,7 @@ class TalentsController < ApplicationController
 
   def new
     @talent = Talent.new
-    authorize @talent
+    # authorize @talent
     # @talent = current_user.talents.build
     # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
@@ -26,9 +26,9 @@ class TalentsController < ApplicationController
     @talent = Talent.new(talent_params)
     # @talent.pole_id = params[:pole_id]
     # @talent = current_user.talents.build(talent_params)
-    @talent.user = current_user if user_signed_in?
+    # @talent.user = current_user if user_signed_in?
 
-    authorize @talent
+    # authorize @talent
     if @talent.save
       redirect_to @talent, notice: "Yessss! It was posted"
     else
@@ -37,12 +37,12 @@ class TalentsController < ApplicationController
   end
 
   def edit
-    authorize @talent
+    # authorize @talent
     # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
   def update
-    authorize @talent
+    # authorize @talent
     # @talent.pole_id = params[:pole_id]
     if @talent.update(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
@@ -52,7 +52,7 @@ class TalentsController < ApplicationController
   end
 
   def destroy
-    authorize @talent
+    # authorize @talent
     @talent.destroy
     redirect_to talents_path
   end
@@ -72,10 +72,10 @@ class TalentsController < ApplicationController
 
   def talent_params
     params.require(:talent).permit(:name, :about, :title, :insta_link, :link_insta, :tiktok_link, :link_tiktok,
-                                   :youtube_link, :link_youtube, :video, :category, photos: [])
+                                   :youtube_link, :link_youtube, :video, :media, :category, photos: [])
   end
 
   def find_talent
-    @talent = policy_scope(Talent).find(params[:id])
+    @talent = Talent.find(params[:id])
   end
 end
