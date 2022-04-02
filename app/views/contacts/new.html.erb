@@ -46,39 +46,56 @@
     <div class="row">
       <div class="column">
         <%= form_for @contact do |f| %>
-          <div class="col-md-6">
-            <%= f.label :name %><br>
-            <%= f.text_field  :name, required: true, class: "contact-form-text-area" %><br>
-            <%= f.label :email %><br>
-            <%= f.text_field :email, required: true, class: "contact-form-text-area" %><br>
-            <%= f.label :message %><br>
+          <div class="col-md-12">
+            <%= f.label t('contact.form.name') %><br>
+            <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder') %>
+            <%= f.label t('contact.form.entreprise') %>
+            <%= f.text_field  :entreprise, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder1') %>
+            <%= f.label t('contact.form.email') %>
+            <%#= f.select :category, :option_for_select(["Green"], ["Fashion"], ["Lifestyle (urban - make up)"]]), { include_blank: "Select Category" }  %>
+            <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder2') %>
+            <%= f.label t('contact.form.category') %>
+            <select name="category" id="category">
+              <option value="" label=" "></option>
+              <option value="1">Green</option>
+              <option value="2" selected="selected">Fashion</option>
+              <option value="3">Lifestyle (urban - make up)</option>
+            </select>
+            <%= f.label t('contact.form.sujet') %><br>
             <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-              placeholder: "Send me a message"%><br>
+              placeholder: t('contact.form.placeholder3')%><br>
 
             <div class= "d-none">
               <%= f.label :nickname %>
               <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
             </div>
 
-            <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+            <%= f.submit t('contact.form.submit'), class: 'btn-neumorphism' %>
           </div>
         <% end %>
 
-          <label for="fname"><%= t('contact.form.name') %></label>
+        <%# <select name="post[person_id]" id="post_person_id">
+          <option value="" label=" "></option>
+          <option value="1">David</option>
+          <option value="2" selected="selected">Eileen</option>
+          <option value="3">Rafael</option>
+        </select> %>
+
+          <%# <label for="fname"><%= t('contact.form.name') %></label>
           <%# <input type="text" id="fname" name="firstname" placeholder="Your name.."> %>
-          <input type="text" id="fname" name="firstname" placeholder= <%= t('contact.form.placeholder') %> >
-          <label for="lname"><%= t('contact.form.last_name') %></label>
-          <input type="text" id="lname" name="lastname" placeholder=<%= t('contact.form.placeholder2') %>>
-          <label for="pole"><%= t('contact.form.category') %></label>
-          <select id="pole" name="pole">
-            <option value="green">Green</option>
+          <%# <input type="text" id="fname" name="firstname" placeholder= <%#= t('contact.form.placeholder') %>
+          <%# <label for="lname"><%#= t('contact.form.last_name') %></label>
+          <%# <input type="text" id="lname" name="lastname" placeholder=<%#= t('contact.form.placeholder2') %>
+          <%# <label for="pole"><%#= t('contact.form.category') %></label>
+          <%# <select id="pole" name="pole"> %>
+            <%# <option value="green">Green</option>
             <option value="fashion">Fashion</option>
-            <option value="Lifestyle">Lifestyle (urban - make up)</option>
-            <option value="autre"><%= t('contact.form.select') %></option>
-          </select>
-          <label for="subject"><%= t('contact.form.sujet') %></label>
-          <textarea id="subject" name="subject" placeholder=<%= t('contact.form.placeholder3') %> style="height:170px"></textarea>
-          <input type="submit" value=<%= t('contact.form.submit') %> class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red">
+            <option value="Lifestyle">Lifestyle (urban - make up)</option> %>
+            <%# <option value="autre">= t('contact.form.select')</option>
+          <%# </select> %>
+          <%# <label for="subject">= t('contact.form.sujet')</label>  %>
+          <%# <textarea id="subject" name="subject" placeholder== t('contact.form.placeholder3') style="height:170px"></textarea>
+          <input type="submit" value=<%#= t('contact.form.submit') class="btn-neumorphism" style="background-color:transparent;background:transparent;color:red"> %>
       </div>
       <div class="column">
         <iframe width="100%" height="100%" frameborder="0" style="border:0"
