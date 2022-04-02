@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /fr|en/ do
     resources :talents, only: [:index, :show, :new, :create, :update, :edit]
     resources :campaigns, only: [:index, :show, :new, :create, :update, :edit]
-    # resources :contacts, only: [:new, :create]
+    resources :contacts, only: [:new, :create]
 
     # get '/:locale' => 'talents#show'
     # get '/:locale' => 'campaigns#index'
@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     root to: 'pages#home'
     # resources :campaigns
     # resources :talents
+    post '/contacts/', to: 'contacts#create'
     get 'team', to: 'pages#team', as: :team
     get 'contact', to: 'pages#contact', as: :contact
     get 'mentions', to: 'pages#mentions', as: :mentions
