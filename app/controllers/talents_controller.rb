@@ -5,6 +5,7 @@ class TalentsController < ApplicationController
   def index
     # if params[:pole].blank?
     @talents = Talent.all.order(created_at: :desc)
+    @talents = policy_scope(Talent).order(created_at: :desc)
     #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id
     # @talents = Talent.where(:pole_id => @pole_id).order(created_at: :desc)
@@ -16,19 +17,19 @@ class TalentsController < ApplicationController
   end
 
   def new
-    @talent = Talent.new
-    # authorize @talent
-    # @talent = current_user.talents.build
+    # @talent = Talent.new
+    @talent = current_user.talents.build
+    authorize @talent
     # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
   def create
-    @talent = Talent.new(talent_params)
+    # @talent = Talent.new(talent_params)
     # @talent.pole_id = params[:pole_id]
-    # @talent = current_user.talents.build(talent_params)
+    @talent = current_user.talents.build(talent_params)
     # @talent.user = current_user if user_signed_in?
 
-    # authorize @talent
+    authorize @talent
     if @talent.save
       redirect_to @talent, notice: "Yessss! It was posted"
     else
@@ -76,6 +77,8 @@ class TalentsController < ApplicationController
   end
 
   def find_talent
-    @talent = Talent.find(params[:id])
+    # @talent = Talent.find(params[:id])
+    @talent = policy_scope(Talent).find(params[:id])
+    authorize @talent
   end
 end

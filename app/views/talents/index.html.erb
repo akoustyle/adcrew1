@@ -35,9 +35,9 @@
             <a class="nav-link" id="pills-lifestyle-tab" data-toggle="pill" href="#pills-lifestyle" role="tab" aria-controls="pills-lifestyle" aria-selected="false"><%= t('talents.tab3') %></a>
             <a class="nav-link" id="pills-fashion-tab" data-toggle="pill" href="#pills-fashion" role="tab" aria-controls="pills-fashion" aria-selected="false"><%= t('talents.tab5') %></a>
             <% if user_signed_in? %>
-              <%# if policy(Talent).create? %>
+              <% if policy(Talent).create? %>
                 <%= link_to t('talents.tab6'), new_talent_path, class: "nav-link" %>
-              <%# end %>
+              <% end %>
             <% end %>
           </div>
         </div>
