@@ -7,17 +7,17 @@ class TalentPolicy < ApplicationPolicy
   end
 
   def show?
-    return true
+    true # Anyone can view a talent
   end
 
   def create?
     # user.present? && user == record.user
-    record.user == user
+    record.user == user # only talent creator can create it
   end
 
   def edit?
     # user.present? && user == record.user
-    record.user ==  user # only talent creator can update it
+    record.user == user # only talent creator can update it
   end
 
   def update?

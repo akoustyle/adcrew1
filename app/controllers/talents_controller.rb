@@ -14,6 +14,7 @@ class TalentsController < ApplicationController
 
   def show
     # @talent.scrape_youtube
+    authorize @talent
   end
 
   def new
@@ -29,8 +30,8 @@ class TalentsController < ApplicationController
     @talent = current_user.talents.build(talent_params)
     # @talent.user = current_user if user_signed_in?
 
-    authorize @talent
     if @talent.save
+      authorize @talent
       redirect_to @talent, notice: "Yessss! It was posted"
     else
       render "new"
@@ -43,7 +44,7 @@ class TalentsController < ApplicationController
   end
 
   def update
-    # authorize @talent
+    authorize @talent
     # @talent.pole_id = params[:pole_id]
     if @talent.update(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
@@ -53,7 +54,7 @@ class TalentsController < ApplicationController
   end
 
   def destroy
-    # authorize @talent
+    authorize @talent
     @talent.destroy
     redirect_to talents_path
   end
