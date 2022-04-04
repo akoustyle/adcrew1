@@ -26,9 +26,9 @@ class TalentsController < ApplicationController
   end
 
   def create
-    # @talent = Talent.new(talent_params)
+    @talent = Talent.new(talent_params)
     # @talent.pole_id = params[:pole_id]
-    @talent = current_user.talents.build(talent_params)
+    # @talent = current_user.talents.build(talent_params)
     # @talent.user = current_user if user_signed_in?
 
     if @talent.save
