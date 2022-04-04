@@ -1,4 +1,5 @@
 class Campaign < ApplicationRecord
+  belongs_to :user
   has_many :collabs, dependent: :destroy
   has_many_attached :photos
   has_many :talents, through: :collabs

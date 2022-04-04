@@ -19,6 +19,10 @@ Rails.application.routes.draw do
 
     delete '/talent/:id', to: 'talents#destroy', as: 'destroy'
     delete '/campaign/:id', to: 'campaigns#destroy', as: 'campaign_destroy'
+    
+    devise_scope :user do
+      delete '/users/sign_out' => 'devise/sessions#destroy'
+    end
     # post '/contacts/', to: 'contacts#create', as: 'contact'
     # get 'prod', to: 'pages#prod', as: :prod
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
