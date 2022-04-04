@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  # require 'mail_form'
   def new
     @contact = Contact.new
   end
@@ -13,5 +14,7 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Could not send message'
       render :new
     end
+  rescue ScriptError
+      flash[:error] = 'Sorry, something was wrong'
   end
 end
