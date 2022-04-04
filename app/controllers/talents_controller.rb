@@ -1,10 +1,11 @@
 class TalentsController < ApplicationController
   before_action :find_talent, only: %i[show edit update destroy]
   # before_action :skip_authorization, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     # if params[:pole].blank?
-    @talents = Talent.all.order(created_at: :desc)
+    # @talents = Talent.all.order(created_at: :desc)
     @talents = policy_scope(Talent).order(created_at: :desc)
     #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id

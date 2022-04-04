@@ -11,13 +11,14 @@ class TalentPolicy < ApplicationPolicy
   end
 
   def create?
-    # user.present? && user == record.user
-    record.user == user # only talent creator can create it
+    user.present? && user == record.user
+    # record.user == user # only talent creator can create it
   end
 
   def edit?
+    update?
     # user.present? && user == record.user
-    record.user == user # only talent creator can update it
+    # record.user == user # only talent creator can update it
   end
 
   def update?
@@ -28,7 +29,7 @@ class TalentPolicy < ApplicationPolicy
   end
 
   def destroy?
-      # user.present? && user == record.user
-    record.user == user # only talent creator can update it
+    user.present? && user == record.user
+    # record.user == user # only talent creator can update it
   end
 end
