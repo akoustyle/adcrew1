@@ -102,7 +102,7 @@
     backdrop-filter: blur(10px);
   }
   &:hover .info{
-    color: white;
+    color: white !important;
   }
   &:hover .tag {
     color: $red;

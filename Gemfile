@@ -26,7 +26,7 @@ gem 'rails-i18n'
 # gem 'globalize'
 # gem 'globalize3'
 # gem 'activemodel-serializers-xml'
-
+gem 'mail_form'
 
 
 # Use Active Storage variant
