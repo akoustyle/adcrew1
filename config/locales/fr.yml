@@ -63,6 +63,10 @@ fr:
     team: "LA TEAM"
     links:
       contact: "Contactez-nous"
+    statut: "Gestionnaire de Talents"
+    statut2: "Cheffe de Projet"
+    statut3: "Cheffe de projet Stratégie"
+    statut4: "Cheffe de Production"
   contact:
     title: "CONTACTEZ-NOUS"
     paragraphe: "Passez prendre une tasse de café ou laissez-nous un message"
