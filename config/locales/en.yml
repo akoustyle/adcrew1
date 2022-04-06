@@ -63,6 +63,10 @@ en:
     team: "THE TEAM"
     links:
       contact: "Contact us"
+    statut: "Talent Manager"
+    statut2: "Project Manager"
+    statut3: "Strategy project  Manager"
+    statut4: "Production Manager"
   contact:
     title: "CONTACT US"
     paragraphe: "Swing by for a cup of coffee or leave us a message"
