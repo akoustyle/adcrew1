@@ -40,7 +40,7 @@ class TalentsController < ApplicationController
   end
 
   def edit
-    # authorize @talent
+    authorize @talent
     # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
@@ -81,6 +81,6 @@ class TalentsController < ApplicationController
   def find_talent
     # @talent = Talent.find(params[:id])
     @talent = policy_scope(Talent).find(params[:id])
-    authorize @talent
+    # authorize @talent
   end
 end
