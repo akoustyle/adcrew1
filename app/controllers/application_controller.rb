@@ -16,8 +16,6 @@ class ApplicationController < ActionController::Base
   #   redirect_to(root_path)
   # end
 
-
-
   def switch_locale
     locale = params[:locale].to_s.strip.to_sym
     I18n.locale = if I18n.available_locales.include?(locale)
