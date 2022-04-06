@@ -64,6 +64,9 @@
         <div class="main-container" style="background-color: white">
             <p class="notice" style="position:absolute"><%= notice %></p>
             <p class="alert" style="position:absolute"><%= alert %></p>
+            <%# flash.each do |key, message| %>
+              <%# <p class="alert alert-= key">= message</p> %>
+            <%# end %>
             <%= yield %>
          </div>
         <%= render 'shared/final-footer' %>
