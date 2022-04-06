@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-   def index
+  def index
     @users = User.order(created_at: :desc)
     authorize @users
     # if current_user.has_any_role? :admin, :newuser
