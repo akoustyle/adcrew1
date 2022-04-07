@@ -5,8 +5,8 @@ class TalentsController < ApplicationController
 
   def index
     # if params[:pole].blank?
-    # @talents = Talent.all.order(created_at: :desc)
-    @talents = policy_scope(Talent).order(created_at: :desc)
+    @talents = Talent.all.order(created_at: :desc)
+    # @talents = policy_scope(Talent).order(created_at: :desc)
     #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id
     # @talents = Talent.where(:pole_id => @pole_id).order(created_at: :desc)
@@ -15,13 +15,13 @@ class TalentsController < ApplicationController
 
   def show
     # @talent.scrape_youtube
-    authorize @talent
+    # authorize @talent
   end
 
   def new
-    # @talent = Talent.new
-    @talent = current_user.talents.build
-    authorize @talent
+    @talent = Talent.new
+    # authorize @talent
+    # @talent = current_user.talents.build
     # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
@@ -31,8 +31,8 @@ class TalentsController < ApplicationController
     # @talent = current_user.talents.build(talent_params)
     # @talent.user = current_user if user_signed_in?
 
+    # authorize @talent
     if @talent.save
-      authorize @talent
       redirect_to @talent, notice: "Yessss! It was posted"
     else
       render "new"
@@ -40,12 +40,12 @@ class TalentsController < ApplicationController
   end
 
   def edit
-    authorize @talent
+    # authorize @talent
     # @poles = Pole.all.map{ |p| [p.name, p.id] }
   end
 
   def update
-    authorize @talent
+    # authorize @talent
     # @talent.pole_id = params[:pole_id]
     if @talent.update(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
@@ -55,7 +55,7 @@ class TalentsController < ApplicationController
   end
 
   def destroy
-    authorize @talent
+    # authorize @talent
     @talent.destroy
     redirect_to talents_path
   end
@@ -79,8 +79,8 @@ class TalentsController < ApplicationController
   end
 
   def find_talent
-    # @talent = Talent.find(params[:id])
-    @talent = policy_scope(Talent).find(params[:id])
+    @talent = Talent.find(params[:id])
+    # @talent = policy_scope(Talent).find(params[:id])
     # authorize @talent
   end
 end
