@@ -22,8 +22,10 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:success] = 'Message sent!'
       # render :create
+      redirect_to root_path
     else
       flash.now[:error] = 'Could not send message'
+      binding.pry
       render :new
     end
   rescue ScriptError

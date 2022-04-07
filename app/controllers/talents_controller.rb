@@ -47,7 +47,7 @@ class TalentsController < ApplicationController
   def update
     # authorize @talent
     # @talent.pole_id = params[:pole_id]
-    if @talent.update(talent_params)
+    if @talent.update!(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
     else
       render 'edit'
