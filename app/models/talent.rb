@@ -2,7 +2,7 @@ require 'open-uri'
 # require 'json'
 include ActionView::Helpers::NumberHelper
 class Talent < ApplicationRecord
-  belongs_to :user
+  # belongs_to :user
   has_many :collabs, dependent: :destroy
   has_many_attached :photos
   has_one_attached :video

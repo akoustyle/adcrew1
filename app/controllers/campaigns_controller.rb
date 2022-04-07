@@ -5,18 +5,18 @@ class CampaignsController < ApplicationController
 
 
   def index
-    # @campaigns = Campaign.all
-    @campaigns = policy_scope(Campaign)
+    @campaigns = Campaign.all
+    # @campaigns = policy_scope(Campaign)
   end
 
   def show
-    authorize @campaign
+    # authorize @campaign
   end
 
   def new
     @campaign = Campaign.new
     # @campaign = current_user.campaigns.build
-    authorize @campaign
+    # authorize @campaign
   end
 
   def create
@@ -24,7 +24,7 @@ class CampaignsController < ApplicationController
     @campaign = Campaign.new(campaign_params)
     @campaign.user = current_user if user_signed_in?
     if @campaign.save
-      authorize @campaign
+      # authorize @campaign
       params[:campaign][:collab_ids].each do |id|
         next if id.blank?
         Collab.create(campaign: @campaign, talent_id: id)
@@ -42,7 +42,7 @@ class CampaignsController < ApplicationController
   end
 
   def update
-    authorize @campaign
+    # authorize @campaign
     if @campaign.update(campaign_params)
       redirect_to @campaign, notice: "Congrats! Campaign was updated!"
     else
@@ -51,7 +51,7 @@ class CampaignsController < ApplicationController
   end
 
   def destroy
-    authorize @campaign
+    # authorize @campaign
     @campaign.destroy
     redirect_to campaigns_path
   end
@@ -64,7 +64,8 @@ class CampaignsController < ApplicationController
   end
 
   def find_campaign
-    @campaign = policy_scope(Campaign).find(params[:id])
-    authorize @campaign
+    @campaign = Campaign.find(params[:id])
+    # @campaign = policy_scope(Campaign).find(params[:id])
+    # authorize @campaign
   end
 end
