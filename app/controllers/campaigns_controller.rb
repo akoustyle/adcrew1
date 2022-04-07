@@ -5,8 +5,8 @@ class CampaignsController < ApplicationController
 
 
   def index
-    # @campaigns = Campaign.all
-    @campaigns = policy_scope(Campaign)
+    @campaigns = Campaign.all
+    # @campaigns = policy_scope(Campaign)
   end
 
   def show
@@ -64,7 +64,8 @@ class CampaignsController < ApplicationController
   end
 
   def find_campaign
-    @campaign = policy_scope(Campaign).find(params[:id])
-    authorize @campaign
+    @campaign = Campaign.find(params[:id])
+    # @campaign = policy_scope(Campaign).find(params[:id])
+    # authorize @campaign
   end
 end
