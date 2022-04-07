@@ -21,8 +21,8 @@ class ContactsController < ApplicationController
     # authorize @contact
     if @contact.deliver
       flash.now[:success] = 'Message sent!'
-      # render :create
-      redirect_to root_path
+      render :create
+      # redirect_to root_path
     else
       flash.now[:error] = 'Could not send message'
       binding.pry

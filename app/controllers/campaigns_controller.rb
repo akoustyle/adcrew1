@@ -22,7 +22,7 @@ class CampaignsController < ApplicationController
   def create
     @collab = Talent.find_by(params[:collabs])
     @campaign = Campaign.new(campaign_params)
-    @campaign.user = current_user if user_signed_in?
+    # @campaign.user = current_user if user_signed_in?
     if @campaign.save
       # authorize @campaign
       params[:campaign][:collab_ids].each do |id|
