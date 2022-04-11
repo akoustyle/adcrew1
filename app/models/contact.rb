@@ -3,10 +3,9 @@ class Contact < MailForm::Base
 
   attribute :name,      validate: true
   attribute :email,     validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :category,   validate: true
+  attribute :category
   attribute :entreprise
   attribute :message,    validate: true
-  attribute :form
   attribute :nickname,  captcha: true
 
   def persisted?
