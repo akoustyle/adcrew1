@@ -3,15 +3,16 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # Settings specified here will take precedence over those in config/application.rb.
-  # config.action_mailer.delivery_method = :smtp
-  # # config.action_mailer.smtp_settings = {
-  #   adress:                         'smtp.gmail.com',
-  #   port:                           587,
-  #   domain:                         'www.adcrew-paris.com',
-  #   user_name:                      'maoukola.oneal@gmail.com',
-  #   password:                       'Tshileo06@',
-  #   authentification:                'plain',
-  #   enable_starttls_auto:             true }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    adress:                         'smtp.sendgrid.net',
+    port:                           587,
+    domain:                         'www.adcrew-paris.com',
+    user_name:                      ENV['SENDGRID_USERNAME'],
+    password:                       ENV['SENDGRID_PASSWORD'],
+    authentification:                'plain',
+    enable_starttls_auto:             true }
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.

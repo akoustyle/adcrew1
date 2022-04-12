@@ -6,7 +6,6 @@ class Contact < MailForm::Base
   attribute :category
   attribute :entreprise
   attribute :message,    validate: true
-  # attribute :form
   attribute :nickname,  captcha: true
 
   def persisted?
@@ -16,9 +15,9 @@ class Contact < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Contact Form Inquiry",
+      :subject => "Contact Form Inquiry from %('#{name}' <#{email})",
       :to => "maoukola.oneal@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => "email@myallowedemailingdomain"
     }
   end
 end

@@ -1,14 +1,8 @@
+
 require 'mail_form'
 
 class ContactsController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [:create, :new]
-  # after_action :skip_pundit?, only: :create
-  # before_action :find_contact
-
-  def index
-    # authorize @contact
-    #  @contacts = policy_scope(Contact)
-  end
+  before_action :contact_params, only: [:create]
 
   def new
     @contact = Contact.new
@@ -22,7 +16,7 @@ class ContactsController < ApplicationController
     if @contact.deliver
       flash.now[:success] = 'Message sent!'
       render :create
-      # redirect_to root_path
+
     else
       flash.now[:error] = 'Could not send message'
       binding.pry
@@ -32,13 +26,8 @@ class ContactsController < ApplicationController
       flash[:error] = 'Sorry, something was wrong'
   end
 
-
-  # private
-
-  # def find_contact
-  #   # @talent = Talent.find(params[:id])
-  #   @contact = policy_scope(Contact).find(params[:id])
-  #   authorize @contact
-  # end
-
+  private
+  def contact_params
+    params.require(:contact).permit(:name, :email, :category, :entreprise, :message, :nickname, :captcha)
+  end
 end
