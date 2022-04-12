@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Pundit
   before_action :authenticate_user!
   before_action :switch_locale
   after_action :store_action
@@ -14,8 +15,6 @@ class ApplicationController < ActionController::Base
   #   flash[:alert] = "You are not authorized to perform this action."
   #   redirect_to(root_path)
   # end
-
-
 
   def switch_locale
     locale = params[:locale].to_s.strip.to_sym
