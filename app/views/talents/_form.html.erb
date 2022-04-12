@@ -16,7 +16,7 @@
       <%= t.input :media, as: :file, input_html: { class: 'form-control'} %>
       <%= t.input :video, as: :file, input_html: { class: 'form-control'}  %>
       <%= t.input :photos, input_html: { multiple: true, class: 'hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Talent photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview" %>
-      <%= t.button :submit, class: 'btn btn-info' %>
+      <%= t.button :submit, class: 'btn btn-info' %> <%= link_to "Retour", talent_path %>
     </div>
   <% end %>
 </div>
