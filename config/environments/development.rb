@@ -6,11 +6,11 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    adress:                         'smtp.gmail.com',
+    adress:                         'smtp.sendgrid.net',
     port:                           587,
     domain:                         'www.adcrew-paris.com',
-    user_name:                      'maoukola.oneal@gmail.com',
-    password:                       'Tshileo06@',
+    user_name:                      ENV['SENDGRID_USERNAME'],
+    password:                       ENV['SENDGRID_PASSWORD'],
     authentification:                'plain',
     enable_starttls_auto:             true }
   # In the development environment your application's code is reloaded any time
