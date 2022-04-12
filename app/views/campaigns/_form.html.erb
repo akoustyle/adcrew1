@@ -26,7 +26,8 @@
       <%= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Bg-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview" %>
       <%#= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input2'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a mid-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview2" %>
       <%#= c.input :photos, as: :file, input_html: { multiple: true, class: 'hidden', id: 'photo-input3'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Top-photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview3" %>
-      <%= c.button :submit, class: 'btn btn-info' %> <%= link_to "Retour", campaign_path %>
+      <%= c.button :submit, class: 'btn btn-info' %>
     </div>
   <% end %>
+  <%= link_to "Retour", @campaign_path %>
 </div>
