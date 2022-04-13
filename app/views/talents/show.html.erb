@@ -65,7 +65,7 @@
                 <% end %>
                 <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
                 <% else %>
-                   <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                    <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-instagram"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
