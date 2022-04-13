@@ -41,6 +41,7 @@ body {
   // &:after {
   //   animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
   // }
+  position:relative;
 }
 // @keyframes gradient {
 //     0% {
@@ -76,4 +77,10 @@ body {
 }
 .blue-color {
   color: blue;
+}
+.fa-solid .fas {
+  // font-family: "Font Awesome 6 Free";
+  // font-weight: 900;
+  font-size: 18px;
+  color: red;
 }

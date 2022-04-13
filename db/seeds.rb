@@ -76,7 +76,7 @@ blabbermooth = Talent.create(name: "@blabbermooth", about: "Noa Souffir, connue 
 puts "saving blabbermooth..."
 blabbermooth.save!
 
-lucasdorable = Talent.create(name: "@lucasdorable", about: "Lucas est un jeune influenceur connu pour son sens de la répartie plus que remarquable.", title: "influenceur", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/lucasdorable/", insta_link: "264000", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@lucasdorable?lang=fr", tiktok_link: "347700", tiktok_eng: "2%", link_youtube: "https://www.youtube.com/c/LucasDorable/videos", youtube_link: "UCWet1JGdMI5PlO8VqXXg-Ng", youtube_eng: "34%", category: "fashion")
+lucasdorable = Talent.create(name: "@lucasdorable", about: "Lucas est un jeune influenceur connu pour son sens de la répartie plus que remarquable.", title: "influenceur", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/lucasdorable/", insta_link: "264000", insta_eng: "76%", link_tiktok: "https://www.tiktok.com/@lucasdorable?lang=fr", tiktok_link: "347700", tiktok_eng: "2%", link_youtube: "https://www.youtube.com/c/LucasDorable/videos", youtube_link: "453000", youtube_eng: "34%", category: "fashion")
 puts "saving lucasdorable..."
 lucasdorable.save!
 
@@ -258,4 +258,4 @@ first = User.new(
             password: "123456")
 puts "saving adc..."
 first.save!
-puts "Adc saved successfully!"
+puts "Adc saved successfully!!!!!"

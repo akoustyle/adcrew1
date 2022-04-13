@@ -17,7 +17,9 @@ module AdcrewApp1
     config.load_defaults 6.1
     config.assets.initialize_on_precompile = false
     # Configuration for the application, engines, and railties goes here.
-    #
+
+    # config.autoload_paths += Dir[Rails.root.join('app', 'policies', '*.rb')]
+
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #

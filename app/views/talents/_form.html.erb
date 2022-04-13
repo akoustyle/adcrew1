@@ -3,20 +3,21 @@
     <div class="form-group">
       <%= t.input :category, collection: ["green", "fashion", "lifestyle"] %>
       <%#= t.select :category, input_html: { class: 'form-control'}  %>
-      <%= t.input :name, input_html: { class: 'form-control'} %>
-      <%= t.input :about, input_html: { class: 'form-control'} %>
-      <%= t.input :title, input_html: { class: 'form-control'} %>
-      <%= t.input :insta_link, input_html: { class: 'form-control'} %>
-      <%= t.input :link_insta, input_html: { class: 'form-control'} %>
-      <%= t.input :youtube_link, input_html: { class: 'form-control'} %>
-      <%= t.input :link_youtube, input_html: { class: 'form-control'} %>
-      <%= t.input :tiktok_link, input_html: { class: 'form-control'} %>
-      <%= t.input :link_tiktok, input_html: { class: 'form-control'} %>
+      <%= t.input :name, placeholder: "Nom insta de l'influ par exemple: @influ_34", input_html: { class: 'form-control'} %>
+      <%= t.input :about, placeholder: "Petite description de l'influ, 1 phrase max", input_html: { class: 'form-control'} %>
+      <%= t.input :title, placeholder: "Métier de l'influ ou Instagrammer", input_html: { class: 'form-control'} %>
+      <%= t.input :insta_link, placeholder: "Nombre d'abonnés insta, laisser vide si aucun abonné", input_html: { class: 'form-control'} %>
+      <%= t.input :link_insta, placeholder: 'Adresse url insta, laisser vide si aucun compte', input_html: { class: 'form-control'} %>
+      <%= t.input :youtube_link, placeholder: "Nombre d'abonnés youtube, laisser vide si aucun abonné",  input_html: { class: 'form-control'} %>
+      <%= t.input :link_youtube, placeholder: 'adresse url youtube, laisser vide si aucun compte', input_html: { class: 'form-control'} %>
+      <%= t.input :tiktok_link, placeholder: "Nombre d'abonnés tiktok, laisser vide si aucun abonné", input_html: { class: 'form-control'} %>
+      <%= t.input :link_tiktok, placeholder: 'Adresse url tiktok, laisser vide si aucun compte', input_html: { class: 'form-control'} %>
       <%# <%#= t.input :audience_male, input_html: { class: 'form-control'} %>
-      <%#= t.input :audience_female, input_html: { class: 'form-control'} %>
+      <%= t.input :media, as: :file, input_html: { class: 'form-control'} %>
       <%= t.input :video, as: :file, input_html: { class: 'form-control'}  %>
       <%= t.input :photos, input_html: { multiple: true, class: 'hidden', id: 'photo-input'}, label_html: { class: 'upload-photo'}, label: '📷 Upload a Talent photo' %><%= image_tag "", width: 150, class: "hidden", id: "photo-preview" %>
       <%= t.button :submit, class: 'btn btn-info' %>
     </div>
   <% end %>
+  <%= link_to "Retour", @talent_path %>
 </div>
