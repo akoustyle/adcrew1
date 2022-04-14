@@ -376,7 +376,7 @@ section.campaign {
       & .img-wrapper {
         height: 460px;
         grid-template-columns: 1fr;
-        &.campaign-card {
+        & .campaign-card {
           height: 460px !important;
         }
       }
