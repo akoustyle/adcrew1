@@ -160,6 +160,134 @@ section.team {
 
 }
 
+//////////////// RESPONSIVE ////////////////////
+
+@media (max-width: 500px) { 
+
+  section.team {
+    &:nth-child(1) {
+
+      & .img-wrapper-small {
+        display: flex !important;
+        flex-direction: column;
+        // justify-content: space-between;
+        width: 85vw;
+        margin: 0;
+        & .gif-talent {
+          filter: grayscale(100%);
+          margin: 15px 0;
+          height: 200px;
+          width: 49%;
+            background-size: cover;
+            background-position: center;
+            &#maud {
+              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(maud.jpg);
+            }
+            &#jessica {
+              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(jessica.jpg);
+            }
+            & > div {
+              justify-content: space-between !important;
+            }
+            & p {
+              font-size: 8px !important;
+            }
+        }
+        & .side-text {
+          margin: 30px 0px;
+        }
+        & .note {
+          display: none;
+        }
+      }
+      & .img-wrapper {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      & .img-wrapper {
+        grid-template-columns: 1fr;
+        grid-gap: 6px;
+        width: 85vw;
+        margin: 30px 0;
+        & .note {
+          margin: 0px 0px;
+          width: 110%;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-family: inherit;
+          & span {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      justify-content: space-between;
+      align-items: center;
+
+      & .content {
+          display: flex;
+          width: 50vw;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          & .text-content {
+            width: 35vw;
+            position: relative;
+            //text-align: center;
+            & a {
+              font-size: 14px;
+              color: $red;
+              &:hover {
+                border-bottom: 1px $red solid;
+              }
+            }
+          .rounded-shape {
+              position: absolute;
+              top: -15px;
+              left: 358px;
+                transform: translate(-50%, -50%);
+                content: "";
+                // border: 1px solid #000;
+                height: 100px;
+              width: 390px;
+                border-radius: 90%;
+                transform: rotate(-10deg);
+                pointer-events: none;
+                z-index: 100;
+          }
+          }
+      }
+      & img {
+        height: 100%;
+        width: 50vw;
+            object-fit: cover;
+            filter: grayscale(100%);
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // .container-team {
 //   display: flex;
 //   align-items: center;
