@@ -22,17 +22,16 @@ input[type=submit]:hover {
 }
 
 /* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  padding: 10px;
-}
+// .container {
+//   border-radius: 5px;
+//   padding: 10px;
+// }
 
 /* Create two columns that float next to eachother */
 .column {
   float: left;
-  width: 50%;
+  // width: 50%;
   margin-top: 6px;
-  padding: 20px;
 }
 
 /* Clear floats after the columns */
@@ -41,6 +40,7 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+
 section.contact {
 	display: flex;
 	height: 100vh;
@@ -95,13 +95,15 @@ section.contact {
 	}
 
 	&:nth-child(3) {
+		align-items: center;
 		flex-direction: column;
 		padding-top: 13vh;
 		margin-bottom: 360px;
 
 		& .content {
 			display: flex;
-			// width: 50vw;
+			flex-direction: row;
+			width: 85vw;
 			// height: 100vh;
 			justify-content: center;
 			// align-items: center;
@@ -109,7 +111,7 @@ section.contact {
 				border-bottom: 1px black solid;
 			    width: 85vw;
 			    & p {
-			    	width: 60vw;
+			    	width: 85vw;
 			    }
 				//text-align: center;
 				& a {
@@ -120,9 +122,16 @@ section.contact {
 					}
 				}
 			}
+			& .column {
+				width: 50%;
+				&:nth-child(2) {
+					padding: 10px 0px 0px 20px;
+				}
+			}
 		}
-  }
+  	}
 }
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
@@ -130,3 +139,48 @@ section.contact {
     margin-top: 0;
   }
 }
+
+
+//////////////// RESPONSIVE ////////////////////
+
+@media (max-width: 500px) { 
+	section.contact {
+		&:nth-child(3) {
+			align-items: center;
+			flex-direction: column;
+			padding-top: 13vh;
+			margin-bottom: 360px;
+
+			& .content {
+				display: flex;
+				flex-direction: column;
+				width: 85vw;
+				// height: 100vh;
+				justify-content: center;
+				// align-items: center;
+				& .text-content {
+					border-bottom: 1px black solid;
+				    width: 85vw;
+				    & p {
+				    	width: 85vw;
+				    }
+					//text-align: center;
+					& a {
+						font-size: 14px;
+						color: $red;
+						&:hover {
+							border-bottom: 1px $red solid;
+						}
+					}
+				}
+				& .column {
+					width: 100%;
+					&:nth-child(2) {
+						padding: 10px 0px 0px 0px;
+					}
+				}
+			}
+	  	}
+	}
+}
+

@@ -60,7 +60,7 @@
   animation: 0.3s blur forwards;
 
   & .navbar .closebtn {
-    padding: 5px 15px;
+    padding: 4px 10px;
   }
 }
 
@@ -166,5 +166,8 @@
   }
   .openbtn {
     padding: 10px 0;
+  }
+  .closebtn {
+    padding: 4px 0px !important;
   }
 }

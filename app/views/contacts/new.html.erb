@@ -42,11 +42,10 @@
       </div>
     </div>
   </div>
-  <div class="content container">
-    <div class="row">
+  <div class="content">
       <div class="column">
         <%= form_for @contact do |f| %>
-          <div class="col-md-12">
+          <div class="pt-3">
             <%= f.label t('contact.form.name') %><br>
             <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder') %>
             <%= f.label t('contact.form.entreprise') %>
@@ -102,6 +101,5 @@
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0SzSJHhDb1W3KuSY8fwZQbancntTuWUs&q=104 rue Réaumur 75002 Paris" allowfullscreen>
         </iframe>
       </div>
-    </div>
   </div>
 </section>
