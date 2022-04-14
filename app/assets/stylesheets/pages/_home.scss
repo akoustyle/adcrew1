@@ -809,3 +809,243 @@ section.home {
       content: "Des valeurs fortes prônées tout au long des missions : confiance , éthique,55,4k respect, éco-responsabilité, inclusion, environnement, diversité.";
     }
 }
+
+
+//////////////// RESPONSIVE ////////////////////
+
+@media (max-width: 500px) {
+  
+
+  section.home {
+    display: flex;
+    height: 100vh;
+
+    scroll-snap-align: center;
+
+    .note {
+      font-family: $note-font;
+    }
+
+    &:nth-child(1) {
+      justify-content: space-between;
+      align-items: center;
+
+      & .background {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+          filter: grayscale(0%);
+          z-index: 10;
+          & video {
+              height: 100%;
+              width: 100%;
+            object-fit: cover;
+          }
+      }
+    }
+
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+
+      & .content {
+      width: 100vw;
+      padding: 0px 0px 40px 0px;
+        & .text-content {
+          width: 85vw;
+        }
+      }
+      & img {
+        padding: 80px 30px 30px 30px;
+        height: 100%;
+        width: 100vw;
+      object-fit: cover;
+      filter: grayscale(100%);
+      }
+    }
+
+    &:nth-child(3) {
+      flex-direction: column;
+      padding-top: 13vh;
+      margin-bottom: 60px;
+
+      & .content {
+        display: flex;
+        // width: 50vw;
+        // height: 100vh;
+        justify-content: center;
+        // align-items: center;
+        & .text-content {
+          border-bottom: 1px black solid;
+          width: 85vw;
+          z-index: 10;
+          & p {
+            width: 100%;
+          }
+          //text-align: center;
+          & a {
+            font-size: 14px;
+            color: $red;
+            &:hover {
+              border-bottom: 1px $red solid;
+            }
+          }
+        }
+      }
+
+      & .img-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 85vw;
+        position: relative;
+
+        img {
+          // filter: grayscale(100%);
+          margin: 30px 0;
+          height: 430px;
+          width: 24%;
+            object-fit: cover;
+
+          &:nth-child(1) {
+            display: none;
+          }
+
+          &:nth-child(2) {
+              left: 0px;
+              top: 20px;
+              width: 210px;
+              height: 280px;
+          }
+
+          &:nth-child(3) {
+                top: 0px;
+                height: 320px;
+                width: 225px;
+          }
+        }
+
+        .note {
+          display: none;
+        }
+
+        .rounded-shape {
+              top: 110px;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      flex-direction: column;
+      padding-top: 13vh;
+
+      & .content {
+        & .text-content {
+            & p {
+              width: 85vw;
+            }
+        }
+      }
+      & .img-wrapper {
+        & .gif-talent {
+          height: 300px;
+          width: 50%;
+            &#gif-one {
+              display: none;
+              animation: 10.1s gifMakerOne infinite;
+            }
+            &#gif-two {
+              display: none;
+              animation: 10.3s gifMakerTwo infinite;
+            }
+            &#gif-three {
+              animation: 10s gifMakerThree infinite;
+            }
+            &#gif-four {
+              animation: 10.2s gifMakerFour infinite;
+            }
+        }
+        & .note {
+          margin: 30px 10px;
+          width: 24%;
+          font-size: 18px;
+          text-transform: uppercase;
+          & span {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      justify-content: space-between;
+      align-items: center;
+
+      & .content {
+          display: flex;
+          width: 50vw;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          & .text-content {
+            width: 35vw;
+            position: relative;
+            //text-align: center;
+            & a {
+              font-size: 14px;
+              color: $red;
+              &:hover {
+                border-bottom: 1px $red solid;
+              }
+            }
+          .rounded-shape {
+              position: absolute;
+              top: -15px;
+              left: 358px;
+                transform: translate(-50%, -50%);
+                content: "";
+                // border: 1px solid #000;
+                height: 100px;
+              width: 390px;
+                border-radius: 90%;
+                transform: rotate(-10deg);
+                pointer-events: none;
+                z-index: 100;
+          }
+          }
+      }
+
+
+      & img {
+        height: 100%;
+        width: 50vw;
+            object-fit: cover;
+            filter: grayscale(100%);
+      }
+    }
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
