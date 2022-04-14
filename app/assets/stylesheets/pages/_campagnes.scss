@@ -376,9 +376,75 @@ section.campaign {
       & .img-wrapper {
         height: 460px;
         grid-template-columns: 1fr;
+        &.campaign-card {
+          height: 460px !important;
+        }
       }
     }
 
+  }
+
+  section.campaign {
+    padding: 0px !important;
+    padding-top: 13vh !important;
+
+    &:nth-child(1) {
+      & .content {
+        & .text-content {
+          & p {
+            width: 100%;
+            margin: 0;
+            & i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      & .img-wrapper {
+        img, video {
+          &:nth-child(1) {
+            top: 0px;
+            right: 0px;
+          }
+
+          &:nth-child(2) {
+            right: 0;
+            top: 100px;
+            width: 320px;
+            height: 325px;
+          }
+
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+
+        .note {
+          display: none;
+        }
+
+        .rounded-shape {
+              top: 260px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      & .content {
+        
+        & .text-content {
+          
+            & p {
+              width: 85vw;
+            }
+          
+        }
+      }
+      & .img-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 
 }

@@ -9,64 +9,6 @@ section.talents {
     font-family: $note-font;
   }
 
-  // &:nth-child(0) {
-  //   flex-direction: column;
-  //   padding-top: 13vh;
-  //   & .content {
-  //   display: flex;
-  //   // width: 50vw;
-  //   // height: 100vh;
-  //   justify-content: center;
-  //   // align-items: center;
-  //     & .text-content {
-  //       border-bottom: 1px black solid;
-  //         width: 85vw;
-  //         & p {
-  //           width: 35vw;
-  //         }
-  //       //text-align: center;
-  //       & a {
-  //         font-size: 14px;
-  //         color: $red;
-  //         &:hover {
-  //           border-bottom: 1px $red solid;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   & .img-wrapper {
-  //     display: flex;
-  //     justify-content: space-between;
-  //     width: 85vw;
-  //     & .gif-talent {
-  //       filter: grayscale(100%);
-  //       margin: 30px 0;
-  //       height: 430px;
-  //       width: 24%;
-  //         background-size: cover;
-  //         background-position: center;
-  //         &#gif-one {
-  //           animation: 10.1s gifMakerOne infinite;
-  //         }
-  //         &#gif-two {
-  //           animation: 10.3s gifMakerTwo infinite;
-  //         }
-  //         &#gif-three {
-  //           animation: 10s gifMakerThree infinite;
-  //         }
-  //     }
-  //     & .note {
-  //       margin: 30px 10px;
-  //       width: 24%;
-  //       font-size: 18px;
-  //       text-transform: uppercase;
-  //       & span {
-  //         text-decoration: line-through;
-  //       }
-  //     }
-  //   }
-  // }
-
   &:nth-child(1) {
     flex-direction: column;
     padding-top: 13vh;
@@ -225,7 +167,50 @@ section.talent {
 }
 
 
+//////////////// RESPONSIVE ////////////////////
 
+@media (max-width: 500px) {
+  section.talents {
+
+    &:nth-child(1) {
+
+      & .content {
+        & .text-content {
+          & .nav-pills {
+            justify-content: space-between !important;
+            & .nav-link {
+              font-size: 12px !important;
+              padding: 5px 20px;
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+      & .img-wrapper {
+        overflow-y: scroll;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 6px;
+        width: 85vw;
+        margin: 30px 0;
+        &.campaign-card {
+          height: 500px !important;
+        }
+        & .note {
+          margin: 30px 10px;
+          width: 24%;
+          font-size: 18px;
+          text-transform: uppercase;
+          & span {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+  }
+}
 
 
 
