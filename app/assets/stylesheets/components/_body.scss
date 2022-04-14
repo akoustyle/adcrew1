@@ -84,3 +84,9 @@ body {
   font-size: 18px;
   color: red;
 }
+
+@media (max-width: 500px) {
+  .arrow-top {
+    display: none;
+  }
+}
