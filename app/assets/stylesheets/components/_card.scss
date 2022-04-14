@@ -92,6 +92,9 @@
     & p {
           margin: 0;
     }
+    & a {
+      display: none;
+    }
   }
   &:hover .background {
     // filter: blur(10px);
@@ -100,6 +103,10 @@
   &:hover .card-info {
     // filter: blur(10px);
     backdrop-filter: blur(10px);
+    & a {
+      display: block;
+      color: white;
+    }
   }
   &:hover .info{
     color: white !important;

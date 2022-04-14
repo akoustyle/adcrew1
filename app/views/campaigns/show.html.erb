@@ -87,7 +87,7 @@
                 <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
 
                   <% if collab.talent.category == "green" %>
-                    <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px;"></i>
+                    <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px; z-index: 1000; color: black;"></i>
                   <% end %>
 
                   <div class="card-info">
