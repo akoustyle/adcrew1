@@ -144,27 +144,29 @@ section.talent {
       }
     }
 
+    .talent-standing {
+      position: relative;
+      & #png-mouseout {
+        display: block;
+      }
+      & #png-mousein {
+        display: none;
+      }
+      &:hover {
+        & #png-mouseout {
+          display: none;
+        }
+        & #png-mousein {
+          display: block;
+        }
+      }
+    }
+
   }
+
 
 }
 
-.talent-standing {
-  position: relative;
-  & #png-mouseout {
-    display: block;
-  }
-  & #png-mousein {
-    display: none;
-  }
-  &:hover {
-    & #png-mouseout {
-      display: none;
-    }
-    & #png-mousein {
-      display: block;
-    }
-  }
-}
 
 
 //////////////// RESPONSIVE ////////////////////
@@ -208,6 +210,87 @@ section.talent {
         }
       }
     }
+
+  }
+
+  section.talent {
+    flex-direction: column-reverse;
+    height: 200vh;
+
+    &:nth-child(1) {
+      justify-content: right;
+      align-items: center;
+
+      & .content {
+        width: 100vw;
+        & .text-content {
+          width: 85vw;
+          & .social-links > a {
+            &:nth-child(1) {
+              top: 0 !important;
+              left: 10px !important;
+            }
+            &:nth-child(2) {
+              top: 30px !important;
+              left: 10px !important;
+            }
+            &:nth-child(3) {
+              top: 60px !important;
+              left: 10px !important;
+            }
+            &:nth-child(4) {
+              top: 90px !important;
+              left: 10px !important;
+            }
+          }
+          & .social-links > a i {
+            color: $red;
+            font-size: 20px;
+          }
+          & .social-links > a p {
+            line-height: 1.7;
+          }
+          & a {
+            font-size: 14px;
+            color: $red;
+            background-color: transparent !important;
+            // &:hover {
+            //   // border-bottom: 1px $red solid;
+            // }
+          }
+        }
+      }
+      & video {
+        height: 100vh;
+        width: 100vw;
+      }
+      & img {
+        &.png-img {
+          width: 340px;
+          margin-top: 30px;
+        }
+      }
+      
+      .talent-standing {
+        position: relative;
+        & #png-mouseout {
+          display: block;
+        }
+        & #png-mousein {
+          display: none;
+        }
+        &:hover {
+          & #png-mouseout {
+            display: none;
+          }
+          & #png-mousein {
+            display: block;
+          }
+        }
+      }
+
+    }
+
 
   }
 }
