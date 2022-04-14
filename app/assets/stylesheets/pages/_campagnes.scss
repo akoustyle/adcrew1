@@ -294,6 +294,110 @@ section.campaign {
   }
 }
 
+//////////////// RESPONSIVE ////////////////////
+
+@media (max-width: 500px) {
+
+  section.campaigns {
+
+    &:nth-child(1) {
+
+      & .content {
+        & .text-content {
+          & p {
+            width: 100%;
+          }
+          //text-align: center;
+          & .nav-link:active{
+            background-color: transparent !important;
+            text-decoration: underline;
+            color:red;
+          }
+          & a {
+            font-size: 14px;
+            // color: $red;
+            &:hover {
+              text-decoration: underline;
+              color:red;
+            }
+            &:active {
+              color:red;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      & .img-wrapper {
+        & .gif-talent {
+          height: 280px;
+          width: 50%;
+            &#gif-one {
+              animation: 10.1s gifMakerOne infinite;
+            }
+            &#gif-two {
+              animation: 10.3s gifMakerTwo infinite;
+            }
+            &#gif-three {
+              display: none;
+              animation: 10s gifMakerThree infinite;
+            }
+            &#gif-four {
+              display: none;
+              animation: 10.2s gifMakerFour infinite;
+            }
+        }
+        & .note {
+          margin: 30px 10px;
+          width: 24%;
+          font-size: 18px;
+          text-transform: uppercase;
+          & span {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      flex-direction: column;
+      padding-top: 13vh;
+
+      & .text-content {
+        padding: 10px 0;
+      }
+
+      & .nav-pills {
+        justify-content: center !important;
+        & .nav-link {
+          font-size: 12px !important;
+          padding: 5px 20px;
+        }
+      }
+      & .img-wrapper {
+        height: 460px;
+        grid-template-columns: 1fr;
+      }
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // .campagne-header {
