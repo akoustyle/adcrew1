@@ -48,7 +48,7 @@
         <div class="text-content">
           <div class="d-flex justify-content-between nav nav-pills" id="pills-tab" role="tablist">
             <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false"><%= t('campagnes.tab1') %></a>
-            <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
+            <%# <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
             <a class="nav-link active" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="true"><%= t('campagnes.tab3') %></a>
             <% if user_signed_in? %>
               <%= link_to t('campagnes.tab4'), new_campaign_path, class: "nav-link" %>
@@ -73,37 +73,6 @@
                         </div>
 
                         <h2 class="info title"> <%= campaign.name %> </h2>
-
-                        <div class="bottom">
-                          <div class="info justify-content-center">
-                            <% campaign.collabs.each do |collab| %>
-                              <p><%= collab.talent.name %></p>
-                            <% end %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
-              <% end %>
-            </div>
-          </div>
-
-          <div class="tab-pane fade" id="pills-last"role="tabpanel" aria-labelledby="pills-last-tab">
-            <div class="img-wrapper">
-              <% @campaigns.last(3).each do |campaign|%>
-
-                <%= link_to campaign_path(campaign) do %>
-                  <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
-                      <div class="card-info">
-                        <div class="top py-1">
-                          <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
-                          </div>
-                        </div>
-
-                        <h2 class="info title"> <%= campaign.name%> </h2>
 
                         <div class="bottom">
                           <div class="info justify-content-center">
