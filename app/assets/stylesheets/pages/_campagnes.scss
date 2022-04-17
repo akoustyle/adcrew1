@@ -58,16 +58,16 @@ section.campaigns {
           background-size: cover;
           background-position: center;
           &#gif-one {
-            animation: 10.1s gifMakerFive infinite;
+            animation: 10.1s gifMakerOne infinite;
           }
           &#gif-two {
-            animation: 10.3s gifMakerSix infinite;
+            animation: 10.3s gifMakerTwo infinite;
           }
           &#gif-three {
-            animation: 10s gifMakerSeven infinite;
+            animation: 10s gifMakerThree infinite;
           }
           &#gif-four {
-            animation: 10.2s gifMakerHeight infinite;
+            animation: 10.2s gifMakerFour infinite;
           }
       }
       & .note {
@@ -294,333 +294,333 @@ section.campaign {
   }
 }
 
-@keyframes gifMakerFive {
-  0% {
-    background-image: url('campagnes/camp1.jpg'); //
-  }
-
-  9% {
-    background-image: url('campagnes/camp1.jpg'); //
-  }
-
-  10% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  19% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  20% {
-    background-image: url('campagnes/camp3.jpg'); //
-  }
-
-  29% {
-    background-image: url('campagnes/camp3.jpg'); //
-  }
-
-  30% {
-    background-image: url('campagnes/camp4.png'); //
-  }
-
-  39% {
-    background-image: url('campagnes/camp4.png'); //
-  }
-
-  40% {
-    background-image: url('campagnes/camp5.jpg'); //
-  }
-
-  49% {
-    background-image: url('campagnes/camp5.jpg'); //
-  }
-
-  50% {
-    background-image: url('campagnes/camp6.jpg'); //
-  }
-
-  59% {
-    background-image: url('campagnes/camp6.jpg'); //
-  }
-
-  60% {
-    background-image: url('campagnes/camp7.jpg'); //
-  }
-
-  69% {
-    background-image: url('campagnes/camp7.jpg'); //
-  }
-
-  70% {
-    background-image: url('campagnes/camp8.jpg'); //
-  }
-
-  79% {
-    background-image: url('campagnes/camp8.jpg'); //
-  }
-
-  80% {
-    background-image: url('campagnes/camp9.jpg'); //
-  }
-
-  89% {
-    background-image: url('campagnes/camp9.jpg'); //
-  }
-
-  90% {
-    background-image: url('campagnes/camp10.jpg'); //
-  }
-
-  100% {
-    background-image: url('campagnes/camp10.jpg'); //
-  }
-}
-
-@keyframes gifMakerSix {
-  0% {
-    background-image: url('campagnes/camp11.jpg'); //
-  }
-
-  9% {
-    background-image: url('campagnes/camp11.jpg'); //
-  }
-
-  10% {
-    background-image: url('campagnes/camp12.jpg'); //
-  }
-
-  19% {
-    background-image: url('campagnes/camp12.jpg'); //
-  }
-
-  20% {
-    background-image: url('campagnes/camp13.jpg'); //
-  }
-
-  29% {
-    background-image: url('campagnes/camp13.jpg'); //
-  }
-
-  30% {
-    background-image: url('campagnes/camp14.jpg'); //
-  }
-
-  39% {
-    background-image: url('campagnes/camp14.jpg'); //
-  }
-
-  40% {
-    background-image: url('campagnes/camp15.jpg'); //
-  }
-
-  49% {
-    background-image: url('campagnes/camp15.jpg'); //
-  }
-
-  50% {
-    background-image: url('campagnes/camp16.jpg'); //
-  }
-
-  59% {
-    background-image: url('campagnes/camp16.jpg'); //
-  }
-
-  60% {
-    background-image: url('campagnes/camp17.jpeg'); //
-  }
-
-  69% {
-    background-image: url('campagnes/camp17.jpeg'); //
-  }
-
-  70% {
-    background-image: url('campagnes/camp18.jpg'); //
-  }
-
-  79% {
-    background-image: url('campagnes/camp18.jpg'); //
-  }
-
-  80% {
-    background-image: url('campagnes/camp19.jpg'); //
-  }
-
-  89% {
-    background-image: url('campagnes/camp19.jpg'); //
-  }
-
-  90% {
-    background-image: url('campagnes/camp20.png'); //
-  }
-
-  100% {
-    background-image: url('campagnes/camp20.png'); //
-  }
-}
-
-@keyframes gifMakerSeven {
-  0% {
-    background-image: url('campagnes/camp11.jpg'); //
-  }
-
-  9% {
-    background-image: url('campagnes/camp11.jpg'); //
-  }
-
-  10% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  19% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  20% {
-    background-image: url('campagnes/camp13.jpg'); //
-  }
-
-  29% {
-    background-image: url('campagnes/camp13.jpg'); //
-  }
-
-  30% {
-    background-image: url('campagnes/camp4.png'); //
-  }
-
-  39% {
-    background-image: url('campagnes/camp4.png'); //
-  }
-
-  40% {
-    background-image: url('campagnes/camp15.jpg'); //
-  }
-
-  49% {
-    background-image: url('campagnes/camp15.jpg'); //
-  }
-
-  50% {
-    background-image: url('campagnes/camp6.jpg'); //
-  }
-
-  59% {
-    background-image: url('campagnes/camp6.jpg'); //
-  }
-
-  60% {
-    background-image: url('campagnes/camp17.jpeg'); //
-  }
-
-  69% {
-    background-image: url('campagnes/camp17.jpeg'); //
-  }
-
-  70% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  79% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  80% {
-    background-image: url('campagnes/camp1.jpg'); //
-  }
-
-  89% {
-    background-image: url('campagnes/camp1.jpg'); //
-  }
-
-  90% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-
-  100% {
-    background-image: url('campagnes/camp2.jpg'); //
-  }
-}
-
-@keyframes gifMakerHeight {
-  0% {
-    background-image: url('campagnes/camp7.jpg'); //
-  }
-
-  9% {
-    background-image: url('campagnes/camp7.jpg'); //
-  }
-
-  10% {
-    background-image: url('campagnes/camp13.jpg'); //
-  }
-
-  19% {
-    background-image: url('campagnes/camp13.jpg'); //
-  }
-
-  20% {
-    background-image: url('campagnes/camp17.jpeg'); //
-  }
-
-  29% {
-    background-image: url('campagnes/camp17.jpeg'); //
-  }
-
-  30% {
-    background-image: url('campagnes/camp11.jpg'); //
-  }
-
-  39% {
-    background-image: url('campagnes/camp11.jpg'); //
-  }
-
-  40% {
-    background-image: url('campagnes/camp9.jpg'); //
-  }
-
-  49% {
-    background-image: url('campagnes/camp9.jpg'); //
-  }
-
-  50% {
-    background-image: url('campagnes/camp6.jpg'); //
-  }
-
-  59% {
-    background-image: url('campagnes/camp6.jpg'); //
-  }
-
-  60% {
-    background-image: url('campagnes/camp14.jpg'); //
-  }
-
-  69% {
-    background-image: url('campagnes/camp14.jpg'); //
-  }
-
-  70% {
-    background-image: url('campagnes/camp5.jpg'); //
-  }
-
-  79% {
-    background-image: url('campagnes/camp5.jpg'); //
-  }
-
-  80% {
-    background-image: url('campagnes/camp12.jpg'); //
-  }
-
-  89% {
-    background-image: url('campagnes/camp12.jpg'); //
-  }
-
-  90% {
-    background-image: url('campagnes/camp16.jpg'); //
-  }
-
-  100% {
-    background-image: url('campagnes/camp16.jpg'); //
-  }
-}
+// @keyframes gifMakerFive {
+//   0% {
+//     background-image: url('campagnes/camp1.jpg'); //
+//   }
+
+//   9% {
+//     background-image: url('campagnes/camp1.jpg'); //
+//   }
+
+//   10% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   19% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   20% {
+//     background-image: url('campagnes/camp3.jpg'); //
+//   }
+
+//   29% {
+//     background-image: url('campagnes/camp3.jpg'); //
+//   }
+
+//   30% {
+//     background-image: url('campagnes/camp4.png'); //
+//   }
+
+//   39% {
+//     background-image: url('campagnes/camp4.png'); //
+//   }
+
+//   40% {
+//     background-image: url('campagnes/camp5.jpg'); //
+//   }
+
+//   49% {
+//     background-image: url('campagnes/camp5.jpg'); //
+//   }
+
+//   50% {
+//     background-image: url('campagnes/camp6.jpg'); //
+//   }
+
+//   59% {
+//     background-image: url('campagnes/camp6.jpg'); //
+//   }
+
+//   60% {
+//     background-image: url('campagnes/camp7.jpg'); //
+//   }
+
+//   69% {
+//     background-image: url('campagnes/camp7.jpg'); //
+//   }
+
+//   70% {
+//     background-image: url('campagnes/camp8.jpg'); //
+//   }
+
+//   79% {
+//     background-image: url('campagnes/camp8.jpg'); //
+//   }
+
+//   80% {
+//     background-image: url('campagnes/camp9.jpg'); //
+//   }
+
+//   89% {
+//     background-image: url('campagnes/camp9.jpg'); //
+//   }
+
+//   90% {
+//     background-image: url('campagnes/camp10.jpg'); //
+//   }
+
+//   100% {
+//     background-image: url('campagnes/camp10.jpg'); //
+//   }
+// }
+
+// @keyframes gifMakerSix {
+//   0% {
+//     background-image: url('campagnes/camp11.jpg'); //
+//   }
+
+//   9% {
+//     background-image: url('campagnes/camp11.jpg'); //
+//   }
+
+//   10% {
+//     background-image: url('campagnes/camp12.jpg'); //
+//   }
+
+//   19% {
+//     background-image: url('campagnes/camp12.jpg'); //
+//   }
+
+//   20% {
+//     background-image: url('campagnes/camp13.jpg'); //
+//   }
+
+//   29% {
+//     background-image: url('campagnes/camp13.jpg'); //
+//   }
+
+//   30% {
+//     background-image: url('campagnes/camp14.jpg'); //
+//   }
+
+//   39% {
+//     background-image: url('campagnes/camp14.jpg'); //
+//   }
+
+//   40% {
+//     background-image: url('campagnes/camp15.jpg'); //
+//   }
+
+//   49% {
+//     background-image: url('campagnes/camp15.jpg'); //
+//   }
+
+//   50% {
+//     background-image: url('campagnes/camp16.jpg'); //
+//   }
+
+//   59% {
+//     background-image: url('campagnes/camp16.jpg'); //
+//   }
+
+//   60% {
+//     background-image: url('campagnes/camp17.jpeg'); //
+//   }
+
+//   69% {
+//     background-image: url('campagnes/camp17.jpeg'); //
+//   }
+
+//   70% {
+//     background-image: url('campagnes/camp18.jpg'); //
+//   }
+
+//   79% {
+//     background-image: url('campagnes/camp18.jpg'); //
+//   }
+
+//   80% {
+//     background-image: url('campagnes/camp19.jpg'); //
+//   }
+
+//   89% {
+//     background-image: url('campagnes/camp19.jpg'); //
+//   }
+
+//   90% {
+//     background-image: url('campagnes/camp20.png'); //
+//   }
+
+//   100% {
+//     background-image: url('campagnes/camp20.png'); //
+//   }
+// }
+
+// @keyframes gifMakerSeven {
+//   0% {
+//     background-image: url('campagnes/camp11.jpg'); //
+//   }
+
+//   9% {
+//     background-image: url('campagnes/camp11.jpg'); //
+//   }
+
+//   10% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   19% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   20% {
+//     background-image: url('campagnes/camp13.jpg'); //
+//   }
+
+//   29% {
+//     background-image: url('campagnes/camp13.jpg'); //
+//   }
+
+//   30% {
+//     background-image: url('campagnes/camp4.png'); //
+//   }
+
+//   39% {
+//     background-image: url('campagnes/camp4.png'); //
+//   }
+
+//   40% {
+//     background-image: url('campagnes/camp15.jpg'); //
+//   }
+
+//   49% {
+//     background-image: url('campagnes/camp15.jpg'); //
+//   }
+
+//   50% {
+//     background-image: url('campagnes/camp6.jpg'); //
+//   }
+
+//   59% {
+//     background-image: url('campagnes/camp6.jpg'); //
+//   }
+
+//   60% {
+//     background-image: url('campagnes/camp17.jpeg'); //
+//   }
+
+//   69% {
+//     background-image: url('campagnes/camp17.jpeg'); //
+//   }
+
+//   70% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   79% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   80% {
+//     background-image: url('campagnes/camp1.jpg'); //
+//   }
+
+//   89% {
+//     background-image: url('campagnes/camp1.jpg'); //
+//   }
+
+//   90% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+
+//   100% {
+//     background-image: url('campagnes/camp2.jpg'); //
+//   }
+// }
+
+// @keyframes gifMakerHeight {
+//   0% {
+//     background-image: url('campagnes/camp7.jpg'); //
+//   }
+
+//   9% {
+//     background-image: url('campagnes/camp7.jpg'); //
+//   }
+
+//   10% {
+//     background-image: url('campagnes/camp13.jpg'); //
+//   }
+
+//   19% {
+//     background-image: url('campagnes/camp13.jpg'); //
+//   }
+
+//   20% {
+//     background-image: url('campagnes/camp17.jpeg'); //
+//   }
+
+//   29% {
+//     background-image: url('campagnes/camp17.jpeg'); //
+//   }
+
+//   30% {
+//     background-image: url('campagnes/camp11.jpg'); //
+//   }
+
+//   39% {
+//     background-image: url('campagnes/camp11.jpg'); //
+//   }
+
+//   40% {
+//     background-image: url('campagnes/camp9.jpg'); //
+//   }
+
+//   49% {
+//     background-image: url('campagnes/camp9.jpg'); //
+//   }
+
+//   50% {
+//     background-image: url('campagnes/camp6.jpg'); //
+//   }
+
+//   59% {
+//     background-image: url('campagnes/camp6.jpg'); //
+//   }
+
+//   60% {
+//     background-image: url('campagnes/camp14.jpg'); //
+//   }
+
+//   69% {
+//     background-image: url('campagnes/camp14.jpg'); //
+//   }
+
+//   70% {
+//     background-image: url('campagnes/camp5.jpg'); //
+//   }
+
+//   79% {
+//     background-image: url('campagnes/camp5.jpg'); //
+//   }
+
+//   80% {
+//     background-image: url('campagnes/camp12.jpg'); //
+//   }
+
+//   89% {
+//     background-image: url('campagnes/camp12.jpg'); //
+//   }
+
+//   90% {
+//     background-image: url('campagnes/camp16.jpg'); //
+//   }
+
+//   100% {
+//     background-image: url('campagnes/camp16.jpg'); //
+//   }
+// }
 
 //////////////// RESPONSIVE ////////////////////
 
