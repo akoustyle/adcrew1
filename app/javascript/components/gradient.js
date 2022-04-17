@@ -8,15 +8,15 @@
 
 //   $('body').css('background', 'gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
 // });
-const pageGradient = document.querySelector('body')
-pageGradient.onmousemove = function(e) {
-  var x = e.pageX - pageGradient.offsetLeft - pageGradient.offsetParent.offsetLeft
-  var y = e.pageY - pageGradient.offsetTop - pageGradient.offsetParent.offsetTop
-  pageGradient.style.setProperty('--x', x + 'px')
-  pageGradient.style.setProperty('--y', y + 'px')
-  console.log(pageGradient);
-}
-export { pageGradient };
+// const pageGradient = document.querySelector('body')
+// pageGradient.onmousemove = function(e) {
+//   var x = e.pageX - pageGradient.offsetLeft - pageGradient.offsetParent.offsetLeft
+//   var y = e.pageY - pageGradient.offsetTop - pageGradient.offsetParent.offsetTop
+//   pageGradient.style.setProperty('--x', x + 'px')
+//   pageGradient.style.setProperty('--y', y + 'px')
+//   console.log(pageGradient);
+// }
+// export { pageGradient };
 
 // var btn = document.querySelector('.mouse-cursor-gradient-tracking')
 // btn.onmousemove = function(e) {
