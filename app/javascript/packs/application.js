@@ -25,9 +25,9 @@ import "bootstrap";
 import { previewImageOnFileSelect } from '../components/photo_preview';
 import { preview2ImageOnFileSelect } from '../components/photo_preview2';
 import { preview3ImageOnFileSelect } from '../components/photo_preview3';
-import { initSwiper } from '../components/initSwiper';
+// import { initSwiper } from '../components/initSwiper';
 import { initSidenav } from '../components/sidenav';
-import { pageGradient } from '../components/gradient';
+// import { pageGradient } from '../components/gradient';
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -36,7 +36,7 @@ document.addEventListener('turbolinks:load', () => {
   previewImageOnFileSelect();
   preview2ImageOnFileSelect();
   preview3ImageOnFileSelect();
-  initSwiper();
+  // initSwiper();
   initSidenav();
-  pageGradient();
+  // pageGradient();
 });
