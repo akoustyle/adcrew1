@@ -63,7 +63,7 @@ section.talent {
   display: flex;
   height: 100vh;
   margin-top: 13vh;
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 
   .note {
     font-family: $note-font;
@@ -242,7 +242,7 @@ section.talent {
           & .social-links > a {
             &:nth-child(1) {
               top: 30px !important;
-              left: 10px !important;
+              left: 5px !important;
             }
             &:nth-child(2) {
               top: 30px !important;
