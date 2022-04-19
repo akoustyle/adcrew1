@@ -166,7 +166,10 @@ section.team {
 
   section.team {
     &:nth-child(1) {
-
+      .content .text-content p {
+        font-size: 12px;
+        width: 100%;
+      }
       & .img-wrapper-small {
         display: flex !important;
         flex-direction: column;
