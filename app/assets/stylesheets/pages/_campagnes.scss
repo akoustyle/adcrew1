@@ -733,7 +733,9 @@ section.campaign {
         img, video {
           &:nth-child(1) {
             top: 0px;
-            right: -10px;
+            right: -20px;
+            width: 190px;
+            height: 190px;
           }
 
           &:nth-child(2) {
