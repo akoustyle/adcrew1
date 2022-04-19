@@ -820,7 +820,7 @@ section.home {
   section.home {
     display: flex;
     height: 100vh;
-
+    padding-bottom: 5vh;
     scroll-snap-align: center;
 
     .note {

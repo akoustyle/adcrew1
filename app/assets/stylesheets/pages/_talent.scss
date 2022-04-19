@@ -90,14 +90,14 @@ section.talent {
 
     & .content {
       display: flex;
-      width: 65vw;
+      width: 70vw;
       height: 100vh;
       justify-content: space-evenly;
       align-items: center;
 
       & .text-content {
         z-index: 10000;
-        width: 35vw;
+        width: 45vw;
         z-index: 10000;
         //text-align: center;
         & .social-links > a {
@@ -127,7 +127,7 @@ section.talent {
 
     & video {
       height: 100%;
-      width: 35vw;
+      width: 3vw;
       object-fit: fill;
       filter: grayscale(100%) contrast(120%);
     }
@@ -228,20 +228,20 @@ section.talent {
           width: 85vw;
           & .social-links > a {
             &:nth-child(1) {
-              top: 0 !important;
+              top: 30px !important;
               left: 10px !important;
             }
             &:nth-child(2) {
               top: 30px !important;
-              left: 10px !important;
+              left: 230px !important;
             }
             &:nth-child(3) {
               top: 60px !important;
               left: 10px !important;
             }
             &:nth-child(4) {
-              top: 90px !important;
-              left: 10px !important;
+              top: 350px !important;
+              left: 230px !important;
             }
           }
           & .social-links > a i {
