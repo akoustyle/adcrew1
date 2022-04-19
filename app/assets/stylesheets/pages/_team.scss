@@ -23,7 +23,7 @@ section.team {
         border-bottom: 1px black solid;
           width: 85vw;
           & p {
-            width: 50vw;
+            width: 70vw;
           }
         //text-align: center;
         & a {
@@ -162,7 +162,7 @@ section.team {
 
 //////////////// RESPONSIVE ////////////////////
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
 
   section.team {
     &:nth-child(1) {
