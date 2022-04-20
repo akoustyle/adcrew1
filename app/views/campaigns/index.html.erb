@@ -47,9 +47,9 @@
       <div class="content">
         <div class="text-content">
           <div class="d-flex justify-content-between nav nav-pills" id="pills-tab" role="tablist">
-            <a class="nav-link" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false"><%= t('campagnes.tab1') %></a>
+            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true"><%= t('campagnes.tab1') %></a>
             <%# <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
-            <a class="nav-link active" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="true"><%= t('campagnes.tab3') %></a>
+            <a class="nav-link" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="false"><%= t('campagnes.tab3') %></a>
             <% if user_signed_in? %>
               <%= link_to t('campagnes.tab4'), new_campaign_path, class: "nav-link" %>
             <% end %>
