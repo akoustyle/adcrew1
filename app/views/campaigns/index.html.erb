@@ -91,7 +91,7 @@
 
           <div class="tab-pane fade" id="pills-adcrew"role="tabpanel" aria-labelledby="pills-adcrew-tab">
             <div class="img-wrapper">
-              <% @campaigns(tag: true).each do |campaign|%>
+              <% @campaigns.where(tag: true).each do |campaign|%>
 
                 <%= link_to campaign_path(campaign) do %>
                   <div class="campaign-card">
