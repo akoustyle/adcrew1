@@ -62,7 +62,7 @@ section.talents {
 section.talent {
   display: flex;
   height: 100vh;
-  margin-top: 13vh;
+  // margin-top: 13vh;
   // scroll-snap-align: center;
 
   .note {
@@ -127,7 +127,7 @@ section.talent {
 
     & video {
       height: 100%;
-      width: 30vw;
+      width: 27vw;
       object-fit: fill;
       filter: grayscale(100%) contrast(120%);
     }
