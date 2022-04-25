@@ -82,7 +82,7 @@
           <% @campaign.collabs.each do |collab|%>
             <%= link_to talent_path(collab.talent) do %>
               <div class="campaign-card">
-                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: center; background-size: cover">
+                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: top; background-size: contain; background-repeat: no-repeat;">
 
                   <% if collab.talent.category == "green" %>
                     <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px; z-index: 1000; color: black;"></i>
