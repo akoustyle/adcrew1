@@ -5,7 +5,7 @@
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% elsif %>
-          <%= video_tag "clip.mp4", autoplay: true, muted: true, loop: true, controls: false, style="width:35vw" %>
+          <%= video_tag "clip.mp4", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
 
       <div class="content">
