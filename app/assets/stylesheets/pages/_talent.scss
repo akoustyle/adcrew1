@@ -127,8 +127,9 @@ section.talent {
 
     & video {
       height: 100%;
-      width: 27vw;
-      object-fit: fill;
+      width: 50vw;
+      object-fit: cover;
+      object-position: center top;
       filter: grayscale(100%) contrast(120%);
     }
 
