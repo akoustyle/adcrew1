@@ -796,7 +796,7 @@ section.home {
 
 //////////////// RESPONSIVE ////////////////////
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
@@ -971,12 +971,17 @@ section.home {
       align-items: center;
       background-color: black;
 
+      & img {
+      	display: none;
+      }
+
       & .content {
-          display: flex;
-          width: 50vw;
-          height: 100vh;
-          justify-content: center;
-          align-items: center;
+        display: flex;
+		/* width: 50vw; */
+		    height: 60vh;
+    justify-content: flex-start;
+		/* align-items: center; */
+		flex-direction: column;
           & .text-content {
             width: 35vw;
             position: relative;
