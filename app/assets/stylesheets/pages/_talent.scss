@@ -86,12 +86,13 @@ section.talent {
 
   &:nth-child(1) {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     & .content {
       display: flex;
-      width: 70vw;
+      width: 50vw;
       height: 100vh;
+      padding: 60px;
       justify-content: space-evenly;
       align-items: center;
 
@@ -126,10 +127,8 @@ section.talent {
     }
 
     & video {
-      height: 100%;
-      width: 27vw;
-      object-fit: fill;
-      filter: grayscale(100%) contrast(120%);
+      width: 50vw;
+      object-fit: cover;
     }
 
     & img {
