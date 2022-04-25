@@ -12,7 +12,7 @@
 
         <div class="text-content">
 
-          <%= link_to t('talents.show.links.index'), talents_path %>
+          <%= link_to t('talents.show.links.index'), :back %>
           <% if user_signed_in? %>
             <%= link_to t('talents.show.links.edit'), edit_talent_path %>
           <% end %>
