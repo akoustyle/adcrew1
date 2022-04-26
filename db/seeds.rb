@@ -84,7 +84,7 @@ florettenacer = Talent.create(name: "@florettenacer", about: "Florette est une j
 puts "saving florettenacer..."
 florettenacer.save!
 
-adelinerbr = Talent.create(name: "@adelinerbr", about: "Adeline est une influenceuse française, passionnée par la mode et la beauté.", title: "influenceuse", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/adelinerbr/", insta_link: "75900", insta_eng: "76%", link_tiktok: "", tiktok_link: "", tiktok_eng: "", link_youtube: "https://www.youtube.com/channel/UC_coDQehZPP41BfWQvUfhaw", youtube_link: "UC_coDQehZPP41BfWQvUfhaw", youtube_eng: "34%", category: "fashion")
+adelinerbr = Talent.create(name: "@adelinerbr", about: "Adeline est une influenceuse française, passionnée par la mode et la beauté.", title: "influenceuse", audience_male: "89%", audience_female: "41%", link_insta: "https://www.instagram.com/adelinerbr/", insta_link: "75900", insta_eng: "76%", link_tiktok: "", tiktok_link: "", tiktok_eng: "", link_youtube: "https://www.youtube.com/channel/UC_coDQehZPP41BfWQvUfhaw", youtube_link: "625", youtube_eng: "34%", category: "fashion")
 puts "saving adelinerbr..."
 adelinerbr.save!
 

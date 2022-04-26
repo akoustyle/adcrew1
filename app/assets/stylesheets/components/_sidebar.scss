@@ -2,6 +2,11 @@
 
 .navbar {
   padding: 0.5rem 40px !important;
+  position:relative;
+}
+.navbar2 {
+  padding: 0.5rem 40px !important;
+  // position: relative;
 }
 
 .logo {
@@ -11,6 +16,10 @@
   & span {
     font-weight: 300;
   }
+  position:absolute;
+  left:50%;
+  margin-left: -50px !important;
+  display: block;
 }
 
 .openbtn {
@@ -59,8 +68,22 @@
   background-color: rgba(0, 0, 0, 0.2);
   animation: 0.3s blur forwards;
 
-  & .navbar .closebtn {
+  & .navbar2 .closebtn {
     padding: 4px 10px;
+  }
+  & .logo {
+    font-family: $header-font;
+    color: $red;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+
+    & span {
+      font-weight: 300;
+    }
+
+    // position:absolute;
+    // left:50%;
+    // margin-left: -50px !important;
+    // display: block;
   }
 }
 
