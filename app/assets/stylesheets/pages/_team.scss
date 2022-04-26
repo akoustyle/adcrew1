@@ -37,14 +37,15 @@ section.team {
     }
     & .img-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      grid-gap: 15px;
       width: 85vw;
       margin: 30px 0;
       & .gif-talent {
         filter: grayscale(100%);
         margin: 30px 0;
         height: 400px;
-        width: 24%;
+        width: 30%;
           background-size: cover;
           background-position: center;
           &#maud {
