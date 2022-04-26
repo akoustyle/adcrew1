@@ -4,7 +4,7 @@
     <section class="campaign" id="show-campaign">
         <div class="content">
           <div class="text-content">
-            <a><%= link_to t('campagnes.show.links.index'), :back %></a>
+            <a><%= link_to t('campagnes.show.links.index'), campaigns_path %></a>
             <% if user_signed_in? %>
               <%= link_to t('campagnes.show.links.edit'), edit_campaign_path %>
               <% if user_signed_in? %>
