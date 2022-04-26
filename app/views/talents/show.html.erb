@@ -5,7 +5,7 @@
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% elsif %>
-          <%= video_tag "clip.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+          <%= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
 
       <div class="content">
