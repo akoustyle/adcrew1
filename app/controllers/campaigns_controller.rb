@@ -5,7 +5,7 @@ class CampaignsController < ApplicationController
 
 
   def index
-    @campaigns = Campaign.all
+    @campaigns = Campaign.all.order("name ASC")
     # @campaigns = policy_scope(Campaign)
   end
 
