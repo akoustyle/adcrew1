@@ -5,7 +5,7 @@ class TalentsController < ApplicationController
 
   def index
     # if params[:pole].blank?
-    @talents = Talent.all.order(created_at: :desc)
+    @talents = Talent.all.order("name asc")
     # @talents = policy_scope(Talent).order(created_at: :desc)
     #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id

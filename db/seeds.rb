@@ -259,3 +259,10 @@ first = User.new(
 puts "saving adc..."
 first.save!
 puts "Adc saved successfully!!!!!"
+
+second = User.new(
+            email: 'adcrew2@adcrew.com',
+            password: "123456")
+puts "saving adc2..."
+second.save!
+puts "Adc2 saved successfully!!!!!"

@@ -5,14 +5,14 @@
       <% if @talent.video.attached? %>
         <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
       <% elsif %>
-          <%= video_tag "clip.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+          <%= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
       <% end %>
 
       <div class="content">
 
         <div class="text-content">
 
-          <%= link_to t('talents.show.links.index'), talents_path %>
+          <%= link_to t('talents.show.links.index'), :back %>
           <% if user_signed_in? %>
             <%= link_to t('talents.show.links.edit'), edit_talent_path %>
           <% end %>
@@ -82,7 +82,7 @@
                   </a>
                 <% end %>
 
-                <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -2px;" download>
+                <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -2px;">
                   <div class="d-flex" style="width: 200px;">
                     <i class="fas fa-download"></i>
                     <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
