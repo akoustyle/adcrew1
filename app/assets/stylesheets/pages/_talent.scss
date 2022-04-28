@@ -86,12 +86,13 @@ section.talent {
 
   &:nth-child(1) {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     & .content {
       display: flex;
-      width: 70vw;
+      width: 50vw;
       height: 100vh;
+      padding: 60px;
       justify-content: space-evenly;
       align-items: center;
 
@@ -172,7 +173,7 @@ section.talent {
 
 //////////////// RESPONSIVE ////////////////////
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
   // .smooth {
   //   // position: relative;
   //   // width: 100%;
