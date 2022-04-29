@@ -2,7 +2,6 @@ section.campaigns {
 
   display: flex;
   height: 100vh;
-  margin-bottom: 20vh;
 
   scroll-snap-align: center;
 
@@ -12,7 +11,7 @@ section.campaigns {
 
   &:nth-child(1) {
     flex-direction: column;
-    padding-top: 12vh;
+    padding-top: 13vh;
 
     & .content {
     display: flex;
@@ -110,13 +109,18 @@ section.campaigns {
       }
     }
     & .img-wrapper {
+
+      width: 100vw;
+      padding: 30px 13vh 0px;
+
+
       overflow-y: scroll;
-      height: 550px;
+      height: 73vh;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
-      width: 85vw;
-      margin: 30px 0;
+      width: 100vw;
+      padding: 30px 13vh 0px;
       & .note {
         margin: 30px 10px;
         width: 24%;
@@ -125,6 +129,36 @@ section.campaigns {
         & span {
           text-decoration: line-through;
         }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
       }
     }
   }
@@ -209,7 +243,7 @@ section.campaign {
         &:nth-child(3) {
               position: absolute;
               right: 10px;
-              top: -200px;
+              top: -150px;
               height: 630px;
               width: 500px;
               transform: rotate(1deg);
@@ -286,8 +320,8 @@ section.campaign {
       overflow-y: scroll;
       height: 550px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 86px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
       width: 85vw;
       margin: 30px 0;
       & .note {
@@ -301,6 +335,37 @@ section.campaign {
       }
     }
   }
+
+  &:nth-child(3) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
+      }
+    }
+  }
+
 }
 
 @keyframes gifMakerFive {
@@ -697,7 +762,7 @@ section.campaign {
 
     &:nth-child(2) {
       flex-direction: column;
-      padding-top: 10vh;
+      padding-top: 13vh;
 
       & .text-content {
         padding: 10px 0;
