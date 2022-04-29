@@ -74,7 +74,7 @@
                 <% end %>
                 <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
                 <% else %>
-                 <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 373px; z-index: 1000;">
+                 <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 326px; z-index: 1000;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fab fa-tiktok"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>

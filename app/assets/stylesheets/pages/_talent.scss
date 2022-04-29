@@ -56,6 +56,36 @@ section.talents {
     }
   }
 
+  &:nth-child(2) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
+      }
+    }
+  }
+
 }
 
 
@@ -141,7 +171,7 @@ section.talent {
       filter: grayscale(100%);
 
       &.png-img {
-        width: 430px;
+        width: 400px;
         object-fit: cover;
       }
     }

@@ -44,7 +44,6 @@
         <%= csp_meta_tag %>
         <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-        <%#= stylesheet_pack_tag 'application' %>
         <script src="https://kit.fontawesome.com/b6edebd40a.js" crossorigin="anonymous"></script>
     </head>
 
@@ -75,50 +74,12 @@
         <div class="main-container" style="background-color: white">
             <p class="notice" style="position:absolute"><%= notice %></p>
             <p class="alert" style="position:absolute"><%= alert %></p>
-            <%# flash.each do |key, message| %>
-              <%# <p class="alert alert-= key">= message</p> %>
-            <%# end %>
+
             <%= yield %>
          </div>
-        <%= render 'shared/final-footer' %>
-    <!--
-    <%# <script src="./javascript/slideshow.js"></script> %>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
+        <%#= render 'shared/final-footer' %>
 
-            $('#dismiss, .overlay').on('click', function () {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
-    <script>$(function() {
-    $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-    });
-    });</script>
-    <script>
-    const dates = document.querySelectorAll('.shop')
-
-    for(let i = 0; i < dates.length; i++) {
-    dates[i].innerHTML = "Shop"
-    }
-    </script>
-    <script>
-
-    </script> -->
-    <a href="#haut" class="arrow-top" style="position: fixed; bottom :1em; right:1em; padding:2em;"><i class="fas fa-sort-up" style="font-size: 18px;color: red;"></i></a>
+    <!-- <a href="#haut" class="arrow-top" style="position: fixed; bottom :1em; right:1em; padding:2em;"><i class="fas fa-sort-up" style="font-size: 18px;color: red;"></i></a> -->
     <script>
       window.axeptioSettings = {
         clientId: "62601429bca4164c7ccd390f",
