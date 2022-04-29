@@ -38,12 +38,12 @@ section.talents {
     }
     & .img-wrapper {
       overflow-y: scroll;
-      height: 550px;
+      height: 70vh;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
-      width: 85vw;
-      margin: 30px 0;
+      width: 100vw;
+      padding: 30px 13vh 0px;
       & .note {
         margin: 30px 10px;
         width: 24%;
