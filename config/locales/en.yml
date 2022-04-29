@@ -20,7 +20,7 @@ en:
     title2: "Our campaigns"
     title3: "Our talents"
     paragraphe2: "AD CREW supports its many clients in their digital communication campaigns through the creation of tailor-made strategic content, we guide them on the development of their long-term strategy through original and avant-garde concepts to adapt their image and their values of coherent and attractive way."
-    paragraphe3: "AD CREW is 26 exclusive influencers and a network of over 15,000 influencers based in over 10 countries. The team collaborates on a daily basis with influencers, bloggers and international personalities in order to bring perspective and visibility to brands."
+    paragraphe3: "AD CREW is 35 exclusive influencers and a network of over 15,000 influencers based in over 10 countries in the world. The team collaborates on a daily basis with influencers, bloggers and international personalities in order to bring perspective and visibility to brands."
     note: "Concerned about the future that awaits the next generations, the agency makes it a point of honor to encourage and encourage people to do the right things."
     title4: "Our values"
     paragraphe4: "At AD CREW we make it a point of honor to convey strong values: Trust, Ethics, Respect, Diversity. Values that we affirm and emphasize through our campaigns."
@@ -30,7 +30,7 @@ en:
     note: "Realization of advertising campaigns, Proposal of muses (celebrities, influencers), Shootings (Press Lookbooks / Commercial / Websites), Poster campaigns (Street Marketing, Kiosk, Bus, TV ...)"
     tab1: "ALL CAMPAIGNS"
     tab2: "LASTEST CAMPAIGNS"
-    tab3: "AD CREW CAMPAIGNS"
+    tab3: "AD CREW PRODUCTIONS"
     tab4: "ADD A CAMPAIGN"
     index:
       adcampagnes: "AD CREW CAMPAIGN"
@@ -67,6 +67,7 @@ en:
     statut2: "Project Manager"
     statut3: "Strategy project  Manager"
     statut4: "Production Manager"
+    statut5: "Financial and administrative manager"
   contact:
     title: "CONTACT US"
     paragraphe: "Swing by for a cup of coffee or leave us a message"

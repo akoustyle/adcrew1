@@ -20,7 +20,7 @@ fr:
     title2: "NOS CAMPAGNES"
     title3: "NOS TALENTS"
     paragraphe2: "AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure, nous les guidons sur le développement de leur stratégie à long terme à travers de concepts originaux et avant-gardistes pour adapter leur image et leurs valeurs de manière cohérentes et attractives."
-    paragraphe3: "AD CREW c'est 26 influenceurs exclusifs et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays. L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités internationnales dans le but d’apporter de la perspective et de la visibilité aux marques."
+    paragraphe3: "AD CREW c'est 35 influenceurs exclusivités et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays dans le monde. L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités internationnales dans le but d’apporter de la perspective et de la visibilité aux marques."
     note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
     title4: "NOS VALEURS"
     paragraphe4: "Chez AD CREW nous mettons un point d'honneur à véhiculer des valeurs fortes : Confiance, Éthique, Respect, Diversité. Des valeurs que l'on affirme et souligne à travers nos campagnes."
@@ -30,7 +30,7 @@ fr:
     note: "Réalisation de campagnes publicitaires,Proposition d’égéries (célébrités, influenceurs), Shootings (Lookbooks Presse/ Commerciaux/ Sites web), Campagnes d’affichage (Street Marketing, Kiosque, Bus, TV...)"
     tab1: "TOUTES LES CAMPAGNES"
     tab2: "LES DERNIERES CAMPAGNES"
-    tab3: "LES CAMPAGNES AD CREW"
+    tab3: "LES PRODUCTIONS AD CREW"
     tab4: "AJOUTER UNE CAMPAGNE"
     index:
       adcampagnes: "Campagne AD CREW"
@@ -67,6 +67,7 @@ fr:
     statut2: "Cheffe de Projet"
     statut3: "Cheffe de projet Stratégie"
     statut4: "Cheffe de Production"
+    statut5: "Financial and administrative manager"
   contact:
     title: "CONTACTEZ-NOUS"
     paragraphe: "Passez prendre une tasse de café ou laissez-nous un message"

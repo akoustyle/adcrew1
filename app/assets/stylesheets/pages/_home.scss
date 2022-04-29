@@ -83,7 +83,7 @@ section.home {
 
 	&:nth-child(3) {
 		flex-direction: column;
-		padding-top: 13vh;
+		padding-top: 10vh;
 		margin-bottom: 60px;
 
 		& .content {
@@ -190,7 +190,7 @@ section.home {
 
 	&:nth-child(4) {
 		flex-direction: column;
-		padding-top: 13vh;
+		padding-top: 10vh;
 
 		& .content {
 		display: flex;
@@ -584,7 +584,7 @@ section.home {
 	font-family: $note-font;
 	font-size: 24px;
 	line-height: 1;
-    content: "Plus de 15 000 influenceurs basés dans plus de 10 pays..";
+    content: "Plus de 15 000 influenceurs basés dans plus de 10 pays dans le monde..";
     animation: valeurContent infinite 15s;
 }
 
@@ -616,7 +616,7 @@ section.home {
     }
 
     20% {
-        content: "26 influenceurs signés en totale exclusivité.";
+        content: "35 influenceurs signés en totale exclusivité.";
     }
 
     40% {
@@ -693,7 +693,7 @@ section.home {
 
     &:nth-child(3) {
       flex-direction: column;
-      padding-top: 13vh;
+      padding-top: 10vh;
       margin-bottom: 60px;
 
       & .content {
