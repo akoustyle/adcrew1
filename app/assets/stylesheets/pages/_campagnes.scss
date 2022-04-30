@@ -56,17 +56,18 @@ section.campaigns {
         width: 24%;
           background-size: cover;
           background-position: center;
-          &#gif-one {
-            animation: 10.1s gifMakerFive infinite;
+          &#gif-five {
+            // animation: 10.1s gifMakerFive infinite;
           }
-          &#gif-two {
-            animation: 10.3s gifMakerSix infinite;
+          &#gif-six {
+            // animation: 10.3s gifMakerSix infinite;
           }
-          &#gif-three {
-            animation: 10s gifMakerSeven infinite;
+          &#gif-seven {
+            // animation: 10s gifMakerSeven infinite;
+            // transform: rotate(2deg);
           }
-          &#gif-four {
-            animation: 10.2s gifMakerHeight infinite;
+          &#gif-height {
+            // animation: 10.2s gifMakerHeight infinite;
           }
       }
       & .note {
