@@ -7,7 +7,7 @@
       <% else %>
           <%#= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
           <% if @talent.photos.attached? %>
-            <%= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img" %>
+            <%= cl_image_tag @talent.photos.second.key, alt: "Talent image" %>
           <% else %>
             <% if @talent.video.attached? %>
               <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", autoplay: true, muted: true, loop: true, controls: false %>
