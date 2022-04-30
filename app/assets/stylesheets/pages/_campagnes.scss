@@ -2,7 +2,6 @@ section.campaigns {
 
   display: flex;
   height: 100vh;
-  margin-bottom: 20vh;
 
   scroll-snap-align: center;
 
@@ -12,7 +11,7 @@ section.campaigns {
 
   &:nth-child(1) {
     flex-direction: column;
-    padding-top: 10vh;
+    padding-top: 13vh;
 
     & .content {
     display: flex;
@@ -57,18 +56,19 @@ section.campaigns {
         width: 24%;
           background-size: cover;
           background-position: center;
-          &#gif-one {
-            animation: 10.1s gifMakerFive infinite;
-          }
-          &#gif-two {
-            animation: 10.3s gifMakerSix infinite;
-          }
-          &#gif-three {
-            animation: 10s gifMakerSeven infinite;
-          }
-          &#gif-four {
-            animation: 10.2s gifMakerHeight infinite;
-          }
+          // &#gif-five {
+          //   // animation: 10.1s gifMakerFive infinite;
+          // }
+          // &#gif-six {
+          //   // animation: 10.3s gifMakerSix infinite;
+          // }
+          // &#gif-seven {
+          //   // animation: 10s gifMakerSeven infinite;
+          //   // transform: rotate(2deg);
+          // }
+          // &#gif-height {
+          //   // animation: 10.2s gifMakerHeight infinite;
+          // }
       }
       & .note {
         margin: 30px 10px;
@@ -110,13 +110,18 @@ section.campaigns {
       }
     }
     & .img-wrapper {
+
+      width: 100vw;
+      padding: 30px 13vh 0px;
+
+
       overflow-y: scroll;
-      height: 550px;
+      height: 73vh;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
-      width: 85vw;
-      margin: 30px 0;
+      width: 100vw;
+      padding: 30px 13vh 0px;
       & .note {
         margin: 30px 10px;
         width: 24%;
@@ -129,6 +134,35 @@ section.campaigns {
     }
   }
 
+  &:nth-child(3) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
+      }
+    }
+  }
 }
 
 section.campaign {
@@ -185,6 +219,7 @@ section.campaign {
         height: 430px;
         width: 24%;
         object-fit: cover;
+        object-position: top center;
 
         &:nth-child(1) {
             position: absolute;
@@ -210,7 +245,7 @@ section.campaign {
         &:nth-child(3) {
               position: absolute;
               right: 10px;
-              top: -200px;
+              top: -150px;
               height: 630px;
               width: 500px;
               transform: rotate(1deg);
@@ -233,7 +268,7 @@ section.campaign {
         width:350px;
         max-width:350px;
         top: 150px;
-        left: 520px;
+        left: 350px;
         transform: rotate(-5deg);
         line-height: 1;
         color: white;
@@ -287,8 +322,8 @@ section.campaign {
       overflow-y: scroll;
       height: 550px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 86px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
       width: 85vw;
       margin: 30px 0;
       & .note {
@@ -302,6 +337,37 @@ section.campaign {
       }
     }
   }
+
+  &:nth-child(3) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
+      }
+    }
+  }
+
 }
 
 @keyframes gifMakerFive {
@@ -634,7 +700,7 @@ section.campaign {
 
 //////////////// RESPONSIVE ////////////////////
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
 
   section.campaigns {
 
@@ -667,7 +733,7 @@ section.campaign {
       }
       & .img-wrapper {
         & .gif-talent {
-          height: 280px;
+          height: 220px;
           width: 50%;
             &#gif-one {
               animation: 10.1s gifMakerFive infinite;
@@ -743,7 +809,7 @@ section.campaign {
         img, video {
           &:nth-child(1) {
             top: 0px;
-            right: -20px;
+            right: -10px;
             width: 190px;
             height: 190px;
           }
@@ -751,16 +817,17 @@ section.campaign {
           &:nth-child(2) {
             display: none;
             right: 40px;
-            top: 100px;
+            top: 25px;
             width: 274px;
             height: 342px;
           }
 
           &:nth-child(3) {
             right: 40px;
-            top: 100px;
+            top: 25px;
             width: 274px;
             height: 342px;
+            transform: rotate(2deg);
             // display: none;
           }
           // &:nth-child(4) {
@@ -777,7 +844,7 @@ section.campaign {
         }
 
         .rounded-shape {
-              top: 260px;
+              top: 200px;
         }
       }
     }
@@ -795,6 +862,9 @@ section.campaign {
       }
       & .img-wrapper {
         grid-template-columns: 1fr;
+        & .campaign-card {
+          height: 470px !important;
+        }
       }
     }
   }

@@ -38,12 +38,12 @@ section.talents {
     }
     & .img-wrapper {
       overflow-y: scroll;
-      height: 550px;
+      height: 70vh;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
-      width: 85vw;
-      margin: 30px 0;
+      width: 100vw;
+      padding: 30px 13vh 0px;
       & .note {
         margin: 30px 10px;
         width: 24%;
@@ -52,6 +52,36 @@ section.talents {
         & span {
           text-decoration: line-through;
         }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
       }
     }
   }
@@ -86,12 +116,13 @@ section.talent {
 
   &:nth-child(1) {
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     & .content {
       display: flex;
-      width: 70vw;
+      width: 50vw;
       height: 100vh;
+      padding: 60px;
       justify-content: space-evenly;
       align-items: center;
 
@@ -128,6 +159,7 @@ section.talent {
     & video {
       height: 100%;
       width: 50vw;
+          padding: 80px 0px 80px 80px;
       object-fit: cover;
       object-position: center top;
       filter: grayscale(100%) contrast(120%);
@@ -140,7 +172,7 @@ section.talent {
       filter: grayscale(100%);
 
       &.png-img {
-        width: 430px;
+        width: 400px;
         object-fit: cover;
       }
     }
@@ -165,6 +197,35 @@ section.talent {
 
   }
 
+  &:nth-child(2) {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+
+    & .content {
+      display: flex;
+      color: white;
+      width: 85vw;
+      height: 40vh;
+      justify-content: space-between;
+      align-items: baseline;
+      & a {
+        font-size: 14px;
+        color: $red;
+        &:hover {
+          border-bottom: 1px $red solid;
+        }
+      }
+      & .social-icons li {
+        padding: 0px;
+      }
+      & .social-icons a:hover {
+        border-bottom: 0px $red solid;
+      }
+    }
+  }
 
 }
 
@@ -172,7 +233,7 @@ section.talent {
 
 //////////////// RESPONSIVE ////////////////////
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
   // .smooth {
   //   // position: relative;
   //   // width: 100%;
@@ -319,66 +380,3 @@ section.talent {
 
 
 
-// // specific css for the talent page
-
-// i {
-//   color: #DBDBDB;
-//   font-size: 20px;
-// }
-// i:hover {
-//   color: white;
-//   cursor: pointer;
-// }
-
-// .talent-header {
-//   display: flex;
-//   justify-content: flex-start;
-//   text-align: start;
-//   flex-direction: column;
-//   padding: 20px;
-//   margin: 0 75px;
-// }
-// .talent-title h1 {
-//   font-size: 25px;
-//   font-weight: 700;
-//   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-// }
-// .talent-title span {
-//   color: red;
-//   font-weight: 500;
-// }
-// .talent-wording p {
-//   font-size: 15px;
-//   font-weight: 400;
-// }
-// .line-talents {
-//   // width:85vw;
-//   border-bottom:solid 1px;
-// }
-// .pole-description {
-//   text-align:left;
-//   padding: 5px 5px;
-//   width: 27vw
-// }
-// .tiktok span:hover {
-//   color: blue;
-// }
-// .talent-about {
-//   position:absolute;
-//   left:43px;
-//   bottom:-53px;
-//   width:360px;
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-// .youtube {
-//   display: flex;
-// }
-// .img-wrapper .note-talent {
-//   margin: 30px 10px;
-//   width: 100%;
-//   font-size: 16px;
-//   text-transform: uppercase;
-//   font-family: "Reenie Beanie";
-// }

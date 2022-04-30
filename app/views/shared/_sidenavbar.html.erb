@@ -1,8 +1,10 @@
 
   <div class="main-sidebar navbar fixed-top <%#= yield(:navbar_class) %>">
+    <div></div>
     <div class="logo">
       <%= link_to root_path do %>
-        <h1 class="logo">AD<span>CREW</span></h1>
+        <%= image_tag "logo_prop1.png", alt: "alttext", width: "140"%>
+        <!-- <h1 class="logo">AD<span>CREW</span></h1> -->
       <% end %>
     </div>
     <a class="openbtn">&#x268C;</a>
@@ -10,6 +12,7 @@
 
   <div id="mySidebar" class="sidebar">
     <div class="main-sidebar navbar fixed-top">
+      <div></div>
       <div class="logo">
         <%= link_to root_path do %>
           <h1 class="logo">AD<span>CREW</span></h1>
