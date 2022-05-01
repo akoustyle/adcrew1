@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_17_155720) do
+ActiveRecord::Schema.define(version: 2022_05_01_084725) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_155720) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "sentence"
     t.string "sentence2"
+    t.string "slug"
+    t.index ["slug"], name: "index_campaigns_on_slug", unique: true
   end
 
   create_table "collabs", force: :cascade do |t|
@@ -82,6 +84,8 @@ ActiveRecord::Schema.define(version: 2022_03_17_155720) do
     t.string "link_youtube"
     t.string "link_insta"
     t.string "link_tiktok"
+    t.string "slug"
+    t.index ["slug"], name: "index_talents_on_slug", unique: true
   end
 
   create_table "users", force: :cascade do |t|
