@@ -3,6 +3,8 @@ require 'open-uri'
 include ActionView::Helpers::NumberHelper
 class Talent < ApplicationRecord
   # belongs_to :user
+  extend FriendlyId
+  friendly_id :name, use: :slugged
   has_many :collabs, dependent: :destroy
   has_many_attached :photos
   has_one_attached :video

@@ -47,6 +47,8 @@ class TalentsController < ApplicationController
   def update
     # authorize @talent
     # @talent.pole_id = params[:pole_id]
+    @talent.slug = nil if @talent.name != params[:name]
+
     if @talent.update!(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
     else
@@ -79,7 +81,7 @@ class TalentsController < ApplicationController
   end
 
   def find_talent
-    @talent = Talent.find(params[:id])
+    @talent = Talent.friendly.find_by_slug(params[:slug])
     # @talent = policy_scope(Talent).find(params[:id])
     # authorize @talent
   end
