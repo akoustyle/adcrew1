@@ -169,7 +169,7 @@ section.talent {
       height: 100%;
       width: 50vw;
       object-fit: cover;
-      object-position: top;
+      object-position: top center;
       filter: grayscale(100%);
 
       &.png-img {
