@@ -33,7 +33,7 @@ en:
     tab3: "AD CREW PRODUCTIONS"
     tab4: "ADD A CAMPAIGN"
     index:
-      adcampagnes: "AD CREW CAMPAIGN"
+      adcampagnes: "AD CREW PRODUCTION"
       name: '%{name}'
     show:
       links:
