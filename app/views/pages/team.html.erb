@@ -1,4 +1,4 @@
-<%= cache_if current_user.nil?, "public-events-v1" do %>
+<%= cache_if current_user.nil?, "public-events-v1", expires_in: 12.hours do %>
   <%= content_for(:navbar_class, "main-sidebar-home") %>
   <div class="scroll">
     <div class="smooth">
