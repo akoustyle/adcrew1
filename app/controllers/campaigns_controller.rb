@@ -42,7 +42,7 @@ class CampaignsController < ApplicationController
 
   def update
     # authorize @campaign
-    # @campaign.slug = nil if @campaign.name != params[:name]
+    @campaign.slug = nil if @campaign.name != params[:name]
     if @campaign.update(campaign_params)
       redirect_to @campaign, notice: "Congrats! Campaign was updated!"
     else
@@ -52,7 +52,7 @@ class CampaignsController < ApplicationController
 
   def destroy
     # authorize @campaign
-    # @campaign.slug = nil if @campaign.name != params[:name]
+    @campaign.slug = nil if @campaign.name != params[:name]
     @campaign.destroy
     redirect_to campaigns_path
   end
