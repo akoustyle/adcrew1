@@ -43,9 +43,11 @@ Rails.application.configure do
   else
     config.action_controller.perform_caching = false
 
-    config.cache_store = :null_store
+    config.cache_store = :file_store, Rails.root.join('tmp/cache/views')
   end
 
+  config.action_controller.perform_caching = true
+  config.cache_store = :memory_store
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :cloudinary
 

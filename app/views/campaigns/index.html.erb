@@ -1,174 +1,160 @@
+<%= cache_if current_user.nil?, "public-campaigns-v1" do %>
+  <div class="scroll">
+    <div class="smooth">
 
-<!-- <div class="campagne-header container">
-  <div class="campagne-title">
-    <span>Studio</span>
-    <h1>Campagne AD CREW</h1>
-  </div>
-  <div class="campagne-wording">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis numquam ea recusandae neque? Optio consequatur omnis iste exercitationem vero nemo dignissimos cumque assumenda fugit sunt cum suscipit iure, cupiditate labore deserunt excepturi sapiente. Cum facere aspernatur laboriosam culpa quos, optio iste quae temporibus animi asperiores similique. Suscipit ea praesentium molestiae.</p>
-  </div>
-  <div class="line-campagnes"></div>
-  <div class="campaign-new">
-    <%# if user_signed_in? %>
-      <%#= link_to new_campaign_path do %>
-        <%#= image_tag 'plus-front-premium.png', width: 30 %>
-      <%# end %>
-    <%# end %>
-  </div>
-</div> -->
-
-<div class="scroll">
-  <div class="smooth">
-
-    <section class="campaigns" id="preview-campaign">
-      <div class="content">
-        <div class="text-content">
-          <h2><%= t('campagnes.title') %></h2>
-          <p class="pt-3"> <%= t('campagnes.paragraphe_html') %> </p>
-        </div>
-      </div>
-      <div class="content">
-        <%# <p class="note" style="position: absolute;top: 358px;left: 51%;z-index: 10;width: 20vw;color: white;font-size: 18px;transform: rotate(-7deg);">
-            <%#= t('campagnes.note') %>
-        <%# </p>  %>
-        <div class="img-wrapper">
-          <div class="gif-talent" > <%= image_tag "campaign1.gif"  %> </div>
-          <div class="gif-talent"><%= image_tag "campaign2.gif"  %></div>
-          <%# <div class="gif-talent" id="gif-three"></div> %>
-          <div class="gif-talent" style="transform: rotate(2deg);"><%= image_tag "campaign3.gif"  %></div>
-          <div class="gif-talent"><%= image_tag "campaign4.gif"  %></div>
-          <div class="rounded-shape">
+      <section class="campaigns" id="preview-campaign">
+        <div class="content">
+          <div class="text-content">
+            <h2><%= t('campagnes.title') %></h2>
+            <p class="pt-3"> <%= t('campagnes.paragraphe_html') %> </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="campaigns" id="campaign">
-      <div class="content">
-        <div class="text-content">
-          <div class="d-flex justify-content-between nav nav-pills" id="pills-tab" role="tablist">
-            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true"><%= t('campagnes.tab1') %></a>
-            <%# <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
-            <a class="nav-link" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="false"><%= t('campagnes.tab3') %></a>
-            <% if user_signed_in? %>
-              <%= link_to t('campagnes.tab4'), new_campaign_path, class: "nav-link" %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-all"role="tabpanel" aria-labelledby="pills-all-tab" data-controller="all">
-            <div class="img-wrapper">
-              <% @campaigns.each do |campaign|%>
-
-                <%= link_to campaign_path(campaign) do %>
-                  <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
-                      <div class="card-info">
-                        <div class="top py-1">
-                          <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
-                          </div>
-                        </div>
-
-                        <h2 class="info title"> <%= campaign.name.upcase %> </h2>
-
-                        <div class="bottom">
-                          <div class="info justify-content-center">
-                            <% campaign.collabs.each do |collab| %>
-                              <p><%= collab.talent.name %></p>
-                            <% end %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
-              <% end %>
+        <div class="content">
+          <%# <p class="note" style="position: absolute;top: 358px;left: 51%;z-index: 10;width: 20vw;color: white;font-size: 18px;transform: rotate(-7deg);">
+              <%#= t('campagnes.note') %>
+          <%# </p>  %>
+          <div class="img-wrapper">
+            <div class="gif-talent" > <%= image_tag "campaign1.gif"  %> </div>
+            <div class="gif-talent"><%= image_tag "campaign2.gif"  %></div>
+            <%# <div class="gif-talent" id="gif-three"></div> %>
+            <div class="gif-talent" style="transform: rotate(2deg);"><%= image_tag "campaign3.gif"  %></div>
+            <div class="gif-talent"><%= image_tag "campaign4.gif"  %></div>
+            <div class="rounded-shape">
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="tab-pane fade" id="pills-adcrew"role="tabpanel" aria-labelledby="pills-adcrew-tab">
-            <div class="img-wrapper">
-              <% @campaigns.where(tag: true).each do |campaign|%>
-
-                <%= link_to campaign_path(campaign) do %>
-                  <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
-                      <div class="card-info">
-                        <div class="top py-1">
-                          <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag" style="font-size:20px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
-                          </div>
-                        </div>
-
-                        <h2 class="info title"> <%= campaign.name%> </h2>
-
-                        <div class="bottom">
-                          <div class="info justify-content-center">
-                            <% campaign.collabs.each do |collab| %>
-                              <p><%= collab.talent.name %></p>
-                            <% end %>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <% end %>
+      <section class="campaigns" id="campaign">
+        <div class="content">
+          <div class="text-content">
+            <div class="d-flex justify-content-between nav nav-pills" id="pills-tab" role="tablist">
+              <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true"><%= t('campagnes.tab1') %></a>
+              <%# <a class="nav-link" id="pills-last-tab" data-toggle="pill" href="#pills-last" role="tab" aria-controls="pills-last" aria-selected="false"><%= t('campagnes.tab2') %></a>
+              <a class="nav-link" id="pills-adcrew-tab" data-toggle="pill" href="#pills-adcrew" role="tab" aria-controls="pills-adcrew" aria-selected="false"><%= t('campagnes.tab3') %></a>
+              <% if user_signed_in? %>
+                <%= link_to t('campagnes.tab4'), new_campaign_path, class: "nav-link" %>
               <% end %>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="content">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all"role="tabpanel" aria-labelledby="pills-all-tab" data-controller="all">
+              <div class="img-wrapper">
+                <% @campaigns.each do |campaign|%>
+                  <%= cache campaign do %>
+                    <%= link_to campaign_path(campaign) do %>
+                      <div class="campaign-card">
+                        <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
+                          <div class="card-info">
+                            <div class="top py-1">
+                              <div class="info">
+                                <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
+                              </div>
+                            </div>
+                            <%= cache campaign.name do %>
+                              <h2 class="info title"> <%= campaign.name.upcase %> </h2>
+                            <% end %>
+                            <div class="bottom">
+                              <div class="info justify-content-center">
+                                <% campaign.collabs.each do |collab| %>
+                                  <%= cache collab.talent.name do %>
+                                    <p><%= collab.talent.name %></p>
+                                  <% end %>
+                                <% end %>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <% end %>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
 
-    <section class="campaigns" id="footer-section">
+            <div class="tab-pane fade" id="pills-adcrew"role="tabpanel" aria-labelledby="pills-adcrew-tab">
+              <div class="img-wrapper">
+                <% @campaigns.where(tag: true).each do |campaign|%>
 
-      <div class="content">
-          <div class="" style="">
-            <%= link_to root_path do %>
-              <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
-            <% end %>
+                  <%= link_to campaign_path(campaign) do %>
+                    <div class="campaign-card">
+                      <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
+                        <div class="card-info">
+                          <div class="top py-1">
+                            <div class="info">
+                              <% if campaign.tag %> <p class="px-3 tag" style="font-size:20px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
+                            </div>
+                          </div>
+
+                          <h2 class="info title"> <%= campaign.name%> </h2>
+
+                          <div class="bottom">
+                            <div class="info justify-content-center">
+                              <% campaign.collabs.each do |collab| %>
+                                <p><%= collab.talent.name %></p>
+                              <% end %>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="" style="">
-            <h6><%= t('footer.title') %></h6>
-            <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
-          </div>
+      <section class="campaigns" id="footer-section">
 
-          <div class="" style="">
-            <h6><%= t('footer.title2') %></h6>
-            <ul class="footer-links">
-              <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
-              <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
-              <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
-              <li><a> <% if user_signed_in? %>
-                <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
-              <% else %>
-                <%= link_to t('footer.links.signin'), new_user_session_path %>
+        <div class="content">
+            <div class="" style="">
+              <%= link_to root_path do %>
+                <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
               <% end %>
-              </a></li>
-              <li>
-              </li>
-            </ul>
-          </div>
+            </div>
 
-          <div class="" style="text-align:center">
-            <ul class="social-icons">
-              <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-      </div>
+            <div class="" style="">
+              <h6><%= t('footer.title') %></h6>
+              <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
+            </div>
 
-      <div class="content" style=" width: 82vw; height: 10vh;">
-        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-          <a> <%= link_to "Adcrew", root_path %></a>.
-        </p>
-        <span>Made with <span class="heart">♥</span> by O&A</span>
-      </div>
-    </section>
+            <div class="" style="">
+              <h6><%= t('footer.title2') %></h6>
+              <ul class="footer-links">
+                <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
+                <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
+                <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
+                <li><a> <% if user_signed_in? %>
+                  <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
+                <% else %>
+                  <%= link_to t('footer.links.signin'), new_user_session_path %>
+                <% end %>
+                </a></li>
+                <li>
+                </li>
+              </ul>
+            </div>
 
+            <div class="" style="text-align:center">
+              <ul class="social-icons">
+                <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="content" style=" width: 82vw; height: 10vh;">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+            <a> <%= link_to "Adcrew", root_path %></a>.
+          </p>
+          <span>Made with <span class="heart">♥</span> by O&A</span>
+        </div>
+      </section>
+
+    </div>
   </div>
-</div>
+<% end %>
