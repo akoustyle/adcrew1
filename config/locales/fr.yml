@@ -12,15 +12,15 @@ fr:
           unit: ''
   home:
     title: "L'AGENCE"
-    paragraphe_html: "AD CREW est une agence experte en stratégie digitale qui représente des créateurs de contenus. Leader sur le marché de l’influence responsable : inclusivité, éco-responsabilité et diversité sont les valeurs que nous défendons au quotidien. Notre priorité est d'aider des talents ayant un univers travaillé et véhiculant des idées à développer leur audience."
+    paragraphe_html: "AD CREW est une agence experte en stratégie digitale qui représente des créateurs de contenus.<br><br> Leader sur le marché de l’influence responsable : <br><br> Inclusivité , Eco responsabilité, diversité , messages engagés et vision artistique sont les valeurs que nous défendons au quotidien. Développer des talents qui véhiculent des idées en plus d’un univers travaillé est notre priorité. <br><br> Nous accompagnons aussi les marques sur le développement de leur stratégie à long terme. Avec notamment la création de concepts originaux et avant-gardistes pour leurs campagnes digitales.<br> Mais aussi avec des propositions fortes pour adapter leur image et leurs valeurs de manière cohérentes et attractives online et Off line.<br><br> &laquo; Let’s influence the world with positive values &raquo;."
     links:
       team: "En savoir plus"
       campagnes: "Découvrir nos campagnes"
       talents: "Découvrir nos talents"
     title2: "NOS CAMPAGNES"
     title3: "NOS TALENTS"
-    paragraphe2: "AD CREW accompagne ses nombreux clients dans leurs campagnes de communication digitale via la création de contenu stratégique sur mesure, nous les guidons sur le développement de leur stratégie à long terme à travers de concepts originaux et avant-gardistes pour adapter leur image et leurs valeurs de manière cohérentes et attractives."
-    paragraphe3: "AD CREW c'est 35 influenceurs exclusivités et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays dans le monde. L’équipe collabore au quotidien avec des influenceurs, blogueurs et personnalités internationnales dans le but d’apporter de la perspective et de la visibilité aux marques."
+    paragraphe2: "AD CREW accompagne ses clients dans leurs campagnes de communication digitale. Elle les guident dans leur stratégie à travers des concepts originaux et avant-gardistes. Le but est de les aider a adapter leur image et leurs valeurs de manière à ce qu’elle soit cohérentes et attractives."
+    paragraphe3: "AD CREW c'est 35 influenceurs en exclusivités et un réseau de plus de 15 000 influenceurs basés dans plus 10 pays dans le monde."
     note: "Soucieuse de l’avenir qui guette les prochaines générations, elle met un point d’honneur à encourager et inciter à faire les bons gestes."
     title4: "NOS VALEURS"
     paragraphe4: "Chez AD CREW nous mettons un point d'honneur à véhiculer des valeurs fortes : Confiance, Éthique, Respect, Diversité. Des valeurs que l'on affirme et souligne à travers nos campagnes."
@@ -33,7 +33,7 @@ fr:
     tab3: "LES PRODUCTIONS AD CREW"
     tab4: "AJOUTER UNE CAMPAGNE"
     index:
-      adcampagnes: "Production AD CREW"
+      adcampagnes: "PRODUCTION BY AD CREW"
       name: '%{name}'
     show:
       links:
