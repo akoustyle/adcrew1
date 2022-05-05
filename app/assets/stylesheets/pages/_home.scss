@@ -226,6 +226,21 @@ section.home {
 				width: 24%;
 		  		background-size: cover;
 		  		background-position: center;
+<<<<<<< HEAD
+		  		&#gif-one {
+		  			animation: 10.1s gifMakerOne infinite;
+		  		}
+		  		&#gif-two {
+		  			animation: 10.3s gifMakerTwo infinite;
+            // transform: rotate(2deg);
+		  		}
+		  		&#gif-three {
+		  			animation: 10s gifMakerThree infinite;
+		  		}
+		  		&#gif-four {
+		  			animation: 10.2s gifMakerFour infinite;
+		  		}
+=======
 		  		// &#gif-one {
 		  		// 	animation: 10.1s gifMakerOne infinite;
 		  		// }
@@ -239,6 +254,7 @@ section.home {
 		  		// &#gif-four {
 		  		// 	animation: 10.2s gifMakerFour infinite;
 		  		// }
+>>>>>>> 93ff44f5947fe40c41f93bfe29d4fd7026810c28
 			}
 			& .note {
 				margin: 30px 10px;
