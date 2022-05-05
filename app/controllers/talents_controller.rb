@@ -6,6 +6,8 @@ class TalentsController < ApplicationController
   def index
     # if params[:pole].blank?
     @talents = Talent.all.order("name asc")
+    fresh_when last_modified: @talents.maximum(:updated_at), public: true
+
     # @talents = policy_scope(Talent).order(created_at: :desc)
     #  else
     # @pole_id = Pole.find_by(name: params[:pole]).id
@@ -16,6 +18,10 @@ class TalentsController < ApplicationController
   def show
     # @talent.scrape_youtube
     # authorize @talent
+    expires_in 3.minutes, :public => true
+    if stale?(@talent, public: true)
+    # …
+    end
   end
 
   def new
@@ -47,6 +53,7 @@ class TalentsController < ApplicationController
   def update
     # authorize @talent
     # @talent.pole_id = params[:pole_id]
+    @talent.slug = nil if @talent.name != params[:name]
     if @talent.update!(talent_params)
       redirect_to @talent, notice: "Congrats! talent was updated!"
     else
@@ -79,7 +86,7 @@ class TalentsController < ApplicationController
   end
 
   def find_talent
-    @talent = Talent.find(params[:id])
+    @talent = Talent.friendly.find_by_slug(params[:slug])
     # @talent = policy_scope(Talent).find(params[:id])
     # authorize @talent
   end

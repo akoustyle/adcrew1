@@ -42,6 +42,7 @@ class CampaignsController < ApplicationController
 
   def update
     # authorize @campaign
+    @campaign.slug = nil if @campaign.name != params[:name]
     if @campaign.update(campaign_params)
       redirect_to @campaign, notice: "Congrats! Campaign was updated!"
     else
@@ -51,6 +52,7 @@ class CampaignsController < ApplicationController
 
   def destroy
     # authorize @campaign
+    @campaign.slug = nil if @campaign.name != params[:name]
     @campaign.destroy
     redirect_to campaigns_path
   end
@@ -63,7 +65,7 @@ class CampaignsController < ApplicationController
   end
 
   def find_campaign
-    @campaign = Campaign.find(params[:id])
+    @campaign = Campaign.friendly.find_by_slug(params[:slug])
     # @campaign = policy_scope(Campaign).find(params[:id])
     # authorize @campaign
   end
