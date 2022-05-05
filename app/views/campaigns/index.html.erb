@@ -50,7 +50,7 @@
                           <div class="card-info">
                             <div class="top py-1">
                               <div class="info">
-                                <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
+                                <% if campaign.tag %> <p class="px-3 tag" style="font-weight:bold;font-size:16px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
                               </div>
                             </div>
                             <%= cache campaign.name do %>
@@ -83,8 +83,8 @@
                       <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
                         <div class="card-info">
                           <div class="top py-1">
-                            <div class="info">
-                              <% if campaign.tag %> <p class="px-3 tag" style="font-size:20px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
+                            <div class="info" style="font-weight:bold;font-size:20px;">
+                              <% if campaign.tag %> <p class="px-3 tag" style="font-weight: bold; font-size:16px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
                             </div>
                           </div>
 
