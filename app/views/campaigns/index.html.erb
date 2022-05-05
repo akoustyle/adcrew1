@@ -1,4 +1,4 @@
-<%= cache_if current_user.nil?, "public-campaigns-v1" do %>
+<%#= cache_if current_user.nil?, "public-campaigns-v1" do %>
   <div class="scroll">
     <div class="smooth">
 
@@ -38,29 +38,23 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="content">
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-all"role="tabpanel" aria-labelledby="pills-all-tab" data-controller="all">
-            <div class="img-wrapper">
-              <% @campaigns.each do |campaign|%>
-
-                <%= link_to campaign_path(campaign) do %>
-                  <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
-                      <div class="card-info">
-                        <div class="top py-1">
-                          <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag" style="font-weight:bold;font-size:18px;"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
-                          </div>
-                        </div>
-
-                        <h2 class="info title"> <%= campaign.name.upcase %> </h2>
-
-                        <div class="bottom">
-                          <div class="info justify-content-center">
-                            <% campaign.collabs.each do |collab| %>
-                              <p><%= collab.talent.name %></p>
+        <div class="content">
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all"role="tabpanel" aria-labelledby="pills-all-tab" data-controller="all">
+              <div class="img-wrapper">
+                <% @campaigns.each do |campaign|%>
+                  <%#= cache campaign do %>
+                    <%= link_to campaign_path(campaign) do %>
+                      <div class="campaign-card">
+                        <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
+                          <div class="card-info">
+                            <div class="top py-1">
+                              <div class="info">
+                                <% if campaign.tag %> <p class="px-3 tag"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
+                              </div>
+                            </div>
+                            <%= cache campaign.name do %>
+                              <h2 class="info title"> <%= campaign.name.upcase %> </h2>
                             <% end %>
                             <div class="bottom">
                               <div class="info justify-content-center">
@@ -75,7 +69,7 @@
                         </div>
                       </div>
                     <% end %>
-                  <% end %>
+                  <%# end %>
                 <% end %>
               </div>
             </div>
@@ -163,4 +157,4 @@
 
     </div>
   </div>
-<% end %>
+<%# end %>
