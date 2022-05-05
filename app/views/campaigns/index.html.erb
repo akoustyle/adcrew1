@@ -74,15 +74,6 @@
               </div>
             </div>
 
-<<<<<<< HEAD
-                <%= link_to campaign_path(campaign) do %>
-                  <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
-                      <div class="card-info">
-                        <div class="top py-1">
-                          <div class="info">
-                            <% if campaign.tag %> <p class="px-3 tag" style="font-weight:bold;font-size:15px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
-=======
             <div class="tab-pane fade" id="pills-adcrew"role="tabpanel" aria-labelledby="pills-adcrew-tab">
               <div class="img-wrapper">
                 <% @campaigns.where(tag: true).each do |campaign|%>
@@ -95,7 +86,6 @@
                             <div class="info">
                               <% if campaign.tag %> <p class="px-3 tag" style="font-size:20px"><%= t('campagnes.index.adcampagnes') %></p> <% end %>
                             </div>
->>>>>>> 93ff44f5947fe40c41f93bfe29d4fd7026810c28
                           </div>
 
                           <h2 class="info title"> <%= campaign.name%> </h2>
