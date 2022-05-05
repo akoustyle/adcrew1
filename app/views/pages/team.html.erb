@@ -1,295 +1,297 @@
-<%= content_for(:navbar_class, "main-sidebar-home") %>
-<div class="scroll">
-  <div class="smooth">
-    <section class="team" id="team">
-      <div class="content">
-        <div class="text-content">
-          <h2><%= t('team.title') %></h2>
-          <p class="pt-3"> <%= t('team.paragraphe_html') %> </p>
+<%= cache_if current_user.nil?, "public-events-v1", expires_in: 12.hours do %>
+  <%= content_for(:navbar_class, "main-sidebar-home") %>
+  <div class="scroll">
+    <div class="smooth">
+      <section class="team" id="team">
+        <div class="content">
+          <div class="text-content">
+            <h2><%= t('team.title') %></h2>
+            <p class="pt-3"> <%= t('team.paragraphe_html') %> </p>
+          </div>
         </div>
-      </div>
-      <div class="content">
-        <div class="img-wrapper-small" style="display: none;">
-          <div class="d-flex justify-content-between align-items-center">
+        <div class="content">
+          <div class="img-wrapper-small" style="display: none;">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="gif-talent" id="maud">
+                <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -45px;">
+                  <p style="font-family: 'Lexend Mega'; line-height: 1.9;"><strong> Maud H . L . </strong></p>
+                  <p class="ml-2">CEO</p>
+                </div>
+              </div>
+              <div class="gif-talent" id="jessica">
+                <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -45px;">
+                  <p style="font-family: 'Lexend Mega'; line-height: 1.9;"><strong> Jessica Cohen Bouaziz </strong></p>
+                  <p class="ml-2">CEO</p>
+                </div>
+              </div>
+            </div>
+            <div style="width: 100%;">
+              <p class="note">
+                <%= t('team.note_html') %>
+              </p>
+            </div>
+          </div>
+          <div class="img-wrapper">
             <div class="gif-talent" id="maud">
               <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -45px;">
-                <p style="font-family: 'Lexend Mega'; line-height: 1.9;"><strong> Maud H . L . </strong></p>
+                <p style="font-size: 10px;font-family: 'Lexend Mega'; line-height: 1.9;"><strong> MAUD H . L . </strong></p>
                 <p class="ml-2">CEO</p>
               </div>
             </div>
             <div class="gif-talent" id="jessica">
               <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -45px;">
-                <p style="font-family: 'Lexend Mega'; line-height: 1.9;"><strong> Jessica Cohen Bouaziz </strong></p>
+                <p style="font-size: 10px;font-family: 'Lexend Mega'; line-height: 1.9;"><strong> JESSICA COHEN BOUAZIZ </strong></p>
                 <p class="ml-2">CEO</p>
               </div>
             </div>
           </div>
-          <div style="width: 100%;">
-            <p class="note">
-              <%= t('team.note_html') %>
-            </p>
-          </div>
         </div>
-        <div class="img-wrapper">
-          <div class="gif-talent" id="maud">
-            <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -45px;">
-              <p style="font-size: 10px;font-family: 'Lexend Mega'; line-height: 1.9;"><strong> MAUD H . L . </strong></p>
-              <p class="ml-2">CEO</p>
-            </div>
-          </div>
-          <div class="gif-talent" id="jessica">
-            <div class="align-items-end d-flex justify-content-center w-100" style="position: absolute; bottom: -45px;">
-              <p style="font-size: 10px;font-family: 'Lexend Mega'; line-height: 1.9;"><strong> JESSICA COHEN BOUAZIZ </strong></p>
-              <p class="ml-2">CEO</p>
-            </div>
-          </div>
+        <div style="width: 100%;">
+          <p class="note" style="">
+            <%= t('team.note_html') %>
+          </p>
         </div>
-      </div>
-      <div style="width: 100%;">
-        <p class="note" style="">
-          <%= t('team.note_html') %>
-        </p>
-      </div>
-    </section>
-    <section class="team" id="team">
+      </section>
+      <section class="team" id="team">
 
-      <div class="content">
-        <div class="text-content">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <p class="mb-0"><%= t('team.team') %></p>
-            <a> <%= link_to t('team.links.contact'), new_contact_path %></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="content">
-        <div class="img-wrapper">
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('maureen.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Maurine </h2>
-                  <p class="info justify-content-center"><%= t('team.statut') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                    <a href="mailto:maurine@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('alix.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Alix </h2>
-                  <p class="info justify-content-center"><%= t('team.statut') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                    <a href="mailto:alix@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('chloe.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Pénélope </h2>
-                  <p class="info justify-content-center"><%= t('team.statut') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                    <a href="mailto:penelope@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('manon.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Manon </h2>
-                  <p class="info justify-content-center"><%= t('team.statut') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                    <a href="mailto:manon@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('melchior.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Melchior </h2>
-                  <p class="info justify-content-center"><%= t('team.statut') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                    <a href="mailto:melchior@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('carla.png') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Carla </h2>
-                  <p class="info justify-content-center"><%= t('team.statut') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                    <a href="mailto:carla@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('nao.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Naomie </h2>
-                  <p class="info justify-content-center"><%= t('team.statut3') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('victoria.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Victoria </h2>
-                  <p class="info justify-content-center"><%= t('team.statut2') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('sofia.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Sofia </h2>
-                  <p class="info justify-content-center"><%= t('team.statut5') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="team-card">
-            <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('leonie.jpg') %>); background-position: center; background-size: cover">
-              <div class="card-info">
-                <div class="top py-1">
-                  <div class="info">
-                  </div>
-                </div>
-
-                <div>
-                  <h2 class="info title"> Léonie </h2>
-                  <p class="info justify-content-center"><%= t('team.statut4') %></p>
-                </div>
-
-                <div class="bottom">
-                  <div class="info justify-content-center">
-                  </div>
-                </div>
-              </div>
+        <div class="content">
+          <div class="text-content">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <p class="mb-0"><%= t('team.team') %></p>
+              <a> <%= link_to t('team.links.contact'), new_contact_path %></a>
             </div>
           </div>
         </div>
 
+        <div class="content">
+          <div class="img-wrapper">
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('maureen.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
 
-      </div>
-    </section>
+                  <div>
+                    <h2 class="info title"> Maurine </h2>
+                    <p class="info justify-content-center"><%= t('team.statut') %></p>
+                  </div>
 
-    <section class="team" id="moto">
-      <div class="content">
-        <div class="text-content">
-          <h2><%= t('home.title4') %></h2>
-          <div class="pt-3 moto">
-            <p><%= t('home.paragraphe4') %></p>
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                      <a href="mailto:maurine@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('alix.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Alix </h2>
+                    <p class="info justify-content-center"><%= t('team.statut') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                      <a href="mailto:alix@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('chloe.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Pénélope </h2>
+                    <p class="info justify-content-center"><%= t('team.statut') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                      <a href="mailto:penelope@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('manon.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Manon </h2>
+                    <p class="info justify-content-center"><%= t('team.statut') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                      <a href="mailto:manon@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('melchior.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Melchior </h2>
+                    <p class="info justify-content-center"><%= t('team.statut') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                      <a href="mailto:melchior@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('carla.png') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Carla </h2>
+                    <p class="info justify-content-center"><%= t('team.statut') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                      <a href="mailto:carla@adcrew-paris.com" target="_blank"><i class="far fa-envelope fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('nao.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Naomie </h2>
+                    <p class="info justify-content-center"><%= t('team.statut3') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('victoria.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Victoria </h2>
+                    <p class="info justify-content-center"><%= t('team.statut2') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('sofia.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Sofia </h2>
+                    <p class="info justify-content-center"><%= t('team.statut5') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-card">
+              <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(<%= image_path('leonie.jpg') %>); background-position: center; background-size: cover">
+                <div class="card-info">
+                  <div class="top py-1">
+                    <div class="info">
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="info title"> Léonie </h2>
+                    <p class="info justify-content-center"><%= t('team.statut4') %></p>
+                  </div>
+
+                  <div class="bottom">
+                    <div class="info justify-content-center">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="rounded-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 939.46 338.24"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M.19,8.45c44.31-8.76,108.33-14.29,175,10,120.31,43.84,119.72,137.6,250,228,22.18,15.39,154.29,104.29,327.7,88.81,81.85-7.3,145.51-35.4,184.6-56.68"/><path class="cls-1" d="M871.54,270.6a442.39,442.39,0,0,1,66.52,7.71q-12.3,29.78-24.62,59.55"/></g></g></svg>
+
+
+        </div>
+      </section>
+
+      <section class="team" id="moto">
+        <div class="content">
+          <div class="text-content">
+            <h2><%= t('home.title4') %></h2>
+            <div class="pt-3 moto">
+              <p><%= t('home.paragraphe4') %></p>
+            </div>
+            <div class="rounded-shape">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 939.46 338.24"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M.19,8.45c44.31-8.76,108.33-14.29,175,10,120.31,43.84,119.72,137.6,250,228,22.18,15.39,154.29,104.29,327.7,88.81,81.85-7.3,145.51-35.4,184.6-56.68"/><path class="cls-1" d="M871.54,270.6a442.39,442.39,0,0,1,66.52,7.71q-12.3,29.78-24.62,59.55"/></g></g></svg>
+            </div>
           </div>
         </div>
-      </div>
-      <%= image_tag "https://res.cloudinary.com/akoustyle/image/upload/v1651094210/3Y0A1908_umua1r.jpg", alt: "alttext" %>
-    </section>
+        <%= image_tag "https://res.cloudinary.com/akoustyle/image/upload/v1651094210/3Y0A1908_umua1r.jpg", alt: "alttext" %>
+      </section>
 
+    </div>
   </div>
-</div>
+<% end %>

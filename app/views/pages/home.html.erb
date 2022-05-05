@@ -1,125 +1,128 @@
-<body>
-  <div class="scroll">
-    <div class="smooth">
-      <section class="home" id="home">
-        <div class="scroll video-banner">
-            <div class="background">
-              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", autoplay: true, muted: true, loop: true, poster: 'https://res.cloudinary.com/akoustyle/image/upload/v1651251452/poster_clip_edsqsz.png', controls: false %>
-              <div class="banner-icons">
+<%= cache_if current_user.nil?, "public-events-v1" do %>
+  <body>
+    <div class="scroll">
+      <div class="smooth">
+        <section class="home" id="home">
+          <div class="scroll video-banner">
+              <div class="background">
+                <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", autoplay: true, muted: true, loop: true, poster: 'https://res.cloudinary.com/akoustyle/image/upload/v1651251452/poster_clip_edsqsz.png', controls: false %>
+                <%# <iframe src="https://player.vimeo.com/video/705340752?h=fa535572b5&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="clip_p3yp9k_mr8t2a"></iframe><script src="https://player.vimeo.com/api/player.js"></script> %>
+                <%#= video_tag "https://vimeo.com/705340752", autoplay: true, muted: true, loop: true, controls: false %>
+                <div class="banner-icons">
+                  <ul class="social-icons">
+                    <%# <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li> %>
+                    <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section class="home" id="about">
+          <div class="content">
+            <div class="text-content">
+              <h2><%= t('home.title') %></h2>
+              <p class="pt-3">
+                <%= t('home.paragraphe_html') %>
+              </p>
+              <a><%= link_to t('home.links.team'), team_path %></a>
+            </div>
+          </div>
+          <%= image_tag "https://res.cloudinary.com/akoustyle/image/upload/v1651094187/3Y0A1899_dab9p4.jpg", alt: "alttext" %>
+        </section>
+        <section class="home" id="campaign">
+          <div class="content">
+            <div class="text-content">
+              <a><%= link_to t('home.links.campagnes'), campaigns_path %></a>
+              <h2><%= t('home.title2') %></h2>
+              <p class="pt-3">
+                <%= t('home.paragraphe2') %>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="img-wrapper">
+              <%= image_tag "fulsap.jpg", alt: "alttext" %>
+              <%= image_tag "coach.jpg", alt: "alttext" %>
+              <%= image_tag "adidas2.jpg", alt: "alttext" %>
+              <p class="note">
+                Let’s influence the world <br>
+                with positive values ! <br> <span> <3</span>
+              </p>
+              <div class="rounded-shape">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home" id="talent">
+          <div class="content">
+            <div class="text-content">
+              <a> <%= link_to t('home.links.talents'), talents_path %></a>
+              <h2><%= t('home.title3') %></h2>
+              <p class="pt-3">
+                <%= t('home.paragraphe3') %>
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="img-wrapper">
+              <div class="gif-talent" > <%= image_tag "talent1.gif" %> </div>
+              <div class="gif-talent" ><%= image_tag "talent2.gif" %> </div>
+              <div class="gif-talent" style="transform:rotate(2deg)" ><%= image_tag "talent3.gif" %> </div>
+              <div class="gif-talent" ><%= image_tag "talent4.gif" %> </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home" id="footer-section">
+
+          <div class="content">
+              <div class="" style="">
+                <%= link_to root_path do %>
+                  <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
+                <% end %>
+              </div>
+
+              <div class="" style="">
+                <h6><%= t('footer.title') %></h6>
+                <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
+              </div>
+
+              <div class="" style="">
+                <h6><%= t('footer.title2') %></h6>
+                <ul class="footer-links">
+                  <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
+                  <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
+                  <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
+                  <li><a> <% if user_signed_in? %>
+                    <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
+                  <% else %>
+                    <%= link_to t('footer.links.signin'), new_user_session_path %>
+                  <% end %>
+                  </a></li>
+                  <li>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="" style="text-align:center">
                 <ul class="social-icons">
-                  <%# <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li> %>
                   <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                   <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
               </div>
-            </div>
-        </div>
-      </section>
-      <section class="home" id="about">
-        <div class="content">
-          <div class="text-content">
-            <h2><%= t('home.title') %></h2>
-            <p class="pt-3">
-              <%= t('home.paragraphe_html') %>
+          </div>
+
+          <div class="content" style=" width: 82vw; height: 10vh;">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+              <a> <%= link_to "Adcrew", root_path %></a>.
             </p>
-            <a><%= link_to t('home.links.team'), team_path %></a>
+            <span>Made with <span class="heart">♥</span> by O&A</span>
           </div>
-        </div>
-        <%= image_tag "https://res.cloudinary.com/akoustyle/image/upload/v1651094187/3Y0A1899_dab9p4.jpg", alt: "alttext" %>
-      </section>
-      <section class="home" id="campaign">
-        <div class="content">
-          <div class="text-content">
-            <a><%= link_to t('home.links.campagnes'), campaigns_path %></a>
-            <h2><%= t('home.title2') %></h2>
-            <p class="pt-3">
-              <%= t('home.paragraphe2') %>
-            </p>
-          </div>
-        </div>
-        <div class="content">
-          <div class="img-wrapper">
-            <%= image_tag "fulsap.jpg", alt: "alttext" %>
-            <%= image_tag "coach.jpg", alt: "alttext" %>
-            <%= image_tag "adidas2.jpg", alt: "alttext" %>
-            <p class="note">
-              Let’s influence the world <br>
-              with positive values ! <br> <span> <3</span>
-            </p>
-            <div class="rounded-shape">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="home" id="talent">
-        <div class="content">
-          <div class="text-content">
-            <a> <%= link_to t('home.links.talents'), talents_path %></a>
-            <h2><%= t('home.title3') %></h2>
-            <p class="pt-3">
-              <%= t('home.paragraphe3') %>
-            </p>
-          </div>
-        </div>
-        <div class="content">
-          <div class="img-wrapper">
-            <div class="gif-talent" id="gif-one"></div>
-            <div class="gif-talent" id="gif-three"></div>
-            <div class="gif-talent" id="gif-two"></div>
-            <div class="gif-talent" id="gif-four"></div>
-          </div>
-        </div>
-      </section>
 
-      <section class="home" id="footer-section">
-
-        <div class="content">
-            <div class="" style="">
-              <%= link_to root_path do %>
-                <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
-              <% end %>
-            </div>
-
-            <div class="" style="">
-              <h6><%= t('footer.title') %></h6>
-              <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
-            </div>
-
-            <div class="" style="">
-              <h6><%= t('footer.title2') %></h6>
-              <ul class="footer-links">
-                <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
-                <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
-                <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
-                <li><a> <% if user_signed_in? %>
-                  <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
-                <% else %>
-                  <%= link_to t('footer.links.signin'), new_user_session_path %>
-                <% end %>
-                </a></li>
-                <li>
-                </li>
-              </ul>
-            </div>
-
-            <div class="" style="text-align:center">
-              <ul class="social-icons">
-                <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-        </div>
-
-        <div class="content" style=" width: 82vw; height: 10vh;">
-          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-            <a> <%= link_to "Adcrew", root_path %></a>.
-          </p>
-          <span>Made with <span class="heart">♥</span> by O&A</span>
-        </div>
-
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
-
-</body>
+  </body>
+<% end %>

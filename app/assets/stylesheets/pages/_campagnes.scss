@@ -55,19 +55,20 @@ section.campaigns {
         height: 430px;
         width: 24%;
           background-size: cover;
-          background-position: center;
-          &#gif-one {
-            animation: 10.1s gifMakerFive infinite;
-          }
-          &#gif-two {
-            animation: 10.3s gifMakerSix infinite;
-          }
-          &#gif-three {
-            animation: 10s gifMakerSeven infinite;
-          }
-          &#gif-four {
-            animation: 10.2s gifMakerHeight infinite;
-          }
+          background-position: top center;
+          // &#gif-five {
+          //   // animation: 10.1s gifMakerFive infinite;
+          // }
+          // &#gif-six {
+          //   // animation: 10.3s gifMakerSix infinite;
+          // }
+          // &#gif-seven {
+          //   // animation: 10s gifMakerSeven infinite;
+          //   // transform: rotate(2deg);
+          // }
+          // &#gif-height {
+          //   // animation: 10.2s gifMakerHeight infinite;
+          // }
       }
       & .note {
         margin: 30px 10px;
@@ -218,6 +219,7 @@ section.campaign {
         height: 430px;
         width: 24%;
         object-fit: cover;
+        object-position: top center;
 
         &:nth-child(1) {
             position: absolute;
@@ -266,7 +268,7 @@ section.campaign {
         width:350px;
         max-width:350px;
         top: 150px;
-        right: 100px;
+        left: 350px;
         transform: rotate(-5deg);
         line-height: 1;
         color: white;

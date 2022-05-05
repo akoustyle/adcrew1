@@ -16,6 +16,7 @@ Rails.application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
   # config.require_master_key = true
@@ -57,11 +58,14 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
-
+  if ENV['REDISCLOUD_URL']
+    config.cache_store = :redis_store, ENV['REDISCLOUD_URL'], { expires_in: 1.day }
+    config.action_controller.enable_fragment_cache_logging = true # you can remove this line once you made sure caching works on Heroku
+  end
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "adcrew_app1_production"
-
+  config.active_record.cache_versioning = false
   config.action_mailer.perform_caching = false
 
   # Ignore bad email addresses and do not raise email delivery errors.
@@ -74,25 +78,25 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default charset: 'utf-8'
   config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   adress:                         'smtp.sendgrid.net',
-  #   port:                           587,
-  #   domain:                         'app-adcrew.herokuapp.com',
-  #   user_name:                      ENV['SENDGRID_USERNAME'],
-  #   password:                       ENV['SENDGRID_PASSWORD'],
-  #   authentification:                'plain',
-  #   enable_starttls_auto:             true }
   config.action_mailer.smtp_settings = {
-  # adress:                         'smtp.sendgrid.net',
-  adress:                         'smtp.gmail.com',
-  port:                           587,
-  domain:                         'www.adcrew-paris.com',
-  # user_name:                      ENV['SENDGRID_USERNAME'],
-  user_name:                       'maoukola.oneal@gmail.com',
-  # password:                       ENV['SENDGRID_PASSWORD'],
-  password:                        ENV['GMAIL'],
-  authentification:                'plain',
-  enable_starttls_auto:             true }
+    adress:                         'smtp.sendgrid.net',
+    port:                           587,
+    domain:                         'app-adcrew.herokuapp.com',
+    user_name:                      ENV['SENDGRID_USERNAME'],
+    password:                       ENV['SENDGRID_PASSWORD'],
+    authentification:                'plain',
+    enable_starttls_auto:             true }
+  # config.action_mailer.smtp_settings = {
+  # # adress:                         'smtp.sendgrid.net',
+  # adress:                         'smtp.gmail.com',
+  # port:                           587,
+  # domain:                         'www.adcrew-paris.com',
+  # # user_name:                      ENV['SENDGRID_USERNAME'],
+  # user_name:                       'maoukola.oneal@gmail.com',
+  # # password:                       ENV['SENDGRID_PASSWORD'],
+  # password:                        ENV['GMAIL'],
+  # authentification:                'plain',
+  # enable_starttls_auto:             true }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
