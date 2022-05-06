@@ -1,7 +1,7 @@
 section.campaigns {
 
   display: flex;
-  height: 100vh;
+  // height: 100vh;
 
   scroll-snap-align: center;
 
@@ -112,11 +112,11 @@ section.campaigns {
     & .img-wrapper {
 
       width: 100vw;
-      padding: 30px 13vh 0px;
+      padding: 30px 13vh 50px;
 
 
-      overflow-y: scroll;
-      height: 73vh;
+      // overflow-y: scroll;
+      // height: 73vh;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
