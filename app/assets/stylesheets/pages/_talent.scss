@@ -1,9 +1,9 @@
 section.talents {
 
   display: flex;
-  height: 100vh;
+  // height: 100vh;
 
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 
   .note {
     font-family: $note-font;
@@ -37,13 +37,13 @@ section.talents {
       }
     }
     & .img-wrapper {
-      overflow-y: scroll;
-      height: 70vh;
+      // overflow-y: scroll;
+      // height: 70vh;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
       width: 100vw;
-      padding: 30px 13vh 0px;
+      padding: 30px 13vh 50px;
       & .note {
         margin: 30px 10px;
         width: 24%;
