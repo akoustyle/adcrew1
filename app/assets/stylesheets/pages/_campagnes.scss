@@ -1,9 +1,13 @@
+.smooth {
+  scroll-snap-type: none !important;
+}
+
 section.campaigns {
 
   display: flex;
   // height: 100vh;
 
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 
   .note {
     font-family: $note-font;
@@ -121,7 +125,7 @@ section.campaigns {
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
       width: 100vw;
-      padding: 30px 13vh 0px;
+      padding: 30px 13vh 50px;
       & .note {
         margin: 30px 10px;
         width: 24%;
