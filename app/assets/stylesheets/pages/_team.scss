@@ -1,9 +1,9 @@
 section.team {
 
   display: flex;
-  height: 100vh;
+  // height: 100vh;
 
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 
   .note {
     font-family: $note-font;
@@ -111,8 +111,8 @@ section.team {
       }
     }
     & .img-wrapper {
-      overflow-y: scroll;
-      height: 550px;
+      // overflow-y: scroll;
+      // height: 550px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 6px;
@@ -138,7 +138,7 @@ section.team {
     & .content {
         display: flex;
         width: 50vw;
-        height: 100vh;
+        // height: 100vh;
         justify-content: center;
         align-items: center;
         & .text-content {
@@ -173,6 +173,7 @@ section.team {
       width: 50vw;
       padding: 80px 106px 80px 20px;
           object-fit: cover;
+          object-position: top center;
           // filter: grayscale(100%);
     }
   }
