@@ -40,7 +40,7 @@
             <% if @campaign.video.attached? %>
               <%= video_tag (url_for(@campaign.video)), crop: :scale, width: 500, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false %>
             <% else %>
-              <%= video_tag "random_video.mp4", crop: :fill, width: 500, autoplay: true, muted: true, loop: true, controls: false %>
+              <%= video_tag "random_video.mp4", crop: :fill, width: 500, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false %>
             <% end %>
           <% else %>
             <% if @campaign.photos.attached? %>
