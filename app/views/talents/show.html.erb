@@ -1,155 +1,155 @@
 <div class="scroll">
-  <div class="smooth">
-    <section class="talent" id="talent">
+    <div class="smooth">
+      <section class="talent" id="talent">
 
-      <% if @talent.video.attached? %>
-        <%= video_tag (url_for(@talent.video)), crop: :scale, width: 800, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false %>
-      <% else %>
-          <%#= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
-          <% if @talent.photos.attached? %>
-            <%= cl_image_tag @talent.photos.second.key, crop: :scale, width: 700, alt: "Talent image", style: "padding:80px 0 80px 80px; objecti-position:top" %>
-          <% else %>
-            <% if @talent.video.attached? %>
-              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :fill, width: 800, autoplay: true, muted: true, loop: true, controls: false %>
-            <% end %>
-          <% end %>
-      <% end %>
-
-      <div class="content">
-
-        <div class="text-content">
-
-          <%= link_to t('talents.show.links.index'), :back %>
-          <% if user_signed_in? %>
-            <%= link_to t('talents.show.links.edit'), edit_talent_path %>
-          <% end %>
-          <% if user_signed_in? %>
-            <%= link_to "Supprimer", destroy_path(@talent), method: :delete, data: { confirm: "Are you sure?" }%>
-          <% end %>
-
-          <div class="d-flex justify-content-between align-items-center">
-            <h2><%= @talent.name.upcase%></h2>
-              <% if  @talent.category == "green" %>
-                <p> <%= @talent.category.upcase %>
-                  <i class="fa-solid fa-seedling ml-1"></i>
-                </p>
-              <% elsif @talent.category == "fashion" %>
-                <p> <%= @talent.category.upcase %> </p>
-              <% elsif @talent.category == "urban" %>
-                <p> <%= @talent.category.upcase %> </p>
-              <% else %>
-                <p> <%= @talent.category.upcase %> </p>
+        <% if @talent.video.attached? %>
+          <%= video_tag (url_for(@talent.video)), crop: :scale, width: 800, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false %>
+        <% else %>
+            <%#= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+            <% if @talent.photos.attached? %>
+              <%= cl_image_tag @talent.photos.second.key, crop: :scale, width: 700, alt: "Talent image", style: "padding:80px 0 80px 80px; objecti-position:top" %>
+            <% else %>
+              <% if @talent.video.attached? %>
+                <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :fill, width: 800, autoplay: true, muted: true, loop: true, controls: false %>
               <% end %>
-          </div>
+            <% end %>
+        <% end %>
 
-          <p><%= @talent.about %></p>
+        <div class="content">
 
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="rounded-shape">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48">
-                <defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g>
-              </svg>
+          <div class="text-content">
+
+            <%= link_to t('talents.show.links.index'), :back %>
+            <% if user_signed_in? %>
+              <%= link_to t('talents.show.links.edit'), edit_talent_path %>
+            <% end %>
+            <% if user_signed_in? %>
+              <%= link_to "Supprimer", destroy_path(@talent), method: :delete, data: { confirm: "Are you sure?" }%>
+            <% end %>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <h2><%= @talent.name.upcase%></h2>
+                <% if  @talent.category == "green" %>
+                  <p> <%= @talent.category.upcase %>
+                    <i class="fa-solid fa-seedling ml-1"></i>
+                  </p>
+                <% elsif @talent.category == "fashion" %>
+                  <p> <%= @talent.category.upcase %> </p>
+                <% elsif @talent.category == "urban" %>
+                  <p> <%= @talent.category.upcase %> </p>
+                <% else %>
+                  <p> <%= @talent.category.upcase %> </p>
+                <% end %>
             </div>
 
-            <div class="talent-standing">
+            <p><%= @talent.about %></p>
 
-              <% if @talent.photos.attached? %>
-                <%= cl_image_tag @talent.photos.last.key, crop: :scale, width: 600, quality: :auto, fetch_format: :auto, alt: "Talent image", class: "png-img" %>
-                <%#= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img", id: "png-mousein" %>
-              <% else %>
-                <%= image_tag 'silhouette3.png', alt:"", class: "png-img" %>
-              <% end %>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="rounded-shape">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48">
+                  <defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g>
+                </svg>
+              </div>
 
-              <div class="social-links">
-                <% if @talent.youtube_link == "0" || @talent.youtube_link == "" %>
+              <div class="talent-standing">
+
+                <% if @talent.photos.attached? %>
+                  <%= cl_image_tag @talent.photos.last.key, crop: :scale, width: 600, quality: :auto, fetch_format: :auto, flags: :lossy, alt: "Talent image", class: "png-img" %>
+                  <%#= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img", id: "png-mousein" %>
                 <% else %>
-                  <a href="<%= @talent.link_youtube %>" target="_blank" style="position: absolute; top: 50px; left: 310px; z-index: 1000;">
-                    <div class="d-flex" style="width: 200px;">
-                      <i class="fab fa-youtube"></i>
-                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
-                    </div>
-                  </a>
-                <% end %>
-                <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
-                <% else %>
-                    <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
-                    <div class="d-flex" style="width: 200px;">
-                      <i class="fab fa-instagram"></i>
-                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
-                    </div>
-                  </a>
-                <% end %>
-                <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
-                <% else %>
-                 <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 326px; z-index: 1000;">
-                    <div class="d-flex" style="width: 200px;">
-                      <i class="fab fa-tiktok"></i>
-                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
-                    </div>
-                  </a>
+                  <%= image_tag 'silhouette3.png', alt:"", class: "png-img" %>
                 <% end %>
 
-                <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -25px;">
-                  <div class="d-flex" style="width: 200px;">
-                    <i class="fas fa-download"></i>
-                    <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
-                  </div>
-                </a>
+                <div class="social-links">
+                  <% if @talent.youtube_link == "0" || @talent.youtube_link == "" %>
+                  <% else %>
+                    <a href="<%= @talent.link_youtube %>" target="_blank" style="position: absolute; top: 50px; left: 310px; z-index: 1000;">
+                      <div class="d-flex" style="width: 200px;">
+                        <i class="fab fa-youtube"></i>
+                        <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                      </div>
+                    </a>
+                  <% end %>
+                  <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
+                  <% else %>
+                      <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                      <div class="d-flex" style="width: 200px;">
+                        <i class="fab fa-instagram"></i>
+                        <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                      </div>
+                    </a>
+                  <% end %>
+                  <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
+                  <% else %>
+                  <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 326px; z-index: 1000;">
+                      <div class="d-flex" style="width: 200px;">
+                        <i class="fab fa-tiktok"></i>
+                        <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                      </div>
+                    </a>
+                  <% end %>
+
+                  <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -25px;">
+                    <div class="d-flex" style="width: 200px;">
+                      <i class="fas fa-download"></i>
+                      <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
 
-      </div>
+      </section>
 
-    </section>
+      <section class="talent" id="footer-section">
 
-    <section class="talent" id="footer-section">
-
-      <div class="content">
-          <div class="" style="">
-            <%= link_to root_path do %>
-              <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
-            <% end %>
-          </div>
-
-          <div class="" style="">
-            <h6><%= t('footer.title') %></h6>
-            <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
-          </div>
-
-          <div class="" style="">
-            <h6><%= t('footer.title2') %></h6>
-            <ul class="footer-links">
-              <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
-              <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
-              <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
-              <li><a> <% if user_signed_in? %>
-                <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
-              <% else %>
-                <%= link_to t('footer.links.signin'), new_user_session_path %>
+        <div class="content">
+            <div class="" style="">
+              <%= link_to root_path do %>
+                <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
               <% end %>
-              </a></li>
-              <li>
-              </li>
-            </ul>
-          </div>
+            </div>
 
-          <div class="" style="text-align:center">
-            <ul class="social-icons">
-              <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-      </div>
+            <div class="" style="">
+              <h6><%= t('footer.title') %></h6>
+              <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
+            </div>
 
-      <div class="content" style=" width: 82vw; height: 10vh;">
-        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-          <a> <%= link_to "Adcrew", root_path %></a>.
-        </p>
-        <span>Made with <span class="heart" style="color:red">♥</span> by O&A</span>
-      </div>
-    </section>
-  </div>
+            <div class="" style="">
+              <h6><%= t('footer.title2') %></h6>
+              <ul class="footer-links">
+                <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
+                <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
+                <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
+                <li><a> <% if user_signed_in? %>
+                  <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
+                <% else %>
+                  <%= link_to t('footer.links.signin'), new_user_session_path %>
+                <% end %>
+                </a></li>
+                <li>
+                </li>
+              </ul>
+            </div>
+
+            <div class="" style="text-align:center">
+              <ul class="social-icons">
+                <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="content" style=" width: 82vw; height: 10vh;">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+            <a> <%= link_to "Adcrew", root_path %></a>.
+          </p>
+          <span>Made with <span class="heart" style="color:red">♥</span> by O&A</span>
+        </div>
+      </section>
+    </div>
 </div>
