@@ -31,6 +31,7 @@ gem 'mail_form', ">= 1.3.0"
 gem 'sendgrid-ruby'
 gem 'friendly_id', "~> 5.1.0"
 gem 'redis-rails'
+# gem 'invisible_captcha'
 # gem 'sidekiq'
 # gem 'sinatra', github: 'sinatra/sinatra'
 

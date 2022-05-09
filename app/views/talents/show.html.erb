@@ -3,14 +3,14 @@
     <section class="talent" id="talent">
 
       <% if @talent.video.attached? %>
-        <%= video_tag (url_for(@talent.video)), autoplay: true, muted: true, loop: true, controls: false %>
+        <%= video_tag (url_for(@talent.video)), crop: :fill, width: 500, autoplay: true, muted: true, loop: true, controls: false %>
       <% else %>
           <%#= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
           <% if @talent.photos.attached? %>
-            <%= cl_image_tag @talent.photos.second.key, alt: "Talent image", style: "padding:80px 0 80px 80px; objecti-position:top" %>
+            <%= cl_image_tag @talent.photos.second.key, crop: :fill, width: 800, alt: "Talent image", style: "padding:80px 0 80px 80px; objecti-position:top" %>
           <% else %>
             <% if @talent.video.attached? %>
-              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", autoplay: true, muted: true, loop: true, controls: false %>
+              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :fill, width: 500, autoplay: true, muted: true, loop: true, controls: false %>
             <% end %>
           <% end %>
       <% end %>
@@ -54,7 +54,7 @@
             <div class="talent-standing">
 
               <% if @talent.photos.attached? %>
-                <%= cl_image_tag @talent.photos.last.key, alt: "Talent image", class: "png-img" %>
+                <%= cl_image_tag @talent.photos.last.key, crop: :fill, width: 800, alt: "Talent image", class: "png-img" %>
                 <%#= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img", id: "png-mousein" %>
               <% else %>
                 <%= image_tag 'silhouette3.png', alt:"", class: "png-img" %>

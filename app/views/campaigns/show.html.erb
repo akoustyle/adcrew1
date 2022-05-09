@@ -27,12 +27,12 @@
             <%#= cl_image_tag @campaign.photos.last.key, alt: "alttext" %>
           <% if @campaign.video.attached? %>
             <% if @campaign.photos.attached? %>
-              <%= cl_image_tag @campaign.photos.first.key, alt: @campaign.name %>
+              <%= cl_image_tag @campaign.photos.first.key, crop: :fill, width: 500, alt: @campaign.name %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
             <% if @campaign.photos.attached? %>
-              <%= cl_image_tag @campaign.photos.second.key, alt: "alttext" %>
+              <%= cl_image_tag @campaign.photos.second.key, crop: :fill, width: 500, alt: "alttext" %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
@@ -44,17 +44,17 @@
             <% end %>
           <% else %>
             <% if @campaign.photos.attached? %>
-              <%= cl_image_tag @campaign.photos.first.key, alt: @campaign.name %>
+              <%= cl_image_tag @campaign.photos.first.key, crop: :fill, width: 500, alt: @campaign.name %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
             <% if @campaign.photos.attached? %>
-              <%= cl_image_tag @campaign.photos.second.key, alt: @campaign.name %>
+              <%= cl_image_tag @campaign.photos.second.key, crop: :fill, width: 500, alt: @campaign.name %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
             <% if @campaign.photos.attached? %>
-              <%= cl_image_tag @campaign.photos.third.key, alt: @campaign.name %>
+              <%= cl_image_tag @campaign.photos.third.key, crop: :fill, width: 500, alt: @campaign.name %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
@@ -82,7 +82,7 @@
           <% @campaign.collabs.each do |collab|%>
             <%= link_to talent_path(collab.talent) do %>
               <div class="show-campaign-card">
-                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: top; background-size: cover; background-repeat: no-repeat;">
+                <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= collab.talent.photos.attached? ? cl_image_path(collab.talent.photos.first.key, crop: :fill, width: 800) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: top; background-size: cover; background-repeat: no-repeat;">
 
                   <% if collab.talent.category == "green" %>
                     <i class="fa-solid fa-seedling m-3" style="position: absolute;right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px; z-index: 1000; color: black;"></i>
