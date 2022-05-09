@@ -44,6 +44,8 @@ section.talents {
       grid-gap: 6px;
       width: 100vw;
       padding: 30px 13vh 50px;
+      background-image: -moz-linear-gradient(bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
+      background-image: -webkit-gradient(linear, left top, left bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
       & .note {
         margin: 30px 10px;
         width: 24%;
