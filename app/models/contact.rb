@@ -7,6 +7,7 @@ class Contact < MailForm::Base
   attribute :entreprise
   attribute :message,    validate: true
   attribute :nickname,  captcha: true
+  # after_create :send_email
 
   def persisted?
     false
@@ -20,4 +21,11 @@ class Contact < MailForm::Base
       :from => "email@myallowedemailingdomain"
     }
   end
+  # private
+
+  # def send_email
+  #   ContactMailer.with(message: self).new.deliver_now
+  # end
+
+
 end
