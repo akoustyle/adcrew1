@@ -20,7 +20,7 @@ class ContactsController < ApplicationController
 
     else
       flash.now[:error] = 'Could not send message'
-      binding.pry
+      # binding.pry
       render :new
     end
   rescue ScriptError
