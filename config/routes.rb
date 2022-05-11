@@ -2,13 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
 
   scope '(:locale)', locale: /fr|en/ do
-    resources :talents, param: :slug, only: [:index, :show, :new, :create, :update, :edit]
-    resources :campaigns, param: :slug, only: [:index, :show, :new, :create, :update, :edit]
-    resources :contacts, only: [:create]
-
-    # get '/:locale' => 'talents#show'
-    # get '/:locale' => 'campaigns#index'
-    # get '/:locale' => 'campaigns#show'
     root to: 'pages#home'
     # resources :campaigns
     # resources :talents
@@ -19,7 +12,9 @@ Rails.application.routes.draw do
 
     delete '/talent/:slug', to: 'talents#destroy', as: 'destroy'
     delete '/campaign/:slug', to: 'campaigns#destroy', as: 'campaign_destroy'
-
+    resources :talents, param: :slug, only: [:index, :show, :new, :create, :update, :edit]
+    resources :campaigns, param: :slug, only: [:index, :show, :new, :create, :update, :edit]
+    resources :contacts, only: [:create]
     devise_scope :user do
       delete '/users/sign_out' => 'devise/sessions#destroy'
     end
