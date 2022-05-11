@@ -4,6 +4,7 @@
 class ContactsController < ApplicationController
 #   before_action :contact_params, only: [:create]
 #   skip_before_action :authenticate_user!
+invisible_captcha only: :create
 
 #   def new
 #     @contact = Contact.new
@@ -33,6 +34,7 @@ class ContactsController < ApplicationController
 #   end
 # end
 def create
+
   @contact = Contact.new(contact_params)
   if @contact.save
     flash[:notice] = "Message successfully sent. Thanks!"

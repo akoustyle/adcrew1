@@ -14,6 +14,7 @@
       <div class="column">
         <%= simple_form_for @contact do |f| %>
           <div class="pt-3">
+            <%= invisible_captcha %>
             <%= f.label t('contact.form.name') %><br>
             <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder') %>
             <%= f.label t('contact.form.entreprise') %>

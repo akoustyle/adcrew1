@@ -13,7 +13,7 @@ Rails.application.configure do
     # user_name:                      ENV['SENDGRID_USERNAME'],
     user_name:                       'maoukola.oneal@gmail.com',
     # password:                       ENV['SENDGRID_PASSWORD'],
-    password:                        ENV['GMAIL'],
+    password:                        'Tshileo06@',
     authentification:                'plain',
     enable_starttls_auto:             true }
   # In the development environment your application's code is reloaded any time
