@@ -29,6 +29,6 @@ class Contact < ApplicationRecord
   private
 
   def send_email
-    ContactMailer.with(message: self).new.deliver_now
+    ContactMailer.with(contact: self).new.deliver_now
   end
 end
