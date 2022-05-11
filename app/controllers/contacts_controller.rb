@@ -41,7 +41,6 @@ def create
     render 'pages/contact'
   end
 end
-
   private
 
   def contact_params
