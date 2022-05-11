@@ -14,7 +14,7 @@ class PagesController < ApplicationController
     @campaigns = Campaign.all
   end
 
-  def contact_page
+  def contact
     @contact = Contact.new
   end
 

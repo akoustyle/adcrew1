@@ -22,10 +22,10 @@
     </div>
 
     <ul class="side-links">
-      <li> <%= link_to t('sidebar.links.campaigns'), campaigns_path,"#{'active' if params[:action].include?('campaign')}" %></li>
-      <li> <%= link_to t('sidebar.links.talents'), talents_path, "#{'active' if params[:action].include?('talent')}" %></li>
-      <li> <%= link_to t('sidebar.links.crew'), team_path, "#{'active' if params[:action].include?('team')}" %></li>
-      <li> <%= link_to t('sidebar.links.contact'), contact_path, "#{'active' if params[:action].include?('contact')}" %></li>
+      <li> <%= link_to t('sidebar.links.campaigns'), campaigns_path %></li>
+      <li> <%= link_to t('sidebar.links.talents'), talents_path %></li>
+      <li> <%= link_to t('sidebar.links.crew'), team_path %></li>
+      <li> <%= link_to t('sidebar.links.contact'), contact_path %></li>
       <li><%= link_to 'fr', { :locale=>'fr' } %> <span style="color: white"> | </span> <%= link_to 'en', { :locale=>'en' } %></li>
       <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp; <a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
     </ul>
