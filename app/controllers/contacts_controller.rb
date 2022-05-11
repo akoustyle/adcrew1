@@ -33,14 +33,14 @@ class ContactsController < ApplicationController
 #   end
 # end
 def create
-    @contact = Contact.new(contact_params)
-    if @contact.save
-      flash[:notice] = "Message successfully sent. Thanks!"
-      redirect_to contact_path
-    else
-      render 'pages/contact'
-    end
+  @contact = Contact.new(contact_params)
+  if @contact.save
+    flash[:notice] = "Message successfully sent. Thanks!"
+    redirect_to contact_path
+  else
+    render 'pages/contact'
   end
+end
 
   private
 
