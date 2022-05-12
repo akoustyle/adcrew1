@@ -47,7 +47,7 @@
     }
   }
   &:hover .background {
-    // filter: blur(10px);
+    filter: blur(10px);
     transform: scale(1);
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);/* For Webkit browsers */
