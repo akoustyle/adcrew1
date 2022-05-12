@@ -46,7 +46,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'sprockets', '3.7.2' # avoid err working with font-awesome 4.5 - corrected in 5.12
-gem 'font-awesome-sass', '~> 4.4.0'
+gem 'font-awesome-sass'
 gem 'pundit'
 gem 'simple_form'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
