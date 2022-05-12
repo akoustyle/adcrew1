@@ -318,7 +318,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   faker!
-  font-awesome-sass (~> 4.4.0)
+  font-awesome-sass
   friendly_id (~> 5.1.0)
   invisible_captcha
   listen (~> 3.3)
