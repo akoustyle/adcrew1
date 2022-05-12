@@ -128,6 +128,7 @@ section.campaigns {
       padding: 30px 13vh 50px;
       background-image: -moz-linear-gradient(bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
       background-image: -webkit-gradient(linear, left top, left bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
       & .note {
         margin: 30px 10px;
         width: 24%;
