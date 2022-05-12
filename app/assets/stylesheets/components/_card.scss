@@ -44,6 +44,13 @@
   &:hover .card-info {
     // filter: blur(10px);
     backdrop-filter: blur(10px);
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: url(#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
   }
   &:hover .info{
     color: white;
@@ -80,7 +87,16 @@
     height: 100%;
     padding: 20px;
     backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -o-filter: blur(0px);
+      -ms-filter: blur(0px);
+      filter: url(#blur);
+      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
     backdrop-filter: grayscale(100%);
+    filter: grayscale(100%);
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -145,7 +161,9 @@
     height: 100%;
     padding: 20px;
     backdrop-filter: blur(0px);
+    filter: blur(0px);
     backdrop-filter: grayscale(100%);
+    filter: grayscale(100%);
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
