@@ -28,7 +28,7 @@ gem 'rails-i18n'
 # gem 'globalize'
 # gem 'globalize3'
 # gem 'activemodel-serializers-xml'
-gem 'mail_form', ">= 1.3.0"
+# gem 'mail_form', ">= 1.3.0"
 gem 'sendgrid-ruby'
 gem 'friendly_id', "~> 5.1.0"
 gem 'redis-rails'
