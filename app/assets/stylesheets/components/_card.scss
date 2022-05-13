@@ -142,7 +142,6 @@
   }
 
   &:hover .card-info {
-    // filter: blur(10px);
     backdrop-filter: blur(10px);
     filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -151,7 +150,6 @@
     -ms-backdrop-filter: blur(10px);
     backdrop-filter: url(#blur);
     backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
-    // color: white;
   }
 
   &:hover .info {
