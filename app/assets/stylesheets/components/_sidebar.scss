@@ -61,7 +61,7 @@
   right: 0;
   overflow-x: hidden;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   animation: 0.3s blur forwards;
 
   & .navbar .closebtn {
@@ -73,18 +73,18 @@
   from {
     backdrop-filter: blur(1px);
     // filter: blur(1px);
-    // -webkit-filter: blur(1px);
-    // -ms-filter: blur(1px);
-    // filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='1'%20/></filter></svg>#blur");
-    // filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
+    -webkit-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='1'%20/></filter></svg>#blur");
+    backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='1');
   }
   to {
     backdrop-filter: blur(15px);
     // filter: blur(15px);
-    // -webkit-filter: blur(15px);
-    // -ms-filter: blur(15px);
-    // filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='15'%20/></filter></svg>#blur");
-    // filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
+    -webkit-backdrop-filter: blur(15px);
+    -ms-backdrop-filter: blur(15px);
+    backdrop-filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='15'%20/></filter></svg>#blur");
+    backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='15');
   }
 }
 
