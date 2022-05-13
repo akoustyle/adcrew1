@@ -122,10 +122,10 @@ section.campaigns {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 6px;
-      width: 100vw;
+      // width: 100vw;
       padding: 30px 13vh 50px;
-      background-image: -moz-linear-gradient(bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
-      background-image: -webkit-gradient(linear, left top, left bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
+      // background-image: -moz-linear-gradient(bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
+      // background-image: -webkit-gradient(linear, left top, left bottom, from rgba(0, 0, 0, 0.2), to rgba(0, 0, 0, 0.2));
       // filter: grayscale(100%);
       // -webkit-filter: grayscale(100%);/* For Webkit browsers */
       // filter: gray;/* For IE 6 - 9 */
