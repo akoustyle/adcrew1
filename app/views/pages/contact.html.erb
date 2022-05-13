@@ -14,12 +14,12 @@
       <div class="column">
         <%= simple_form_for @contact do |f| %>
           <div class="pt-3">
+            <%#= invisible_captcha %>
             <%= f.label t('contact.form.name') %><br>
             <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder') %>
             <%= f.label t('contact.form.entreprise') %>
             <%= f.text_field  :entreprise, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder1') %>
             <%= f.label t('contact.form.email') %>
-            <%#= f.select :category, :option_for_select(["Green"], ["Fashion"], ["Lifestyle (urban - make up)"]]), { include_blank: "Select Category" }  %>
             <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder2') %>
             <%= f.label t('contact.form.category') %>
             <select name="category" id="category">
