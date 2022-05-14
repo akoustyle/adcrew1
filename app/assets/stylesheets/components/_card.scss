@@ -45,7 +45,7 @@
   }
 
   &:hover .background {
-    // filter: blur(10px);
+    filter: grayscale(0px);
     transform: scale(1);
   }
 
@@ -183,7 +183,7 @@
   }
 
   &:hover .background {
-    // filter: blur(10px);
+    filter: grayscale(0px);
     transform: scale(1);
     filter: grayscale(0%);
   }
