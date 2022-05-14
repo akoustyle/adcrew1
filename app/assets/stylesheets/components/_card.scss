@@ -164,8 +164,8 @@
     -moz-backdrop-filter: blur(10px);
     -o-backdrop-filter: blur(10px);
     -ms-backdrop-filter: blur(10px);
-    backdrop-filter: url(#blur);
-    backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+    // backdrop-filter: url(#blur);
+    // backdrop-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
     // color: white;
   }
 
@@ -204,12 +204,12 @@
     padding: 20px;
     backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
-      filter: blur(0px);
+      // filter: blur(0px);
       -webkit-filter: blur(0px);
       -moz-filter: blur(0px);
       -o-filter: blur(0px);
       -ms-filter: blur(0px);
-      filter: url(#blur);
+      // filter: url(#blur);
       // filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
     backdrop-filter: grayscale(100%);
     // filter: grayscale(100%);
