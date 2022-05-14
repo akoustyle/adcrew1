@@ -6,7 +6,7 @@
   & .background {
     height: 100%;
     transform: scale(1);
-    transition: all 1s ease-in-out;
+    transition: all 0.7s ease-in-out;
 
     // transition: filter 1s ease-in-out;
     & img {
@@ -45,14 +45,14 @@
   }
 
   &:hover .background {
-    // filter: blur(10px);
+    filter: grayscale(0px);
     transform: scale(1);
   }
 
   &:hover .card-info {
     // filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   &:hover .info {
@@ -182,14 +182,14 @@
   }
 
   &:hover .background {
-    // filter: blur(10px);
+    filter: grayscale(0px);
     transform: scale(1);
   }
 
   &:hover .card-info {
     // filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 
     & a {
       display: block;
