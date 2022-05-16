@@ -1126,20 +1126,21 @@ section.campaign {
         & .gif-talent {
           height: 220px;
           width: 50%;
-          // &#gif-one {
-          //   animation: 10.1s gifMakerFive infinite;
-          // }
-          // &#gif-two {
-          //   animation: 10.3s gifMakerSix infinite;
-          // }
-          // &#gif-three {
-          //   display: none;
-          //   animation: 10s gifMakerSeven infinite;
-          // }
-          // &#gif-four {
-          //   display: none;
-          //   animation: 10.2s gifMakerHeight infinite;
-          // }
+          & img {
+            width: 330px;
+          }
+          &#gif-one {
+            display: none;
+          }
+          &#gif-two {
+            display:none;
+          }
+          &#gif-three {
+            display:block;
+          }
+          &#gif-four {
+            display:none;
+          }
         }
 
         & .note {
@@ -1157,7 +1158,7 @@ section.campaign {
 
     &:nth-child(2) {
       flex-direction: column;
-      padding-top: 13vh;
+      padding-top: 45vh;
 
       & .text-content {
         padding: 10px 0;
@@ -1173,7 +1174,8 @@ section.campaign {
       }
 
       & .img-wrapper {
-        height: 460px;
+        // height: 460px;
+        padding: 30px;
         grid-template-columns: 1fr;
 
         & .campaign-card {
