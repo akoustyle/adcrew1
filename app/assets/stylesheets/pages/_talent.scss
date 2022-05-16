@@ -272,14 +272,14 @@ section.talent {
         }
       }
       & .img-wrapper {
-        overflow-y: scroll;
-        height: 500px;
+        // overflow-y: scroll;
+        // height: 500px;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 6px;
         width: 85vw;
         margin: 30px 0;
-        padding: 30px;
+        padding: 20px 5px;
         &.campaign-card {
           height: 500px !important;
         }
