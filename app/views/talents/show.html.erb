@@ -54,7 +54,7 @@
               <div class="talent-standing">
 
                 <% if @talent.photos.attached? %>
-                 <img src="<%= cl_image_path(@talent.photos.last.key, crop: :fill, width: 600, quality: :auto, fetch_format: :auto)  %>" alt="Talent Image" class="png-img" />
+                 <img src="<%= cl_image_path(@talent.photos.last.key, crop: :fill, width: 600, quality: :auto)  %>" alt="Talent Image" class="png-img" />
                   <%#= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img", id: "png-mousein" %>
                 <% else %>
                   <%= image_tag 'silhouette3.png', alt:"", class: "png-img" %>
