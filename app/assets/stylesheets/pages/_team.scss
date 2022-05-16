@@ -59,10 +59,10 @@ section.team {
           background-size: cover;
           background-position: center;
           &#maud {
-            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('maud.jpg');
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2))
           }
           &#jessica {
-            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('jessica.jpg');
+            background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2))
           }
       }
       & .side-text {
@@ -75,7 +75,7 @@ section.team {
         text-align: left;
         font-size: 18px;
         position: absolute;
-        right: 200px;
+        right: 170px;
         bottom: 70px;
         width: 200px;
         transform: rotate(-2deg);
@@ -232,15 +232,17 @@ section.team {
         & .gif-talent {
           filter: grayscale(100%);
           margin: 15px 0;
-          height: 200px;
-          width: 49%;
             background-size: cover;
             background-position: center;
             &#maud {
-              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(maud.jpg);
+              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/app/assets/images/jessica.jpg');
+              height: 400px;
+              width: 300px;
             }
             &#jessica {
-              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(jessica.jpg);
+              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/app/assets/images/maud.jpg');
+              height: 400px;
+              width: 300px;
             }
             & > div {
               justify-content: center !important;
