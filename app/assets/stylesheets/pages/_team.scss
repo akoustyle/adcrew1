@@ -215,7 +215,7 @@ section.team {
 
 //////////////// RESPONSIVE ////////////////////
 
-@media (max-width: 425px) {
+@media (max-width: 100px) and (max-width: 425px) {
 
   section.team {
     &:nth-child(1) {
@@ -229,7 +229,7 @@ section.team {
         // justify-content: space-between;
         width: 85vw;
         margin: 0;
-        & .gif-team {
+        & .gif-talent {
           filter: grayscale(100%);
           margin: 15px 0;
           height: 200px;

@@ -3,7 +3,7 @@
 
 class ContactsController < ApplicationController
 #   before_action :contact_params, only: [:create]
-#   skip_before_action :authenticate_user!
+  skip_before_action :authenticate_user!
 invisible_captcha only: :create
 
 #   def new
