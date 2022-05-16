@@ -798,6 +798,7 @@ section.home {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
+    left: -3vw;
     // right: 30px;
     // z-index: 10;
   }
@@ -824,8 +825,8 @@ section.home {
           filter: grayscale(0%);
           z-index: 10;
           & video {
-              min-height: 100%;
-              max-width: 100%;
+              height: 85vh;
+              width: 85vw;
             object-fit: cover;
           }
       }
@@ -968,7 +969,7 @@ section.home {
       justify-content: center;
       align-items: center;
       background-color: black;
-
+      min-height: 60vh;
       & img {
       	display: none;
       }
