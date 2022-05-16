@@ -18,8 +18,8 @@ class TalentsController < ApplicationController
   def show
     # @talent.scrape_youtube
     # authorize @talent
-    expires_in 3.minutes, :public => true
-    if stale?(@talent, public: true)
+    # expires_in 3.minutes, :public => true
+    # if stale?(@talent, public: true)
     # …
     end
   end
