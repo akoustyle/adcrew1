@@ -20,8 +20,8 @@ class TalentsController < ApplicationController
     # authorize @talent
     # expires_in 3.minutes, :public => true
     # if stale?(@talent, public: true)
-    # …
-    end
+    # # …
+    # end
   end
 
   def new
