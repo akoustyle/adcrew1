@@ -1137,12 +1137,13 @@ section.campaign {
           }
           &#gif-seven {
             display:block;
+            & img {
+                width: 330px;
+              }
           }
           &#gif-height {
             display:none;
-            & img {
-              width:330px;
-            }
+
           }
         }
 
