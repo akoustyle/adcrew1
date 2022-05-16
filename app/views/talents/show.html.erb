@@ -1,4 +1,4 @@
-<div class="scroll">
+<div class="scroll" onLoad="refresh()">
     <div class="smooth">
       <section class="talent" id="talent">
 
@@ -153,3 +153,11 @@
       </section>
     </div>
 </div>
+<script>
+  // onclick="javascript:window.location.reload(true)";
+  function refresh() {
+    setTimeout(function () {
+        window.location.reload()
+    }, 100);
+  }
+</script>

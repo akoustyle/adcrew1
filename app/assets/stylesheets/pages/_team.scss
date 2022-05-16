@@ -229,20 +229,16 @@ section.team {
         // justify-content: space-between;
         width: 85vw;
         margin: 0;
-        & .gif-talent {
+        & .gif-team {
           filter: grayscale(100%);
           margin: 15px 0;
             background-size: cover;
             background-position: center;
             &#maud {
-              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/app/assets/images/jessica.jpg');
-              height: 400px;
-              width: 300px;
+
             }
             &#jessica {
-              background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/app/assets/images/maud.jpg');
-              height: 400px;
-              width: 300px;
+
             }
             & > div {
               justify-content: center !important;
@@ -266,6 +262,7 @@ section.team {
 
     &:nth-child(2) {
       & .img-wrapper {
+        display:grid;
         grid-template-columns: 1fr;
         grid-gap: 6px;
         width: 85vw;
