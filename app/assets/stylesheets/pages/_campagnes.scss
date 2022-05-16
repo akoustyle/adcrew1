@@ -1129,20 +1129,21 @@ section.campaign {
           // & img {
           //   width: 330px;
           // }
-          &#gif-one {
+          &#gif-five {
             display: none;
           }
-          &#gif-two {
+          &#gif-six {
             display:none;
           }
-          &#gif-three {
+          &#gif-seven {
             display:block;
-          }
-          &#gif-four {
-            display:none;
             & img {
-              width:330px;
-            }
+                width: 330px;
+              }
+          }
+          &#gif-height {
+            display:none;
+
           }
         }
 
