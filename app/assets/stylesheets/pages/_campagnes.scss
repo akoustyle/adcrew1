@@ -1126,9 +1126,9 @@ section.campaign {
         & .gif-talent {
           height: 220px;
           width: 50%;
-          & img {
-            width: 330px;
-          }
+          // & img {
+          //   width: 330px;
+          // }
           &#gif-one {
             display: none;
           }
@@ -1140,6 +1140,9 @@ section.campaign {
           }
           &#gif-four {
             display:none;
+            & img {
+              width:330px;
+            }
           }
         }
 
@@ -1191,7 +1194,7 @@ section.campaign {
         }
       }
     }
-    &:nth-child(5) {
+    &:nth-child(3) {
       justify-content: center;
       align-items: center;
       background-color: black;
