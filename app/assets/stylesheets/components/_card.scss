@@ -45,7 +45,7 @@
   }
 
   &:hover .background {
-    filter: grayscale(0px);
+    filter: grayscale(0px) !important;
     transform: scale(1);
   }
 
