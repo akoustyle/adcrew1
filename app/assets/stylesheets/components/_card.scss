@@ -2,7 +2,7 @@
   height: 500px;
   display: block;
   overflow: hidden;
-
+  filter: grayscale(100%);
   & .background {
     height: 100%;
     transform: scale(1);
