@@ -2,12 +2,12 @@
   height: 500px;
   display: block;
   overflow: hidden;
-  filter: grayscale(100%);
+
   & .background {
     height: 100%;
     transform: scale(1);
     transition: all 0.7s ease-in-out;
-
+    filter: grayscale(100%);
     // transition: filter 1s ease-in-out;
     & img {
       position: absolute;
