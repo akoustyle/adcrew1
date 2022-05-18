@@ -14,7 +14,7 @@ class ContactMailer < ApplicationMailer
 
   def mail_with_sendgrid_api
     sg = SendGrid::API.new(api_key: Rails.application.credentials.sendgrid_api_key) # => uses API v3
-    from = SendGrid::Email.new(email: @message.email)
+    from = SendGrid::Email.new(email: @contact.email)
     to = SendGrid::Email.new(email: @email)
     message = SendGrid::Message.new(type: 'text/html', value: @contact.message)
     mail = SendGrid::Mail.new(from, @contact.name, to, message)
