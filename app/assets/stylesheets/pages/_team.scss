@@ -239,10 +239,10 @@ section.team {
             background-size: cover;
             background-position: center;
             &#maud {
-
+              width:330px;
             }
             &#jessica {
-
+              width:330px;
             }
             & > div {
               justify-content: center !important;
@@ -259,9 +259,6 @@ section.team {
           display: none;
         }
       }
-      // & .img-wrapper {
-      //   display: none;
-      // }
     }
 
     &:nth-child(2) {
