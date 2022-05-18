@@ -218,10 +218,16 @@ section.team {
 @media (max-width: 100px) and (max-width: 425px) {
 
   section.team {
+
     &:nth-child(1) {
-      .content .text-content p {
-        font-size: 12px;
-        width: 100%;
+
+      &.content {
+          &.text-content {
+              & p {
+            font-size: 12px;
+            width: 100%;
+          }
+        }
       }
       & .img-wrapper {
         display: block;
@@ -253,9 +259,9 @@ section.team {
           display: none;
         }
       }
-      & .img-wrapper {
-        display: none;
-      }
+      // & .img-wrapper {
+      //   display: none;
+      // }
     }
 
     &:nth-child(2) {
