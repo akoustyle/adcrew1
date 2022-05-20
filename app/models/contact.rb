@@ -26,9 +26,15 @@ class Contact < ApplicationRecord
   validates :email, :name, :message, presence: true
   after_create :send_email
 
+  def formatted_message
+    "New message from: #{email}<br>#{name}<br>"
+
+  end
+
   private
 
   def send_email
     ContactMailer.with(contact: self).new.deliver_now
   end
+
 end
