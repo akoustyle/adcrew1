@@ -46,6 +46,6 @@ end
   private
 
   def contact_params
-    params.require(:contact).permit(:email, :name, :message, :entreprise, :category)
+    params.require(:contact).permit(:email, :name, :message, :entreprise, category: [])
   end
 end
