@@ -27,8 +27,7 @@ class Contact < ApplicationRecord
   after_create :send_email
 
   def formatted_message
-    "New message from: #{email}<br>#{name}<br>"
-
+    "New message from: #{email} - #{name}<br> Entreprise: #{entreprise}<br> Category: #{category} <br> Message: #{message}. <br> reply to mailto:#{email}."
   end
 
   private
