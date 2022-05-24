@@ -21,16 +21,17 @@
             <%= f.text_field  :entreprise, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder1') %>
             <%= f.label t('contact.form.email') %>
             <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder2') %>
-            <%= f.label t('contact.form.category') %>
-            <select name="category" id="category">
+            <%= f.text_field :category, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder3') %>
+            <%#= f.label t('contact.form.category') %>
+            <%# <select name="category" id="category">
               <option value="" label=" "></option>
               <option value="1">Green</option>
               <option value="2" selected="selected">Fashion</option>
               <option value="3">Lifestyle (urban - make up)</option>
-            </select>
+            </select> %>
             <%= f.label t('contact.form.sujet') %><br>
             <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-              placeholder: t('contact.form.placeholder3')%><br>
+              placeholder: t('contact.form.placeholder4')%><br>
 
             <div class= "d-none">
               <%#= f.label :nickname %>
