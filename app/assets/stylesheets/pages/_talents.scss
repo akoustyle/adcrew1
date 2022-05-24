@@ -245,13 +245,13 @@ section.talent {
 //////////////// RESPONSIVE ipad ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 801px) and (max-width: 1124px) {
 
 
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 800px) {
   section.talents {
 
       &:nth-child(1) {
