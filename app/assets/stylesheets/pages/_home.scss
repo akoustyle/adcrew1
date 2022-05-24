@@ -85,7 +85,7 @@ section.home {
 	&:nth-child(3) {
 		flex-direction: column;
 		padding-top: 10vh;
-		margin-bottom: 60px;
+		//margin-bottom: 60px;
 
 		& .content {
 			display: flex;
@@ -223,10 +223,10 @@ section.home {
 			& .gif-talent {
 				filter: grayscale(100%);
 				margin: 30px 0;
-				height: 430px;
-				width: 24%;
-		  		background-size: cover;
-		  		background-position: center;
+				//height: 430px;
+				//width: 24%;
+		  		//background-size: cover;
+		  		//background-position: center;
 		  		// &#gif-one {
 		  		// 	animation: 10.1s gifMakerOne infinite;
 		  		// }
@@ -284,257 +284,257 @@ section.home {
     }
 }
 
-@keyframes gifMakerOne {
-  0% {
-    background-image: url('influ/adeline.jpg'); //
-  }
-  9% {
-    background-image: url('influ/adeline.jpg'); //
-  }
-  10% {
-    background-image: url('influ/laura.jpg'); //
-  }
-  19% {
-    background-image: url('influ/laura.jpg'); //
-  }
-  20% {
-    background-image: url('influ/twins.jpg'); //
-  }
-  29% {
-    background-image: url('influ/twins.jpg'); //
-  }
-  30% {
-    background-image: url('influ/cailloux2.jpg'); //
-  }
-  39% {
-    background-image: url('influ/cailloux2.jpg'); //
-  }
-  40% {
-    background-image: url('influ/vanel.jpg'); //
-  }
-  49% {
-    background-image: url('influ/vanel.jpg'); //
-  }
-  50% {
-    background-image: url('influ/aure.jpg'); //
-  }
-  59% {
-    background-image: url('influ/aure.jpg'); //
-  }
-  60% {
-    background-image: url('influ/aure2.png'); //
-  }
-  69% {
-    background-image: url('influ/aure2.png'); //
-  }
-  70% {
-    background-image: url('influ/twins2.jpg'); //
-  }
-  79% {
-    background-image: url('influ/twins2.jpg'); //
-  }
-  80% {
-    background-image: url('influ/cailloux2.jpg'); //
-  }
-  89% {
-    background-image: url('influ/cailloux2.jpg'); //
-  }
-  90% {
-    background-image: url('influ/vanel2.jpg'); //
-  }
-  100% {
-    background-image: url('influ/vanel2.jpg'); //
-  }
-}
+// @keyframes gifMakerOne {
+//   0% {
+//     background-image: url('influ/adeline.jpg'); //
+//   }
+//   9% {
+//     background-image: url('influ/adeline.jpg'); //
+//   }
+//   10% {
+//     background-image: url('influ/laura.jpg'); //
+//   }
+//   19% {
+//     background-image: url('influ/laura.jpg'); //
+//   }
+//   20% {
+//     background-image: url('influ/twins.jpg'); //
+//   }
+//   29% {
+//     background-image: url('influ/twins.jpg'); //
+//   }
+//   30% {
+//     background-image: url('influ/cailloux2.jpg'); //
+//   }
+//   39% {
+//     background-image: url('influ/cailloux2.jpg'); //
+//   }
+//   40% {
+//     background-image: url('influ/vanel.jpg'); //
+//   }
+//   49% {
+//     background-image: url('influ/vanel.jpg'); //
+//   }
+//   50% {
+//     background-image: url('influ/aure.jpg'); //
+//   }
+//   59% {
+//     background-image: url('influ/aure.jpg'); //
+//   }
+//   60% {
+//     background-image: url('influ/aure2.png'); //
+//   }
+//   69% {
+//     background-image: url('influ/aure2.png'); //
+//   }
+//   70% {
+//     background-image: url('influ/twins2.jpg'); //
+//   }
+//   79% {
+//     background-image: url('influ/twins2.jpg'); //
+//   }
+//   80% {
+//     background-image: url('influ/cailloux2.jpg'); //
+//   }
+//   89% {
+//     background-image: url('influ/cailloux2.jpg'); //
+//   }
+//   90% {
+//     background-image: url('influ/vanel2.jpg'); //
+//   }
+//   100% {
+//     background-image: url('influ/vanel2.jpg'); //
+//   }
+// }
 
-@keyframes gifMakerTwo {
-  0% {
-    background-image: url('influ/pauline.jpg'); //
-  }
-  9% {
-    background-image: url('influ/pauline.jpg'); //
-  }
-  10% {
-    background-image: url('influ/mathilde.jpg'); //
-  }
-  19% {
-    background-image: url('influ/mathilde.jpg'); //
-  }
-  20% {
-    background-image: url('https://res.cloudinary.com/akoustyle/image/upload/v1651101116/PHOTOS%20INFLUS/amandine_igovtx.jpg'); //
-  }
-  29% {
-    background-image: url('https://res.cloudinary.com/akoustyle/image/upload/v1651101116/PHOTOS%20INFLUS/amandine_igovtx.jpg'); //
-  }
-  30% {
-    background-image: url('influ/samantha.png'); //
-  }
-  39% {
-    background-image: url('influ/samantha.png'); //
-  }
-  40% {
-    background-image: url('influ/safya.jpg'); //
-  }
-  49% {
-    background-image: url('influ/safya.jpg'); //
-  }
-  50% {
-    background-image: url('influ/oceane.jpg'); //
-  }
-  59% {
-    background-image: url('influ/oceane.jpg'); //
-  }
-  60% {
-    background-image: url('influ/noa.jpg'); //
-  }
-  69% {
-    background-image: url('influ/noa.jpg'); //
-  }
-  70% {
-    background-image: url('influ/pauline2.jpg'); //
-  }
-  79% {
-    background-image: url('influ/pauline2.jpg'); //
-  }
-  80% {
-    background-image: url('influ/lucas.jpg'); //
-  }
-  89% {
-    background-image: url('influ/lucas.jpg'); //
-  }
-  90% {
-    background-image: url('influ/oceane.jpg'); //
-  }
-  100% {
-    background-image: url('influ/oceane.jpg'); //
-  }
-}
+// @keyframes gifMakerTwo {
+//   0% {
+//     background-image: url('influ/pauline.jpg'); //
+//   }
+//   9% {
+//     background-image: url('influ/pauline.jpg'); //
+//   }
+//   10% {
+//     background-image: url('influ/mathilde.jpg'); //
+//   }
+//   19% {
+//     background-image: url('influ/mathilde.jpg'); //
+//   }
+//   20% {
+//     background-image: url('https://res.cloudinary.com/akoustyle/image/upload/v1651101116/PHOTOS%20INFLUS/amandine_igovtx.jpg'); //
+//   }
+//   29% {
+//     background-image: url('https://res.cloudinary.com/akoustyle/image/upload/v1651101116/PHOTOS%20INFLUS/amandine_igovtx.jpg'); //
+//   }
+//   30% {
+//     background-image: url('influ/samantha.png'); //
+//   }
+//   39% {
+//     background-image: url('influ/samantha.png'); //
+//   }
+//   40% {
+//     background-image: url('influ/safya.jpg'); //
+//   }
+//   49% {
+//     background-image: url('influ/safya.jpg'); //
+//   }
+//   50% {
+//     background-image: url('influ/oceane.jpg'); //
+//   }
+//   59% {
+//     background-image: url('influ/oceane.jpg'); //
+//   }
+//   60% {
+//     background-image: url('influ/noa.jpg'); //
+//   }
+//   69% {
+//     background-image: url('influ/noa.jpg'); //
+//   }
+//   70% {
+//     background-image: url('influ/pauline2.jpg'); //
+//   }
+//   79% {
+//     background-image: url('influ/pauline2.jpg'); //
+//   }
+//   80% {
+//     background-image: url('influ/lucas.jpg'); //
+//   }
+//   89% {
+//     background-image: url('influ/lucas.jpg'); //
+//   }
+//   90% {
+//     background-image: url('influ/oceane.jpg'); //
+//   }
+//   100% {
+//     background-image: url('influ/oceane.jpg'); //
+//   }
+// }
 
-@keyframes gifMakerThree {
-  0% {
-    background-image: url('influ/jordalena.jpg'); //
-  }
-  9% {
-    background-image: url('influ/jordalena.jpg'); //
-  }
-  10% {
-    background-image: url('influ/lucas.jpg'); //
-  }
-  19% {
-    background-image: url('influ/lucas.jpg'); //
-  }
-  20% {
-    background-image: url('influ/jullie.jpg'); //
-  }
-  29% {
-    background-image: url('influ/jullie.jpg'); //
-  }
-  30% {
-    background-image: url('influ/tess.jpg'); //
-  }
-  39% {
-    background-image: url('influ/tess.jpg'); //
-  }
-  40% {
-    background-image: url('influ/florette.jpg'); //
-  }
-  49% {
-    background-image: url('influ/florette.jpg'); //
-  }
-  50% {
-    background-image: url('influ/maoui.jpg'); //
-  }
-  59% {
-    background-image: url('influ/maoui.jpg'); //
-  }
-  60% {
-    background-image: url('influ/margot.jpg'); //
-  }
-  69% {
-    background-image: url('influ/margot.jpg'); //
-  }
-  70% {
-    background-image: url('influ/jullie2.jpg'); //
-  }
-  79% {
-    background-image: url('influ/jullie2.jpg'); //
-  }
-  80% {
-    background-image: url('influ/maoui2.jpg'); //
-  }
-  89% {
-    background-image: url('influ/maoui2.jpg'); //
-  }
-  90% {
-    background-image: url('influ/safya.jpg'); //
-  }
-  100% {
-    background-image: url('influ/safya.jpg'); //
-  }
-}
+// @keyframes gifMakerThree {
+//   0% {
+//     background-image: url('influ/jordalena.jpg'); //
+//   }
+//   9% {
+//     background-image: url('influ/jordalena.jpg'); //
+//   }
+//   10% {
+//     background-image: url('influ/lucas.jpg'); //
+//   }
+//   19% {
+//     background-image: url('influ/lucas.jpg'); //
+//   }
+//   20% {
+//     background-image: url('influ/jullie.jpg'); //
+//   }
+//   29% {
+//     background-image: url('influ/jullie.jpg'); //
+//   }
+//   30% {
+//     background-image: url('influ/tess.jpg'); //
+//   }
+//   39% {
+//     background-image: url('influ/tess.jpg'); //
+//   }
+//   40% {
+//     background-image: url('influ/florette.jpg'); //
+//   }
+//   49% {
+//     background-image: url('influ/florette.jpg'); //
+//   }
+//   50% {
+//     background-image: url('influ/maoui.jpg'); //
+//   }
+//   59% {
+//     background-image: url('influ/maoui.jpg'); //
+//   }
+//   60% {
+//     background-image: url('influ/margot.jpg'); //
+//   }
+//   69% {
+//     background-image: url('influ/margot.jpg'); //
+//   }
+//   70% {
+//     background-image: url('influ/jullie2.jpg'); //
+//   }
+//   79% {
+//     background-image: url('influ/jullie2.jpg'); //
+//   }
+//   80% {
+//     background-image: url('influ/maoui2.jpg'); //
+//   }
+//   89% {
+//     background-image: url('influ/maoui2.jpg'); //
+//   }
+//   90% {
+//     background-image: url('influ/safya.jpg'); //
+//   }
+//   100% {
+//     background-image: url('influ/safya.jpg'); //
+//   }
+// }
 
-@keyframes gifMakerFour {
-  0% {
-    background-image: url('influ/fany.jpg'); //
-  }
-  9% {
-    background-image: url('influ/fany.jpg'); //
-  }
-  10% {
-    background-image: url('influ/kenza.jpg'); //
-  }
-  19% {
-    background-image: url('influ/kenza.jpg'); //
-  }
-  20% {
-    background-image: url('influ/marion.jpg'); //
-  }
-  29% {
-    background-image: url('influ/marion.jpg'); //
-  }
-  30% {
-    background-image: url('influ/clara.jpg'); //
-  }
-  39% {
-    background-image: url('influ/clara.jpg'); //
-  }
-  40% {
-    background-image: url('influ/rubi.jpg'); //
-  }
-  49% {
-    background-image: url('influ/rubi.jpg'); //
-  }
-  50% {
-    background-image: url('influ/berenyce.jpg'); //
-  }
-  59% {
-    background-image: url('influ/berenyce.jpg'); //
-  }
-  60% {
-    background-image: url('influ/margot.jpg'); //
-  }
-  69% {
-    background-image: url('influ/margot.jpg'); //
-  }
-  70% {
-    background-image: url('influ/twins3.jpg'); //
-  }
-  79% {
-    background-image: url('influ/twins3.jpg'); //
-  }
-  80% {
-    background-image: url('influ/pauline2.png'); //
-  }
-  89% {
-    background-image: url('influ/pauline2.png'); //
-  }
-  90% {
-    background-image: url('influ/oceane3.png'); //
-  }
-  100% {
-    background-image: url('influ/oceane3.png'); //
-  }
-}
+// @keyframes gifMakerFour {
+//   0% {
+//     background-image: url('influ/fany.jpg'); //
+//   }
+//   9% {
+//     background-image: url('influ/fany.jpg'); //
+//   }
+//   10% {
+//     background-image: url('influ/kenza.jpg'); //
+//   }
+//   19% {
+//     background-image: url('influ/kenza.jpg'); //
+//   }
+//   20% {
+//     background-image: url('influ/marion.jpg'); //
+//   }
+//   29% {
+//     background-image: url('influ/marion.jpg'); //
+//   }
+//   30% {
+//     background-image: url('influ/clara.jpg'); //
+//   }
+//   39% {
+//     background-image: url('influ/clara.jpg'); //
+//   }
+//   40% {
+//     background-image: url('influ/rubi.jpg'); //
+//   }
+//   49% {
+//     background-image: url('influ/rubi.jpg'); //
+//   }
+//   50% {
+//     background-image: url('influ/berenyce.jpg'); //
+//   }
+//   59% {
+//     background-image: url('influ/berenyce.jpg'); //
+//   }
+//   60% {
+//     background-image: url('influ/margot.jpg'); //
+//   }
+//   69% {
+//     background-image: url('influ/margot.jpg'); //
+//   }
+//   70% {
+//     background-image: url('influ/twins3.jpg'); //
+//   }
+//   79% {
+//     background-image: url('influ/twins3.jpg'); //
+//   }
+//   80% {
+//     background-image: url('influ/pauline2.png'); //
+//   }
+//   89% {
+//     background-image: url('influ/pauline2.png'); //
+//   }
+//   90% {
+//     background-image: url('influ/oceane3.png'); //
+//   }
+//   100% {
+//     background-image: url('influ/oceane3.png'); //
+//   }
+// }
 
 //////////// BANNER VIDEO ////////////
 
@@ -737,6 +737,7 @@ section.home {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width:426px) and (max-width: 767px) {
   .banner-icons {
+    display: none;
     // position: absolute;
     bottom: 30px;
     // right: 30px;
@@ -795,10 +796,11 @@ section.home {
 
 /*Smallest device*/
 @media (min-width: 100px) and (max-width: 425px) {
-  .banner-icons {
+  .banner-icons a {
+        display: none;
     // position: absolute;
-    bottom: 30px;
-    left: -3vw;
+    // bottom: 30px;
+    // left: -3vw;
     // right: 30px;
     // z-index: 10;
   }
@@ -818,14 +820,14 @@ section.home {
 
       & .background {
           display: flex;
-          align-items: center;
+          align-items: end;
           justify-content: center;
-          max-width: 100vw;
-          min-height: 100vh;
-          filter: grayscale(0%);
+          // max-width: 100vw;
+          // min-height: 100vh;
+          // filter: grayscale(0%);
           z-index: 10;
           & video {
-              height: 85vh;
+              height: 80vh;
               width: 85vw;
             object-fit: cover;
           }
@@ -846,16 +848,16 @@ section.home {
       & img {
         // margin: 30px 0 30px 0;
         height: 100%;
-        width: 100vw;
-        padding: 40px;
+        width: 85vw;
+        padding: 0px;
       object-fit: cover;
-      filter: grayscale(100%);
+      //filter: grayscale(100%);
       }
     }
 
     &:nth-child(3) {
       flex-direction: column;
-      margin-top: 60vh;
+      margin-top: 40vh;
       // margin-bottom: 60px;
 
       & .content {
@@ -929,6 +931,12 @@ section.home {
       flex-direction: column;
       // padding-top: 13vh;
 
+      img {
+        width: 100%; 
+        height: 380px;
+        object-fit: cover;
+      }
+
       & .content {
         & .text-content {
             & p {
@@ -938,8 +946,8 @@ section.home {
       }
       & .img-wrapper {
         & .gif-talent {
-          height: 260px;
-          // width: 50%;
+          //height: 260px;
+          width: 100%;
             &#gif-one {
               display: none;
             }
@@ -950,7 +958,12 @@ section.home {
               display:none;
             }
             &#gif-four {
-              display:block;
+
+              width: 100%;
+              // display:block;
+              // width: 85vw;
+              // height: 200px;
+              // object-fit: cover;
             }
         }
         & .note {
@@ -974,6 +987,10 @@ section.home {
       	display: none;
       }
 
+      & .social-icons{
+        display: none;
+      }
+
       & .content {
         display: flex;
         /* width: 50vw; */
@@ -985,9 +1002,6 @@ section.home {
             width: 35vw;
             position: relative;
             //text-align: center;
-            & .social-icons{
-              flex-direction: unset;
-            }
             & a {
               font-size: 14px;
               color: $red;
