@@ -178,14 +178,14 @@ section.talent {
     }
 
     & img {
-      height: 100%;
+      min-height: 350px;
       width: 50vw;
       object-fit: cover;
       object-position: top center;
       filter: grayscale(100%);
 
       &.png-img {
-        width: 400px;
+        width: 350px;
         object-fit: cover;
       }
     }
@@ -389,7 +389,7 @@ section.talent {
             margin-top: 30px;
           }
         }
-        
+
         .talent-standing {
           position: relative;
           & #png-mouseout {
