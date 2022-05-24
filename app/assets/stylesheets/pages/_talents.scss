@@ -178,14 +178,14 @@ section.talent {
     }
 
     & img {
-      min-height: 350px;
+      min-height: 450px;
       width: 50vw;
       object-fit: cover;
       object-position: top center;
       filter: grayscale(100%);
 
       &.png-img {
-        width: 350px;
+        max-width: 350px;
         object-fit: cover;
       }
     }
