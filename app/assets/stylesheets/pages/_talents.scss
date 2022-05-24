@@ -258,7 +258,8 @@ section.talent {
 
         & .img-wrapper {
           grid-template-columns: 1fr 1fr;
-          padding: 30px;
+          grid-gap: 10px;
+          padding: 30px 5vh 50px
         }
 
         & .content {
@@ -275,7 +276,7 @@ section.talent {
         justify-content: center;
         align-items: center;
         background-color: black;
-        min-height: 65vh;
+        min-height: 25vh;
 
         & img {
           display: none;
@@ -288,7 +289,7 @@ section.talent {
         & .content {
           display: flex;
           /* width: 50vw; */
-          // height: 60vh;
+          height: 20vh;
           justify-content: space-around;
           /* align-items: center; */
           flex-direction: column;
@@ -430,7 +431,7 @@ section.talent {
         justify-content: center;
         align-items: center;
         background-color: black;
-        min-height: 65vh;
+        min-height: 25vh;
 
         & img {
           display: none;
