@@ -328,8 +328,8 @@ section.talent {
     }
 
     section.talent {
-      // flex-direction: column-reverse;
-      // height: 200vh;
+      flex-direction: column-reverse;
+      height: 200vh;
 
       &:nth-child(1) {
         justify-content: right;
@@ -338,6 +338,7 @@ section.talent {
         & .content {
           width: 100vw;
           align-items: end;
+          padding: 85px;
 
           & .text-content {
             width: 85vw;
@@ -387,6 +388,7 @@ section.talent {
         & video {
           height: 100vh;
           width: 100vw;
+          padding:80px
         }
 
         & img {
