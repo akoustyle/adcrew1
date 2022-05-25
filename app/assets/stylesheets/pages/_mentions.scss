@@ -1,7 +1,7 @@
 section.mentions {
 
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   // margin-bottom: 20vh;
 
   // scroll-snap-align: center;
@@ -22,9 +22,9 @@ section.mentions {
     // align-items: center;
       & .text-content {
         border-bottom: 1px black solid;
-          width: 85vw;
+          max-width: 85vw;
           & p {
-            width: 70vw;
+            max-width: 70vw;
           }
         //text-align: center;
         & a {
@@ -47,7 +47,7 @@ section.mentions {
       justify-content: center;
       & .text-content {
         // border-bottom: 1px black solid;
-          width: 85vw;
+          max-width: 85vw;
           & p {
             width: 35vw;
           }
@@ -62,7 +62,7 @@ section.mentions {
     }
   }
   &:nth-child(3) {
-    height: 40vh;
+    min-height: 40vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ section.mentions {
     & .content {
       display: flex;
       color: white;
-      width: 85vw;
+      max-width: 85vw;
       height: 40vh;
       justify-content: space-between;
       align-items: baseline;
