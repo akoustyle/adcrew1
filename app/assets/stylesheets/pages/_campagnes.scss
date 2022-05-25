@@ -569,7 +569,7 @@ section.campaign {
 
 // }
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 721px) and (max-width: 1224px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
   section.campaigns {
 
@@ -901,7 +901,7 @@ section.campaign {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (orientation: landscape) and (min-width: 406px) and (max-width: 720px) {
+@media (orientation: landscape) and (min-width: 426px) and (max-width: 767px) {
 
   section.campaigns {
 
@@ -1234,7 +1234,7 @@ section.campaign {
 }
 
 /*Smallest device*/
-@media (min-width: 100px) and (max-width: 405px) {
+@media (min-width: 100px) and (max-width: 425px) {
 
   section.campaigns {
 
