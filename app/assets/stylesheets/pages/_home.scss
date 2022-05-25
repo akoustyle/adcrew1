@@ -638,7 +638,7 @@ section.home {
 //////////////// RESPONSIVE ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:721px) and (max-width: 1224px) {
+@media (min-width:768px) and (max-width: 1024px) {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
@@ -735,7 +735,7 @@ section.home {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (orientation: landscape) and (min-width:406px) and (max-width: 720px) {
+@media (orientation: landscape) and (min-width:426px) and (max-width: 767px) {
   .banner-icons {
     display: none;
     // position: absolute;
@@ -846,7 +846,7 @@ section.home {
 }
 
 /*Smallest device*/
-@media (min-width: 100px) and (max-width: 405px) {
+@media (min-width: 100px) and (max-width: 425px) {
   .banner-icons a {
     // display: none;
     // position: absolute;
