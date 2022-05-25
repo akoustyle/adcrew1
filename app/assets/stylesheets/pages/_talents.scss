@@ -574,18 +574,18 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      height: 200vh;
+      min-height: 200vh;
 
       &:nth-child(1) {
         justify-content: right;
         align-items: center;
 
         & .content {
-          width: 100vw;
+          max-width: 100vw;
           align-items: end;
 
           & .text-content {
-            width: 85vw;
+            max-width: 85vw;
 
             // & .social-links>a {
             //   &:nth-child(1) {
