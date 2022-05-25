@@ -587,27 +587,27 @@ section.talent {
           & .text-content {
             width: 85vw;
 
-            & .social-links>a {
-              &:nth-child(1) {
-                top: 0 !important;
-                left: 10px !important;
-              }
+            // & .social-links>a {
+            //   &:nth-child(1) {
+            //     top: 0 !important;
+            //     left: 10px !important;
+            //   }
 
-              &:nth-child(2) {
-                top: 30px !important;
-                left: 10px !important;
-              }
+            //   &:nth-child(2) {
+            //     top: 30px !important;
+            //     left: 10px !important;
+            //   }
 
-              &:nth-child(3) {
-                top: 60px !important;
-                left: 10px !important;
-              }
+            //   &:nth-child(3) {
+            //     top: 60px !important;
+            //     left: 10px !important;
+            //   }
 
-              &:nth-child(4) {
-                top: 450px !important;
-                left: 10px !important;
-              }
-            }
+            //   &:nth-child(4) {
+            //     top: 450px !important;
+            //     left: 10px !important;
+            //   }
+            // }
 
             & .social-links>a i {
               color: $red;
