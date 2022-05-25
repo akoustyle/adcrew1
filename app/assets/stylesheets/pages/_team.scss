@@ -215,8 +215,10 @@ section.team {
 
 //////////////// RESPONSIVE ////////////////////
 
+/*Medium devices (tablets, 768px and up)*/
+
 /*Small devices (landscape phones, 576px and up)*/
-@media (orientation: landscape) and (min-width: 426px) and (max-width: 767px) {
+@media (orientation: landscape) and (min-width: 466px) and (max-width: 720px) {
     section.team {
 
         &:nth-child(1) {
@@ -235,8 +237,8 @@ section.team {
 
           & .img-wrapper {
             display: block;
-            width: 85vw;
-            margin: 0;
+            // width: 85vw;
+            // margin: 0;
 
             & .gif-team {
               filter: grayscale(100%);
@@ -274,7 +276,7 @@ section.team {
             grid-template-columns: 1fr 1fr;
             grid-gap: 6px;
             width: 85vw;
-            margin: 30px 0;
+            margin: 30px auto;
 
             & .note {
               margin: 0px 0px;
@@ -376,7 +378,7 @@ section.team {
       }
 }
 /*Smallest device*/
-@media (min-width: 100px) and (max-width: 425px) {
+@media (min-width: 100px) and (max-width: 465px) {
 
   section.team {
 

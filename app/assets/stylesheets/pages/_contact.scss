@@ -143,8 +143,14 @@ section.contact {
 }
 
 
+
 //////////////// RESPONSIVE ////////////////////
 
+/*Medium devices (tablets, 768px and up)*/
+
+/*Small devices (landscape phones, 576px and up)*/
+
+/*Smallest device*/
 @media (max-width: 425px) {
 	section.contact {
 		&:nth-child(3) {
