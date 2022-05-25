@@ -638,7 +638,7 @@ section.home {
 //////////////// RESPONSIVE ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:801px) and (max-width: 1124px) {
+@media (min-width:768px) and (max-width: 1024px) {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
@@ -735,7 +735,7 @@ section.home {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width:426px) and (max-width: 800px) {
+@media (min-width:426px) and (max-width: 767px) {
   .banner-icons {
     display: none;
     // position: absolute;
@@ -881,7 +881,7 @@ section.home {
           & video {
               height: 80vh;
               width: 85vw;
-              padding: 13vh 30px 30px 30px;
+              padding: 10vh 30px 20px 30px;
             object-fit: cover;
           }
       }
