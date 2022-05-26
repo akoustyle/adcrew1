@@ -901,7 +901,7 @@ section.campaign {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (orientation: landscape) and (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
 
   section.campaigns {
 
