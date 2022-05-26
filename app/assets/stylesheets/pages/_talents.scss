@@ -492,7 +492,7 @@ section.talent {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (orientation: landscape) and (min-width: 490px) and (max-width: 797px) {
+@media (min-width: 490px) and (max-width: 797px) {
   section.talents {
 
       &:nth-child(1) {
@@ -583,7 +583,7 @@ section.talent {
         align-items: center;
 
         & .content {
-          max-width: 100vw;
+          width: 100vw;
           align-items: end;
 
           & .text-content {
