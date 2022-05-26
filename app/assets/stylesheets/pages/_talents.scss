@@ -183,6 +183,7 @@ section.talent {
       object-fit: cover;
       object-position: top center;
       filter: grayscale(100%);
+      padding: 80px 0 80px 80px;
 
       &.png-img {
         max-width: 350px;
@@ -251,9 +252,10 @@ section.talent {
       &:nth-child(1) {
 
         & .img-wrapper {
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
           grid-gap: 10px;
-          padding: 30px 5vh 50px
+          padding: 30px 10vh 50px;
+          width:115px;
         }
 
         & .content {
@@ -271,7 +273,7 @@ section.talent {
         align-items: center;
         background-color: black;
         min-height: 45vh;
-
+        display:none;
         & img {
           display: none;
         }
@@ -821,6 +823,9 @@ section.talent {
           align-items: end;
           & .text-content {
             width: 85vw;
+            & h2 {
+                font-size: 20px;
+              }
             & .social-links > a {
               &:nth-child(1) {
                 top: 0 !important;
@@ -835,7 +840,7 @@ section.talent {
                 left: 10px !important;
               }
               &:nth-child(4) {
-                top: 450px !important;
+                top: 380px !important;
                 left: 10px !important;
               }
             }

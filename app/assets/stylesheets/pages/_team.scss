@@ -218,7 +218,7 @@ section.team {
 /*Medium devices (tablets, 768px and up)*/
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (orientation: landscape) and (min-width: 466px) and (max-width: 720px) {
+@media (orientation: landscape) and (min-width: 466px) and (max-width: 767px) {
     section.team {
 
         &:nth-child(1) {
