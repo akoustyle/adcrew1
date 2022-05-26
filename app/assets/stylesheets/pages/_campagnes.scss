@@ -54,7 +54,7 @@ section.campaigns {
       justify-content: space-between;
       width: 85vw;
       & .gif-talent {
-        // filter: grayscale(100%);
+        filter: grayscale(100%);
         margin: 30px 0;
         height: 430px;
         width: 24%;
@@ -938,6 +938,9 @@ section.campaign {
       }
 
       & .img-wrapper {
+        display:grid;
+        grid-gap:10px;
+        grid-template-columns: 1fr 1fr;
         & .gif-talent {
           //height: 220px;
           width: 100%;
@@ -948,14 +951,14 @@ section.campaign {
           &#gif-five {
             display: block;
             & img {
-              width: 100%;
+              max-width: 210px;
             }
           }
 
           &#gif-six {
             display: block;
             & img {
-              width: 100%;
+              max-width: 210px;
             }
           }
 
