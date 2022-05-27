@@ -388,17 +388,17 @@ section.talent {
         }
 
         & video {
-          height: 60%;
+          height: 50%;
           width:80%;
           padding:80px
         }
 
         & img {
-          height: 60%;
+          height: 50%;
           width: 80%;
           padding: 30px;
           &.png-img {
-            width: 370px;
+            width: 400px;
             margin-top: 30px;
           }
         }
@@ -432,7 +432,7 @@ section.talent {
         justify-content: center;
         align-items: center;
         background-color: black;
-        min-height: 45vh;
+        min-height: 60vh;
 
         & img {
           display: none;
@@ -445,7 +445,7 @@ section.talent {
         & .content {
           display: flex;
           /* width: 50vw; */
-          height: 50vh;
+          height: 36vh;
           justify-content: space-around;
           /* align-items: center; */
           flex-direction: column;
@@ -456,8 +456,8 @@ section.talent {
 
             //text-align: center;
             & .social-icons {
-              display: none;
-              flex-direction: unset;
+              // display: none;
+              // flex-direction: unset;
             }
 
             & a {
