@@ -598,17 +598,17 @@ section.talent {
 
               &:nth-child(2) {
                 // top: 30px !important;
-                right: -187px !important;
+                right: -170px !important;
               }
 
               &:nth-child(3) {
-                top: 265px !important;
-                left: 318px !important;
+                // top: 265px !important;
+                left: 337px !important;
               }
 
               &:nth-child(4) {
-                top: 450px !important;
-                left: 10px !important;
+                // top: 450px !important;
+                // left: 10px !important;
               }
             }
 
@@ -633,18 +633,18 @@ section.talent {
         }
 
         & video {
-          height: 50%;
+          height: 40%;
           width: 80%;
           padding: 30px;
         }
 
         & img {
-          height: 50%;
+          height: 40%;
           width: 80%;
           padding: 30px;
           &.png-img {
-            width: 370px;
-            // margin-top: 30px;
+            width: 400px;
+            margin-top: 30px;
           }
         }
 
