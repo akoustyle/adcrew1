@@ -791,8 +791,8 @@ section.campaign {
           }
 
           &:nth-child(3) {
-            right: -65px;
-            top: -50px;
+            right: -45px;
+            top: -32px;
             width: 307px;
             height: 530px;
             transform: rotate(2deg);
@@ -848,7 +848,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      min-height: 45vh;
 
       // & img {
       //   display: none;
