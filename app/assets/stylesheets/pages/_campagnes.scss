@@ -784,15 +784,15 @@ section.campaign {
 
           &:nth-child(2) {
             // display: none;
-            right: 440px;
+            right: 340px;
             // top: 25px;
             width: 300px;
             height: 402px;
           }
 
           &:nth-child(3) {
-            right: 25px;
-            top: -85px;
+            right: -85px;
+            top: -105px;
             width: 307px;
             height: 530px;
             transform: rotate(2deg);
@@ -839,7 +839,7 @@ section.campaign {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
 
         & .show-campaign-card {
-          height: 470px !important;
+          height: 270px !important;
         }
       }
     }
