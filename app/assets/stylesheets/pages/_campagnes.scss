@@ -606,6 +606,8 @@ section.campaign {
       }
 
       & .img-wrapper {
+        display:grid;
+        grid-template-columns: 200px 200px 200px;
         & .gif-talent {
           //height: 220px;
           width: 100%;
@@ -616,21 +618,21 @@ section.campaign {
           &#gif-five {
             display: block;
             & img {
-                width: 100%;
+                width: 200px;
               }
           }
 
           &#gif-six {
             display: block;
             & img {
-              width: 100%;
+              width: 200px;
             }
           }
 
           &#gif-seven {
             display: block;
             & img {
-                width: 100%;
+                width: 200px;
               }
           }
 
@@ -680,8 +682,8 @@ section.campaign {
 
       & .img-wrapper {
         // height: 460px;
-        padding: 30px;
-        grid-template-columns: 1fr 1fr 1fr;
+        padding: 54px;
+        grid-template-columns: 1fr 1fr;
 
         & .campaign-card {
           height: 460px !important;
@@ -938,9 +940,9 @@ section.campaign {
       }
 
       & .img-wrapper {
-        display:grid;
-        grid-gap:10px;
-        grid-template-columns: 1fr 1fr;
+        // display:grid;
+        // grid-gap:10px;
+        // grid-template-columns: 1fr 1fr;
         & .gif-talent {
           //height: 220px;
           width: 100%;
@@ -951,14 +953,14 @@ section.campaign {
           &#gif-five {
             display: block;
             & img {
-              max-width: 210px;
+              max-width: 280px;
             }
           }
 
           &#gif-six {
             display: block;
             & img {
-              max-width: 210px;
+              max-width: 280px;
             }
           }
 
@@ -1015,7 +1017,7 @@ section.campaign {
 
       & .img-wrapper {
         // height: 460px;
-        padding: 30px;
+        padding: 54px;
         grid-template-columns: 1fr 1fr;
 
         & .campaign-card {
