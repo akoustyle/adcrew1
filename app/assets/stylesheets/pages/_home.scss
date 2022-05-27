@@ -851,6 +851,9 @@ section.home {
         }
 
         & .img-wrapper {
+          display:grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap:10px;
           & .gif-talent {
             //height: 260px;
             width: 100%;
