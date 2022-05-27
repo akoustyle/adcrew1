@@ -246,7 +246,7 @@ section.talent {
 //////////////// RESPONSIVE ipad ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 798px) and (max-width: 1124px) {
+@media (min-width: 798px) and (max-width: 1024px) {
   section.talents {
 
       &:nth-child(1) {
@@ -345,27 +345,27 @@ section.talent {
           & .text-content {
             width: 85vw;
 
-            // & .social-links>a {
-            //   &:nth-child(1) {
-            //     // top: 0 !important;
-            //     // left: 10px !important;
-            //   }
+            & .social-links>a {
+              &:nth-child(1) {
+                top: 40px !important;
+                left: 288px !important;
+              }
 
-            //   &:nth-child(2) {
-            //     // top: 30px !important;
-            //     // left: 10px !important;
-            //   }
+              &:nth-child(2) {
+                top: 117px !important;
+                right: -186px !important;
+              }
 
-            //   &:nth-child(3) {
-            //     // top: 60px !important;
-            //     // left: 10px !important;
-            //   }
+              &:nth-child(3) {
+                top: 253px !important;
+                left: 418px !important;
+              }
 
-            //   &:nth-child(4) {
-            //     // top: 450px !important;
-            //     // left: 10px !important;
-            //   }
-            // }
+              &:nth-child(4) {
+                top: 180px !important;
+                left: -40px !important;
+              }
+            }
 
             & .social-links>a i {
               color: $red;
