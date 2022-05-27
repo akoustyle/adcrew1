@@ -776,7 +776,7 @@ section.campaign {
         video {
           &:nth-child(1) {
             top: 260px;
-            right: 180px;
+            right: 222px;
             width: 210px;
             height: 230px;
             z-index: 100;
@@ -784,16 +784,16 @@ section.campaign {
 
           &:nth-child(2) {
             // display: none;
-            right: 300px;
+            right: 440px;
             // top: 25px;
-            width: 250px;
+            width: 300px;
             height: 402px;
           }
 
           &:nth-child(3) {
             right: 25px;
             top: -85px;
-            width: 450px;
+            width: 307px;
             height: 530px;
             transform: rotate(2deg);
             // display: none;
