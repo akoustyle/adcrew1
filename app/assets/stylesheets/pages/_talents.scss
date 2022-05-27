@@ -186,8 +186,9 @@ section.talent {
       padding: 80px 0 80px 80px;
 
       &.png-img {
-        max-width: 550px;
+        width: 400px;
         object-fit: cover;
+        padding: 0 !important;
       }
     }
 
@@ -212,7 +213,7 @@ section.talent {
   }
 
   &:nth-child(2) {
-    height: 40vh;
+    height: 60vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
