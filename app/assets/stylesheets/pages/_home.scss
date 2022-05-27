@@ -735,7 +735,7 @@ section.home {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width:427px) and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width:427px) and (max-width: 767px) {
   .banner-icons {
     display: none;
     // position: absolute;
