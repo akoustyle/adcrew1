@@ -891,10 +891,62 @@ section.home {
       }
     }
 
-    &:nth-child(5) {
-      justify-content: space-around;
-    }
+    // &:nth-child(5) {
+    //   justify-content: center;
+    //   align-items: center;
+    //   background-color: black;
+    //   min-height: 65vh;
+
+    //   & img {
+    //     display: none;
+    //   }
+
+    //   & .social-icons {
+    //     display: none;
+    //   }
+
+    //   & .content {
+    //     display: flex;
+    //     /* width: 50vw; */
+    //     // height: 60vh;
+    //     justify-content: space-around;
+    //     /* align-items: center; */
+    //     flex-direction: column;
+
+    //     & .text-content {
+    //       width: 35vw;
+    //       position: relative;
+
+    //       //text-align: center;
+    //       & a {
+    //         font-size: 14px;
+    //         color: $red;
+
+    //         &:hover {
+    //           border-bottom: 1px $red solid;
+    //         }
+    //       }
+
+    //       .rounded-shape {
+    //         position: absolute;
+    //         top: -15px;
+    //         left: 358px;
+    //         transform: translate(-50%, -50%);
+    //         content: "";
+    //         // border: 1px solid #000;
+    //         height: 100px;
+    //         width: 390px;
+    //         border-radius: 90%;
+    //         transform: rotate(-10deg);
+    //         pointer-events: none;
+    //         z-index: 100;
+    //       }
+    //     }
+    //   }
+    // }
+
   }
+
 
 
 /*Smallest device*/
