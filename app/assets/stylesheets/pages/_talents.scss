@@ -1,5 +1,5 @@
 .smooth {
-  scroll-snap-type: none !important;
+  scroll-snap-type:none !important;
 }
 
 section.talents {
@@ -342,6 +342,8 @@ section.talent {
           width: 100vw;
           align-items: end;
           padding: 15px;
+          margin-top: 10vh;
+          margin-bottom: 10vh;
 
           & .text-content {
             width: 85vw;
@@ -434,13 +436,15 @@ section.talent {
         align-items: center;
         background-color: black;
         min-height: 60vh;
+        margin-top: 15vh;
 
         & img {
           display: none;
         }
 
         & .social-icons {
-          display: none;
+          // display: none;
+          flex-direction: row;
         }
 
         & .content {
@@ -449,17 +453,13 @@ section.talent {
           height: 36vh;
           justify-content: space-around;
           /* align-items: center; */
-          flex-direction: column;
+          // flex-direction: column;
 
           & .text-content {
             width: 35vw;
             position: relative;
 
             //text-align: center;
-            & .social-icons {
-              // display: none;
-              // flex-direction: unset;
-            }
 
             & a {
               font-size: 14px;
