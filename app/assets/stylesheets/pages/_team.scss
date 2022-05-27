@@ -218,7 +218,7 @@ section.team {
 //////////////// RESPONSIVE ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1224px) {
 
   section.team {
 
@@ -471,6 +471,9 @@ section.team {
 
         & .text-content {
           width: 85vw;
+          & .rounded-shape {
+              display: none
+            }
         }
       }
 
@@ -548,7 +551,7 @@ section.team {
   }
 }
 /*Smallest device*/
-@media only screen and (max-width: 465px) {
+@media only screen and (min-width: 100px) and (max-width: 465px) and (orientation: portrait) {
 
   section.team {
 
@@ -573,7 +576,7 @@ section.team {
           filter: grayscale(100%);
           margin: 15px 0;
             background-size: cover;
-            background-position: center;
+            background-position: top center;
             &#maud {
               width:100% !important;
             }
@@ -623,6 +626,9 @@ section.team {
       padding: 0px 0px 40px 0px;
         & .text-content {
           width: 85vw;
+          & .rounded-shape{
+            display:none
+          }
         }
       }
       & img {
@@ -632,6 +638,7 @@ section.team {
         padding: 0px;
             margin: 0 0 30px 0;
       object-fit: cover;
+      object-position: top center;
       //filter: grayscale(100%);
       }
     }
