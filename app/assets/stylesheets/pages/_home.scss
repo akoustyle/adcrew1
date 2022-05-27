@@ -647,11 +647,12 @@ section.home {
   }
 
   section.home {
-    min-height:100vh;
+    height:100vh;
 
     &:nth-child(2) {
       & .content img {
-        height: 60%;
+        // height: 60%;
+        width:70vw;
         padding: 20px 30px 0 0;
       }
     }
@@ -737,7 +738,7 @@ section.home {
 /*Small devices (landscape phones, 576px and up)*/
 @media only screen and (min-width:467px) and (max-width: 767px) {
   .banner-icons {
-    display: none;
+    // display: none;
     // position: absolute;
     bottom: 30px;
     // right: 30px;
@@ -789,7 +790,7 @@ section.home {
 
       & img {
         // margin: 30px 0 30px 0;
-        height: 100%;
+        height: 60%;
         width: 85vw;
         padding: 0px;
         object-fit: cover;
@@ -805,23 +806,24 @@ section.home {
           }
 
           &:nth-child(2) {
-            left: 300px;
-            top: -58px;
-            width: 160px;
+            left: 200px;
+            top: 40px;
+            width: 165px;
             height: 240px;
             z-index: 1000;
             transform: rotate(-2deg);
           }
 
           &:nth-child(3) {
-            top: -220px;
-            height: 320px;
+            top: -137px;
+            height: 420px;
             width: 225px;
+            transform: scaleX(-1) rotate(-3deg);
           }
         }
 
         .rounded-shape {
-          top: -12px;
+          top: 112px;
         }
 
         & .note {
@@ -831,9 +833,60 @@ section.home {
     }
 
     &:nth-child(4) {
-      & .img-wrapper {
-        & .gif-talent {
-          height: 102px;
+      flex-direction: column;
+        // padding-top: 13vh;
+
+        img {
+          width: 100%;
+          height: 380px;
+          object-fit: cover;
+        }
+
+        & .content {
+          & .text-content {
+            & p {
+              width: 85vw;
+            }
+          }
+        }
+
+        & .img-wrapper {
+          & .gif-talent {
+            //height: 260px;
+            width: 100%;
+
+            &#gif-one {
+              display: none;
+            }
+
+            &#gif-two {
+              display: none;
+            }
+
+            &#gif-three {
+              width:250px !important;
+            }
+
+            &#gif-four {
+
+              width: 250px !important;
+              // display:block;
+              // width: 85vw;
+              // height: 200px;
+              // object-fit: cover;
+            }
+          }
+
+          & .note {
+            margin: 30px 10px;
+            width: 24%;
+            font-size: 18px;
+            text-transform: uppercase;
+
+            & span {
+              text-decoration: line-through;
+            }
+          }
         }
       }
     }
@@ -843,7 +896,6 @@ section.home {
     }
   }
 
-}
 
 /*Smallest device*/
 @media only screen and (min-width: 100px) and (max-width: 466px) {

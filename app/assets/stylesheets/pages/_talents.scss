@@ -104,7 +104,7 @@ section.talents {
 section.talent {
   display: flex;
   height: 100vh;
-  // margin-top: 13vh;
+  margin-top: 13vh;
   // scroll-snap-align: center;
 
   .note {
@@ -133,7 +133,7 @@ section.talent {
     & .content {
       display: flex;
       width: 50vw;
-      // height: 100vh;
+      height: 100vh;
       padding: 60px;
       justify-content: space-evenly;
       align-items: center;
@@ -343,7 +343,7 @@ section.talent {
           width: 100vw;
           align-items: end;
           padding: 15px;
-          // margin-top: 10vh;
+          margin-top: 10vh;
           margin-bottom: 10vh;
 
           & .text-content {
