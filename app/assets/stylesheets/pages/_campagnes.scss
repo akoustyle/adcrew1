@@ -786,15 +786,15 @@ section.campaign {
             // display: none;
             right: 300px;
             // top: 25px;
-            width: 350px;
+            width: 250px;
             height: 402px;
           }
 
           &:nth-child(3) {
-            right: -63px;
-            top: -105px;
-            width: 350px;
-            height: 542px;
+            right: 25px;
+            top: -85px;
+            width: 450px;
+            height: 530px;
             transform: rotate(2deg);
             // display: none;
           }
@@ -814,7 +814,7 @@ section.campaign {
 
         .rounded-shape {
           top: 260px;
-          right:-180px;
+          left:170;
         }
       }
     }
