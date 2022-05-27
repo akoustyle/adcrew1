@@ -791,8 +791,8 @@ section.campaign {
           }
 
           &:nth-child(3) {
-            right: -85px;
-            top: -105px;
+            right: -65px;
+            top: -50px;
             width: 307px;
             height: 530px;
             transform: rotate(2deg);
@@ -850,9 +850,9 @@ section.campaign {
       background-color: black;
       min-height: 65vh;
 
-      & img {
-        display: none;
-      }
+      // & img {
+      //   display: none;
+      // }
 
       & .social-icons {
         // display: none;
@@ -865,7 +865,7 @@ section.campaign {
         // height: 60vh;
         justify-content: space-around;
         /* align-items: center; */
-        flex-direction: column;
+        // flex-direction: column;
 
         & .text-content {
           width: 35vw;
