@@ -521,7 +521,7 @@ section.talent {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width: 490px) and (max-width: 797px) {
+@media only screen and (min-width: 490px) and (max-width: 797px) and (orientation: landscape) {
   section.talents {
 
       &:nth-child(1) {
@@ -1044,7 +1044,7 @@ section.talent {
   //   }
 //}
 
-@media only screen and  (max-height: 576px) and (orientation:landscape) {
+@media only screen and  (max-height: 476px) {
   body {
     width: 100vw;
     transform: rotate(90deg);
