@@ -68,7 +68,7 @@
                 <div class="social-links">
                   <% if @talent.youtube_link == "0" || @talent.youtube_link == "" %>
                   <% else %>
-                    <a href="<%= @talent.link_youtube %>" target="_blank" style="position: absolute; top: 50px; left: 310px; z-index: 1000;">
+                    <a href="<%= @talent.link_youtube %>" target="_blank" style="position: absolute; top: 50px; left: 294px; z-index: 1000;">
                       <div class="d-flex" style="width: 200px;">
                         <i class="fab fa-youtube"></i>
                         <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -77,7 +77,7 @@
                   <% end %>
                   <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
                   <% else %>
-                      <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -163px; z-index: 1000;">
+                      <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -186px; z-index: 1000;">
                       <div class="d-flex" style="width: 200px;">
                         <i class="fab fa-instagram"></i>
                         <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -86,7 +86,7 @@
                   <% end %>
                   <% if @talent.tiktok_link == "0" || @talent.tiktok_link == "" %>
                   <% else %>
-                  <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 294px; left: 326px; z-index: 1000;">
+                  <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 243px; left: 316px; z-index: 1000;">
                       <div class="d-flex" style="width: 200px;">
                         <i class="fab fa-tiktok"></i>
                         <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
@@ -94,7 +94,7 @@
                     </a>
                   <% end %>
 
-                  <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -25px;">
+                  <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -42px;">
                     <div class="d-flex" style="width: 200px;">
                       <i class="fas fa-download"></i>
                       <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
