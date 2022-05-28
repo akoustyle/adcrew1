@@ -341,7 +341,7 @@ section.talent {
           // content: "";
           // border: 1px solid #000;
           height: 400px;
-          width: 400px;
+          width: 300px;
           // border-radius: 90%;
           // transform: rotate(0deg);
           // pointer-events: none;
@@ -363,13 +363,13 @@ section.talent {
 
             & .social-links>a {
               &:nth-child(1) {
-                top: 90px !important;
-                left: 352px !important;
+                top: 80px !important;
+                left: 300px !important;
               }
 
               &:nth-child(2) {
-                top: 197px !important;
-                right: -216px !important;
+                top: 157px !important;
+                right: -166px !important;
               }
 
               &:nth-child(3) {
@@ -491,7 +491,7 @@ section.talent {
               content: "";
               // border: 1px solid #000;
               height: 400px;
-              width: 400px;
+              width: 300px;
               border-radius: 90%;
               transform: rotate(-10deg);
               pointer-events: none;
