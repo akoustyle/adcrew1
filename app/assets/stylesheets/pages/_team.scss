@@ -306,6 +306,9 @@ section.team {
 
         & .text-content {
           width: 85vw;
+          & .rounded-shape{
+            display:none;
+          }
         }
       }
 
@@ -313,8 +316,8 @@ section.team {
         // margin: 30px 0 30px 0;
         height: 100%;
         width: 85vw;
-        padding: 0px;
-        margin: 0 0 30px 0;
+        padding: 80px 80px 80px 0;
+        margin: 0 0 50px 0;
         object-fit: cover;
         //filter: grayscale(100%);
       }
@@ -324,7 +327,7 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      min-height: 50vh;
 
       & img {
         display: none;
@@ -337,10 +340,10 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-        // height: 60vh;
+        height: 20vh;
         justify-content: space-around;
         /* align-items: center; */
-        flex-direction: column;
+        // flex-direction: column;
 
         & .text-content {
           width: 35vw;
