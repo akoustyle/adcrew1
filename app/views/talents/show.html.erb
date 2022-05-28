@@ -58,7 +58,7 @@
               <div class="talent-standing">
 
                 <% if @talent.photos.attached? %>
-                 <%= cl_image_tag @talent.photos.last.key, crop: :fill, width: 500, quality: :auto,  alt: "Talent Image", class:"png-img" %>
+                 <%= cl_image_tag @talent.photos.last.key, crop: :fill, width: 400, quality: :auto,  alt: "Talent Image", class:"png-img" %>
                   <%#= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img", id: "png-mousein" %>
                 <% else %>
                   <%= image_tag 'silhouette3.png', alt:"", class: "png-img" %>
