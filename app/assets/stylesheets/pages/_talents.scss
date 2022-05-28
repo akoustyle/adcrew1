@@ -342,9 +342,8 @@ section.talent {
         & .content {
           width: 100vw;
           align-items: end;
-          padding: 15px;
-          margin-top: 10vh;
-          margin-bottom: 10vh;
+          padding: 80px;
+
 
           & .text-content {
             width: 85vw;
@@ -398,8 +397,8 @@ section.talent {
         }
 
         & img {
-          height: 50%;
-          width: 80%;
+          height: 70vh;
+          width: 70vw;
           padding: 30px;
           &.png-img {
             width: 500px;
@@ -578,7 +577,7 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      height: 200vh;
+      height: 170vh;
 
       &:nth-child(1) {
         justify-content: right;
@@ -635,12 +634,12 @@ section.talent {
 
         & video {
           height: 40%;
-          width: 80%;
+          width: 100vw;
           padding: 30px;
         }
 
         & img {
-          height: 40%;
+          height: 64vh;
           width: 80%;
           padding: 30px;
           &.png-img {
@@ -874,7 +873,7 @@ section.talent {
             width: 100%;
             padding: 30px;
           &.png-img {
-            width: 400px;
+            width: 370px;
             margin-top: 30px;
           }
         }
