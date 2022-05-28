@@ -251,19 +251,6 @@ section.talent {
 @media (min-width: 798px) and (max-width: 1024px) {
   section.talents {
 
-    .rounded-shape {
-        // position: absolute;
-        // transform: translate(-50%, -50%);
-        // content: "";
-        // border: 1px solid #000;
-        height: 500px;
-        width: 400px;
-        // border-radius: 90%;
-        // transform: rotate(0deg);
-        // pointer-events: none;
-        // z-index: 0;
-      }
-
       &:nth-child(1) {
 
         & .img-wrapper {
@@ -347,13 +334,14 @@ section.talent {
     section.talent {
       flex-direction: column-reverse;
       height: 200vh;
+
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
           // content: "";
           // border: 1px solid #000;
           height: 400px;
-          width: 300px;
+          width: 400px;
           // border-radius: 90%;
           // transform: rotate(0deg);
           // pointer-events: none;
@@ -375,22 +363,22 @@ section.talent {
 
             & .social-links>a {
               &:nth-child(1) {
-                top: 40px !important;
-                left: 388px !important;
+                top: 90px !important;
+                left: 352px !important;
               }
 
               &:nth-child(2) {
-                top: 117px !important;
-                right: -186px !important;
+                top: 197px !important;
+                right: -216px !important;
               }
 
               &:nth-child(3) {
-                top: 253px !important;
-                left: 448px !important;
+                top: 293px !important;
+                left: 400px !important;
               }
 
               &:nth-child(4) {
-                top: 180px !important;
+                top: 280px !important;
                 left: -40px !important;
               }
             }
@@ -629,22 +617,22 @@ section.talent {
 
             & .social-links>a {
               &:nth-child(1) {
-                top: 40px !important;
-                left: 280px !important;
+                top: 90px !important;
+                left: 300px !important;
               }
 
               &:nth-child(2) {
-                // top: 30px !important;
+                top: 169px !important;
                 right: -170px !important;
               }
 
               &:nth-child(3) {
                 // top: 265px !important;
-                left: 337px !important;
+                left: 345px !important;
               }
 
               &:nth-child(4) {
-                // top: 450px !important;
+                top: 280px !important;
                 // left: 10px !important;
               }
             }
@@ -729,7 +717,7 @@ section.talent {
         & .content {
           display: flex;
           /* width: 50vw; */
-          height: 20vh;
+          height: 35vh;
           justify-content: space-around;
           /* align-items: center; */
           flex-direction: column;
