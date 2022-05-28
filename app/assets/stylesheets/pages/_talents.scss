@@ -1044,9 +1044,9 @@ section.talent {
   //   }
 //}
 
-@media only screen and (orientation:landscape) {
+@media only screen and  (max-height: 576px) and (orientation:landscape) {
   body {
-    height: 100vh;
+    width: 100vw;
     transform: rotate(90deg);
   }
 }
