@@ -179,7 +179,7 @@ section.talent {
     }
 
     & img {
-      min-height: 450px;
+      height: 450px;
       width: 40vw;
       object-fit: cover;
       object-position: top center;
@@ -896,11 +896,11 @@ section.talent {
           padding:30px;
         }
         & img {
-          height: 63vh;
+          height: 75vh;
             width: 100%;
             padding: 30px;
           &.png-img {
-            width: 400px;
+            width: 380px;
             margin-top: 30px;
           }
         }
