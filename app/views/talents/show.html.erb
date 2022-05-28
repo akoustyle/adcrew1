@@ -7,11 +7,11 @@
       <section class="talent" id="talent">
         <div class="talent-left-image-video">
           <% if @talent.video.attached? %>
-            <%= video_tag (url_for(@talent.video)), crop: :scale, width: 780, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false %>
+            <%= video_tag (url_for(@talent.video)), crop: :scale, width: 780, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false, style: "height:100vh" %>
           <% else %>
               <%#= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
               <% if @talent.photos.attached? %>
-                <%= cl_image_tag @talent.photos.second.key, crop: :scale, width: 550, quality: :auto, fetch_format: :auto, alt: "Talent image", style: "objecti-position:top" %>
+                <%= cl_image_tag @talent.photos.second.key, crop: :scale, width: 550, quality: :auto, fetch_format: :auto, alt: "Talent image", style: "objecti-position:top;height:100vh" %>
               <% else %>
                 <% if @talent.video.attached? %>
                   <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :fill, width: 800, autoplay: true, muted: true, loop: true, controls: false %>
