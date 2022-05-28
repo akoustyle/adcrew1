@@ -694,26 +694,28 @@ section.home {
 
     &:nth-child(4) {
       & .content .text-content p {
-        max-width: 60vw;
+        width: 60vw;
       }
       & .img-wrapper {
         // overflow: hidden;
+        display:grid;
+        grid-template-columns: 200px 200px 200px;
         & .gif-talent {
-          max-width:180px;
-          min-height:450px;
+          // max-width:180px;
+          // min-height:450px;
 
           &#gif-one {
-             width:200px;
+             width:200px !important;
              height:100%;
             }
 
             &#gif-two {
-              width: 200px;
+              width: 200px !important;
               height: 100%;
             }
 
             &#gif-three {
-              width: 200px;
+              width: 200px !important;
               height: 100%;
             }
 
