@@ -340,8 +340,8 @@ section.talent {
           // transform: translate(-50%, -50%);
           // content: "";
           // border: 1px solid #000;
-          height: 400px;
-          width: 300px;
+          height: 460px;
+          width: 400px;
           // border-radius: 90%;
           // transform: rotate(0deg);
           // pointer-events: none;
@@ -363,23 +363,23 @@ section.talent {
 
             & .social-links>a {
               &:nth-child(1) {
-                top: 80px !important;
-                left: 300px !important;
+                top: 58px !important;
+                left: 350px !important;
               }
 
               &:nth-child(2) {
-                top: 157px !important;
-                right: -166px !important;
+                top: 140px !important;
+                right: -230px !important;
               }
 
               &:nth-child(3) {
                 top: 293px !important;
-                left: 400px !important;
+                left: 405px !important;
               }
 
               &:nth-child(4) {
                 top: 280px !important;
-                left: -40px !important;
+                left: -75px !important;
               }
             }
 
