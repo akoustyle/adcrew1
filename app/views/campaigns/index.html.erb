@@ -14,11 +14,11 @@
               <%#= t('campagnes.note') %>
           <%# </p>  %>
           <div class="img-wrapper">
-            <div class="gif-talent" id="gif-five" > <%= image_tag "campaign1.gif", crop: :scale, width: 280, quality: :auto, fetch_format: :auto %> </div>
-            <div class="gif-talent" id="gif-six"><%= image_tag "campaign2.gif", crop: :scale, width: 280, quality: :auto, fetch_format: :auto  %></div>
+            <div class="gif-talent" id="gif-five" > <%= image_tag "campaign1.gif", crop: :scale, width: 245, quality: :auto, fetch_format: :auto %> </div>
+            <div class="gif-talent" id="gif-six"><%= image_tag "campaign2.gif", crop: :scale, width: 245, quality: :auto, fetch_format: :auto  %></div>
             <%# <div class="gif-talent" id="gif-three"></div> %>
-            <div class="gif-talent" id="gif-seven"><%= image_tag "campaign3.gif", crop: :scale, width: 280, quality: :auto, fetch_format: :auto  %></div>
-            <div class="gif-talent" id="gif-height"><%= image_tag "campaign4.gif", crop: :scale, width: 280, quality: :auto, fetch_format: :auto  %></div>
+            <div class="gif-talent" id="gif-seven"><%= image_tag "campaign3.gif", crop: :scale, width: 245, quality: :auto, fetch_format: :auto  %></div>
+            <div class="gif-talent" id="gif-height"><%= image_tag "campaign4.gif", crop: :scale, width: 245, quality: :auto, fetch_format: :auto  %></div>
             <div class="rounded-shape">
             </div>
           </div>
@@ -46,7 +46,7 @@
                   <%#= cache campaign do %>
                     <%= link_to campaign_path(campaign) do %>
                       <div class="campaign-card">
-                        <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, width: 700, crop: :scale, quality: :auto, fetch_format: :auto) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
+                        <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, width: 380, crop: :scale, quality: :auto, fetch_format: :auto) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
                           <div class="card-info">
                             <div class="top py-1">
                               <div class="info">
@@ -80,7 +80,7 @@
 
                   <%= link_to campaign_path(campaign) do %>
                     <div class="campaign-card">
-                      <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, width: 700, crop: :scale, quality: :auto, fetch_format: :auto) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: top center; background-size: cover">
+                      <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, width: 380, crop: :scale, quality: :auto, fetch_format: :auto) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: top center; background-size: cover">
                         <div class="card-info">
                           <div class="top py-1">
                             <div class="info" style="font-weight:bold;font-size:20px;">
