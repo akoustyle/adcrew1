@@ -600,7 +600,7 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      height: 170vh;
+      height: 230vh;
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
@@ -627,17 +627,17 @@ section.talent {
 
             & .social-links>a {
               &:nth-child(1) {
-                top: 90px !important;
+                top: 61px !important;
                 left: 300px !important;
               }
 
               &:nth-child(2) {
-                top: 169px !important;
+                top: 125px !important;
                 right: -170px !important;
               }
 
               &:nth-child(3) {
-                // top: 265px !important;
+                top: 222px !important;
                 left: 345px !important;
               }
 
@@ -667,9 +667,14 @@ section.talent {
           }
         }
 
-        & .talent-left-image-video video, img {
+        & .talent-left-image-video video {
           height: 40%;
-          width: 100vw;
+          width: 100vw !important;
+          padding: 30px;
+        }
+        & .talent-left-image-video img {
+          height: 120vh;
+          width: 100vw !important;
           padding: 30px;
         }
 
