@@ -217,9 +217,12 @@ section.home {
 			}
 		}
 		& .img-wrapper {
-			display: flex;
-			justify-content: space-between;
-			width: 85vw;
+			// display: flex;
+			// justify-content: space-between;
+			// width: 85vw;
+      display: grid;
+      grid-gap: 37px;
+      grid-template-columns: 200px 200px 200px 200px;
 			& .gif-talent {
 				filter: grayscale(100%);
 				margin: 30px 0;
@@ -227,19 +230,18 @@ section.home {
 				//width: 24%;
 		  		//background-size: cover;
 		  		//background-position: center;
-		  		// &#gif-one {
-		  		// 	animation: 10.1s gifMakerOne infinite;
-		  		// }
-		  		// &#gif-two {
-		  		// 	animation: 10.3s gifMakerTwo infinite;
-          //   transform: rotate(2deg);
-		  		// }
-		  		// &#gif-three {
-		  		// 	animation: 10s gifMakerThree infinite;
-		  		// }
-		  		// &#gif-four {
-		  		// 	animation: 10.2s gifMakerFour infinite;
-		  		// }
+		  		&#gif-one {
+		  			width: 200px !important;
+		  		}
+		  		&#gif-two {
+            width: 200px !important;
+		  		}
+		  		&#gif-three {
+            width: 200px !important;
+		  		}
+		  		&#gif-four {
+            width: 200px !important;
+		  		}
 			}
 			& .note {
 				margin: 30px 10px;
