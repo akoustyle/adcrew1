@@ -372,22 +372,22 @@ section.talent {
             width: 85vw;
 
             & .social-links {
-              & .youtube-link {
+              & .youtube-link > a {
                 top: 58px !important;
                 left: 350px !important;
               }
 
-              & .insta-link {
+              & .insta-link > a {
                 top: 140px !important;
                 right: -230px !important;
               }
 
-              & .tiktok-link {
+              & .tiktok-link > a {
                 top: 293px !important;
                 left: 405px !important;
               }
 
-              & .media-kit {
+              & .media-kit > a {
                 top: 280px !important;
                 left: -75px !important;
               }
@@ -631,22 +631,22 @@ section.talent {
             width: 85vw;
 
             & .social-links {
-              & .youtube-link {
+              & .youtube-link > a {
                 top: 80px !important;
                 left: 360px !important;
               }
 
-              & .insta-link {
+              & .insta-link > a {
                 top: 165px !important;
                 right: -210px !important;
               }
 
-              & .tiktok-link {
+              & .tiktok-link > a {
                 top: 260px !important;
                 left: 410px !important;
               }
 
-              & .media-kit {
+              & .media-kit > a {
                 top: 210px !important;
                 // left: -70px !important;
               }
@@ -892,22 +892,22 @@ section.talent {
             width: 85vw;
 
             & .social-links {
-              & .youtube-link {
+              & .youtube-link > a {
                 top: 40px !important;
                 left: 280px !important;
               }
 
-              & .insta-link {
+              & .insta-link > a {
                 // top: 30px !important;
                 right: -170px !important;
               }
 
-              & .tiktok-link {
+              & .tiktok-link > a {
                 // top: 265px !important;
                 left: 337px !important;
               }
 
-              & .media-kit {
+              & .media-kit > a {
                 // top: 450px !important;
                 // left: 10px !important;
               }
@@ -1169,7 +1169,7 @@ section.talent {
                 left: 10px !important;
               }
               & .media-kit > a {
-                top: 411px !important;
+                top: 361px !important;
                 left: 10px !important;
               }
             }
