@@ -1116,6 +1116,9 @@ section.home {
         }
       }
       & .img-wrapper {
+        // width: 89vw;
+        display: grid;
+        grid-template-columns: 1fr;
         & .gif-talent {
           //height: 260px;
           width: 100%;
