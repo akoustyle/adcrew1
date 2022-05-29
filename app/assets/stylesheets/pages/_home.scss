@@ -652,15 +652,24 @@ section.home {
     height:100vh;
 
     &:nth-child(2) {
+      & .content {
+        max-width: 62vw;
+        & .text-content {
+          max-width: 45vw;
+        }
+      }
       & img {
-        height: 56vh;
-        width:41vw;
-        padding: 0 50px 0 0;
+        height: 48vh;
+        width:43vw;
+        padding: 0 52px 0 0;
       }
     }
     &:nth-child(3) {
       padding-top:0;
       margin-bottom:0;
+      & .content .text-content p {
+        width:74vw;
+      }
       & .img-wrapper {
         img {
           &:nth-child(1) {
@@ -678,7 +687,7 @@ section.home {
           }
 
           &:nth-child(2) {
-            right: 283px;
+            right: 183px;
             top: 175px;
             width: 260px;
             height: 330px;
@@ -688,7 +697,7 @@ section.home {
 
           &:nth-child(3) {
             top: -36px;
-            left: 567px;
+            left: 467px;
             height: 564px;
             width: 355px;
           }
