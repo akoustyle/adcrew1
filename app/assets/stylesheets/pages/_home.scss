@@ -34,7 +34,6 @@ section.home {
 	&:nth-child(1) {
 		justify-content: space-between;
 		align-items: center;
-
 		& .background {
       position: relative;
 		    display: flex;
@@ -54,10 +53,11 @@ section.home {
 	&:nth-child(2) {
 		justify-content: space-between;
 		align-items: center;
+    width: 107vw;
 
 		& .content {
 		display: flex;
-		width: 50vw;
+		width: 57vw;
 		height: 100vh;
 		justify-content: center;
 		align-items: center;
@@ -74,8 +74,8 @@ section.home {
 		}
 		& img {
 			height: 100%;
-			width: 50vw;
-      padding: 80px 100px 60px 0px;
+			width: 46vw;
+      padding: 167px 190px 60px 0px;
     filter: saturate(0.7);
 		object-fit: cover;
     object-position: top;
