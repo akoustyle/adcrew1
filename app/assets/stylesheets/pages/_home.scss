@@ -653,15 +653,15 @@ section.home {
 
     &:nth-child(2) {
       & .content {
-        max-width: 62vw;
+        max-width: 65vw;
         & .text-content {
-          max-width: 45vw;
+          max-width: 35vw;
         }
       }
       & img {
-        height: 48vh;
-        width:43vw;
-        padding: 0 52px 0 0;
+        height: 56vh;
+        width:53vw;
+        padding: 0 142px 0 0;
       }
     }
     &:nth-child(3) {
@@ -687,7 +687,7 @@ section.home {
           }
 
           &:nth-child(2) {
-            right: 223px;
+            right: 298px;
             top: 175px;
             width: 260px;
             height: 330px;
@@ -697,9 +697,9 @@ section.home {
 
           &:nth-child(3) {
             top: -36px;
-            left: 597px;
+            left: 469px;
             height: 564px;
-            width: 355px;
+            width: 315px;
           }
         }
 
