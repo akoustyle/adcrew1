@@ -521,7 +521,7 @@ section.talent {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width: 490px) and (max-width: 797px) and (orientation: landscape) {
+@media only screen and (min-width: 490px) and (max-width: 797px) {
   section.talents {
 
       &:nth-child(1) {
