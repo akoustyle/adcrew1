@@ -1156,19 +1156,19 @@ section.talent {
                 font-size: 20px;
               }
             & .social-links {
-              & .youtube-link {
+              & .youtube-link > a {
                 top: 0 !important;
                 left: 10px !important;
               }
-              & .insta-link {
+              & .insta-link > a {
                 top: 30px !important;
                 left: 10px !important;
               }
-              & .tiktok-link {
+              & .tiktok-link > a {
                 top: 60px !important;
                 left: 10px !important;
               }
-              & .media-kit {
+              & .media-kit > a {
                 top: 411px !important;
                 left: 10px !important;
               }
