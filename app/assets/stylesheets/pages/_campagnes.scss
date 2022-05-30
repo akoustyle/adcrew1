@@ -328,8 +328,8 @@ section.campaign {
       }
     }
     & .img-wrapper {
-      overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
+      // overflow-y: scroll;
+      // -webkit-overflow-scrolling: touch;
       height: 550px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr ;
