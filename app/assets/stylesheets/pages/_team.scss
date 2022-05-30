@@ -406,7 +406,7 @@ section.team {
 
       & .img-wrapper {
         display: block;
-        // grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         // grid-gap: 20px;
         // width: 85vw;
         margin: 0;
@@ -418,11 +418,11 @@ section.team {
           background-position: center;
 
           &#maud {
-            width: 300px !important;
+            width: 200px !important;
           }
 
           &#jessica {
-            width: 300px !important;
+            width: 200px !important;
           }
 
           &>div {
@@ -572,19 +572,22 @@ section.team {
           display: none;
         }
       & .img-wrapper {
-        display: block;
+        // display: block;
         width: 85vw;
         margin: 0;
+        grid-template-columns: 1fr 1fr;
         & .gif-team {
           filter: grayscale(100%);
           margin: 15px 0;
             background-size: cover;
             background-position: top center;
             &#maud {
-              width:100% !important;
+              width:38vw !important;
+              height:28vh;
             }
             &#jessica {
-              width:100% !important;
+              width: 38vw !important;
+              height: 28vh;
             }
             & > div {
               justify-content: center !important;
@@ -592,6 +595,7 @@ section.team {
             }
             & p {
               font-size: 8px !important;
+              line-height: 0.9em;
             }
         }
         & .side-text {
