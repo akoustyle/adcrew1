@@ -67,7 +67,7 @@
 .show-campaign-card {
   height: 350px;
   display: block;
-  overflow: auto;
+  overflow: hidden;
 
   & .background {
     height: 100%;
