@@ -1059,13 +1059,13 @@ section.talent {
 
       & .img-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 30px;
+        padding: 34px;
       }
       & .img-wrapper > a {
         & .campaign-card {
           height: 150px;
           width: 120px;
-          & .background i {
+          & .background > i {
             right: 0;
             padding: 4px;
             font-size: 12px;
