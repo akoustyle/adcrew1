@@ -445,10 +445,13 @@ section.team {
     &:nth-child(2) {
       & .img-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 6px;
         width: 85vw;
         margin: 30px auto;
+        & .team-card {
+          height: 230px;
+        }
 
         & .note {
           margin: 0px 0px;
@@ -595,7 +598,7 @@ section.team {
             }
             & p {
               font-size: 8px !important;
-              line-height: 0.9em;
+              line-height: 0.9em !important;
             }
         }
         & .side-text {
@@ -607,10 +610,13 @@ section.team {
     &:nth-child(2) {
       & .img-wrapper {
         display:grid;
-        grid-template-columns: 1fr;
-        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3px;
         width: 85vw;
         margin: 30px 0;
+        & .team-card {
+          height: 150px;
+        }
         & .note {
           margin: 0px 0px;
           width: 110%;
