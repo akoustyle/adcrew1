@@ -1687,10 +1687,11 @@ section.campaign {
       & .img-wrapper {
         // height: 460px;
         padding: 30px;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 
         & .campaign-card {
-          height: 460px !important;
+          height: 150px !important;
+          width: 125px;
         }
       }
     }
