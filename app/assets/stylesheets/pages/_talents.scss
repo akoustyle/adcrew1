@@ -1067,8 +1067,8 @@ section.talent {
           width: 120px;
           & .background > i {
             right: 0;
-            padding: 4px;
-            font-size: 12px;
+            padding: 4px !important;
+            font-size: 12px !important;
           }
         }
       }
