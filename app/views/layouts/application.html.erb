@@ -49,27 +49,6 @@
 
     <body id="gradient haut">
 
-        <div class="main-bg">
-            <div class="noise"></div>
-            <div class="bg-wrapper" id="a">
-                <div class="plane plane-1"></div>
-                <div class="plane plane-2"></div>
-                <div class="plane plane-3"></div>
-                <div class="plane plane-4"></div>
-                <div class="plane plane-5"></div>
-                <div class="plane plane-6"></div>
-                <div class="plane plane-7"></div>
-                <div class="plane plane-8"></div>
-                <div class="plane plane-9"></div>
-                <div class="plane plane-10"></div>
-                <div class="plane plane-11"></div>
-                <div class="plane plane-12"></div>
-                <div class="plane plane-13"></div>
-                <div class="plane plane-14"></div>
-                <div class="plane plane-15"></div>
-            </div>
-        </div>
-
         <%= render 'shared/sidenavbar' %>
         <div class="main-container" style="background-color: white">
             <p class="notice" style="position:absolute"><%= notice %></p>
@@ -79,7 +58,7 @@
         <%#= render 'shared/final-footer' %>
 
     <a href="#haut" class="arrow-top" style="position: fixed; bottom :1em; right:1em; padding:2em;"><i class="fas fa-sort-up" style="font-size: 18px;color: red;"></i></a>
-    <script>
+    <%# <script>
       window.axeptioSettings = {
         clientId: "62601429bca4164c7ccd390f",
       };
@@ -89,6 +68,6 @@
         e.async = true; e.src = "//static.axept.io/sdk.js";
         t.parentNode.insertBefore(e, t);
       })(document, "script");
-    </script>
+    </script> %>
     </body>
 </html>
