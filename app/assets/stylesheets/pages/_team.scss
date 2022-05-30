@@ -595,10 +595,12 @@ section.team {
             & > div {
               justify-content: center !important;
               bottom: 35px;
+              & p {
+                line-height: 0.9em !important;
+              }
             }
             & p {
               font-size: 8px !important;
-              line-height: 0.9em !important;
             }
         }
         & .side-text {
