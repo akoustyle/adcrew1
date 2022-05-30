@@ -1058,8 +1058,14 @@ section.talent {
     &:nth-child(1) {
 
       & .img-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 30px;
+      }
+      & .img-wrapper > a {
+        & .campaign-card {
+          height: 150px;
+          width: 125px;
+        }
       }
 
       & .content {
