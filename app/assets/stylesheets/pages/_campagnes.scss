@@ -1,6 +1,4 @@
-.smooth {
-  scroll-snap-type: none !important;
-}
+
 
 section.campaigns {
 
@@ -178,7 +176,7 @@ section.campaign {
   display: flex;
   height: 100vh;
 
-  scroll-snap-align: center;
+  // scroll-snap-align: center;
 
   .note {
     font-family: $note-font;
