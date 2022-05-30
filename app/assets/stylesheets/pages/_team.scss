@@ -405,7 +405,7 @@ section.team {
       }
 
       & .img-wrapper {
-        display: block;
+        // display: block;
         grid-template-columns: 1fr 1fr;
         // grid-gap: 20px;
         // width: 85vw;
@@ -415,14 +415,16 @@ section.team {
           filter: grayscale(100%);
           margin: 15px 0;
           background-size: cover;
-          background-position: center;
+          background-position: top center;
 
           &#maud {
             width: 200px !important;
+            height: 350px;
           }
 
           &#jessica {
             width: 200px !important;
+            height: 350px;
           }
 
           &>div {
@@ -450,7 +452,7 @@ section.team {
         width: 85vw;
         margin: 30px auto;
         & .team-card {
-          height: 230px;
+          height: 250px;
         }
 
         & .note {
