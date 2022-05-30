@@ -57,7 +57,8 @@ p {
 .main-bg {
 	width: 100vw;
 	height: 100vh;
-	overflow-x: hidden;
+	overflow: auto;
+  -webkit-overflow-scrolling: touch;
 	position: fixed;
 	top: 0;
 	z-index: -1000;
