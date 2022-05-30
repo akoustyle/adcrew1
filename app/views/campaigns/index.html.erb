@@ -1,20 +1,10 @@
 <%#= cache_if current_user.nil?, "public-campaigns-v1" do %>
-<<<<<<< HEAD
   <div class="">
     <section class="campaigns" id="preview-campaign">
       <div class="content">
         <div class="text-content">
           <h2><%= t('campagnes.title') %></h2>
           <p class="pt-3"> <%= t('campagnes.paragraphe_html') %> </p>
-=======
-  <div class="scroll">
-      <section class="campaigns" id="preview-campaign">
-        <div class="content">
-          <div class="text-content">
-            <h2><%= t('campagnes.title') %></h2>
-            <p class="pt-3"> <%= t('campagnes.paragraphe_html') %> </p>
-          </div>
->>>>>>> 6f6fc8629bc054d8ec93575dd86ba3017c22ad9d
         </div>
       </div>
       <div class="content">
@@ -116,8 +106,6 @@
       </div>
     </section>
 
-<<<<<<< HEAD
-    <section class="campaigns" id="footer-section">
 
       <div class="content">
           <div class="" style="">
@@ -164,14 +152,4 @@
         <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
       </div>
     </section>
-=======
-        <div class="content" style=" width: 82vw; height: 10vh;">
-          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-            <a> <%= link_to "Adcrew", root_path %></a>.
-          </p>
-          <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
-        </div>
-      </section>
->>>>>>> 6f6fc8629bc054d8ec93575dd86ba3017c22ad9d
   </div>
-<%# end %>
