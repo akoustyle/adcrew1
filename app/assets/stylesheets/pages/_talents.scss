@@ -1058,13 +1058,13 @@ section.talent {
     &:nth-child(1) {
 
       & .img-wrapper {
-        grid-template-columns: 80px 80px 80px;
-        padding: 34px;
+        grid-template-columns: 85px 85px 85px;
+        padding: 27px;
       }
       & .img-wrapper > a {
         & .campaign-card {
           height: 150px;
-          width: 80px;
+          width: 85px;
           & .background > i {
             right: 0;
             padding: 4px !important;
