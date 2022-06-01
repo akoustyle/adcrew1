@@ -1207,7 +1207,7 @@ section.home {
           object-fit: cover;
 
           &:nth-child(1) {
-            display: none;
+            display: unset;
           }
 
           &:nth-child(2) {
@@ -1261,7 +1261,7 @@ section.home {
         // width: 89vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3px;
+        grid-gap: 15px;
 
         & .gif-talent {
           // min-height: 360px;
