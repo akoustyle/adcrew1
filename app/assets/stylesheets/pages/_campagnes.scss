@@ -957,24 +957,21 @@ section.campaign {
           &#gif-five {
             display: block;
             & img {
-              width:205px;
-              max-width: 100%;
+              width:100%;
             }
           }
 
           &#gif-six {
             display: block;
             & img {
-              width: 205px;
-              max-width: 100%;
+              width: 100%;
             }
           }
 
           &#gif-seven {
             display:block;
             & img {
-              width: 205px;
-              max-width: 100%;
+              width: 100%;
               }
           }
 
@@ -1687,12 +1684,12 @@ section.campaign {
 
       & .img-wrapper {
         // height: 460px;
-        padding: 30px;
+        padding: 17px;
         grid-template-columns: 1fr 1fr 1fr;
 
         & .campaign-card {
           height: 150px !important;
-          width: 115px;
+          width: 100%;
         }
       }
     }

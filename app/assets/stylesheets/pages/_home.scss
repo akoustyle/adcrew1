@@ -1525,6 +1525,8 @@ section.home {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 3px;
+        width:85vw;
+        margin:auto;
 
         & .gif-talent {
           //height: 260px;
@@ -1535,19 +1537,19 @@ section.home {
           }
 
           &#gif-two {
-            width: 120px !important;
-            height: 250px;
+            width: 100% !important;
+            height: 200px;
           }
 
           &#gif-three {
-            width: 120px !important;
-            height: 250px;
+            width: 100% !important;
+            height: 200px;
           }
 
           &#gif-four {
 
-            width: 120px !important;
-            height: 250px;
+            width: 100% !important;
+            height: 200px;
             // display:block;
             // width: 85vw;
             // height: 200px;

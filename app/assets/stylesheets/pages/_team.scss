@@ -136,6 +136,8 @@ section.team {
   &:nth-child(3) {
     justify-content: space-between;
     align-items: center;
+    width:85vw;
+    margin:auto;
 
     & .content {
         display: flex;
@@ -171,9 +173,9 @@ section.team {
         }
     }
     & img {
-      height: 70vh;
-      width: 70vw;
-      padding: 80px 106px 80px 20px;
+      height: 90vh;
+      width: 50vw;
+      padding: 80px 80px 80px 20px;
           object-fit: cover;
           object-position: top center;
           // filter: grayscale(100%);
