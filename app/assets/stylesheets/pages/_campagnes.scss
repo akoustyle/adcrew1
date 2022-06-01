@@ -1777,17 +1777,17 @@ section.campaign {
         video {
           &:nth-child(1) {
             top: 0px;
-            right: -21px;
+            right: -11px;
             width: 140px;
-            height: 190px;
+            height: 170px;
           }
 
           &:nth-child(2) {
             display: none;
             right: 40px;
-            top: 25px;
-            width: 274px;
-            height: 342px;
+            top: 27px;
+            width: 270px;
+            height: 390px;
           }
 
           &:nth-child(3) {
@@ -1796,6 +1796,7 @@ section.campaign {
             width: 274px;
             height: 342px;
             transform: rotate(2deg);
+            z-index: 10;
             // display: none;
           }
 
@@ -1813,7 +1814,8 @@ section.campaign {
         }
 
         .rounded-shape {
-          top: 200px;
+          top: 261px;
+          right: -11px;
         }
       }
     }
