@@ -7,7 +7,7 @@
       <section class="talent" id="talent">
         <div class="talent-left-image-video">
           <% if @talent.video.attached? %>
-            <%= video_tag (url_for(@talent.video)), crop: :scale, width: 780, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, controls: false, style: "height:100vh" %>
+            <%= video_tag (url_for(@talent.video)), crop: :scale, width: 780, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, playsinline: true, controls: true, style: "height:100vh" %>
           <% else %>
               <%#= video_tag "https://res.cloudinary.com/dc71zwpev/video/upload/v1650998684/clip_p3yp9k.mp4", autoplay: true, muted: true, loop: true, controls: false %>
               <% if @talent.photos.attached? %>
