@@ -641,7 +641,7 @@ section.home {
 //////////////// RESPONSIVE ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width:818px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
@@ -756,7 +756,7 @@ section.home {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width:668px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-width:668px) and (max-width: 817px) and (-webkit-min-device-pixel-ratio: 3) {
   .banner-icons {
     // display: none;
     // position: absolute;
@@ -1032,7 +1032,7 @@ section.home {
 
       & img {
         // margin: 30px 0 30px 0;
-        height: 50%;
+        height: 60%;
         width: 85vw;
         padding: 0px;
         object-fit: cover;
@@ -1238,7 +1238,7 @@ section.home {
   }
 }
 /* Portrait and Landscape */
-@media only screen and (min-width: 320px) and (max-width: 467px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-width: 100px) and (max-width: 467px) and (-webkit-min-device-pixel-ratio: 2) {
   .banner-icons {
     top: 30vh;
 
