@@ -1264,7 +1264,7 @@ section.home {
         grid-gap: 3px;
 
         & .gif-talent {
-          //height: 260px;
+          // min-height: 360px;
           width: 100%;
 
           &#gif-one {
@@ -1272,16 +1272,19 @@ section.home {
           }
 
           &#gif-two {
-            width: 130px !important;
+            width: 150px !important;
+            height: 280px;
           }
 
           &#gif-three {
-            width: 130px !important;
+            width: 150px !important;
+            height: 280px;
           }
 
           &#gif-four {
 
-            width: 130px !important;
+            width: 150px !important;
+            height: 280px;
             // display:block;
             // width: 85vw;
             // height: 200px;
@@ -1532,16 +1535,19 @@ section.home {
           }
 
           &#gif-two {
-            width: 130px !important;
+            width: 120px !important;
+            height: 250px;
           }
 
           &#gif-three {
-            width: 130px !important;
+            width: 120px !important;
+            height: 250px;
           }
 
           &#gif-four {
 
-            width: 130px !important;
+            width: 120px !important;
+            height: 250px;
             // display:block;
             // width: 85vw;
             // height: 200px;
