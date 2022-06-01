@@ -957,22 +957,25 @@ section.campaign {
           &#gif-five {
             display: block;
             & img {
-              max-width: 280px;
+              width:205px;
+              max-width: 260px;
             }
           }
 
           &#gif-six {
             display: block;
             & img {
-              max-width: 280px;
+              width: 205px;
+              max-width: 260px;
             }
           }
 
           &#gif-seven {
-            display: none;
-            // & img {
-            //     width: 100%;
-            //   }
+            display:block;
+            & img {
+              width: 205px;
+              max-width: 260px;
+              }
           }
 
           &#gif-height {
@@ -1022,10 +1025,10 @@ section.campaign {
       & .img-wrapper {
         // height: 460px;
         padding: 54px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1f;
 
         & .campaign-card {
-          height: 460px !important;
+          height: 300px !important;
         }
       }
     }
