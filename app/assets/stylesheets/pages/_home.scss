@@ -1038,7 +1038,7 @@ section.home {
 
     &:nth-child(3) {
       flex-direction: column;
-      margin-top: 40vh;
+      margin-top: 20vh;
       // margin-bottom: 60px;
 
       & .content {
@@ -1129,7 +1129,8 @@ section.home {
       & .img-wrapper {
         // width: 89vw;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:3px;
         & .gif-talent {
           //height: 260px;
           width: 100%;
@@ -1137,14 +1138,14 @@ section.home {
               display: none;
             }
             &#gif-two {
-              display: none;
+              width: 130px !important;
             }
             &#gif-three {
-              display:none;
+              width: 130px !important;
             }
             &#gif-four {
 
-              width: 100% !important;
+              width: 130px !important;
               // display:block;
               // width: 85vw;
               // height: 200px;
