@@ -529,7 +529,7 @@ section.talent {
         & .img-wrapper {
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 10px;
-          padding: 30px 5vh 50px
+          padding: 30px 5vh 50px;
         }
 
         & .content {
@@ -788,9 +788,9 @@ section.talent {
       &:nth-child(1) {
 
         & .img-wrapper {
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 10px;
-          padding: 30px 5vh 50px
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 5px;
+          padding: 30px 5vh 50px;
         }
 
         & .content {
