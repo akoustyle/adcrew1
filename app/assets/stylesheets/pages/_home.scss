@@ -1207,7 +1207,7 @@ section.home {
           object-fit: cover;
 
           &:nth-child(1) {
-            display: unset;
+            display: none;
           }
 
           &:nth-child(2) {
