@@ -1096,7 +1096,7 @@ section.home {
 
 
 /*Smallest device*/
-@media only screen and (min-width: 468px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2){
+@media only screen and (min-width: 468px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .banner-icons {
     top: 30vh;
 
@@ -1245,7 +1245,7 @@ section.home {
 
       img {
         width: 100%;
-        height: 380px;
+        height: 280px;
         object-fit: cover;
       }
 
@@ -1272,18 +1272,18 @@ section.home {
           }
 
           &#gif-two {
-            width: 150px !important;
+            width: 100% !important;
             height: 280px;
           }
 
           &#gif-three {
-            width: 150px !important;
+            width: 100% !important;
             height: 280px;
           }
 
           &#gif-four {
 
-            width: 150px !important;
+            width: 100% !important;
             height: 280px;
             // display:block;
             // width: 85vw;
