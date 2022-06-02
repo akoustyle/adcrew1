@@ -685,7 +685,7 @@ section.campaign {
         grid-template-columns: 1fr 1fr 1fr;
 
         & .campaign-card {
-          height: 460px !important;
+          height: 360px !important;
           width:100%;
         }
       }
@@ -958,21 +958,21 @@ section.campaign {
           &#gif-five {
             display: block;
             & img {
-              width:100%;
+              width:97%;
             }
           }
 
           &#gif-six {
             display: block;
             & img {
-              width: 100%;
+              width: 97%;
             }
           }
 
           &#gif-seven {
             display:block;
             & img {
-              width: 100%;
+              width: 97%;
               }
           }
 
@@ -1026,7 +1026,7 @@ section.campaign {
         grid-template-columns: 1fr 1fr 1f;
 
         & .campaign-card {
-          height: 300px !important;
+          height: 260px !important;
           width:100%;
         }
       }
