@@ -993,10 +993,11 @@ section.home {
         }
 
         & .img-wrapper {
-          width:89vw;
+          width:85vw;
           display:grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap:4px;
+          grid-template-columns: 1fr 1fr 1r;
+          grid-gap:6px;
+          margin:auto
           & .gif-talent {
             //height: 260px;
             width: 100%;
@@ -1006,16 +1007,19 @@ section.home {
             }
 
             &#gif-two {
-              display: none;
+              width: 100% !important;
+              height: 300px;
             }
 
             &#gif-three {
-              width:250px !important;
+              width: 100% !important;
+              height: 300px;
             }
 
             &#gif-four {
 
-              width: 250px !important;
+              width: 100% !important;
+              height: 300px;
               // display:block;
               // width: 85vw;
               // height: 200px;
