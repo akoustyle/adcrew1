@@ -776,20 +776,23 @@ section.home {
       & .content {
         max-width: 65vw;
         & .text-content {
-          max-width: 35vw;
+          max-width: 40vw;
+          & p{
+            font-size: 12px;
+          }
         }
       }
       & img {
-        height: 56vh;
-        width:53vw;
-        padding: 0 142px 0 0;
+        height: 50%;
+        width: 45vw;
+        padding: 30px 60px 60px 0px;
       }
     }
     &:nth-child(3) {
       padding-top:0;
       margin-bottom:0;
       & .content .text-content p {
-        width:74vw;
+        width:75vw;
       }
       & .img-wrapper {
         img {
@@ -808,15 +811,17 @@ section.home {
           }
 
           &:nth-child(2) {
-            right: 298px;
+            position:unset;
+            right: 330px;
             top: 175px;
             width: 260px;
-            height: 330px;
+            height: 290px;
             z-index: 1000;
             transform: rotate(-2deg);
           }
 
           &:nth-child(3) {
+            position:unset;
             top: -36px;
             left: 469px;
             height: 564px;
@@ -825,7 +830,8 @@ section.home {
         }
 
         .rounded-shape {
-          top: 292px;
+          top: 360px;
+          right:0 !important;
         }
 
         & .note {
@@ -841,24 +847,24 @@ section.home {
       & .img-wrapper {
         // overflow: hidden;
         display:grid;
-        grid-template-columns: 200px 200px 200px;
+        grid-template-columns: 1fr 1fr 1fr;
         & .gif-talent {
           // max-width:180px;
           // min-height:450px;
 
           &#gif-one {
-             width:200px !important;
-             height:100%;
+             width:100% !important;
+            //  height:100%;
             }
 
             &#gif-two {
-              width: 200px !important;
-              height: 100%;
+              width: 100% !important;
+              // height: 100%;
             }
 
             &#gif-three {
-              width: 200px !important;
-              height: 100%;
+              width: 100% !important;
+              // height: 100%;
             }
 
             &#gif-four {
