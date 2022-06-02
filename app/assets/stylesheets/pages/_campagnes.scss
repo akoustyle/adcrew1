@@ -13,7 +13,7 @@ section.campaigns {
 
   &:nth-child(1) {
     flex-direction: column;
-    // padding-top: 13vh;
+    padding-top: 13vh;
 
     & .content {
     display: flex;
@@ -1023,7 +1023,7 @@ section.campaign {
       & .img-wrapper {
         // height: 460px;
         padding: 54px;
-        grid-template-columns: 1fr 1fr 1f;
+        grid-template-columns: 1fr 1fr 1fr;
 
         & .campaign-card {
           height: 260px !important;
