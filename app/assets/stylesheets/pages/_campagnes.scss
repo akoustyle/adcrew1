@@ -1694,8 +1694,10 @@ section.campaign {
           height: 150px !important;
           width: 100%;
           max-width:125px;
-          & .card-info .title {
-            font-size: 10px;
+          & .card-info {
+            & .title {
+              font-size: 10px;
+            }
           }
 
         }
