@@ -1195,7 +1195,7 @@ section.home {
 
       & .img-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 85vw;
         position: relative;
 
@@ -1508,7 +1508,7 @@ section.home {
 
       img {
         width: 100%;
-        height: 200px;
+        height: 250px;
         object-fit: cover;
       }
 
