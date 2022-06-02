@@ -1026,6 +1026,7 @@ section.campaign {
 
         & .campaign-card {
           height: 300px !important;
+          width:100%;
         }
       }
     }
@@ -1690,6 +1691,8 @@ section.campaign {
         & .campaign-card {
           height: 150px !important;
           width: 100%;
+          max-width:125px;
+
         }
       }
     }
