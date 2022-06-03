@@ -1872,9 +1872,9 @@ section.home {
         display: none;
       }
 
-      // & .social-icons {
-      //   display: none;
-      // }
+      & .social-icons {
+        display: block;
+      }
 
       & .content {
         display: flex;
