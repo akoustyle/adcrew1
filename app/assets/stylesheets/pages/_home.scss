@@ -1648,7 +1648,8 @@ section.home {
 
 @media only screen and (max-height: 576px) and (orientation: landscape) {
   .banner-icons {
-    top: 30vh;
+    top: 90px;
+    left:10px
 
     & a {
       margin-left: -7px;
@@ -1679,9 +1680,9 @@ section.home {
         z-index: 10;
 
         & video {
-          height: 100%;
+          height: 70%;
           width: 635px;
-          padding: 0px 0px 20px 0px;
+          padding: 50px 20px 20px 10px;
           object-fit: cover;
         }
       }
