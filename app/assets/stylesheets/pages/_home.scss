@@ -149,7 +149,7 @@ section.home {
 
 				&:nth-child(3) {
 			        position: absolute;
-			        right: 10px;
+			        right: -35px;
 			        top: -200px;
 
 			        z-index: 10;
@@ -177,7 +177,7 @@ section.home {
 			.rounded-shape {
 			    position: absolute;
 		        top: 360px;
-		        right: -100px;
+		        right: -75px;
 		        transform: translate(-50%, -50%);
 		        content: "";
 		        // border: 1px solid #000;
