@@ -1249,6 +1249,7 @@ section.campaign {
   section.campaigns {
 
     &:nth-child(1) {
+      height:600px;
 
       & .content {
         & .text-content {
@@ -1284,7 +1285,7 @@ section.campaign {
 
         // display:grid;
         // grid-gap:10px;
-        // grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         & .gif-talent {
           //height: 220px;
           width: 100%;
@@ -1296,7 +1297,7 @@ section.campaign {
             display: block;
 
             & img {
-              max-width: 280px;
+              width: 170px;
             }
           }
 
@@ -1304,19 +1305,22 @@ section.campaign {
             display: block;
 
             & img {
-              max-width: 280px;
+              max-width: 170px;
             }
           }
 
           &#gif-seven {
-            display: none;
-            // & img {
-            //     width: 100%;
-            //   }
+            display: block;
+            & img {
+              width: 170px;
+              }
           }
 
           &#gif-height {
-            display: none;
+            display: block;
+            & img {
+              width:170px;
+            }
 
           }
         }
@@ -1365,7 +1369,7 @@ section.campaign {
         grid-template-columns: 1fr 1fr 1fr;
 
         & .campaign-card {
-          height: 460px !important;
+          height: 260px !important;
           width:100%;
         }
       }
@@ -1692,8 +1696,8 @@ section.campaign {
 
         & .campaign-card {
           height: 150px !important;
-          width: 100%;
-          max-width:125px;
+          // width: 100%;
+          width:125px;
           & .card-info {
             & .title {
               font-size: 10px;
