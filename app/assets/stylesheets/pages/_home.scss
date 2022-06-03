@@ -223,7 +223,7 @@ section.home {
 			// width: 85vw;
       display: grid;
       grid-gap: 37px;
-      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 			& .gif-talent {
 				filter: grayscale(100%);
 				margin: 30px 0;
@@ -232,16 +232,16 @@ section.home {
 		  		//background-size: cover;
 		  		//background-position: center;
 		  		&#gif-one {
-		  			width: 200px !important;
+		  			width: 100% !important;
 		  		}
 		  		&#gif-two {
-            width: 200px !important;
+            width: 100% !important;
 		  		}
 		  		&#gif-three {
-            width: 200px !important;
+            width: 100% !important;
 		  		}
 		  		&#gif-four {
-            width: 200px !important;
+            width: 100% !important;
 		  		}
 			}
 			& .note {
