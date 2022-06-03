@@ -1441,6 +1441,7 @@ section.campaign {
 
     &:nth-child(1) {
       padding-top: 13vh !important;
+      height: 650px;
 
       & .content {
         & .text-content {
@@ -1504,6 +1505,7 @@ section.campaign {
 
     &:nth-child(2) {
       padding-top: 13vh !important;
+      height:550px;
 
       & .content {
 
@@ -1529,14 +1531,15 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      height: 400px;
 
       & img {
         display: none;
       }
 
       & .social-icons {
-        display: none;
+        display: block;
+        flex-direction: column;
       }
 
       & .content {
@@ -1545,7 +1548,7 @@ section.campaign {
         // height: 60vh;
         justify-content: space-around;
         /* align-items: center; */
-        flex-direction: column;
+        // flex-direction: column;
 
         & .text-content {
           width: 35vw;
@@ -1553,8 +1556,8 @@ section.campaign {
 
           //text-align: center;
           & .social-icons {
-            display: none;
-            flex-direction: unset;
+            // display: block;
+            // flex-direction: column;
           }
 
           & a {
