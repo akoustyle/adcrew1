@@ -149,7 +149,7 @@ section.home {
 
 				&:nth-child(3) {
 			        position: absolute;
-			        right: -35px;
+			        right: -25px;
 			        top: -200px;
 
 			        z-index: 10;
@@ -761,7 +761,7 @@ section.home {
 
 }
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:818px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width:818px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) and (hover: none) {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
@@ -882,7 +882,7 @@ section.home {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width:668px) and (max-width: 817px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-width:668px) and (max-width: 817px) and (-webkit-min-device-pixel-ratio: 3) and (hover:none) {
   .banner-icons {
     // display: none;
     // position: absolute;
@@ -1372,7 +1372,7 @@ section.home {
 }
 
 // landscape phones
-@media only screen and (max-height: 776px) and (orientation: landscape) {
+@media only screen and (max-height: 776px) and (orientation: landscape) and (hover: none) {
   .banner-icons {
     top: 30vh;
 
@@ -1646,7 +1646,7 @@ section.home {
   }
 }
 
-@media only screen and (max-height: 576px) and (orientation: landscape) {
+@media only screen and (max-height: 576px) and (orientation: landscape) and (hover:none) {
   .banner-icons {
     top: 90px;
     left:10px;
