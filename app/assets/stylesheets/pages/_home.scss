@@ -758,7 +758,7 @@ section.home {
 
 }
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:821px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width:821px) and (max-width: 1024px) {
   .banner-icons {
     // position: absolute;
     bottom: 30px;
@@ -879,7 +879,7 @@ section.home {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width:668px) and (max-width: 820px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-width:668px) and (max-width: 820px) {
   .banner-icons {
     // display: none;
     // position: absolute;
