@@ -1699,12 +1699,14 @@ section.campaign {
         // height: 460px;
         // padding: 17px;
         grid-template-columns: 1fr 1fr 1fr;
-        width:296px;
+        width:304px !important;
+        padding:0;
+        margin:30px auto;
 
         & .campaign-card {
           height: 150px !important;
           // width: 100%;
-          width:95px;
+          width:100px;
           & .card-info {
             & .title {
               font-size: 10px;
