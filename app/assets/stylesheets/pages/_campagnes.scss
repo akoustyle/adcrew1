@@ -1673,8 +1673,10 @@ section.campaign {
       justify-content: center;
         // align-items: center;
         // background-color: black;
-      height: 550px;
-
+      height: 2550px;
+      & .content {
+        margin-top:20px;
+      }
         & img {
           display: none;
         }
@@ -1696,6 +1698,7 @@ section.campaign {
         // height: 460px;
         padding: 17px;
         grid-template-columns: 1fr 1fr 1fr;
+        width:296px;
 
         & .campaign-card {
           height: 150px !important;
@@ -1716,6 +1719,7 @@ section.campaign {
       align-items: center;
       background-color: black;
       min-height: 65vh;
+      margin-top:150px;
 
       & img {
         display: none;
