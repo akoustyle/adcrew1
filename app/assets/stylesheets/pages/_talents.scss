@@ -871,7 +871,7 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      height: 1550px;
+      height: 1050px;
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
@@ -904,7 +904,7 @@ section.talent {
 
               & .insta-link > a {
                 top: 105px !important;
-                right: -105px !important;
+                right: -198px !important;
               }
 
               & .tiktok-link > a {
@@ -939,8 +939,8 @@ section.talent {
         }
 
         & .talent-left-image-video video {
-          height: 761px;
-          width: 420px;
+          height: 761px !important;
+          width: 420px !important;
           padding: 40px;
         }
         & .talent-left-image-video img {
@@ -1180,22 +1180,22 @@ section.talent {
             & .social-links {
               & .youtube-link > a {
                 top: 0 !important;
-                left: 30px !important;
+                left: 20px !important;
                 right: 0 !important;
               }
               & .insta-link > a {
                 top: 30px !important;
-                left: 30px !important;
+                left: 20px !important;
                 right: 0 !important;
               }
               & .tiktok-link > a {
                 top: 60px !important;
-                left: 30px !important;
+                left: 20px !important;
                 right: 0 !important;
               }
               & .media-kit > a {
                 top: 400px !important;
-                left: 30px !important;
+                left: 20px !important;
               }
             }
             & .social-links > a i {
