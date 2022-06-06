@@ -1501,6 +1501,7 @@ section.campaign {
         .rounded-shape {
           top: 250px;
           right:-30px;
+          width:200px;
         }
       }
     }
@@ -1541,13 +1542,13 @@ section.campaign {
 
       & .social-icons {
         display: block;
-        flex-direction: column;
+        flex-direction: initial;
       }
 
       & .content {
         display: flex;
         /* width: 50vw; */
-        // height: 60vh;
+        height: 200px;
         justify-content: space-around;
         /* align-items: center; */
         // flex-direction: column;
