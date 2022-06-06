@@ -899,7 +899,7 @@ section.home {
 
   section.home {
     display: flex;
-    // height: 100vh;
+    height: 100vh;
     // scroll-snap-align: center;
 
     .note {
@@ -927,7 +927,7 @@ section.home {
           height: 80%;
           width: 656px;
           object-fit: cover;
-          padding:40px 10px 0px 10px;
+          padding:100px 10px 0px 10px;
         }
       }
     }
