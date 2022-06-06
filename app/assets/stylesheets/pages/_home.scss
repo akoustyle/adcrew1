@@ -899,7 +899,7 @@ section.home {
 
   section.home {
     display: flex;
-    height: auto;
+    // height: auto;
     // scroll-snap-align: center;
 
     .note {
@@ -2008,7 +2008,7 @@ section.home {
       flex-direction: column;
       padding-top: 30px;
       height:950px;
-      width:365px;
+      width:100%;
       margin:auto;
 
       & .content {
