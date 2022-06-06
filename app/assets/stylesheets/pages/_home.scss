@@ -968,7 +968,7 @@ section.home {
       height: 750px;
 
       & .content .text-content p {
-        width:550px;
+        width:630px;
       }
       & .img-wrapper {
         justify-content: center;
@@ -1022,13 +1022,13 @@ section.home {
         & .content {
           & .text-content {
             & p {
-              width: 85vw;
+              width: 630px;
             }
           }
         }
 
         & .img-wrapper {
-          width: 85vw;
+          width: 630px;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 6px;
