@@ -182,7 +182,7 @@ section.team {
     }
   }
   &:nth-child(4) {
-    height: 40vh;
+    height: 400px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ section.team {
       display: flex;
       color: white;
       width: 85vw;
-      height: 40vh;
+      height: 200px;
       justify-content: space-between;
       align-items: baseline;
 
@@ -220,7 +220,7 @@ section.team {
 //////////////// RESPONSIVE ////////////////////
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width:768px) and (max-width: 1224px) {
+@media (min-width:868px) and (max-width: 1224px) {
 
   section.team {
 
@@ -329,20 +329,20 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 50vh;
+      min-height: 400px;
 
       & img {
         display: none;
       }
 
       & .social-icons {
-        display: none;
+        display: block;
       }
 
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 20vh;
+        height: 200px;
         justify-content: space-around;
         /* align-items: center; */
         // flex-direction: column;
@@ -389,7 +389,7 @@ section.team {
 }
 
 /*Small devices (landscape phones, 576px and up)*/
-@media only screen and (min-width: 466px) and (max-width: 767px) {
+@media only screen and (min-width: 566px) and (max-width: 867px) {
   section.team {
 
     &:nth-child(1) {
@@ -561,7 +561,7 @@ section.team {
   }
 }
 /*Smallest device*/
-@media only screen and (min-width: 100px) and (max-width: 465px) and (orientation: portrait) {
+@media only screen and (min-width: 100px) and (max-width: 565px) and (orientation: portrait) {
 
   section.team {
 
