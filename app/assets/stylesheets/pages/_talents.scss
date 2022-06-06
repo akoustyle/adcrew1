@@ -605,7 +605,7 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      height: 210vh;
+      height: 1850px;
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
@@ -621,10 +621,10 @@ section.talent {
 
       &:nth-child(1) {
         justify-content: right;
-        align-items: center;
+        align-items: flex-start;
 
         & .content {
-          width: 100vw;
+          width: 100%;
           // align-items: end;
 
           & .text-content {
@@ -668,6 +668,9 @@ section.talent {
               // &:hover {
               //   // border-bottom: 1px $red solid;
               // }
+            }
+            & .talent-standing img {
+              height:46vh !important;
             }
           }
         }
