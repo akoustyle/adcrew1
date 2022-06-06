@@ -1380,7 +1380,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      min-height: 500px;
       display: none;
 
       & img {
@@ -1463,9 +1463,9 @@ section.campaign {
         video {
           &:nth-child(1) {
             top: 0px;
-            right: -26px;
+            right: -6px;
             width: 145px;
-            height: 190px;
+            height: 210px;
           }
 
           &:nth-child(2) {
@@ -1700,14 +1700,14 @@ section.campaign {
         // height: 460px;
         // padding: 17px;
         grid-template-columns: 1fr 1fr 1fr;
-        width:304px !important;
+        width:342px !important;
         padding:0;
         margin:30px auto;
 
         & .campaign-card {
           height: 150px !important;
           // width: 100%;
-          width:100px;
+          width:110px;
           & .card-info {
             & .title {
               font-size: 10px;
@@ -1722,7 +1722,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      min-height: 450px;
       margin-top:150px;
 
       & img {
@@ -1735,7 +1735,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        // height: 60vh;
+        height: 200px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: column;

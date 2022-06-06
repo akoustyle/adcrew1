@@ -1066,12 +1066,14 @@ section.talent {
 
       & .img-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 17px;
+        padding: 0;
+        margin:30px auto;
+        width:342px;
       }
       & .img-wrapper > a {
         & .campaign-card {
           height: 150px;
-          width: 100%;
+          width: 110px;
           & .background > i {
             right: 0;
             padding: 4px !important;
