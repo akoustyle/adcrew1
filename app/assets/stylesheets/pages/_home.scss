@@ -57,11 +57,11 @@ section.home {
 		align-items: center;
     // width: 100vw;
     margin:auto;
-    height:1050px;
+    height:750px;
 
 		& .content {
 		display: flex;
-		width: 57vw;
+		width: 50vw;
 		height: 100vh;
 		justify-content: center;
 		align-items: center;
@@ -79,7 +79,7 @@ section.home {
 		& img {
 			height: 750px;
 			width: 500px;
-      padding: 167px 127px 106px 0px;
+      padding: 125px 90px 113px 0px;
     filter: saturate(0.7);
 		object-fit: cover;
     object-position: top center;
@@ -225,7 +225,7 @@ section.home {
 		}
 		& .img-wrapper {
       display: grid;
-      grid-gap: 37px;
+      grid-gap: 5px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
 			& .gif-talent {
 				filter: grayscale(100%);
