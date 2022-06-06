@@ -1441,7 +1441,7 @@ section.campaign {
     padding: 0px !important;
 
     &:nth-child(1) {
-      padding-top: 13vh !important;
+      padding-top: 20vh !important;
       height: 650px;
 
       & .content {
@@ -1841,6 +1841,7 @@ section.campaign {
         .rounded-shape {
           top: 261px;
           right: -11px;
+          width:200px;
         }
       }
     }
