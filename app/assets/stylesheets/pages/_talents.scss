@@ -871,7 +871,7 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      // height: 1350px;
+      height: 1350px;
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
@@ -891,8 +891,8 @@ section.talent {
 
         & .content {
           width: 100vw;
-          height:1850px;
-          // padding-top:80px;
+          height:auto;
+          padding-top:80px;
           // align-items: end;
 
           & .text-content {
