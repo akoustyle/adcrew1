@@ -1712,14 +1712,14 @@ section.home {
     }
 
     &:nth-child(2) {
-      // flex-direction: column;
+      flex-direction: initial;
       // padding-top: 30px;
       // margin: 100px auto;
-      height: 600px;
+      height: 200px;
       margin:75px;
       width:478px;
       & .content {
-        width: 492px;
+        width: 400px;
         padding: 0px 0px 50px 0px;
 
         & .text-content {
@@ -1732,9 +1732,9 @@ section.home {
 
       & img {
         // margin: 30px 0 30px 0;
-        height: 450px;
+        height: 379px;
         width: 591px !important;
-        padding: 50px;
+        padding: 0px 0px 50px 50px;
         object-fit: cover;
         object-position: top center;
         //filter: grayscale(100%);
