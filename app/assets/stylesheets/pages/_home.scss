@@ -917,7 +917,7 @@ section.home {
         align-items: end;
         justify-content: center;
         width: 766px;
-        // height: 600px;
+        height: 100vh;
         // max-width: 100vw;
         // min-height: 100vh;
         // filter: grayscale(0%);
@@ -927,7 +927,7 @@ section.home {
           height: 80%;
           width: 656px;
           object-fit: cover;
-          padding:100px 10px 0px 10px;
+          padding:150px 10px 0px 10px;
         }
       }
     }
