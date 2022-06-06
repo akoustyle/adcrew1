@@ -1729,11 +1729,11 @@ section.home {
       flex-direction: initial;
       // padding-top: 30px;
       // margin: 100px auto;
-      height: 200px;
-      margin:75px;
-      width:478px;
+      height: 300px;
+      margin:150px 50px;
+      width:391px;
       & .content {
-        width: 400px;
+        width: 300px;
         padding: 0px 0px 50px 0px;
 
         & .text-content {
@@ -1860,7 +1860,8 @@ section.home {
         // width: 89vw;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 15px;
+        grid-gap: 5px;
+        width: 580px;
 
         & .gif-talent {
           // min-height: 360px;
