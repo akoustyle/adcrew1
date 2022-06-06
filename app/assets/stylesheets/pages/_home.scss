@@ -1996,7 +1996,7 @@ section.home {
       margin:auto;
 
       & .content {
-        width: 100vw;
+        width: 70vw;
         padding: 0px 0px 40px 0px;
 
         & .text-content {
@@ -2007,7 +2007,7 @@ section.home {
       & img {
         // margin: 30px 0 30px 0;
         height: 50%;
-        width: 85vw;
+        width: 70vw;
         padding: 0px;
         object-fit: cover;
         //filter: grayscale(100%);
@@ -2029,7 +2029,7 @@ section.home {
         // align-items: center;
         & .text-content {
           border-bottom: 1px black solid;
-          width: 85vw;
+          width: 70vw;
           z-index: 10;
 
           & p {
@@ -2051,7 +2051,7 @@ section.home {
       & .img-wrapper {
         display: flex;
         justify-content: space-between;
-        width: 85vw;
+        width: 70vw;
         position: relative;
 
         img {
@@ -2078,6 +2078,8 @@ section.home {
             top: 0px;
             height: 320px;
             width: 225px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
           }
         }
 
@@ -2108,7 +2110,7 @@ section.home {
       & .content {
         & .text-content {
           & p {
-            width: 85vw;
+            width: 70vw;
           }
         }
       }
@@ -2116,9 +2118,9 @@ section.home {
       & .img-wrapper {
         // width: 89vw;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3px;
-        width:85vw;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        width:70vw;
         margin:auto;
 
         & .gif-talent {
@@ -2140,7 +2142,7 @@ section.home {
           }
 
           &#gif-four {
-
+            display:none;
             width: 100% !important;
             height: 200px;
             // display:block;
@@ -2167,7 +2169,7 @@ section.home {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      min-height: 500px;
 
       & img {
         display: none;
@@ -2179,8 +2181,8 @@ section.home {
 
       & .content {
         display: flex;
-        /* width: 50vw; */
-        // height: 60vh;
+        width: 70vw;
+        height: 300px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: column;
