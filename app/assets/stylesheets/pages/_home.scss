@@ -891,7 +891,7 @@ section.home {
   .banner-icons {
     // display: none;
     // position: absolute;
-    top: 250px;
+    top: 450px;
     left:10px;
     // right: 30px;
     // z-index: 10;
@@ -924,7 +924,7 @@ section.home {
         z-index: 10;
 
         & video {
-          // height: 420px;
+          height: 80%;
           width: 656px;
           object-fit: cover;
           padding:40px 10px 0px 10px;
@@ -968,7 +968,7 @@ section.home {
       height: 750px;
 
       & .content .text-content p {
-        width:550px;
+        width:630px;
       }
       & .img-wrapper {
         justify-content: center;
@@ -1022,13 +1022,13 @@ section.home {
         & .content {
           & .text-content {
             & p {
-              width: 85vw;
+              width: 630px;
             }
           }
         }
 
         & .img-wrapper {
-          width: 85vw;
+          width: 630px;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 6px;
