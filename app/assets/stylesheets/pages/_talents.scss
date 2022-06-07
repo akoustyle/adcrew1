@@ -530,6 +530,9 @@ section.talent {
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 10px;
           padding: 30px 5vh 50px;
+          & .campaign-card {
+            height:300px;
+          }
         }
 
         & .content {
