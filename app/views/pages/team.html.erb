@@ -1,5 +1,5 @@
 <%#= cache_if current_user.nil?, "public-events-v1", expires_in: 12.hours do %>
-  <%= content_for(:navbar_class, "main-sidebar-home") %>
+  <%#= content_for(:navbar_class, "main-sidebar-home") %>
   <div class="scroll">
     <div class="smooth">
       <section class="team" id="ceo">
@@ -30,7 +30,7 @@
           </div>
         </div>
         <div style="width: 100%;">
-          <p class="note" style="">
+          <p class="note">
             <%= t('team.note_html') %>
           </p>
         </div>
@@ -278,18 +278,18 @@
       <section class="team" id="footer-section">
 
         <div class="content">
-            <div class="" style="">
+            <div>
               <%= link_to root_path do %>
                 <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
               <% end %>
             </div>
 
-            <div class="" style="">
+            <div>
               <h6><%= t('footer.title') %></h6>
               <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
             </div>
 
-            <div class="" style="">
+            <div>
               <h6><%= t('footer.title2') %></h6>
               <ul class="footer-links">
                 <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
