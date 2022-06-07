@@ -1202,7 +1202,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 200px;
+        height: 300px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: initial;
@@ -1397,10 +1397,10 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        // height: 60vh;
+        height: 300px;
         justify-content: space-around;
         /* align-items: center; */
-        flex-direction: column;
+        flex-direction: initial;
 
         & .text-content {
           width: 35vw;
@@ -1551,7 +1551,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 200px;
+        height: 250px;
         justify-content: space-around;
         /* align-items: center; */
         // flex-direction: column;
@@ -1726,7 +1726,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 450px;
+      height: 400px;
       margin-top:150px;
 
       & img {
@@ -1739,7 +1739,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 200px;
+        height: 250px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: column;
@@ -1877,7 +1877,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 500px;
+      height: 400px;
       & img {
         display: none;
       }
@@ -1889,7 +1889,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-          // height: 60vh;
+          height: 250px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: column;
