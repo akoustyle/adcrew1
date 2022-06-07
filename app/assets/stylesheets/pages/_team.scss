@@ -454,7 +454,8 @@ section.team {
         width: 85vw;
         margin: 30px auto;
         & .team-card {
-          height: 250px;
+          height: 250px !important;
+          width:100% !important;
         }
 
         & .note {
