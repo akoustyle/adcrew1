@@ -112,22 +112,26 @@ section.team {
         }
       }
     }
-    & .img-wrapper {
-      // overflow-y: scroll;
-      // height: 550px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 6px;
-      width: 85vw;
-      margin: 60px 0;
-      & .note {
-        margin: 0px 0px;
-        width: 110%;
-        font-size: 18px;
-        text-transform: uppercase;
-        font-family: inherit;
-        & span {
-          text-decoration: line-through;
+    & .content-team {
+      display:flex;
+      justify-content: center;
+      &.img-wrapper {
+        // overflow-y: scroll;
+        // height: 550px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 6px;
+        width: 85vw;
+        margin: 60px 0;
+        & .note {
+          margin: 0px 0px;
+          width: 110%;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-family: inherit;
+          & span {
+            text-decoration: line-through;
+          }
         }
       }
     }
