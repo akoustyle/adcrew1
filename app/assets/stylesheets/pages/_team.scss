@@ -50,8 +50,8 @@ section.team {
       justify-items: center;
       align-items: center;
       grid-gap: 15px;
-      grid-template-columns: 300px 300px;
-      // width: 85vw;
+      grid-template-columns: 1fr 1fr;
+      width: 85vw;
       margin: 30px 0;
       & .gif-team {
         filter: grayscale(100%);
@@ -92,6 +92,7 @@ section.team {
     flex-direction: column;
     padding-top: 13vh;
     font-weight: 100 !important;
+    margin-bottom:100px;
     & .content {
       display: flex;
       justify-content: center;
@@ -104,6 +105,7 @@ section.team {
         & a {
           font-size: 14px;
           color: $red;
+          font-weight: 100 !important;
           // z-index: 1000000;
           &:hover {
             border-bottom: none;
@@ -118,9 +120,9 @@ section.team {
       &.img-wrapper {
         // overflow-y: scroll;
         // height: 550px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 6px;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        grid-gap: 10px;
         width: 85vw;
         margin: 30px auto;
         & .note {
@@ -180,9 +182,9 @@ section.team {
       height: 90vh;
       width: 50vw;
       padding: 80px 80px 80px 20px;
-          object-fit: cover;
-          object-position: top center;
-          // filter: grayscale(100%);
+      object-fit: cover;
+      object-position: top center;
+      // filter: grayscale(100%);
     }
   }
   &#footer-section {
@@ -283,8 +285,8 @@ section.team {
 
     &#team {
       & .img-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
         grid-gap: 6px;
         width: 85vw;
         margin: 30px auto;
