@@ -456,8 +456,8 @@ section.team {
     &#team {
       font-weight: 100 !important;
       & .img-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
         grid-gap: 6px;
         width: 85vw;
         margin: 30px auto;
@@ -626,8 +626,8 @@ section.team {
     &#team {
       font-weight: 100 !important;
       & .img-wrapper {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
+        display:grid !important;
+        grid-template-columns: 1fr 1fr !important;
         grid-gap: 2px;
         width: 342px !important;
         margin: 30px auto !important;
