@@ -620,6 +620,7 @@ section.team {
     }
 
     &#team {
+      font-weight: 100 !important;
       & .img-wrapper {
         display:grid;
         grid-template-columns: 1fr 1fr;
