@@ -122,7 +122,7 @@ section.team {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 6px;
         width: 85vw;
-        margin: 60px 0;
+        margin: 30px auto;
         & .note {
           margin: 0px 0px;
           width: 110%;
@@ -191,6 +191,7 @@ section.team {
     justify-content: center;
     align-items: center;
     background-color: #161616;
+    // font-weight: 100 !important;
 
     & .content {
       display: flex;
@@ -673,6 +674,7 @@ section.team {
       align-items: center;
       background-color: black;
       min-height: 400px;
+      font-weight: 100 !important;
       & img {
         display: none;
       }

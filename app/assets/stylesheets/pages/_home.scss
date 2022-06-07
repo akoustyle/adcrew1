@@ -1999,7 +1999,7 @@ section.home {
         & video {
           height: 80vh;
           width: 85vw;
-          padding: 10vh 30px 20px 30px;
+          padding: 6vh 30px 20px 30px;
           object-fit: cover;
         }
       }
@@ -2046,7 +2046,7 @@ section.home {
         // align-items: center;
         & .text-content {
           border-bottom: 1px black solid;
-          width: 70vw;
+          width: 70vw !important;
           z-index: 10;
 
           & p {
