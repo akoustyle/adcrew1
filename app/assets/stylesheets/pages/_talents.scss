@@ -1276,7 +1276,7 @@ section.talent {
         justify-content: center;
         align-items: center;
         background-color: black;
-        height: 65vh;
+        height: 400px;
         margin-top: 20vh;
         & img {
           display: none;
@@ -1289,7 +1289,7 @@ section.talent {
         & .content {
           display: flex;
           /* width: 50vw; */
-            height: 40vh;
+            height: 300px;
           justify-content: space-around;
           /* align-items: center; */
           flex-direction: column;
