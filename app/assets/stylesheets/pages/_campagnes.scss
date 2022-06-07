@@ -607,6 +607,8 @@ section.campaign {
       & .img-wrapper {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:5px;
+        width:700px;
         & .gif-talent {
           //height: 220px;
           width: 100%;
@@ -656,7 +658,7 @@ section.campaign {
 
     &:nth-child(2) {
       flex-direction: column;
-      // padding-top: 45vh;
+      padding-top: 0;
       justify-content: center;
       // align-items: center;
       // background-color: black;
@@ -681,6 +683,7 @@ section.campaign {
 
       & .img-wrapper {
         // height: 460px;
+        width:820px;
         padding: 54px;
         grid-template-columns: 1fr 1fr 1fr;
 
