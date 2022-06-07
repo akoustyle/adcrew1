@@ -2124,12 +2124,8 @@ section.home {
         object-fit: cover;
       }
 
-      & .content {
-        & .text-content {
-          & p {
-            width: 70vw;
-          }
-        }
+      & .content .text-content {
+        width: 70vw;
       }
 
       & .img-wrapper {
