@@ -1733,7 +1733,7 @@ section.home {
       margin:150px 50px;
       width:391px;
       & .content {
-        width: 252px;
+        width: 250px;
         padding: 0px 0px 50px 0px;
 
         & .text-content {
@@ -1746,9 +1746,9 @@ section.home {
 
       & img {
         // margin: 30px 0 30px 0;
-        height: 379px;
-        width: 591px !important;
-        padding: 0px 0px 50px 50px;
+        height: 360px !important;
+        width: 480px !important;
+        padding: 0px 0px 50px 50px !important;
         object-fit: cover;
         object-position: top center;
         //filter: grayscale(100%);
