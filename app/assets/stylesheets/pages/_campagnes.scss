@@ -1189,7 +1189,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 65vh;
+      height: 400px;
 
       & img {
         display: none;
@@ -1202,10 +1202,10 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        // height: 60vh;
+        height: 200px;
         justify-content: space-around;
         /* align-items: center; */
-        flex-direction: column;
+        flex-direction: initial;
 
         & .text-content {
           width: 35vw;
