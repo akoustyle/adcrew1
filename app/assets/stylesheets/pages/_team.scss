@@ -244,10 +244,10 @@ section.team {
 
       & .img-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        // width: 85vw;
-        // margin: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        width: 85vw;
+        margin: 30px auto;
 
         & .gif-team {
           filter: grayscale(100%);
