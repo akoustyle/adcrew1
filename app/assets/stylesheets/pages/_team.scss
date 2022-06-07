@@ -452,6 +452,7 @@ section.team {
     }
 
     &#team {
+      font-weight: 100 !important;
       & .img-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -510,6 +511,7 @@ section.team {
       align-items: center;
       background-color: black;
       min-height: 400px;
+      font-weight: 100 !important;
 
       & img {
         display: none;
@@ -691,21 +693,21 @@ section.team {
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: column;
-          & .text-content {
-            width: 35vw;
-            position: relative;
-            //text-align: center;
-            & .social-icons{
-              display: none;
-              flex-direction: unset;
+        & .text-content {
+          width: 35vw;
+          position: relative;
+          //text-align: center;
+          & .social-icons{
+            display: none;
+            flex-direction: unset;
+          }
+          & a {
+            font-size: 14px;
+            color: $red;
+            &:hover {
+              border-bottom: 1px $red solid;
             }
-            & a {
-              font-size: 14px;
-              color: $red;
-              &:hover {
-                border-bottom: 1px $red solid;
-              }
-            }
+          }
           .rounded-shape {
               position: absolute;
               top: -15px;
@@ -720,7 +722,7 @@ section.team {
                 pointer-events: none;
                 z-index: 100;
           }
-          }
+        }
       }
     }
 
