@@ -21,6 +21,7 @@
             <%= f.text_field  :entreprise, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder1') %>
             <%= f.label t('contact.form.email') %>
             <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder2') %>
+            <%=  f.label t('contact.form.category') %>
             <%= f.text_field :category, required: true, class: "contact-form-text-area", placeholder: t('contact.form.placeholder3') %>
             <%#= f.label t('contact.form.category') %>
             <%# <select name="category" id="category">
