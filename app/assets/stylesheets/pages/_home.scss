@@ -2192,7 +2192,7 @@ section.home {
         display: none;
       }
 
-      & .content {
+      &:nth-chil(1) {
         display: flex;
         width: 70vw;
         height: 250px;
@@ -2229,6 +2229,9 @@ section.home {
             z-index: 100;
           }
         }
+      }
+      &:nth-child(2) {
+        width:70vw;
       }
     }
   }
