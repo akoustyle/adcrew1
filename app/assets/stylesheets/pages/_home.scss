@@ -2192,8 +2192,8 @@ section.home {
         display: none;
       }
 
-      &:nth-chil(1) {
-        display: flex;
+      & .content {
+        display: block;
         width: 70vw;
         height: 250px;
         justify-content: space-around;
@@ -2230,7 +2230,7 @@ section.home {
           }
         }
       }
-      &:nth-child(2) {
+      & .copyright {
         width:70vw;
       }
     }
