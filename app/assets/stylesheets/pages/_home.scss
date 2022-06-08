@@ -2126,6 +2126,9 @@ section.home {
 
       & .content .text-content {
         width: 70vw;
+        & p {
+          width:70vw;
+        }
       }
 
       & .img-wrapper {
