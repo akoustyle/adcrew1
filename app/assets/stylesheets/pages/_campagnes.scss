@@ -1808,7 +1808,7 @@ section.campaign {
             top: 0px;
             right: -11px;
             width: 140px;
-            height: 270px;
+            height: 170px;
           }
 
           &:nth-child(2) {
@@ -1823,7 +1823,7 @@ section.campaign {
             right: 40px;
             top: 25px;
             width: 274px;
-            height: 342px;
+            height: 442px;
             transform: rotate(2deg);
             z-index: 10;
             // display: none;
@@ -1843,7 +1843,7 @@ section.campaign {
         }
 
         .rounded-shape {
-          top: 261px;
+          top: 361px;
           right: -11px;
           width:200px;
         }
@@ -1865,7 +1865,7 @@ section.campaign {
       }
 
       & .img-wrapper {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 
         & .show-campaign-card {
           height: 240px !important;
