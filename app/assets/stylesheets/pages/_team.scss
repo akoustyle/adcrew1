@@ -578,9 +578,14 @@ section.team {
     &#ceo {
 
       & .content {
-          & .text-content {
-              & p {
+        & .text-content {
+          & p {
             width: 100% !important;
+            white-space: nowrap;
+            overflow: scroll;
+          }
+          & .overflow-clip-ellipsis {
+            text-overflow: clip ellipsis;
           }
         }
       }
