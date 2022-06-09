@@ -1675,7 +1675,7 @@ section.campaign {
 
     &:nth-child(2) {
       flex-direction: column;
-      // padding-top: 45vh;
+      padding-top: 0vh;
       justify-content: center;
         // align-items: center;
         // background-color: black;
@@ -1727,7 +1727,7 @@ section.campaign {
       align-items: center;
       background-color: black;
       height: 400px;
-      margin-top:150px;
+      // margin-top:150px;
 
       & img {
         display: none;
@@ -1740,9 +1740,10 @@ section.campaign {
         display: flex;
         /* width: 50vw; */
         height: 250px;
-        justify-content: space-around;
+        justify-content: space-between;
         /* align-items: center; */
-        flex-direction: column;
+        // flex-direction: column;
+        width:100%;
 
         & .text-content {
           width: 35vw;
