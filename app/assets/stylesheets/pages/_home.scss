@@ -1966,7 +1966,11 @@ section.home {
 @media only screen and (min-width: 100px) and (max-width: 567px) and (-webkit-min-device-pixel-ratio: 2) {
   .banner-icons {
     top: unset;
-    left:-40px;
+    left:130px;
+    bottom: -18px;
+    & .social-icons {
+      flex-direction: row;
+    }
 
     & a {
       margin-left: -7px;
@@ -2000,7 +2004,7 @@ section.home {
         & video {
           height: 50vh;
           width: 85vw;
-          padding: 12vh 30px 20px 30px;
+          padding: 0vh 30px 12vh 30px;
           object-fit: cover;
         }
       }
