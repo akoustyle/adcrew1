@@ -1601,7 +1601,7 @@ section.campaign {
   section.campaigns {
 
     &:nth-child(1) {
-
+      padding-top:0px !important;
       & .content {
         & .text-content {
           & p {
