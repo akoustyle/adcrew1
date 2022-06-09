@@ -576,7 +576,7 @@ section.team {
   section.team {
 
     &#ceo {
-
+      padding:0;
       & .content {
         & .text-content {
           & p {
@@ -585,7 +585,7 @@ section.team {
             overflow: scroll;
           }
           & .overflow-clip-ellipsis {
-            text-overflow: clip ellipsis;
+            text-overflow: ellipsis;
           }
         }
       }
@@ -635,8 +635,8 @@ section.team {
       & .img-wrapper {
         display:grid !important;
         grid-template-columns: 1fr 1fr !important;
-        grid-gap: 2px;
-        width: 342px !important;
+        grid-gap: 5px;
+        width: 85% !important;
         margin: 30px auto !important;
         & .team-card {
           height: 150px !important;
@@ -657,7 +657,8 @@ section.team {
 
     &#moto {
       flex-direction: column;
-      // padding-top: 50px;
+      padding-top: 50px;
+      margin-bottom:50px;
 
       & .content {
       width: 100vw;
@@ -673,8 +674,8 @@ section.team {
         // margin: 30px 0 30px 0;
         height: 80%;
         width: 85vw;
-        padding: 30px;
-            margin: 0 0 30px 0;
+        // padding: 30px;
+            // margin: 0 0 30px 0;
       object-fit: cover;
       object-position: top center;
       //filter: grayscale(100%);
