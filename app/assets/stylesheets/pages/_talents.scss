@@ -15,7 +15,7 @@ section.talents {
 
   &:nth-child(1) {
     flex-direction: column;
-    padding-top: 13vh;
+    // padding-top: 13vh;
 
     & .content {
       display: flex;
@@ -1071,7 +1071,7 @@ section.talent {
 /*Smallest device*/
 @media (min-width: 100px) and (max-width: 589px) {
   section.talents {
-
+    padding-top:0;
     &:nth-child(1) {
 
       & .img-wrapper {
@@ -1188,7 +1188,7 @@ section.talent {
 
         & .content {
           width: 100vw;
-          align-items: end;
+          align-items: flex-start;
           height:1500px;
           padding:0;
           & .text-content {
@@ -1199,22 +1199,22 @@ section.talent {
             & .social-links {
               & .youtube-link > a {
                 top: 0 !important;
-                left: 10px !important;
+                left: 5px !important;
                 right: 0 !important;
               }
               & .insta-link > a {
                 top: 30px !important;
-                left: 10px !important;
+                left: 5px !important;
                 right: 0 !important;
               }
               & .tiktok-link > a {
                 top: 60px !important;
-                left: 10px !important;
+                left: 5px !important;
                 right: 0 !important;
               }
               & .media-kit > a {
-                top: 400px !important;
-                left: 10px !important;
+                top: 422px !important;
+                left: 3px !important;
               }
             }
             & .social-links > a i {
@@ -1246,11 +1246,11 @@ section.talent {
           padding:40px;
         }
         & img {
-          height: 75vh;
+          height: 70vh;
             width: 100%;
             padding: 30px;
           &.png-img {
-            width: 380px;
+            width: 395px;
             margin-top: 30px;
           }
         }
