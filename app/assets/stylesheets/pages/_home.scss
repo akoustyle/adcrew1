@@ -2205,7 +2205,7 @@ section.home {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 500px;
+      height: 400px;
 
       & img {
         display: none;
@@ -2216,20 +2216,25 @@ section.home {
       }
 
       & .content {
-        display: block;
-        width: 70vw !important;
-        height: 250px;
+        display: flex;
+        /* width: 50vw; */
+        height: 150px;
         justify-content: space-around;
         /* align-items: center; */
-        flex-direction: column;
+        // flex-direction: column;
 
         & .text-content {
           width: 35vw;
           position: relative;
 
           //text-align: center;
+          & .social-icons {
+            display: none;
+            flex-direction: unset;
+          }
+
           & a {
-            font-size: 14px;
+            font-size: 10px;
             color: $red;
 
             &:hover {
@@ -2254,6 +2259,7 @@ section.home {
         }
       }
       &#copyright {
+        display:block !important;
         width:70vw !important;
         color: white !important;
       }
