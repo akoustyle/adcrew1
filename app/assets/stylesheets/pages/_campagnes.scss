@@ -1786,7 +1786,8 @@ section.campaign {
   section.campaign {
 
     &:nth-child(1) {
-      // padding-top: 13vh !important;
+      padding: 0vh !important;
+      height:690px;
       & .content {
         & .text-content {
           & p {
@@ -1851,8 +1852,8 @@ section.campaign {
     }
 
     &:nth-child(2) {
-      // padding-top: 15vh !important;
-      height:400px;
+      padding-top: 0vh !important;
+      height:350px;
       & .content {
 
         & .text-content {
