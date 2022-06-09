@@ -696,10 +696,11 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-          height: 250px;
-        justify-content: space-around;
+        height: 150px;
+        justify-content: space-between;
         /* align-items: center; */
-        flex-direction: column;
+        // flex-direction: column;
+        width:100%;
         & .text-content {
           width: 35vw;
           position: relative;
@@ -709,7 +710,7 @@ section.team {
             flex-direction: unset;
           }
           & a {
-            font-size: 14px;
+            font-size: 9px;
             color: $red;
             &:hover {
               border-bottom: 1px $red solid;
