@@ -1125,7 +1125,7 @@ section.talent {
       & .content {
         display: flex;
         /* width: 50vw; */
-          // height: 60vh;
+          height: 150px;
         justify-content: space-between;
         /* align-items: center; */
         // flex-direction: column;
@@ -1168,6 +1168,7 @@ section.talent {
   section.talent {
       flex-direction: column-reverse;
       height: 210vh;
+      padding: 0px !important;
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
