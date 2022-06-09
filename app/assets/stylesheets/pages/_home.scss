@@ -1967,7 +1967,7 @@ section.home {
   .banner-icons {
     top: unset;
     left:130px;
-    bottom: -18px;
+    bottom: 46px;
     & .social-icons {
       flex-direction: row;
     }
@@ -2023,6 +2023,14 @@ section.home {
 
         & .text-content {
           width: 85vw;
+          & p {
+            white-space: nowrap;
+            overflow: scroll;
+          }
+
+          & .overflow-clip-ellipsis {
+            text-overflow: clip ellipsis;
+          }
         }
       }
 
