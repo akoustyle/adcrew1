@@ -1965,7 +1965,8 @@ section.home {
 /* Portrait and Landscape */
 @media only screen and (min-width: 100px) and (max-width: 567px) and (-webkit-min-device-pixel-ratio: 2) {
   .banner-icons {
-    top: 30vh;
+    top: unset;
+    left:-40px;
 
     & a {
       margin-left: -7px;
@@ -1985,21 +1986,21 @@ section.home {
     &:nth-child(1) {
       justify-content: space-between;
       align-items: flex-start;
-      height:650px;
+      height:350px !important;
 
       & .background {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         // max-width: 100vw;
-        // height: 551px;
+        height: unset;
         // filter: grayscale(0%);
         z-index: 10;
 
         & video {
-          height: 80vh;
+          height: 50vh;
           width: 85vw;
-          padding: 6vh 30px 20px 30px;
+          padding: 12vh 30px 20px 30px;
           object-fit: cover;
         }
       }
@@ -2018,13 +2019,6 @@ section.home {
 
         & .text-content {
           width: 85vw;
-          & p {
-            white-space: nowrap;
-            overflow: scroll;
-          }
-          & .overflow-clip-ellipsis {
-            text-overflow: clip ellipsis;
-          }
         }
       }
 
