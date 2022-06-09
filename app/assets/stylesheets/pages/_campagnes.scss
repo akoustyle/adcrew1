@@ -1755,7 +1755,7 @@ section.campaign {
           }
 
           & a {
-            font-size: 14px;
+            font-size: 9px;
             color: $red;
 
             &:hover {
@@ -1852,8 +1852,8 @@ section.campaign {
     }
 
     &:nth-child(2) {
-      padding-top: 15vh !important;
-      height:500px;
+      // padding-top: 15vh !important;
+      height:400px;
       & .content {
 
         & .text-content {
