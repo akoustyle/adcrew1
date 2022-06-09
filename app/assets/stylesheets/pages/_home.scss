@@ -2013,19 +2013,22 @@ section.home {
     &:nth-child(2) {
       flex-direction: column;
       padding-top: 30px;
-      height:950px;
+      height:650px;
       width:100%;
       margin:auto;
+      justify-content: space-evenly;
 
       & .content {
         width: 70vw;
         padding: 0px 0px 40px 0px;
+        align-items: flex-start;
 
         & .text-content {
           width: 85vw;
           & p {
             white-space: nowrap;
             overflow: scroll;
+            width:70vw;
           }
 
           & .overflow-clip-ellipsis {
@@ -2038,7 +2041,7 @@ section.home {
         // margin: 30px 0 30px 0;
         height: 50%;
         width: 70vw;
-        padding: 0px;
+        padding: 23px;
         object-fit: cover;
         //filter: grayscale(100%);
       }
