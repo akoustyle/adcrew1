@@ -2,7 +2,7 @@
 /* Style inputs */
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  // padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
@@ -156,7 +156,7 @@ section.contact {
 		&:nth-child(3) {
 			align-items: center;
 			flex-direction: column;
-			padding-top: 13vh;
+			// padding-top: 13vh;
 			margin-bottom: 360px;
 
 			& .content {

@@ -1200,22 +1200,22 @@ section.talent {
             & .social-links {
               & .youtube-link > a {
                 top: 0 !important;
-                left: 1vw !important;
+                left: -2vw !important;
                 right: 0 !important;
               }
               & .insta-link > a {
                 top: 30px !important;
-                left: 1vw !important;
+                left: -2vw !important;
                 right: 0 !important;
               }
               & .tiktok-link > a {
                 top: 60px !important;
-                left: 1vw !important;
+                left: -2vw !important;
                 right: 0 !important;
               }
               & .media-kit > a {
                 top: 50vh !important;
-                left: 0vw !important;
+                left: -1vw !important;
               }
             }
             & .social-links > a i {
@@ -1247,11 +1247,11 @@ section.talent {
           padding:40px;
         }
         & img {
-          height: 75vh;
+          height: 72vh;
             width: 100%;
             padding: 30px;
           &.png-img {
-            width: 105%;
+            width: 106%;
             margin-top: 30px;
           }
         }
