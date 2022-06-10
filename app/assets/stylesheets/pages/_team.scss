@@ -581,8 +581,8 @@ section.team {
         & .text-content {
           & p {
             width: 100% !important;
-            white-space: nowrap;
-            overflow: scroll;
+            // white-space: nowrap;
+            // overflow: scroll;
           }
           & .overflow-clip-ellipsis {
             text-overflow: ellipsis;
