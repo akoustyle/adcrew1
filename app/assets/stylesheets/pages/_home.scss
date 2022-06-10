@@ -2029,14 +2029,14 @@ section.home {
             font-size: 24px;
           }
           & p {
-            white-space: nowrap;
-            overflow: scroll;
+            // white-space: nowrap;
+            // overflow: scroll;
             width:70vw;
           }
 
-          & .overflow-clip-ellipsis {
-            text-overflow: clip ellipsis;
-          }
+          // & .overflow-clip-ellipsis {
+          //   text-overflow: clip ellipsis;
+          // }
         }
       }
 
@@ -2218,7 +2218,7 @@ section.home {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 150px;
+        height: 0px;
         justify-content: space-between;
         width:100%;
         /* align-items: center; */
@@ -2235,7 +2235,7 @@ section.home {
           }
 
           & a {
-            font-size: 10px;
+            font-size: 9px;
             color: $red;
 
             &:hover {
@@ -2259,10 +2259,13 @@ section.home {
           }
         }
       }
-      &.content-copyright {
-        display:block !important;
-        width:70vw !important;
+      &#copyright {
+        width: 100%;
+        text-align: center !important;
+        justify-content: center !important;
         color: white !important;
+        margin-top:56px;
+        font-size: 0.5em;
       }
     }
   }
