@@ -582,12 +582,15 @@ section.team {
           & p {
             width: 100% !important;
             // white-space: nowrap;
-            overflow-y: scroll;
-            overflow: -moz-scrollbars-vertical;
-            height:230px;
+            // overflow-y: scroll;
+
+            // height:230px;
           }
           & .overflow-clip-ellipsis {
             text-overflow: ellipsis;
+            overflow-y: scroll;
+            overflow: -moz-scrollbars-vertical;
+            height: 130px;
           }
         }
       }
