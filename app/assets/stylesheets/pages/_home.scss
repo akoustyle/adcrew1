@@ -2023,6 +2023,7 @@ section.home {
         width: 70vw;
         padding: 0px 0px 0px 0px;
         align-items: flex-start;
+        height:unset;
 
         & .text-content {
           width: 85vw;
@@ -2063,7 +2064,7 @@ section.home {
       // margin-bottom: 60px;
       height:600px;
       margin:auto;
-      padding-top: 0vh;
+      padding-top: 3vh;
       & .content {
         display: flex;
         // width: 50vw;
