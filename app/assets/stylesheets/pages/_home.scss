@@ -2031,8 +2031,14 @@ section.home {
           & p {
             overflow-y: scroll;
             overflow: -moz-scrollbars-vertical;
-            height: 230px;
+            height: 210px;
+            text-overflow: ellipsis;
             width:70vw;
+          }
+          & i {
+            display:block;
+            justify-content: center;
+            align-items: center;
           }
 
           // & .overflow-clip-ellipsis {
