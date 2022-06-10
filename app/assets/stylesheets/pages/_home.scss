@@ -2012,7 +2012,7 @@ section.home {
 
     &:nth-child(2) {
       flex-direction: column;
-      // padding-top: 30px;
+      padding-top: 10vh;
       height:650px;
       width:100%;
       margin:auto;
@@ -2031,7 +2031,7 @@ section.home {
           & p {
             overflow-y: scroll;
             overflow: -moz-scrollbars-vertical;
-            height: 210px;
+            height: 166px;
             text-overflow: ellipsis;
             width:71vw;
           }
@@ -2063,7 +2063,7 @@ section.home {
       // margin-bottom: 60px;
       height:700px;
       margin:auto;
-      padding-top: 60px;
+      padding-top: 15vh;
       & .content {
         display: flex;
         // width: 50vw;
@@ -2144,7 +2144,7 @@ section.home {
 
     &:nth-child(4) {
       flex-direction: column;
-      padding-top: 0vh;
+      padding-top: 5vh;
       height:550px;
 
       img {
