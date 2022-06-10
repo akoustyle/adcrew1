@@ -2071,6 +2071,8 @@ section.home {
 
           & p {
             width: 100%;
+            overflow-y: scroll;
+            height:230px;
           }
 
           //text-align: center;
@@ -2218,7 +2220,7 @@ section.home {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 0px;
+        height: 150px;
         justify-content: space-between;
         width:100%;
         /* align-items: center; */
