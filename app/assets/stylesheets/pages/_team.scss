@@ -603,7 +603,9 @@ section.team {
         width: 85vw;
         margin: 0;
         grid-template-columns: 1fr 1fr;
-        font-size: 9px;
+        & p {
+          font-size: 9px !important;
+        }
         & .gif-team {
           filter: grayscale(100%);
           margin: 15px 0;

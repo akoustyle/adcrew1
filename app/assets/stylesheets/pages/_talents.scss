@@ -878,7 +878,7 @@ section.talent {
 
     section.talent {
       flex-direction: column-reverse;
-      height: 1550px;
+      height: 1150px;
       .rounded-shape {
           // position: absolute;
           // transform: translate(-50%, -50%);
@@ -899,7 +899,8 @@ section.talent {
         & .content {
           width: 100vw;
           height:auto;
-          padding-top:80px;
+          // padding-top:80px;
+          padding:0px 60px !important;
           // align-items: end;
 
           & .text-content {
@@ -918,7 +919,7 @@ section.talent {
 
               & .tiktok-link > a {
                 top: 191px !important;
-                left: 37vw !important;
+                left: 47vw !important;
               }
 
               & .media-kit > a {
@@ -1199,17 +1200,17 @@ section.talent {
             & .social-links {
               & .youtube-link > a {
                 top: 0 !important;
-                left: 2vw !important;
+                left: 1vw !important;
                 right: 0 !important;
               }
               & .insta-link > a {
                 top: 30px !important;
-                left: 2vw !important;
+                left: 1vw !important;
                 right: 0 !important;
               }
               & .tiktok-link > a {
                 top: 60px !important;
-                left: 2vw !important;
+                left: 1vw !important;
                 right: 0 !important;
               }
               & .media-kit > a {
@@ -1246,11 +1247,11 @@ section.talent {
           padding:40px;
         }
         & img {
-          height: 71vh;
+          height: 67vh;
             width: 100%;
             padding: 30px;
           &.png-img {
-            width: 107%;
+            width: 105%;
             margin-top: 30px;
           }
         }
