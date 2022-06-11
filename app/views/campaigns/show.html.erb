@@ -49,13 +49,7 @@
               <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
             <% if @campaign.photos.attached? %>
-              <div style="position:relative">
-                <%= cl_image_tag @campaign.photos.second.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 365, alt: @campaign.name %>
-                <p class="note">
-                  <%= @campaign.sentence %> <br>
-                  <%= @campaign.sentence2 %>
-                </p>
-              </div>
+              <%= cl_image_tag @campaign.photos.second.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 365, alt: @campaign.name %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
@@ -66,8 +60,8 @@
             <% end %>
           <% end %>
             <p class="note">
-              <%#= @campaign.sentence %> <br>
-              <%#= @campaign.sentence2 %>
+              <%= @campaign.sentence %> <br>
+              <%= @campaign.sentence2 %>
             </p>
             <div class="rounded-shape">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
