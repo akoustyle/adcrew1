@@ -650,7 +650,7 @@ section.talent {
 
               & .tiktok-link > a {
                 top: 23vh !important;
-                left: 48vw !important;
+                right: -200px !important;
               }
 
               & .media-kit > a {
@@ -1004,7 +1004,7 @@ section.talent {
         align-items: center;
         background-color: black;
         height: 62vh;
-        margin-top: 250px;
+        margin-top: 150px;
 
         & img {
           display: none;
