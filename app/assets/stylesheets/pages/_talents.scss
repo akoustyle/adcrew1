@@ -379,12 +379,12 @@ section.talent {
 
               & .insta-link > a {
                 top: 140px !important;
-                right: -242px !important;
+                right: -200px !important;
               }
 
               & .tiktok-link > a {
-                top: 293px !important;
-                left: 420px !important;
+                top: 243px !important;
+                left: 400px !important;
               }
 
               & .media-kit > a {
@@ -463,8 +463,8 @@ section.talent {
         justify-content: center;
         align-items: center;
         background-color: black;
-        height: 60vh;
-        margin-top: 20vh;
+        height: 40vh;
+        // margin-top: 20vh;
 
         & img {
           display: none;
@@ -472,13 +472,14 @@ section.talent {
 
         & .social-icons {
           // display: none;
-          flex-direction: row;
+          flex-direction: column;
         }
 
         & .content {
           display: flex;
           /* width: 50vw; */
           height: 20vh;
+          margin-top:50px;
           justify-content: space-around;
           /* align-items: center; */
           // flex-direction: column;
@@ -628,7 +629,7 @@ section.talent {
 
         & .content {
           width: 100%;
-          // align-items: end;
+          align-items: flex-start;
 
           & .text-content {
             width: 85vw;
@@ -641,12 +642,12 @@ section.talent {
 
               & .insta-link > a {
                 top: 140px !important;
-                right: -180px !important;
+                right: -160px !important;
               }
 
               & .tiktok-link > a {
                 top: 23vh !important;
-                left: 49vw !important;
+                left: 48vw !important;
               }
 
               & .media-kit > a {
@@ -1227,7 +1228,7 @@ section.talent {
               & .tiktok-link > a {
                 top: 60px !important;
                 left: -2vw !important;
-                right: 0 !important;
+                // right: 0 !important;
               }
               & .media-kit > a {
                 top: 52vh !important;

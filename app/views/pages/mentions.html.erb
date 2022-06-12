@@ -59,54 +59,6 @@
         </div>
 
       </section>
-      <section class="mentions" id="footer-section">
-
-        <div class="content">
-            <div>
-              <%= link_to root_path do %>
-                <%= image_tag 'logo-blanc.png', alt:"ADCREW Agency", width: 200 %>
-              <% end %>
-            </div>
-
-            <div>
-              <h6><%= t('footer.title') %></h6>
-              <p>104 rue Réaumur <br> 75002 Paris <br> +33 (0)1 42 86 97 16 <br> <a href="mailto:contact@adcrew-paris.com" target="_blank">contact@adcrew-paris.com</a>
-            </div>
-
-            <div>
-              <h6><%= t('footer.title2') %></h6>
-              <ul class="footer-links">
-                <li><a> <%= link_to t('footer.links.campaigns'), campaigns_path %></a></li>
-                <li><a> <%= link_to t('footer.links.talents'), talents_path %> </a></li>
-                <li><a> <%= link_to t('footer.links.mentions'), mentions_path %></a></li>
-                <li><a> <% if user_signed_in? %>
-                  <%= link_to t('footer.links.signout'), destroy_user_session_path, method: :delete %>
-                <% else %>
-                  <%= link_to t('footer.links.signin'), new_user_session_path %>
-                <% end %>
-                </a></li>
-                <li>
-                </li>
-              </ul>
-            </div>
-
-            <div class="" style="text-align:center">
-              <ul class="social-icons">
-                <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a class="linkedin" href="https://www.linkedin.com/company/adcrew-paris/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="tiktok" href="https://www.tiktok.com/@adcrewagency" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-              </ul>
-            </div>
-        </div>
-
-        <div class="content" id="copyright" style=" width: 85vw; height: 10vh;margin-top:67px">
-          <p class="copyright-text" style="font-size: 0.8em">Copyright &copy; 2022 All Rights Reserved by
-            <a style="font-size: 0.8em"> <%= link_to "Adcrew", root_path %></a>.<br>
-          </p>
-          <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
-        </div>
-
-      </section>
     </div>
   </div>
 <%# end %>
