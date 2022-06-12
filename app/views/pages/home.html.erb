@@ -4,7 +4,8 @@
       <section class="home" id="home">
         <div class="scroll video-banner">
             <div class="background">
-              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :scale, width: 1350, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, playsinline: true, poster: 'https://res.cloudinary.com/akoustyle/image/upload/v1651251452/poster_clip_edsqsz.png', controls: false %> <div class="banner-icons">
+              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :scale, width: 1350, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, playsinline: true, poster: 'https://res.cloudinary.com/akoustyle/image/upload/v1651251452/poster_clip_edsqsz.png', controls: false %>
+              <div class="banner-icons">
                 <ul class="social-icons">
                   <%# <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li> %>
                   <li><a class="instagram" href="https://www.instagram.com/adcrew_agency/" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -23,7 +24,7 @@
             <p class="pt-3 overflow-clip-ellipsis">
               <%= t('home.paragraphe_html') %>
             </p>
-            <i class="fal fa-angle-double-down" style="text-align:center;display:none"></i>
+            <%# <i class="fal fa-angle-double-down" style="text-align:center;display:none"></i> %>
             <a><%= link_to t('home.links.team'), team_path %></a>
           </div>
         </div>
@@ -114,11 +115,11 @@
             </div>
         </div>
 
-        <div class="content" id="copyright" style=" width: 85vw; height: 10vh;">
+        <div class="content" id="copyright" style=" width: 85vw; height: 10vh;margin-top:67px">
           <p class="copyright-text" style="font-size: 0.8em">Copyright &copy; 2022 All Rights Reserved by
-            <a> <%= link_to "AD CREW", root_path %></a>.<br>
-            <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
+            <a> <%= link_to "AD CREW", root_path %></a>.
           </p>
+          <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
         </div>
 
       </section>
