@@ -272,7 +272,7 @@ section.home {
         display: flex;
         color: white;
         width: 85vw;
-        height: 40vh;
+        height: 27vh;
         justify-content: space-between;
         align-items: baseline;
         & a {
@@ -2274,11 +2274,11 @@ section.home {
       }
       & .content #copyright {
         width: 80%;
-        flex-direction: column;
-        text-align: center !important;
+        flex-direction: column !important;
+        // text-align: center !important;
         justify-content: center !important;
         color: white !important;
-        align-items: center;
+        align-items: center !important;
         // margin-top:56px;
         font-size: 0.5em;
       }
