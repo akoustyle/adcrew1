@@ -911,7 +911,7 @@ section.home {
       justify-content: space-between;
       align-items: center;
       // height:510px;
-      margin-bottom:150px;
+      // margin-bottom:150px;
 
       & .background {
         display: flex;
@@ -954,9 +954,9 @@ section.home {
 
       & img {
         // margin: 30px 0 30px 0;
-        height: 80%;
-        width: 80%;
-        padding: 0px 0px 0px 18px;
+        height: 75%;
+        width: 60%;
+        padding: 0px 0px 0px 20px;
         object-fit: cover;
         object-position: top center;
         // padding:33px 32px 33px 33px;
@@ -965,7 +965,7 @@ section.home {
     }
 
     &:nth-child(3) {
-      // padding-top:100px;
+      padding-top:100px;
       height: 650px;
 
       & .content .text-content p {
@@ -1079,7 +1079,7 @@ section.home {
         justify-content: center;
         align-items: center;
         background-color: black;
-        height: 22vh;
+        height: 30vh;
 
         img {
           display: none;
