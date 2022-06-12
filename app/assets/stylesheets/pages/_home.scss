@@ -2272,12 +2272,14 @@ section.home {
           }
         }
       }
-      &#copyright {
-        width: 100%;
+      & .content #copyright {
+        width: 80%;
+        flex-direction: column;
         text-align: center !important;
         justify-content: center !important;
         color: white !important;
-        margin-top:56px;
+        align-items: center;
+        // margin-top:56px;
         font-size: 0.5em;
       }
     }
