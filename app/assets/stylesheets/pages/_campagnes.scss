@@ -287,17 +287,17 @@ section.campaign {
 
       .rounded-shape {
           position: absolute;
-            top: 360px;
-            right: -70px;
-            transform: translate(-50%, -50%);
-            content: "";
-            // border: 1px solid #000;
-            height: 300px;
-            width: 300px;
-            border-radius: 90%;
-            transform: rotate(-7deg);
-            pointer-events: none;
-            z-index: 180;
+          top: 360px;
+          right: -70px;
+          transform: translate(-50%, -50%);
+          content: "";
+          // border: 1px solid #000;
+          height: 300px;
+          width: 300px;
+          border-radius: 90%;
+          transform: rotate(-7deg);
+          pointer-events: none;
+          z-index: 180;
       }
     }
   }
