@@ -642,9 +642,9 @@ section.talent {
 
               & .insta-link > a {
                 top: 140px !important;
-                right: -160px !important;
-                & div {
-                  width:160px;
+                // right: -160px !important;
+                & > div {
+                  width:135px;
                 }
               }
 
@@ -914,7 +914,10 @@ section.talent {
 
               & .insta-link > a {
                 top: 105px !important;
-                right: -136px !important;
+                // right: -136px !important;
+                & > div {
+                  width:135px;
+                }
               }
 
               & .tiktok-link > a {
