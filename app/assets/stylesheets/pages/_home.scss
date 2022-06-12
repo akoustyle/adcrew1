@@ -1498,6 +1498,10 @@ section.home {
       margin-top: 100px;
       height: 600px;
       // margin-bottom: 60px;
+      .rounded-shape {
+        top: 235px;
+        right: 183px;
+      }
 
       & .content {
         display: flex;
@@ -1576,7 +1580,7 @@ section.home {
     &:nth-child(4) {
       flex-direction: column;
       // padding-top: 13vh;
-      height: 700px;
+      height: 500px;
 
       img {
         width: 100%;
