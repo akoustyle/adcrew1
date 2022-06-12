@@ -59,10 +59,12 @@
               <%= image_tag "https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8bW9kZWwsZmFzaGlvbnx8fHx8fDE2NDQ0ODE3Mzk&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
           <% end %>
-            <p class="note">
-              <%= @campaign.sentence %> <br>
-              <%= @campaign.sentence2 %>
-            </p>
+            <div class="note">
+              <p class="note">
+                <%= @campaign.sentence %> <br>
+                <%= @campaign.sentence2 %>
+              </p>
+            </div>
             <div class="rounded-shape">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 622 575.48"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path class="cls-1" d="M153.1,280.29C66.14,368.8-19.35,455.82,5.31,512.89c33,76.41,259.65,90.44,410.3-8,196.83-128.56,248.33-438.83,171-494.1C489.48-58.65,170.88,262.19,153.1,280.29Z"/></g></g></svg>
             </div>
@@ -151,11 +153,11 @@
           </div>
       </div>
 
-      <div class="content" style=" width: 82vw; height: 10vh;">
+      <div class="content" style=" width: 82vw; height: 10vh;margin-top:67px">
         <p class="copyright-text" style="font-size: 0.8em">Copyright &copy; 2022 All Rights Reserved by
           <a style="font-size: 0.8em"> <%= link_to "Adcrew", root_path %></a>.<br>
-          <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
         </p>
+        <span style="font-size: 0.8em">Made with <span class="heart" style="font-size: 0.8em">♥</span> by O&A</span>
       </div>
     </section>
   </div>
