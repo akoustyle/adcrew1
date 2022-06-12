@@ -6,7 +6,7 @@ class TalentsController < ApplicationController
   def index
     # if params[:pole].blank?
     @talents = Talent.all.order("name asc")
-    fresh_when last_modified: @talents.maximum(:updated_at), public: true
+    # fresh_when last_modified: @talents.maximum(:updated_at), public: true
 
     # @talents = policy_scope(Talent).order(created_at: :desc)
     #  else

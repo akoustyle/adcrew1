@@ -62,35 +62,75 @@ section.mentions {
   //   }
   // }
   &:nth-child(2) {
-    min-height: 40vh;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #161616;
+    background-color: black;
+    height: 39vh;
+
+    & img {
+      display: none;
+    }
+
+    & .social-icons {
+      display: none;
+    }
 
     & .content {
-      display: flex;
-      color: white;
-      max-width: 85vw;
-      height: 30vh;
-      justify-content: space-between;
-      align-items: baseline;
+      &:nth-child(1) {
+        display: flex;
+        /* width: 50vw; */
+        height: 100px;
+        margin-top: 50px;
+        justify-content: space-between;
+        width: 100%;
+        /* align-items: center; */
+        // flex-direction: column;
 
-      & a {
-        font-size: 14px;
-        color: $red;
+        & .text-content {
+          width: 35vw;
+          position: relative;
 
-        &:hover {
-          border-bottom: 1px $red solid;
+          //text-align: center;
+          & .social-icons {
+            display: none;
+            flex-direction: unset;
+          }
+
+          & a {
+            font-size: 9px;
+            color: $red;
+
+            &:hover {
+              border-bottom: 1px $red solid;
+            }
+          }
+
+          .rounded-shape {
+            position: absolute;
+            top: -15px;
+            left: 358px;
+            transform: translate(-50%, -50%);
+            content: "";
+            // border: 1px solid #000;
+            height: 100px;
+            width: 390px;
+            border-radius: 90%;
+            transform: rotate(-10deg);
+            pointer-events: none;
+            z-index: 100;
+          }
         }
       }
 
-      & .social-icons li {
-        padding: 0px;
-      }
-
-      & .social-icons a:hover {
-        border-bottom: 0px $red solid;
+      &:nth-child(2) {
+        width: 80%;
+        flex-direction: column !important;
+        // text-align: center !important;
+        justify-content: center !important;
+        color: white !important;
+        align-items: center !important;
+        // margin-top:56px;
+        font-size: 0.9em;
       }
     }
   }
