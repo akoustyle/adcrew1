@@ -60,7 +60,7 @@
 
                 <% if @talent.photos.attached? %>
                 <%#= cl_image_tag @talent.photos.last.key, crop: :fill, width: 400, quality: :auto,  alt: "Talent Image", class:"png-img" %>
-                <img src="<%= cl_image_path(@talent.photos.last.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 400)  %>" alt="Talent Image" class="png-img" />
+                <img src="<%= cl_image_path(@talent.photos.last.key, crop: :scale, fetch_format: :auto, quality: :auto, width: 400)  %>" alt="Talent Image" class="png-img" />
                   <%#= cl_image_tag @talent.photos.second.key, alt: "Talent image", class: "png-img", id: "png-mousein" %>
                 <% else %>
                   <%= image_tag 'silhouette3.png', alt:"", class: "png-img" %>
@@ -81,8 +81,8 @@
                   <% if @talent.insta_link == "0" || @talent.insta_link == ""  %>
                   <% else %>
                     <div class="insta-link">
-                      <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -186px; z-index: 1000;">
-                        <div class="d-flex" style="width: 200px;">
+                      <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -135px; z-index: 1000;">
+                        <div class="d-flex" style="width: 135px;">
                           <i class="fab fa-instagram"></i>
                           <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                         </div>
@@ -93,7 +93,7 @@
                   <% else %>
                     <div class="tiktok-link">
                       <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 243px; left: 316px; z-index: 1000;">
-                        <div class="d-flex" style="width: 200px;">
+                        <div class="d-flex" style="width: 135px;">
                           <i class="fab fa-tiktok"></i>
                           <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                         </div>
@@ -102,7 +102,7 @@
                   <% end %>
                   <div class="media-kit">
                     <a href="<%= @talent.media.attached? ? rails_blob_path(@talent.media, disposition: 'attachment') : @talent_path %>" target="_blank" style="position: absolute; top: 180px; left: -42px;">
-                      <div class="d-flex" style="width: 200px;">
+                      <div class="d-flex" style="width: 135px;">
                         <i class="fas fa-download"></i>
                         <p style="margin-left: 10px; margin-bottom: 0px;"><%= t('talents.show.media') %></p>
                       </div>
