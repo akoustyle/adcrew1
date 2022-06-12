@@ -1567,8 +1567,8 @@ section.home {
         }
 
         .rounded-shape {
-          top: 170px;
-          right: -10px;
+          top: 235px;
+          right: 183px;
         }
       }
     }
@@ -1594,7 +1594,7 @@ section.home {
       }
 
       & .img-wrapper {
-        // width: 89vw;
+        width: 85%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 15px;
@@ -1645,7 +1645,7 @@ section.home {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 400px;
+      height: 40vh;
 
       & img {
         display: none;
@@ -1658,7 +1658,8 @@ section.home {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 250px;
+        height: 100px;
+        margin-top:50px;
         justify-content: space-around;
         /* align-items: center; */
         // flex-direction: column;
