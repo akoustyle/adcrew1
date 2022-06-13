@@ -1466,7 +1466,7 @@ section.home {
       justify-content: space-between;
       align-items: flex-start;
       margin: auto;
-      height:450px;
+      height:550px;
       width: 890px;
 
       & .content {
@@ -1499,6 +1499,7 @@ section.home {
       height: 600px;
       // margin-bottom: 60px;
       .rounded-shape {
+        display:none;
         top: 235px;
         right: 183px;
       }
@@ -1571,6 +1572,7 @@ section.home {
         }
 
         .rounded-shape {
+          display:none;
           top: 235px;
           right: 183px;
         }
@@ -1683,18 +1685,18 @@ section.home {
           }
 
           .rounded-shape {
-            position: absolute;
-            top: -15px;
-            left: 358px;
-            transform: translate(-50%, -50%);
-            content: "";
-            // border: 1px solid #000;
-            height: 100px;
-            width: 390px;
-            border-radius: 90%;
-            transform: rotate(-10deg);
-            pointer-events: none;
-            z-index: 100;
+            // position: absolute;
+            // top: -15px;
+            // left: 358px;
+            // transform: translate(-50%, -50%);
+            // content: "";
+            // // border: 1px solid #000;
+            // height: 100px;
+            // width: 390px;
+            // border-radius: 90%;
+            // transform: rotate(-10deg);
+            // pointer-events: none;
+            // z-index: 100;
           }
         }
       }
