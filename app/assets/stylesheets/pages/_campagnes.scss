@@ -827,6 +827,7 @@ section.campaign {
           // display: none;
           left:115px;
           top:150px;
+          width:260px;
         }
 
         .rounded-shape {
@@ -864,7 +865,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 30vh;
+      min-height: 60vh;
 
       & img {
         display: none;
@@ -878,7 +879,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        // height: 60vh;
+        height: 100px;
         justify-content: space-around;
         /* align-items: center; */
         // flex-direction: column;

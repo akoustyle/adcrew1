@@ -779,18 +779,20 @@ section.home {
 
     &:nth-child(2) {
       & .content {
-        max-width: 65vw;
+        width: 100%;
         & .text-content {
-          max-width: 40vw;
+          width: 100%;
           & p{
             font-size: 12px;
           }
         }
       }
       & img {
-        height: 77%;
-        width: 45vw;
-        padding: 30px 60px 60px 0px;
+        height: 90%;
+        width: 70%;
+        padding: 0px 30px 20px 15px;
+        object-fit: cover;
+        object-position: top center;
       }
     }
     &:nth-child(3) {
