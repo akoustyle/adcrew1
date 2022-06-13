@@ -1079,7 +1079,7 @@ section.home {
         justify-content: center;
         align-items: center;
         background-color: black;
-        height: 30vh;
+        height: 60vh;
 
         img {
           display: none;
@@ -1093,7 +1093,7 @@ section.home {
           &:nth-child(1) {
             display: flex;
             /* width: 50vw; */
-            height: 150px;
+            height: 100px;
             justify-content: space-evenly;
             margin-top:50px;
             /* align-items: center; */

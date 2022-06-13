@@ -513,7 +513,7 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 400px;
+      height: 60vh;
       font-weight: 100 !important;
 
       & img {
@@ -527,7 +527,8 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 200px;
+        height: 100px;
+        margin-top:50px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: initial;
@@ -696,7 +697,7 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      height: 39vh;
+      height: 30vh;
 
       & img {
         display: none;
