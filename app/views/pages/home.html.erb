@@ -4,7 +4,7 @@
       <section class="home" id="home">
         <div class="scroll video-banner">
             <div class="background">
-              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :scale, width: 1350, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, playsinline: true, poster: 'https://res.cloudinary.com/akoustyle/image/upload/v1651251452/poster_clip_edsqsz.png', controls: false %>
+              <%= video_tag "https://res.cloudinary.com/akoustyle/video/upload/v1651250564/clip_p3yp9k_mr8t2a.mp4", crop: :fill, width: 1050, quality: :auto, fetch_format: :auto, autoplay: true, muted: true, loop: true, playsinline: true, controls: false %>
               <div class="banner-icons">
                 <ul class="social-icons">
                   <%# <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li> %>
@@ -28,7 +28,7 @@
             <a><%= link_to t('home.links.team'), team_path %></a>
           </div>
         </div>
-        <%= image_tag "https://res.cloudinary.com/akoustyle/image/upload/v1651094187/3Y0A1899_dab9p4.jpg", crop: :scale, quality: :auto, fetch_format: :auto, width: 800, flags: :lossy, alt: "alttext" %>
+        <%= image_tag "https://res.cloudinary.com/akoustyle/image/upload/v1651094187/3Y0A1899_dab9p4.jpg", crop: :scale, quality: :auto, fetch_format: :auto, width: 500, flags: :lossy, alt: "alttext" %>
       </section>
       <section class="home" id="campaign">
         <div class="content">
@@ -42,9 +42,9 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
-            <%= image_tag "fulsap.jpg", crop: :fill, width: 400, alt: "alttext" %>
-            <%= image_tag "coach.jpg", crop: :fill, width: 500, alt: "alttext" %>
-            <%= image_tag "adidas2.jpg", crop: :fill, width: 600, alt: "alttext" %>
+            <%= image_tag "fulsap.jpg", crop: :fill, quality: :auto, fetch_format: :auto, width: 400, flags: :lossy, alt: "fulsap-campaign" %>
+            <%= image_tag "coach.jpg", crop: :fill, quality: :auto, fetch_format: :auto, width: 500, flags: :lossy, alt: "coah-campaign" %>
+            <%= image_tag "adidas2.jpg", crop: :fill, quality: :auto, fetch_format: :auto, width: 600, flags: :lossy, alt: "adidas-campaign" %>
             <p class="note">
               Let’s influence the world <br>
               with positive values ! <br> <span> <3</span>
@@ -67,10 +67,10 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
-            <div class="gif-talent" id="gif-one"><%= image_tag "talent1.gif", crop: :fill, width: 220 %></div>
-            <div class="gif-talent" id="gif-three"><%= image_tag "talent3.gif", crop: :fill, width: 220  %></div>
-            <div class="gif-talent" id="gif-two"><%= image_tag "talent4.gif", crop: :fill, width: 220  %></div>
-            <div class="gif-talent" id="gif-four"><%= image_tag "talent2.gif", crop: :fill, width: 220  %></div>
+            <div class="gif-talent" id="gif-one"><%= image_tag "talent1.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent1" %></div>
+            <div class="gif-talent" id="gif-three"><%= image_tag "talent3.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent2" %></div>
+            <div class="gif-talent" id="gif-two"><%= image_tag "talent4.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent3" %></div>
+            <div class="gif-talent" id="gif-four"><%= image_tag "talent2.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent4"  %></div>
           </div>
         </div>
       </section>
