@@ -42,9 +42,9 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
-            <%= image_tag "fulsap.jpg", crop: :fill, width: 400, alt: "alttext" %>
-            <%= image_tag "coach.jpg", crop: :fill, width: 500, alt: "alttext" %>
-            <%= image_tag "adidas2.jpg", crop: :fill, width: 600, alt: "alttext" %>
+            <%= image_tag "fulsap.jpg", crop: :fill, quality: :auto, fetch_format: :auto, width: 400, flags: :lossy, alt: "fulsap-campaign" %>
+            <%= image_tag "coach.jpg", crop: :fill, quality: :auto, fetch_format: :auto, width: 500, flags: :lossy, alt: "coah-campaign" %>
+            <%= image_tag "adidas2.jpg", crop: :fill, quality: :auto, fetch_format: :auto, width: 600, flags: :lossy, alt: "adidas-campaign" %>
             <p class="note">
               Let’s influence the world <br>
               with positive values ! <br> <span> <3</span>
@@ -67,10 +67,10 @@
         </div>
         <div class="content">
           <div class="img-wrapper">
-            <div class="gif-talent" id="gif-one"><%= image_tag "talent1.gif", crop: :fill, width: 220 %></div>
-            <div class="gif-talent" id="gif-three"><%= image_tag "talent3.gif", crop: :fill, width: 220  %></div>
-            <div class="gif-talent" id="gif-two"><%= image_tag "talent4.gif", crop: :fill, width: 220  %></div>
-            <div class="gif-talent" id="gif-four"><%= image_tag "talent2.gif", crop: :fill, width: 220  %></div>
+            <div class="gif-talent" id="gif-one"><%= image_tag "talent1.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent1" %></div>
+            <div class="gif-talent" id="gif-three"><%= image_tag "talent3.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent2" %></div>
+            <div class="gif-talent" id="gif-two"><%= image_tag "talent4.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent3" %></div>
+            <div class="gif-talent" id="gif-four"><%= image_tag "talent2.gif", crop: :fill, quality: :auto, fetch_format: :auto, width: 220, flags: :lossy, alt: "gif-talent4"  %></div>
           </div>
         </div>
       </section>
