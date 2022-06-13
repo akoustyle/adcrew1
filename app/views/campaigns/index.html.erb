@@ -45,7 +45,7 @@
                   <%#= cache campaign do %>
                     <%= link_to campaign_path(campaign) do %>
                       <div class="campaign-card">
-                        <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 380) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
+                        <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 380, alt: @campaign.name) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: center; background-size: cover">
                           <div class="card-info">
                             <div class="top py-1">
                               <div class="info">
@@ -79,7 +79,7 @@
 
                   <%= link_to campaign_path(campaign) do %>
                     <div class="campaign-card">
-                      <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 380) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: top center; background-size: cover">
+                      <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= campaign.photos.attached? ? cl_image_path(campaign.photos.first.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 380, alt: @campaign.name) : "https://source.unsplash.com/1600x900/?fashion" %>'); background-position: top center; background-size: cover">
                         <div class="card-info">
                           <div class="top py-1">
                             <div class="info" style="font-weight:bold;font-size:20px;">

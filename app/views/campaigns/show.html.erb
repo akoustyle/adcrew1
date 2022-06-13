@@ -32,7 +32,7 @@
               <%= image_tag "https://images.unsplash.com/photo-1573575155376-b5010099301b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8Y29zbWV0aWNzfHx8fHx8MTY0NDQ4MTc5OQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
             <% if @campaign.photos.attached? %>
-              <%= cl_image_tag @campaign.photos.second.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 500, alt: "alttext" %>
+              <%= cl_image_tag @campaign.photos.second.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 500, alt: @campaign.name %>
             <% else %>
               <%= image_tag "https://images.unsplash.com/photo-1521145369939-d3a47a4e18fa?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aGFuZCBjb3NtZXRpY3N8fHx8fHwxNjQ0NDgyMTIz&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600", alt: "alttext" %>
             <% end %>
