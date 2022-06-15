@@ -1116,7 +1116,7 @@ section.campaign {
     padding: 0px !important;
 
     &:nth-child(1) {
-      padding-top: 13vh !important;
+      // padding-top: 13vh !important;
 
       & .content {
         & .text-content {
@@ -1179,7 +1179,7 @@ section.campaign {
     }
 
     &:nth-child(2) {
-      padding-top: 13vh !important;
+      // padding-top: 13vh !important;
 
       & .content {
 
@@ -1205,7 +1205,7 @@ section.campaign {
       justify-content: center;
       align-items: center;
       background-color: black;
-      height: 400px;
+      height: 40vh;
 
       & img {
         display: none;
@@ -1218,7 +1218,7 @@ section.campaign {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 300px;
+        height: 100px;
         justify-content: space-around;
         /* align-items: center; */
         flex-direction: initial;
