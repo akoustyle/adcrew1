@@ -224,7 +224,7 @@ section.talent {
   }
 
   &:nth-child(2) {
-    height: 40vh;
+    height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -828,7 +828,7 @@ section.talent {
         justify-content: center;
         align-items: center;
         background-color: black;
-        height: 63vh;
+        height: 50vh;
 
         & img {
           display: none;
@@ -841,7 +841,7 @@ section.talent {
         & .content {
           display: flex;
           /* width: 50vw; */
-          height: 88px;
+          height: 100px;
           margin-top:50px;
           justify-content: space-around;
           /* align-items: center; */

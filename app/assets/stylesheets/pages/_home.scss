@@ -262,7 +262,7 @@ section.home {
 	}
 
     &:nth-child(5) {
-      height: 40vh;
+      height: 60vh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -272,7 +272,7 @@ section.home {
         display: flex;
         color: white;
         width: 85vw;
-        height: 27vh;
+        height: 200px;
         justify-content: space-between;
         align-items: baseline;
         & a {
