@@ -10,6 +10,8 @@ class CampaignsController < ApplicationController
   end
 
   def show
+    @page_title = @campaign.name
+    @page_description = @campaign.objectif
   end
 
   def new

@@ -20,9 +20,9 @@
       <section class="home" id="about">
         <div class="content">
           <div class="text-content">
-            <h2><%= t('home.title') %></h2>
+            <h2><%=title t('home.title') %></h2>
             <p class="pt-3 overflow-clip-ellipsis">
-              <%= t('home.paragraphe_html') %>
+              <%= description t('home.paragraphe_html') %>
             </p>
             <%# <i class="fal fa-angle-double-down" style="text-align:center;display:none"></i> %>
             <a><%= link_to t('home.links.team'), team_path %></a>

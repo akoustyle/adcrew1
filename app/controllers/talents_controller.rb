@@ -16,6 +16,8 @@ class TalentsController < ApplicationController
   end
 
   def show
+    @page_title = @talent.name
+    @page_description = @talent.about
     # @talent.scrape_youtube
     # authorize @talent
     # expires_in 3.minutes, :public => true
