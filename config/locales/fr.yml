@@ -10,6 +10,9 @@ fr:
           thousand: K
           trillion: B
           unit: ''
+  activerecord:
+    models:
+      campaigns: 'Campagnes'
   home:
     title: "L'AGENCE"
     paragraphe_html: "AD CREW est une agence experte en stratégie digitale qui représente des créateurs de contenus.<br><br> Leader sur le marché de l’influence responsable : <br> Inclusivité , Eco responsabilité, diversité , messages engagés et vision artistique sont les valeurs que nous défendons au quotidien.<br> Développer des talents qui véhiculent des idées en plus d’un univers travaillé est notre priorité. <br><br> Nous accompagnons aussi les marques sur le développement de leur stratégie à long terme. Avec notamment la création de concepts originaux et avant-gardistes pour leurs campagnes digitales.<br> Mais aussi avec des propositions fortes pour adapter leur image et leurs valeurs de manière cohérentes et attractives online et Off line.<br><br> &laquo; Let’s influence the world with positive values &raquo;."
