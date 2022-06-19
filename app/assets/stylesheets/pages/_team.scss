@@ -337,7 +337,7 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      min-height: 400px;
+      height: 45vh;
 
       & img {
         display: none;
@@ -350,8 +350,9 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 250px;
-        justify-content: space-around;
+        height: 200px;
+        margin-top:50px;
+        justify-content: space-between;
         /* align-items: center; */
         // flex-direction: column;
 
@@ -513,7 +514,7 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      height: 60vh;
+      height: 30vh;
       font-weight: 100 !important;
 
       & img {
@@ -527,7 +528,7 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 88px;
+        height: 150px;
         margin-top:50px;
         justify-content: space-around;
         /* align-items: center; */
