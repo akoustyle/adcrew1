@@ -25,7 +25,7 @@
 
                 <%= link_to talent_path(talent) do %>
                   <div class="campaign-card">
-                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 450, alt: talent.name) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: top center; background-size: cover">
+                    <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= talent.photos.attached? ? cl_image_path(talent.photos.first.key, crop: :scale, fetch_format: :auto, flags: :lossy, quality: :auto, width: 450) : "https://source.unsplash.com/1600x900/?model" %>'); background-position: top center; background-size: cover">
                       <% if talent.category == "green" %>
                         <i class="fa-solid fa-seedling m-1" style="position: absolute; right: 0; padding: 10px; font-size: 20px; border: 1px solid black; border-radius: 50px; z-index: 1000; color: black;"></i>
                       <% end %>
