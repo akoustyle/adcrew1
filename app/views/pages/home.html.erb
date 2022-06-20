@@ -21,8 +21,9 @@
         <div class="content">
           <div class="text-content">
             <h2><%= title t('home.title') %></h2>
+            <% description t('home.metahome') %>
             <p class="pt-3 overflow-clip-ellipsis">
-              <%= description t('home.paragraphe_html') %>
+              <%= t('home.paragraphe_html') %>
             </p>
             <%# <i class="fal fa-angle-double-down" style="text-align:center;display:none"></i> %>
             <a><%= link_to t('home.links.team'), team_path %></a>
