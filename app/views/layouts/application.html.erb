@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <%= display_meta_tags site: 'AD CREW | INFLUENCE & STRATEGY', separator: '-', image_src: 'https://www.app-adcrew.herokuapp.com/app/assets/images/logo-tag.jpeg', reverse: true %>
-        <%#= display_meta_tags og: { title: 'AD CREW | INFLUENCE & STRATEGY', type: 'website' } %>
         <%# <meta name="description" content="ADCREW est une agence parisienne spécialisée dans le marketing d’influence."> %>
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
@@ -60,7 +59,7 @@
         <%#= render 'shared/final-footer' %>
 
     <a href="#haut" class="arrow-top" style="position: fixed; bottom :1em; right:0em; padding:2em;"><i class="fas fa-sort-up" style="font-size: 18px;color: red;"></i></a>
-    <script>
+    <%# <script>
       window.axeptioSettings = {
         clientId: "62601429bca4164c7ccd390f",
       };
@@ -70,6 +69,6 @@
         e.async = true; e.src = "//static.axept.io/sdk.js";
         t.parentNode.insertBefore(e, t);
       })(document, "script");
-    </script>
+    </script> %>
     </body>
 </html>

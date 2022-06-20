@@ -337,10 +337,10 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      height: 45vh;
+      min-height: 400px;
 
       & img {
-        display: block;
+        display: none;
       }
 
       & .social-icons {
@@ -350,9 +350,8 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 200px;
-        margin-top:50px;
-        justify-content: space-between;
+        height: 250px;
+        justify-content: space-around;
         /* align-items: center; */
         // flex-direction: column;
 
@@ -514,7 +513,7 @@ section.team {
       justify-content: center;
       align-items: center;
       background-color: black;
-      height: 30vh;
+      height: 60vh;
       font-weight: 100 !important;
 
       & img {
@@ -528,7 +527,7 @@ section.team {
       & .content {
         display: flex;
         /* width: 50vw; */
-        height: 150px;
+        height: 88px;
         margin-top:50px;
         justify-content: space-around;
         /* align-items: center; */
