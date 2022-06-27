@@ -58,7 +58,7 @@ en:
         edit: "Edit"
       social: "followers"
       media: "Media Kit"
-      stat: "StatistiCS"
+      stat: "Statistics"
   team:
     title: "A WOMAN'S STORY"
     metatitle: "THE TEAM"
@@ -69,7 +69,7 @@ en:
       contact: "Contact us"
     statut: "Talent Manager"
     statut2: "Project Manager"
-    statut3: "Strategy project  Manager"
+    statut3: "Strategy project Manager"
     statut4: "Production Manager"
     statut5: "Financial & administrative manager"
   contact:
