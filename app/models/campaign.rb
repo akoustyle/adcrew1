@@ -2,7 +2,7 @@ class Campaign < ApplicationRecord
   # belongs_to :user
   extend FriendlyId
   friendly_id :name, use: :slugged
-  translates :objectif
+  # translates :objectif
   has_many :collabs, dependent: :destroy
   has_many_attached :photos
   has_many :talents, through: :collabs
