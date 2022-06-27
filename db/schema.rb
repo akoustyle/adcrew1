@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_05_11_085433) do
+ActiveRecord::Schema.define(version: 2022_06_27_100414) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,19 @@ ActiveRecord::Schema.define(version: 2022_05_11_085433) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "campaign_translations", force: :cascade do |t|
+    t.text "objectif_fr"
+    t.text "objectif_en"
+    t.text "activation_fr"
+    t.text "activation_en"
+    t.text "sentence_fr"
+    t.text "sentence_en"
+    t.text "sentence2_fr"
+    t.text "sentence2_en"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "campaigns", force: :cascade do |t|
     t.string "name"
     t.text "objectif"
@@ -54,6 +67,8 @@ ActiveRecord::Schema.define(version: 2022_05_11_085433) do
     t.string "sentence"
     t.string "sentence2"
     t.string "slug"
+    t.text "objectif_fr"
+    t.text "objectif_en"
     t.index ["slug"], name: "index_campaigns_on_slug", unique: true
   end
 
