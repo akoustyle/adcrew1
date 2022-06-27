@@ -14,13 +14,7 @@
             <h2><%= @campaign.name %></h2>
             <%#= cl_image_tag @campaign.photos.last.key, alt: "alttext" %>
             <div class="py-3">
-              <p>
-                <% if I18n.locale == I18n.default_locale %>
-                  <%= @campaign.objectif_en %>
-                <% else %>
-                  <%= @campaign.objectif_en %>
-                <% end %>
-              </p>
+              <p><%= @campaign.objectif %></p>
               <%# <p><i class="fa-solid fa-globe pr-1 text-dark"></i><%= @campaign.activation %></p>
               <%# <p><i class="fa-solid fa-circle-dot pr-1 text-dark"></i><%= number_to_human(@campaign.reach) %></p>
             </div>
