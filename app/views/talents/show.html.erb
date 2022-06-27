@@ -71,9 +71,9 @@
                   <% else %>
                     <div class="youtube-link">
                       <a href="<%= @talent.link_youtube %>" target="_blank" style="position: absolute; top: 50px; left: 294px; z-index: 1000;">
-                        <div class="d-flex" style="width: 200px;">
+                        <div class="d-flex" style="width: 135px;">
                           <i class="fab fa-youtube"></i>
-                          <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                          <p style="margin-left: 10px; margin-bottom: 0px;font-size:13px;"><%= number_to_human(@talent.youtube_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                         </div>
                       </a>
                     </div>
@@ -84,7 +84,7 @@
                       <a href="<%= @talent.link_insta %>" target="_blank"  style="position: absolute; top: 139px; right: -135px; z-index: 1000;">
                         <div class="d-flex" style="width: 135px;">
                           <i class="fab fa-instagram"></i>
-                          <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                          <p style="margin-left: 10px; margin-bottom: 0px;font-size:13px"><%= number_to_human(@talent.insta_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                         </div>
                       </a>
                     </div>
@@ -95,7 +95,7 @@
                       <a href="<%= @talent.link_tiktok %>" target="_blank"  style="position: absolute; top: 243px; left: 316px; z-index: 1000;">
                         <div class="d-flex" style="width: 135px;">
                           <i class="fab fa-tiktok"></i>
-                          <p style="margin-left: 10px; margin-bottom: 0px;"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
+                          <p style="margin-left: 10px; margin-bottom: 0px;font-size:13px"><%= number_to_human(@talent.tiktok_link, presicion: 2, seprarator: ',', siginficant: false) %> <%= t('talents.show.social') %></p>
                         </div>
                       </a>
                     </div>
