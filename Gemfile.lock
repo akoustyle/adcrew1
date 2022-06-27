@@ -272,8 +272,6 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.2.1)
     tilt (2.0.10)
-    traco (5.3.3)
-      activerecord (>= 4.2)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -340,7 +338,6 @@ DEPENDENCIES
   simple_form
   spring
   sprockets (= 3.7.2)
-  traco
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
