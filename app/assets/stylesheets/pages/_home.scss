@@ -55,7 +55,7 @@ section.home {
 	&:nth-child(2) {
 		justify-content: space-between;
 		align-items: flex-start;
-    width: 81%;
+    width: 80%;
     margin:auto;
     height:550px;
     // margin-bottom: 100px;
@@ -101,7 +101,7 @@ section.home {
 			// align-items: center;
 			& .text-content {
 				border-bottom: 1px black solid;
-			    width: 81vw;
+			    width: 80vw;
           		z-index: 10;
 			    & p {
 			    	width: 45vw;
@@ -120,7 +120,7 @@ section.home {
 		& .img-wrapper {
 			display: flex;
 			justify-content: space-between;
-			width: 81vw;
+			width: 80vw;
 			position: relative;
 
 			img {
@@ -210,7 +210,7 @@ section.home {
 		// align-items: center;
 			& .text-content {
 				border-bottom: 1px black solid;
-			    width: 81vw;
+			    width: 80vw;
 			    & p {
 			    	width: 45vw;
 			    }
@@ -272,7 +272,7 @@ section.home {
       & .content {
         display: flex;
         color: white;
-        width: 81vw;
+        width: 80vw;
         height: 40vh;
         justify-content: space-between;
         align-items: baseline;
