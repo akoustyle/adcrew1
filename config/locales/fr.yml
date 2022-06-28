@@ -41,6 +41,7 @@ fr:
       links:
         index: "Retour"
         edit: "Modifier"
+        delete: "Supprimer"
       paragraphe: "Les talents impliqués dans cette campagne"
   talents:
     title: "NOS TALENTS"
@@ -56,6 +57,7 @@ fr:
       links:
         index: "Retour"
         edit: "Modifier"
+        delete: "Supprimer"
       social: "abonnés"
       media: "Kit media"
       stat: "Statistiques"
