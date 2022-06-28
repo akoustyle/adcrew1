@@ -8,7 +8,7 @@
             <% if user_signed_in? %>
               <%= link_to t('campagnes.show.links.edit'), edit_campaign_path %>
               <% if user_signed_in? %>
-                <%= link_to "Supprimer", campaign_destroy_path(@campaign), method: :delete, data: { confirm: "Are you sure?" }%>
+                <%= link_to t('campagnes.show.links.delete'), campaign_destroy_path(@campaign), method: :delete, data: { confirm: "Are you sure?" }%>
               <% end %>
             <% end %>
             <h2><%= @campaign.name %></h2>
