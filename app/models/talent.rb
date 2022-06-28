@@ -4,7 +4,9 @@ include ActionView::Helpers::NumberHelper
 class Talent < ApplicationRecord
   # belongs_to :user
   extend FriendlyId
+  extend Mobility
   friendly_id :name, use: :slugged
+  translates :about, type: :text
   has_many :collabs, dependent: :destroy
   has_many_attached :photos
   has_one_attached :video
