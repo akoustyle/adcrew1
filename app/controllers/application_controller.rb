@@ -22,6 +22,7 @@ class ApplicationController < ActionController::Base
                   else
                     I18n.default_locale
                   end
+    # Mobility.locale = I18n.locale
   end
 
   # Get locale from top-level domain or return +nil+ if such locale is not available
