@@ -230,7 +230,7 @@ section.home {
       grid-template-columns: 200px 200px 200px 200px;
       padding-top: 15px;
 			& .gif-talent {
-				filter: grayscale(100%);
+				filter: grayscale(100%) !important;
 				margin: 30px 0;
 				//height: 430px;
 				width: 100%;
