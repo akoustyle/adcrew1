@@ -41,6 +41,7 @@ en:
       links:
         index: "Back"
         edit: "Edit"
+        delete: "Delete"
       paragraphe: "The talents involved in this campaign"
   talents:
     title: "OUR TALENTS"
@@ -56,6 +57,7 @@ en:
       links:
         index: "Back"
         edit: "Edit"
+        delete: "Delete"
       social: "followers"
       media: "Media Kit"
       stat: "Statistics"
