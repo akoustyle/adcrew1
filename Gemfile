@@ -36,6 +36,7 @@ gem 'friendly_id', "~> 5.1.0"
 gem 'redis-rails'
 gem 'invisible_captcha'
 gem 'meta-tags'
+gem 'mobility', '~> 1.0.1'
 # gem 'traco'
 # gem 'sidekiq'
 # gem 'sinatra', github: 'sinatra/sinatra'
