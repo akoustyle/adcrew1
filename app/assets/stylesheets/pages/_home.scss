@@ -55,7 +55,7 @@ section.home {
 	&:nth-child(2) {
 		justify-content: space-between;
 		align-items: flex-start;
-    width: 86%;
+    width: 81%;
     margin:auto;
     height:550px;
     // margin-bottom: 100px;
@@ -80,7 +80,7 @@ section.home {
 		& img {
 			height: 85%;
 			width: 70%;
-      padding: 0px 33px 20px 155px;
+      padding: 0px 0px 20px 155px;
       filter: saturate(0.7);
       object-fit: cover;
       object-position: top center;
@@ -101,7 +101,7 @@ section.home {
 			// align-items: center;
 			& .text-content {
 				border-bottom: 1px black solid;
-			    width: 85vw;
+			    width: 81vw;
           		z-index: 10;
 			    & p {
 			    	width: 45vw;
@@ -154,12 +154,12 @@ section.home {
 
 				&:nth-child(3) {
 			        position: absolute;
-			        right: -25px;
+			        right: 10px;
 			        top: -200px;
 
 			        z-index: 10;
 			        height: 630px;
-			        width: 500px;
+			        width: 440px;
 			        transform: rotate(1deg);
 				}
 			}
@@ -210,7 +210,7 @@ section.home {
 		// align-items: center;
 			& .text-content {
 				border-bottom: 1px black solid;
-			    width: 85vw;
+			    width: 81vw;
 			    & p {
 			    	width: 45vw;
 			    }
@@ -226,8 +226,9 @@ section.home {
 		}
 		& .img-wrapper {
       display: grid;
-      grid-gap: 5px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 30px;
+      grid-template-columns: 200px 200px 200px 200px;
+      width
 			& .gif-talent {
 				filter: grayscale(100%);
 				margin: 30px 0;
@@ -271,7 +272,7 @@ section.home {
       & .content {
         display: flex;
         color: white;
-        width: 85vw;
+        width: 81vw;
         height: 40vh;
         justify-content: space-between;
         align-items: baseline;
