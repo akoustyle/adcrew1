@@ -161,7 +161,7 @@ p {
         font-size: 18px;
   }
   p, a {
-    font-size: 11px;
+    font-size: 11px !important;
   }
 }
 @media (max-width:699px) {
