@@ -165,7 +165,13 @@ p {
   }
 }
 @media (max-width:699px) {
-  a {
-      font-size: 9px;
+  .youtube-link a, p {
+      font-size: 9px !important;
+    }
+    .insta-link a, p {
+      font-size: 9px !important;
+    }
+    .tiktok-link a, p {
+      font-size: 9px !important;
     }
 }
