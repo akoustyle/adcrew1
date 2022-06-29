@@ -18,7 +18,7 @@
 }
 
 .openbtn {
-  font-size: 30px;
+  font-size: 30px !important;
   color: black;
       padding: 10px 1.5vw;
   &:hover {
@@ -181,6 +181,7 @@
   }
   .openbtn {
     padding: 10px 0;
+    font-size: 20px !important;
   }
   .closebtn {
     padding: 4px 0px !important;
