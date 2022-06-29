@@ -1235,18 +1235,18 @@ section.talent {
             & .social-links {
               & .youtube-link > a {
                 top: 0 !important;
-                left: -2vw !important;
-                right: 0 !important;
+                left: 0vw !important;
+                right: unset !important;
               }
               & .insta-link > a {
                 top: 30px !important;
-                left: -2vw !important;
-                right: 0 !important;
+                left: 0vw !important;
+                right: unset !important;
               }
               & .tiktok-link > a {
                 top: 60px !important;
-                left: -2vw !important;
-                // right: 0 !important;
+                left: 0vw !important;
+                right: unset !important;
               }
               & .media-kit > a {
                 top: 52vh !important;
@@ -1255,13 +1255,13 @@ section.talent {
             }
             & .social-links > a i {
               color: $red;
-              font-size: 20px;
+              font-size: 10px;
             }
             & .social-links > a p {
               line-height: 1.7;
             }
             & a {
-              font-size: 14px;
+              font-size: 9px !important;
               color: $red;
               background-color: transparent !important;
               // &:hover {
