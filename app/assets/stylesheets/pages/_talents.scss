@@ -1223,10 +1223,11 @@ section.talent {
         align-items: center;
 
         & .content {
-          width: 100vw;
+          width: 90vw;
           align-items: flex-start;
           height:1500px;
           padding:0;
+          font-size: 9px !important;
           & .text-content {
             width: 90%;
             & h2 {
